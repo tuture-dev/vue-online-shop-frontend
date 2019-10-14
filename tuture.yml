@@ -1,0 +1,114 @@
+name: 使用 Vue.js 和 Node.js 实现一个迷你淘宝
+topics:
+  - JavaScript
+  - Vue
+  - Node
+  - MongoDB
+id: 5c25244bb5c3b77e08c10aa71d7cf5df
+steps:
+  - name: 快速入门
+    commit: 6f2924b
+    diff:
+      - file: .babelrc
+        display: true
+      - file: .editorconfig
+        display: true
+      - file: .eslintignore
+        display: true
+      - file: .eslintrc.js
+        display: true
+      - file: .gitignore
+      - file: .postcssrc.js
+        display: true
+      - file: README.md
+        display: true
+      - file: build/build.js
+        display: true
+      - file: build/check-versions.js
+        display: true
+      - file: build/logo.png
+        display: true
+      - file: build/utils.js
+        display: true
+      - file: build/vue-loader.conf.js
+        display: true
+      - file: build/webpack.base.conf.js
+        display: true
+      - file: build/webpack.dev.conf.js
+        display: true
+      - file: build/webpack.prod.conf.js
+        display: true
+      - file: config/dev.env.js
+        display: true
+      - file: config/index.js
+        display: true
+      - file: config/prod.env.js
+        display: true
+      - file: index.html
+        display: true
+      - file: package-lock.json
+      - file: package.json
+        display: true
+      - file: src/App.vue
+        display: true
+      - file: src/assets/logo.png
+        display: true
+      - file: src/components/HelloWorld.vue
+        display: true
+      - file: src/main.js
+        display: true
+      - file: src/router/index.js
+        display: true
+      - file: static/.gitkeep
+        display: true
+  - name: 编写你的第一个 Vue 页面
+    commit: 13f202a
+    diff:
+      - file: src/components/HelloWorld.vue
+        display: true
+      - file: src/components/Home.vue
+        display: true
+      - file: src/router/index.js
+        display: true
+  - name: 使用路由进行多页面跳转
+    commit: f0206c2
+    diff:
+      - file: src/App.vue
+        display: true
+      - file: src/components/HelloWorld.vue
+        display: true
+      - file: src/pages/Admin.vue
+        display: true
+      - file: src/pages/Cart.vue
+        display: true
+      - file: src/pages/Home.vue
+        display: true
+      - file: src/router/index.js
+        display: true
+  - name: 使用嵌套路由和动态路由合理组织页面
+    commit: aca2bb6
+    diff:
+      - file: src/pages/Admin.vue
+        display: true
+      - file: src/pages/admin/Edit.vue
+        display: true
+      - file: src/pages/admin/Index.vue
+        display: true
+      - file: src/pages/admin/New.vue
+        display: true
+      - file: src/pages/admin/Products.vue
+        display: true
+      - file: src/router/index.js
+        display: true
+  - name: 了解 Vue 模板语法和双向绑定
+    commit: b3771b6
+    diff:
+      - file: package-lock.json
+      - file: package.json
+        display: true
+      - file: src/components/products/ProductForm.vue
+        display: true
+      - file: src/main.js
+        display: true
+      - file: src/pages/admin/New.vue
+        display: true
