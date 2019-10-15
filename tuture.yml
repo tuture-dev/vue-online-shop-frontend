@@ -1,4 +1,4 @@
-name: 使用 Vue.js 和 Node.js 实现一个迷你淘宝
+name: 使用 Vue.js 和 Node.js 实现一个迷你淘宝(一)
 topics:
   - JavaScript
   - Vue
@@ -10,49 +10,49 @@ steps:
     commit: 6f2924b
     diff:
       - file: .babelrc
-        display: true
+        display: false
       - file: .editorconfig
-        display: true
+        display: false
       - file: .eslintignore
-        display: true
+        display: false
       - file: .eslintrc.js
-        display: true
+        display: false
       - file: .gitignore
       - file: .postcssrc.js
-        display: true
+        display: false
       - file: README.md
-        display: true
+        display: false
       - file: build/build.js
-        display: true
+        display: false
       - file: build/check-versions.js
-        display: true
+        display: false
       - file: build/logo.png
-        display: true
+        display: false
       - file: build/utils.js
-        display: true
+        display: false
       - file: build/vue-loader.conf.js
-        display: true
+        display: false
       - file: build/webpack.base.conf.js
-        display: true
+        display: false
       - file: build/webpack.dev.conf.js
-        display: true
+        display: false
       - file: build/webpack.prod.conf.js
-        display: true
+        display: false
       - file: config/dev.env.js
-        display: true
+        display: false
       - file: config/index.js
-        display: true
+        display: false
       - file: config/prod.env.js
-        display: true
+        display: false
       - file: index.html
-        display: true
+        display: false
       - file: package-lock.json
       - file: package.json
-        display: true
+        display: false
       - file: src/App.vue
         display: true
       - file: src/assets/logo.png
-        display: true
+        display: false
       - file: src/components/HelloWorld.vue
         display: true
       - file: src/main.js
@@ -60,7 +60,7 @@ steps:
       - file: src/router/index.js
         display: true
       - file: static/.gitkeep
-        display: true
+        display: false
   - name: 编写你的第一个 Vue 页面
     commit: 13f202a
     diff:
