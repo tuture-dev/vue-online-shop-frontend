@@ -112,3 +112,15 @@ steps:
         display: true
       - file: src/pages/admin/New.vue
         display: true
+  - name: 使用 Vuex 进行状态管理
+    commit: 4bc407e
+    diff:
+      - file: package-lock.json
+      - file: package.json
+        display: true
+      - file: src/main.js
+        display: true
+      - file: src/pages/admin/Products.vue
+        display: true
+      - file: src/store/index.js
+        display: true
