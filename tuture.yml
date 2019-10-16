@@ -124,3 +124,16 @@ steps:
         display: true
       - file: src/store/index.js
         display: true
+  - name: 使用 Mutation 修改本地状态
+    commit: 3b00854
+    diff:
+      - file: src/components/products/ProductList.vue
+        display: true
+      - file: src/pages/Cart.vue
+        display: true
+      - file: src/pages/Home.vue
+        display: true
+      - file: src/pages/admin/New.vue
+        display: true
+      - file: src/store/index.js
+        display: true
