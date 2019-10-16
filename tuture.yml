@@ -137,3 +137,15 @@ steps:
         display: true
       - file: src/store/index.js
         display: true
+  - name: 使用 Action 获取远程数据
+    commit: b14d923
+    diff:
+      - file: package-lock.json
+      - file: package.json
+        display: true
+      - file: src/components/products/ProductList.vue
+        display: true
+      - file: src/pages/Cart.vue
+        display: true
+      - file: src/store/index.js
+        display: true
