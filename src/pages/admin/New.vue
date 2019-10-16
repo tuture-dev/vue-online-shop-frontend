@@ -31,7 +31,7 @@ export default {
     },
   },
   components: {
-    'product-form': ProductForm
+  'product-form': ProductForm
   }
 }
 </script>
