@@ -179,3 +179,20 @@ steps:
         display: true
       - file: src/store/index.js
         display: true
+  - name: 抽出 Getters 和 Mutations 逻辑
+    commit: 4cc00dd
+    diff:
+      - file: src/pages/admin/Index.vue
+        display: true
+      - file: src/pages/admin/Manufacturers.vue
+        display: true
+      - file: src/pages/admin/Products.vue
+        display: true
+      - file: src/router/index.js
+        display: true
+      - file: src/store/getters.js
+        display: true
+      - file: src/store/index.js
+        display: true
+      - file: src/store/mutations.js
+        display: true
