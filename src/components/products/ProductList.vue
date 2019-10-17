@@ -11,17 +11,6 @@
   </div>
 </template>
 
-<style>
-.product {
-  border-bottom: 1px solid black;
-}
-
-.product__image {
-  width: 100px;
-  height: 100px;
-}
-</style>
-
 <script>
 import ProductItem from './ProductItem.vue';
 export default {
@@ -34,7 +23,7 @@ export default {
   computed: {
     // a computed getter
     products() {
-      return this.$store.state.products;
+      return this.$store.getters.allProducts;
     }
   },
   components: {
