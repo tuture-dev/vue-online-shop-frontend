@@ -160,3 +160,22 @@ steps:
         display: true
       - file: src/pages/Cart.vue
         display: true
+  - name: 使用 Vuex Getters 复用本地数据获取逻辑
+    commit: c999bac
+    diff:
+      - file: src/components/products/ProductDetail.vue
+        display: true
+      - file: src/components/products/ProductItem.vue
+        display: true
+      - file: src/components/products/ProductList.vue
+        display: true
+      - file: src/pages/Cart.vue
+        display: true
+      - file: src/pages/Detail.vue
+        display: true
+      - file: src/pages/admin/Products.vue
+        display: true
+      - file: src/router/index.js
+        display: true
+      - file: src/store/index.js
+        display: true
