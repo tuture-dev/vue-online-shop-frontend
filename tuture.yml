@@ -149,3 +149,14 @@ steps:
         display: true
       - file: src/store/index.js
         display: true
+  - name: 使用 Vue 组件简化页面逻辑
+    commit: 6f96d15
+    diff:
+      - file: src/components/products/ProductButton.vue
+        display: true
+      - file: src/components/products/ProductItem.vue
+        display: true
+      - file: src/components/products/ProductList.vue
+        display: true
+      - file: src/pages/Cart.vue
+        display: true
