@@ -37,6 +37,27 @@ export default new Vuex.Store({
 
       state.showLoader = false;
       state.products = products;
+    },
+    PRODUCT_BY_ID(state) {
+      state.showLoader = true;
+    },
+    PRODUCT_BY_ID_SUCCESS(state, payload) {
+      state.showLoader = false;
+
+      const { product } = payload;
+      state.product = product;
+    }
+  },
+  getters: {
+    allProducts(state) {
+      return state.products;
+    },
+    productById: (state, getters) => id => {
+      if (getters.allProducts.length > 0) {
+        return getters.allProducts.filter(p => p._id == id)[0];
+      } else {
+        return state.product;
+      }
     }
   },
   actions: {
@@ -44,9 +65,18 @@ export default new Vuex.Store({
       commit('ALL_PRODUCTS')
 
       axios.get(`${API_BASE}/products`).then(response => {
-        console.log('response', response);
         commit('ALL_PRODUCTS_SUCCESS', {
           products: response.data,
+        });
+      })
+    },
+    productById({ commit }, payload) {
+      commit('PRODUCT_BY_ID');
+
+      const { productId } = payload;
+      axios.get(`${API_BASE}/products/${productId}`).then(response => {
+        commit('PRODUCT_BY_ID_SUCCESS', {
+          product: response.data,
         });
       })
     }
