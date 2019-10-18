@@ -36,9 +36,7 @@ table {
 <script>
 export default {
   created() {
-    if (this.manufacturers.length === 0) {
-      this.$store.dispatch('allManufacturers');
-    }
+    this.$store.dispatch('allManufacturers');
   },
   computed: {
     manufacturers() {
