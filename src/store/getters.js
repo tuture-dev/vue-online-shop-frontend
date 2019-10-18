@@ -14,5 +14,12 @@ export const productGetters = {
 export const manufacturerGetters = {
   allManufacturers(state) {
     return state.manufacturers;
+  },
+  manufacturerById: (state, getters) => id => {
+    if (getters.allManufacturers.length > 0) {
+      return getters.allManufacturers.filter(manufacturer => manufacturer._id === id)[0]
+    } else {
+      return state.manufacturer;
+    }
   }
 }
