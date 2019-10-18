@@ -1,58 +1,58 @@
-name: 使用 Vue.js 和 Node.js 实现一个迷你淘宝(一)
+name: 使用 Vue 和 Node 开发一个迷你淘宝(一)
 topics:
   - JavaScript
   - Vue
   - Node
   - MongoDB
-id: 5c25244bb5c3b77e08c10aa71d7cf5df
+id: 092faf468f0108b393159a8456de3e15
 steps:
   - name: 快速入门
     commit: 6f2924b
     diff:
       - file: .babelrc
-        display: false
+        display: true
       - file: .editorconfig
-        display: false
+        display: true
       - file: .eslintignore
-        display: false
+        display: true
       - file: .eslintrc.js
-        display: false
+        display: true
       - file: .gitignore
       - file: .postcssrc.js
-        display: false
+        display: true
       - file: README.md
-        display: false
+        display: true
       - file: build/build.js
-        display: false
+        display: true
       - file: build/check-versions.js
-        display: false
+        display: true
       - file: build/logo.png
-        display: false
+        display: true
       - file: build/utils.js
-        display: false
+        display: true
       - file: build/vue-loader.conf.js
-        display: false
+        display: true
       - file: build/webpack.base.conf.js
-        display: false
+        display: true
       - file: build/webpack.dev.conf.js
-        display: false
+        display: true
       - file: build/webpack.prod.conf.js
-        display: false
+        display: true
       - file: config/dev.env.js
-        display: false
+        display: true
       - file: config/index.js
-        display: false
+        display: true
       - file: config/prod.env.js
-        display: false
+        display: true
       - file: index.html
-        display: false
+        display: true
       - file: package-lock.json
       - file: package.json
-        display: false
+        display: true
       - file: src/App.vue
         display: true
       - file: src/assets/logo.png
-        display: false
+        display: true
       - file: src/components/HelloWorld.vue
         display: true
       - file: src/main.js
@@ -60,7 +60,7 @@ steps:
       - file: src/router/index.js
         display: true
       - file: static/.gitkeep
-        display: false
+        display: true
   - name: 编写你的第一个 Vue 页面
     commit: 13f202a
     diff:
@@ -196,22 +196,6 @@ steps:
         display: true
       - file: src/store/mutations.js
         display: true
-  - name: Vuex Actions 最佳实践
-    commit: 14e078b
-    diff:
-      - file: src/components/products/ProductForm.vue
-        display: true
-      - file: src/pages/admin/Edit.vue
-        display: true
-      - file: src/pages/admin/New.vue
-        display: true
-      - file: src/store/actions.js
-        display: true
-      - file: src/store/index.js
-        display: true
-      - file: src/store/mutations.js
-        display: true
-    outdated: true
   - name: 抽出 Actions 逻辑
     commit: 1a54d5e
     diff:
