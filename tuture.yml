@@ -227,3 +227,30 @@ steps:
         display: true
       - file: src/store/mutations.js
         display: true
+  - name: 干掉 mutation-types 硬编码
+    commit: 1cf95ac
+    diff:
+      - file: src/components/ManufacturerForm.vue
+        display: true
+      - file: src/pages/admin/EditManufacturers.vue
+        display: true
+      - file: src/pages/admin/Index.vue
+        display: true
+      - file: src/pages/admin/Manufacturers.vue
+        display: true
+      - file: src/pages/admin/NewManufacturers.vue
+        display: true
+      - file: src/pages/admin/Products.vue
+        display: true
+      - file: src/router/index.js
+        display: true
+      - file: src/store/actions.js
+        display: true
+      - file: src/store/getters.js
+        display: true
+      - file: src/store/index.js
+        display: true
+      - file: src/store/mutation-types.js
+        display: true
+      - file: src/store/mutations.js
+        display: true
