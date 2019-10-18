@@ -196,3 +196,34 @@ steps:
         display: true
       - file: src/store/mutations.js
         display: true
+  - name: Vuex Actions 最佳实践
+    commit: 14e078b
+    diff:
+      - file: src/components/products/ProductForm.vue
+        display: true
+      - file: src/pages/admin/Edit.vue
+        display: true
+      - file: src/pages/admin/New.vue
+        display: true
+      - file: src/store/actions.js
+        display: true
+      - file: src/store/index.js
+        display: true
+      - file: src/store/mutations.js
+        display: true
+    outdated: true
+  - name: 抽出 Actions 逻辑
+    commit: 1a54d5e
+    diff:
+      - file: src/components/products/ProductForm.vue
+        display: true
+      - file: src/pages/admin/Edit.vue
+        display: true
+      - file: src/pages/admin/New.vue
+        display: true
+      - file: src/store/actions.js
+        display: true
+      - file: src/store/index.js
+        display: true
+      - file: src/store/mutations.js
+        display: true
