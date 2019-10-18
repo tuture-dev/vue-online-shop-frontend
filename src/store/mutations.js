@@ -25,6 +25,31 @@ export const productMutations = {
 
     const { productId } = payload;
     state.products = state.products.filter(product => product._id !== productId);
+  },
+  UPDATE_PRODUCT(state) {
+    state.showLoader = true;
+  },
+  UPDATE_PRODUCT_SUCCESS(state, payload) {
+    state.showLoader = false;
+
+    const { product: newProduct } = payload;
+    state.product = newProduct;
+    state.products = state.products.map(product => {
+      if (product._id === newProduct._id) {
+        return newProduct;
+      }
+
+      return product;
+    })
+  },
+  ADD_PRODUCT(state) {
+    state.showLoader = true;
+  },
+  ADD_PRODUCT_SUCCESS(state, payload) {
+    state.showLoader = false;
+
+    const { product } = payload;
+    state.products = state.products.concat(product);
   }
 };
 
