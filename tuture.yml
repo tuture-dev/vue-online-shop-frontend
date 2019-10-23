@@ -5,6 +5,23 @@ topics:
   - Node
   - MongoDB
 id: 092faf468f0108b393159a8456de3e15
+created: 2019-10-17T00:00:00.509Z
+updated: 2019-10-20T08:52:55.509Z
+github: 'https://github.com/pftom/vue-online-shop-frontend'
+splits:
+  - name: 使用 Vue 和 Node 开发一个迷你淘宝(一)
+    description: >-
+      Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
+      有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
+
+      目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像
+      Element 、mpvue、iView 这样优秀的基于 Vue 开源项目存在，所以学习 Vue 是一个不错的投资，当你学会
+      Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。
+
+      看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life
+      （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！
+    start: 6f2924b
+    end: b3771b6
 steps:
   - name: 快速入门
     commit: 6f2924b
@@ -48,7 +65,7 @@ steps:
         display: true
         explain:
           pre: >-
-            ## 初探初始化代码
+            ### 初探初始化代码
 
 
             通过 vue-cli 初始化的项目代码中，我们在整个教程中需要了解的就是以下五个文件：
@@ -161,7 +178,7 @@ steps:
             - 我们的 `HelloWorld.vue` 组件的内容
 
 
-            ![App](tuture-assets/fd30e4f820c680abbd7d34b554704551)
+            ![App](./tuture-assets/fd30e4f820c680abbd7d34b554704551)
       - file: static/.gitkeep
         display: false
     explain:
@@ -182,22 +199,7 @@ steps:
         （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！
 
 
-        ## 前提条件
-
-
-        本教程适合以下人群阅读并学习：
-
-
-        - 了解基础的 HTML、CSS
-        知识。如果你还不清楚，这里推荐几个很好的学习资源：1）[慕课网的初识HTML+CSS](https://www.imooc.com/learn/9)
-        2）[实战1](https://www.imooc.com/learn/147)
-        3）[实战2](https://www.imooc.com/learn/100)
-
-        - 理解 JavaScript 和 ES2015 基础，如果你还不清楚，那么这里推荐一个很好的资源：[阮一峰 ES6
-        入门](http://es6.ruanyifeng.com/)
-
-
-        ## 代码
+        ### 代码
 
 
         你可以在 Github
@@ -205,10 +207,10 @@ steps:
         2）[后端](https://github.com/pftom/vue-online-shop-backend)
 
 
-        ## 项目准备
+        ### 项目准备
 
 
-        ### 安装依赖
+        #### 安装依赖
 
 
         安装 Node.js，你可以去 [Node.js](https://nodejs.org/en/) 官网下载安装包，Node.js
@@ -269,7 +271,7 @@ steps:
         的支持，会大大提高我们的开发效率，本教程所涉及项目的开发都是使用 VSCode 完成的。
 
 
-        ### 初始化项目
+        #### 初始化项目
 
 
         打开终端输入如下命令初始化我们的 Vue 项目：
@@ -301,12 +303,12 @@ steps:
 
 
         > 注意：如果你使用 VSCode 编辑器打开项目进行开发，在运行 `code project-name` 之前需要安装 `code`
-        脚本，具体我找了一篇教程：https://www.cnblogs.com/Zhangcsc/p/11362987.html  
+        脚本，具体我找了一篇教程：https://www.cnblogs.com/Zhangcsc/p/11362987.html
 
 
-        ![初始化项目效果](tuture-assets/c5019a89d14f9f9118f22b61136c02c3)
+        ![初始化项目效果](./tuture-assets/c5019a89d14f9f9118f22b61136c02c3)
       post: |-
-        ## 小结
+        ### 小结
 
         通过一窥 `vue-cli` 为我们初始化的项目代码，我们可以学到如下的知识：
 
@@ -345,7 +347,7 @@ steps:
           post: |-
             现在我们保存代码，打开浏览器，看到的内容应该就和我们在 `Home.vue` 里面编写的内容一样。
 
-            ![Home.vue](tuture-assets/edd8a53811e78bacd91ace31c3691c70)
+            ![Home.vue](./tuture-assets/edd8a53811e78bacd91ace31c3691c70)
     explain:
       pre: 下面我们来编写我们的迷你淘宝的首页。
   - name: 使用路由进行多页面跳转
@@ -376,7 +378,7 @@ steps:
         display: true
         explain:
           pre: >-
-            最后是我们的商品详情列表 `Home.vue`，只不过这一次我们需要将它从 `src/components/Home.vue` 移动到 
+            最后是我们的商品详情列表 `Home.vue`，只不过这一次我们需要将它从 `src/components/Home.vue` 移动到
             `src/pages/Home.vue` 下。
       - file: src/router/index.js
         display: true
@@ -385,7 +387,7 @@ steps:
           post: |-
             保存我们写好的代码，然后打开浏览器，我们可以看到下面的效果：
 
-            ![Multi-Route](tuture-assets/bb0a5726073b43a60328bf2f73a86bef)
+            ![Multi-Route](./tuture-assets/bb0a5726073b43a60328bf2f73a86bef)
 
             你可以点击头部的三个导航链接，下面的标题内容会随着点击的链接变化，恭喜你！你已经拥有了一个多页面的项目了。
     explain:
@@ -469,7 +471,7 @@ steps:
       post: |-
         保存我们编写的内容，打开浏览器，我们可以看到如下内容：
 
-        ![52tuture](tuture-assets/d652313c1dcd035889405c8d238c8a21)
+        ![52tuture](./tuture-assets/d652313c1dcd035889405c8d238c8a21)
   - name: 了解 Vue 模板语法和双向绑定
     commit: b3771b6
     diff:
@@ -487,7 +489,7 @@ steps:
             首先它由两个部分组成，分别是 `script` 和 `template` ，我们先来看一看 `script` 部分。
 
 
-            ## Vue 实例：Methods 和 Props
+            ### Vue 实例：Methods 和 Props
 
 
             首先它多可了两个我们之前没看过 `props` 和 `methods` ，`props` 是 Vue
@@ -504,7 +506,7 @@ steps:
             不仅可以使得数据可以双向流动，而且还可以在子组件反向操作父组件的内容，使得数据还可以上下流动。
 
 
-            ## 模板语法：v-bind、v-on
+            ### 模板语法：v-bind、v-on
 
 
             接下来我们再来谈一谈 `template` 里面发生的事情。
@@ -619,7 +621,7 @@ steps:
             不知道看了上面的长文，你有没有一点晕，不管你晕不晕，我是得喝口水缓一下。 - v -
 
 
-            ## 模板语法：v-model 双向绑定
+            ### 模板语法：v-model 双向绑定
 
 
             前面我们提到通过 `{{}}` 插值语法渲染来自 `data` 的数据实现了逻辑层向视图层的数据流动，通过 `methods`
@@ -644,7 +646,7 @@ steps:
             `model.name` 的值也会被修改，这一切都是自动发生的，不需要我们额外的添加 `methods` 里面的方法调用来手动修改。
 
 
-            ## 模板语法：循环
+            ### 模板语法：循环
 
 
             接下来我们看看第三个 `form-group`，就是选择我们商品的 `manufacturer`
@@ -682,7 +684,7 @@ steps:
 
             ```HTML
 
-            <!-- 
+            <!--
 
             manufacturers = [
               { _id: 1, name: 'Apple' },
@@ -712,7 +714,7 @@ steps:
             ```
 
 
-            ## 模板语法：条件选择
+            ### 模板语法：条件选择
 
 
             上面的讲述了循环是如何在 Vue 中使用的，下面我们来看一看条件语法是如何在 Vue 中使用的，让我们看到最后一个
@@ -729,7 +731,7 @@ steps:
         display: true
         explain:
           pre: |-
-            ## Vue 组件组合
+            ### Vue 组件组合
 
             编写完上面的表单之后，我们在 `New.vue` 中引入我们创建的表单组件：
           post: >-
@@ -750,10 +752,10 @@ steps:
         `New.vue` 添加商品页面，我们可以看到如下的效果：
 
 
-        ![New.vue](tuture-assets/2a340eeb04a07c1aae2bcd0387931c52)
+        ![New.vue](./tuture-assets/2a340eeb04a07c1aae2bcd0387931c52)
 
 
-        ## 小结
+        ### 小结
 
 
         到现在为止，我们已经了解了 Vue 的基础部分，包括：
@@ -901,18 +903,14 @@ steps:
       - file: src/store/mutations.js
         display: true
 description: >-
-  本教程共四个部分，全部采用 Learn by Doing 的方式进行讲解，学完之后，你将会得到一个包括前后端的全栈迷你淘宝项目：
+  Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
+  有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
 
 
-  - 第一部分：以实战的形式介绍 Vue 的基础概念，包括组件、模板语法、表单处理、路由等，这一部分将会完成一个多页面的前端迷你淘宝项目。
-
-  - 第二部分：我们将带你手把手搭建迷你淘宝的后端 API，它将会采用经典的 MVC 模式进行项目的设计，同时数据库采用 MongoDB，并使用方便易用的
-  Mongoose 来操作数据库。
-
-  - 第三部分：引入 Vuex 进行前端状态管理，同时接入我们搭建的后端 API 来替换假数据，这一部分我们将介绍 Vuex
-  三大核心概念：Getters、Mutations、Actions，有 Vuex 的加持，我们可以使用 Vue 构建超大型前端项目。
-
-  - 第四部分：使用前三个部分讲解的知识继续完成剩下的项目，并且引入一些编写项目代码的最佳实践，有了这些最佳实践，能帮助你编写可维护的代码。
+  目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像 Element
+  、mpvue、iView 这样优秀的基于 Vue 开源项目存在，所以学习 Vue 是一个不错的投资，当你学会
+  Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。
 
 
-  相信通过这四篇教程的学习，能给你在成为一名全栈工程师的道路一点小小的帮助。
+  看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life
+  （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！
