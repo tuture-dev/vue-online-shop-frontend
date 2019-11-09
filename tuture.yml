@@ -5,9 +5,13 @@ topics:
   - Node
   - MongoDB
 id: 092faf468f0108b393159a8456de3e15
-created: 2019-10-17T00:00:00.509Z
-updated: 2019-10-20T08:52:55.509Z
-github: 'https://github.com/pftom/vue-online-shop-frontend'
+created: "2019-10-17T00:00:00.509Z"
+updated: "2019-10-20T08:52:55.509Z"
+categories:
+  - Web 前端
+  - Vue
+  - 入门
+github: "https://github.com/pftom/vue-online-shop-frontend"
 splits:
   - name: 使用 Vue 和 Node 开发一个迷你淘宝(一)
     description: >-
@@ -156,7 +160,7 @@ steps:
             `routes` 数组定义了所有我们项目需要用到的页面，比如初始化时为我们生成的 `HelloWorld.vue` 就是我们的网站首页
             -- 我们打开浏览器访问到的第一个页面，因为它的路径（`path`）定义为 `/` 。此外一个页面定义还需要
             `name`，它代表此页面在 `vue-router` 中的标识符，`component` 代表此页面需要渲染的组件页面。
-          post: ''
+          post: ""
       - file: src/assets/logo.png
         display: false
       - file: src/components/HelloWorld.vue
@@ -373,7 +377,7 @@ steps:
       - file: src/pages/Cart.vue
         display: true
         explain:
-          pre: '然后是我们的购物车页面 `Cart.vue` '
+          pre: "然后是我们的购物车页面 `Cart.vue` "
       - file: src/pages/Home.vue
         display: true
         explain:
@@ -459,7 +463,7 @@ steps:
         display: true
         explain:
           pre: 接着创建 `New.vue` 、`Products.vue` 。
-          post: ''
+          post: ""
       - file: src/pages/admin/Products.vue
         display: true
       - file: src/pages/Admin.vue
