@@ -6,7 +6,7 @@ topics:
   - MongoDB
 id: 092faf468f0108b393159a8456de3e15
 created: '2019-10-17T00:00:00.509Z'
-updated: '2019-10-20T08:52:55.509Z'
+updated: 2019-11-11T08:42:30.972Z
 categories:
   - Web 前端
   - Vue
@@ -379,7 +379,7 @@ steps:
         explain:
           pre: '然后是我们的购物车页面 `Cart.vue` '
       - file: src/pages/Home.vue
-        display: true
+        display: false
         explain:
           pre: >-
             最后是我们的商品详情列表 `Home.vue`，只不过这一次我们需要将它从 `src/components/Home.vue` 移动到
@@ -387,7 +387,7 @@ steps:
       - file: src/router/index.js
         display: true
         explain:
-          pre: 完成三个页面，接着就是在我们的 `src/routes/index.js` 中导入并申请上面三个页面。
+          pre: 完成三个页面，接着就是在我们的 `src/routes/index.js` 中导入并申明上面三个页面。
           post: |-
             保存我们写好的代码，然后打开浏览器，我们可以看到下面的效果：
 
@@ -496,7 +496,7 @@ steps:
             ### Vue 实例：Methods 和 Props
 
 
-            首先它多可了两个我们之前没看过 `props` 和 `methods` ，`props` 是 Vue
+            首先它多了两个我们之前没看过 `props` 和 `methods` ，`props` 是 Vue
             进行组件之间传参的形式，比如这里我们的 `props`
             接收来自父组件的三个参数：`model`、`manufacturers`、`isEditing`。
 
@@ -630,8 +630,8 @@ steps:
 
             前面我们提到通过 `{{}}` 插值语法渲染来自 `data` 的数据实现了逻辑层向视图层的数据流动，通过 `methods`
             在视图层操作逻辑层的数据，实现了视图层的数据向逻辑层的数据流动，从而达到了双向绑定，当我们的应用越来越复杂，我们会发现这样的数据双向流动会越来越频繁，而且粒度也会大小不一，有很多单纯修改某个值的方法调用就会显得特别繁杂，因此
-            Vue 通过提供 `v-mode` 进行了视图层和逻辑层的双向绑定，让我们来看我们项目中的例子, 也就是第一个 `form-group`
-            ：
+            Vue 通过提供 `v-model` 进行了视图层和逻辑层的双向绑定，让我们来看我们项目中的例子, 也就是第一个
+            `form-group` ：
 
 
             ```HTML
@@ -641,7 +641,7 @@ steps:
               placeholder="Name"
               v-model="model.name"
               name="name"
-              lass="form-control" />
+              class="form-control" />
             ```
 
 
@@ -765,7 +765,7 @@ steps:
         到现在为止，我们已经了解了 Vue 的基础部分，包括：
 
 
-        - 用路由进行多页面的调整和导航
+        - 用路由进行多页面的跳转和导航
 
         - 用嵌套路由和动态路由合理组织页面
 
@@ -786,12 +786,46 @@ steps:
       - file: package-lock.json
       - file: package.json
         display: true
-      - file: src/main.js
-        display: true
-      - file: src/pages/admin/Products.vue
-        display: true
+        explain:
+          pre: |-
+            首先我们打开命令行，进入项目目录，执行如下命令安装 Vuex:
+
+            ```shell
+            npm install vuex
+            ```
       - file: src/store/index.js
         display: true
+        explain:
+          pre: 然后我们创建 store 文件，并编写如下内容：
+          post: >-
+            上面的代码可以分为三部分。
+
+
+            首先我们导入 `vue` 和 `vuex` 。
+
+
+            然后我们调用 `Vue.use` 方法，使用 `vuex`。
+
+
+            最后我们导出, `Vuex.Store` 实例，并且传入了 `strict` 和 `state` 参数，这里 `strict`
+            参数表示，我们必须使用 Vuex 的 Mutation 方法来改变 `state`，否则就会报错。而 `state`
+            参数用来存放我们全局的状态，比如我们这里定义了 `cart` 、 `showLoader`
+            等属性都是后面我们完善迷你淘宝的内容需要的数据。
+      - file: src/main.js
+        display: true
+        explain:
+          pre: >-
+            接着我们在 `main.js` 里面导入我们的 `store` 实例，并且在 Vue 实例初始化时，传入我们的 `store`
+            实例，这样，当我们开启项目之后，Vue 就会将 Store 里面的 `state` 注入到所有的 Vue 组件中，这样所以的 Vue
+            组件共享同一个全局的 `state` ，它其实就是一个 JS
+            对象，从而避免了组件嵌套层级过深时，组件之间传递属性的复杂性，让属性的定义，获取，修改非常直观，方便开发大型应用和团队协作。
+      - file: src/pages/admin/Products.vue
+        display: true
+    explain:
+      pre: >-
+        我们之前讲解了 Vue
+        的基础部分，你可以做一些比较简单的页面，但是针对复杂的应用，比如组件嵌套超过3级，我们前面讲解的知识处理起来就很费力了，还好 Vue
+        社区为我们打造了状态管理容器 Vuex，用来处理大型复杂的应用。
   - name: 使用 Mutation 修改本地状态
     commit: 3b00854
     diff:
