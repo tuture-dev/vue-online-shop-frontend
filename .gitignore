@@ -17,3 +17,5 @@ yarn-error.log*
 
 .tuture
 tuture-error.log
+
+tuture-build/
