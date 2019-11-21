@@ -4,8 +4,9 @@ description: "Vue 是尤雨溪在2014年创建的一个前端框架，目前 Git
 目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像 Element 、mpvue、iView 这样优秀的基于 Vue 开源项目存在，所以学习 Vue 是一个不错的投资，当你学会 Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。
 看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！"
 tags: ["JavaScript", "Vue", "Node", "MongoDB"]
+categories: ["Web 前端", "Vue", "入门"]
 date: 2019-10-17T00:00:00.509Z
-updated: 2019-10-20T08:52:55.509Z
+updated: 2019-11-11T08:42:30.972Z
 ---
 
 ## 快速入门
@@ -79,7 +80,7 @@ cd vue-online-shop-frontend && npm start
 
 > 注意：如果你使用 VSCode 编辑器打开项目进行开发，在运行 `code project-name` 之前需要安装 `code` 脚本，具体我找了一篇教程：https://www.cnblogs.com/Zhangcsc/p/11362987.html
 
-![](https://raw.githubusercontent.com/pftom/vue-online-shop-frontend/master/./tuture-assets/c5019a89d14f9f9118f22b61136c02c3)
+![初始化项目效果](././c5019a89d14f9f9118f22b61136c02c3)
 
 ### 初探初始化代码
 
@@ -330,7 +331,7 @@ a {
 - 一张 Vue logo 图
 - 我们的 `HelloWorld.vue` 组件的内容
 
-![](https://raw.githubusercontent.com/pftom/vue-online-shop-frontend/master/./tuture-assets/fd30e4f820c680abbd7d34b554704551)
+![App](././fd30e4f820c680abbd7d34b554704551)
 
 ### 小结
 
@@ -402,7 +403,7 @@ Vue.use(Router);
 
 现在我们保存代码，打开浏览器，看到的内容应该就和我们在 `Home.vue` 里面编写的内容一样。
 
-![](https://raw.githubusercontent.com/pftom/vue-online-shop-frontend/master/./tuture-assets/edd8a53811e78bacd91ace31c3691c70)
+![Home.vue](././edd8a53811e78bacd91ace31c3691c70)
 
 ## 使用路由进行多页面跳转
 
@@ -491,13 +492,7 @@ Vue.use(Router);
 </script>
 ```
 
-最后是我们的商品详情列表 `Home.vue`，只不过这一次我们需要将它从 `src/components/Home.vue` 移动到 `src/pages/Home.vue` 下。
-
-```vue src/pages/Home.vue
-
-```
-
-完成三个页面，接着就是在我们的 `src/routes/index.js` 中导入并申请上面三个页面。
+完成三个页面，接着就是在我们的 `src/routes/index.js` 中导入并申明上面三个页面。
 
 ```js src/router/index.js
 import Vue from 'vue';
@@ -529,7 +524,7 @@ Vue.use(Router);
 
 保存我们写好的代码，然后打开浏览器，我们可以看到下面的效果：
 
-![](https://raw.githubusercontent.com/pftom/vue-online-shop-frontend/master/./tuture-assets/bb0a5726073b43a60328bf2f73a86bef)
+![Multi-Route](././bb0a5726073b43a60328bf2f73a86bef)
 
 你可以点击头部的三个导航链接，下面的标题内容会随着点击的链接变化，恭喜你！你已经拥有了一个多页面的项目了。
 
@@ -664,7 +659,7 @@ export default new Router({
 
 保存我们编写的内容，打开浏览器，我们可以看到如下内容：
 
-![](https://raw.githubusercontent.com/pftom/vue-online-shop-frontend/master/./tuture-assets/d652313c1dcd035889405c8d238c8a21)
+![52tuture](././d652313c1dcd035889405c8d238c8a21)
 
 ## 了解 Vue 模板语法和双向绑定
 
@@ -759,7 +754,7 @@ export default {
 
 ### Vue 实例：Methods 和 Props
 
-首先它多可了两个我们之前没看过 `props` 和 `methods` ，`props` 是 Vue 进行组件之间传参的形式，比如这里我们的 `props` 接收来自父组件的三个参数：`model`、`manufacturers`、`isEditing`。
+首先它多了两个我们之前没看过 `props` 和 `methods` ，`props` 是 Vue 进行组件之间传参的形式，比如这里我们的 `props` 接收来自父组件的三个参数：`model`、`manufacturers`、`isEditing`。
 
 然后是 `methods` ，`methods` 是用来定义在组件中会用到的一些方法，如果说我们前面提到的 `data` ，是从数据从逻辑层（JS）向视图层（Html）流动的话，那么这里的 `methods` 就是视图层触发事件，如 click、submit等，反过来修改逻辑层的数据的方法，`methods` 使得数据可以双向流动。比如这里，我们定义了一个 `saveProduct` 方法，就是当用户填写完商品信息的表单之后，点击提交按钮会触发的方法，在 `saveProduct` 内部，我们调用了父组件的 `save-product` 方法，并把修改后的 `this.mode` 变量内容传给父组件。所以这里我们还可以看到，`methods` 不仅可以使得数据可以双向流动，而且还可以在子组件反向操作父组件的内容，使得数据还可以上下流动。
 
@@ -834,7 +829,7 @@ export default {
 
 ### 模板语法：v-model 双向绑定
 
-前面我们提到通过 `{% raw %}{{}}{% endraw %}` 插值语法渲染来自 `data` 的数据实现了逻辑层向视图层的数据流动，通过 `methods` 在视图层操作逻辑层的数据，实现了视图层的数据向逻辑层的数据流动，从而达到了双向绑定，当我们的应用越来越复杂，我们会发现这样的数据双向流动会越来越频繁，而且粒度也会大小不一，有很多单纯修改某个值的方法调用就会显得特别繁杂，因此 Vue 通过提供 `v-mode` 进行了视图层和逻辑层的双向绑定，让我们来看我们项目中的例子, 也就是第一个 `form-group` ：
+前面我们提到通过 `{% raw %}{{}}{% endraw %}` 插值语法渲染来自 `data` 的数据实现了逻辑层向视图层的数据流动，通过 `methods` 在视图层操作逻辑层的数据，实现了视图层的数据向逻辑层的数据流动，从而达到了双向绑定，当我们的应用越来越复杂，我们会发现这样的数据双向流动会越来越频繁，而且粒度也会大小不一，有很多单纯修改某个值的方法调用就会显得特别繁杂，因此 Vue 通过提供 `v-model` 进行了视图层和逻辑层的双向绑定，让我们来看我们项目中的例子, 也就是第一个 `form-group` ：
 
 ```HTML
 <input
@@ -842,7 +837,7 @@ export default {
   placeholder="Name"
   v-model="model.name"
   name="name"
-  lass="form-control" />
+  class="form-control" />
 ```
 
 这里我们通过申明 `v-mode` 将此 input 的值和我们在 Vue 实例中的 `model` 的 `name` 属性进行了双向绑定，即当 `model.name` 发生变化，input 的值也会跟着变化，当 input 的值发生变化，我们 `model.name` 的值也会被修改，这一切都是自动发生的，不需要我们额外的添加 `methods` 里面的方法调用来手动修改。
@@ -947,13 +942,13 @@ model = { _id: 1, name: 'Apple' }
 
 当保存上面编写的代码之后，我们打开浏览器，点击导航链接 `Admin`，然后点击子导航链接 `New Products`，切换到我们的 `New.vue` 添加商品页面，我们可以看到如下的效果：
 
-![](https://raw.githubusercontent.com/pftom/vue-online-shop-frontend/master/./tuture-assets/2a340eeb04a07c1aae2bcd0387931c52)
+![New.vue](././2a340eeb04a07c1aae2bcd0387931c52)
 
 ### 小结
 
 到现在为止，我们已经了解了 Vue 的基础部分，包括：
 
-- 用路由进行多页面的调整和导航
+- 用路由进行多页面的跳转和导航
 - 用嵌套路由和动态路由合理组织页面
 - Vue 组件和 Vue 实例
 - Vue 模板语法
