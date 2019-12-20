@@ -1,16 +1,16 @@
-name: 使用 Vue 和 Node 开发一个迷你淘宝(一)
+name: 从零到部署：用 Vue 和 Express 实现一个迷你全栈电商应用
 topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
-created: "2019-10-17T00:00:00.509Z"
-updated: 2019-11-21T13:48:13.782Z
+created: '2019-10-17T00:00:00.509Z'
+updated: 2019-12-20T10:39:56.284Z
 categories:
   - 前端
   - Vue
   - 入门
-github: "https://github.com/pftom/vue-online-shop-frontend"
+github: 'https://github.com/pftom/vue-online-shop-frontend'
 splits:
-  - name: 使用 Vue 和 Node 开发一个迷你淘宝(一)
+  - name: 从零到部署：用 Vue 和 Express 实现简单的全栈电商应用
     description: >-
       Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
       有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
@@ -67,10 +67,10 @@ steps:
         display: true
         explain:
           pre: >-
-            ### 初探初始化代码
+            ### 初探脚手架代码
 
 
-            通过 vue-cli 初始化的项目代码中，我们在整个教程中需要了解的就是以下五个文件：
+            通过 vue-cli 初始化的脚手架代码中，我们在整个教程中需要了解的就是以下五个文件：
 
 
             - `src/main.js`
@@ -84,17 +84,32 @@ steps:
             - `src/components/HelloWorld.vue`
 
 
-            首先我们来看一下 `src/main.js`，这个是 Vue 编译代码的入口，我们通过导入 `Vue` 类，`App`
-            组件，`router` 路由，再加上 `el` ，将这些参数传给 `Vue` 类，生成 Vue 实例。
+            #### src/main.js
+
+
+            首先我们来看一下 `src/main.js`，这个是 Vue 应用的入口。我们通过导入 `Vue` 类、`App`
+            组件、`router` 路由，再加上 `el` ，将这些参数传给 `Vue` 类，生成一个 Vue 实例。
       - file: index.html
         display: true
         explain:
-          pre: >-
-            接着我们来看一下 `index.html` 文件，当我们开启项目之后，Vue 使用的编译工具 Webpack 将会根据入口文件
-            `src/main.js` 里面声明的 `el` 属性，找到 `index.html` 下面 `el = 'app'` 的 DOM
-            节点，并把编译好的视图模板代码挂载到这个 DOM 节点下面，同时将项目涉及的 JavaScript 和 CSS 代码以 `script`
-            和 `link` 的方式插入到 `index.html` 中，最后打开  `index.html` ，我们就可以在浏览器中看到基于
-            Vue 编写好的前端项目。
+          pre: |-
+            #### index.html
+
+            接着我们来看一下 `index.html` 文件，它的代码是这样的：
+          post: >-
+            当我们开启项目之后，Vue 所使用的构建工具 [Webpack](https://webpack.docschina.org/) 将会：
+
+
+            - 根据入口文件 `src/main.js` 里面声明的 `el` 属性（`#app`），找到 `index.html` 中 id
+            为`app` 的 DOM 节点
+
+            - 把编译好的视图模板代码挂载到这个 DOM 节点下面
+
+            - 将项目涉及的 JavaScript 和 CSS 代码以 `script` 和 `link` 的方式插入到 `index.html`
+            中
+
+
+            最后打开  `index.html` ，我们就可以在浏览器中看到基于 Vue 编写好的前端项目。
       - file: package-lock.json
       - file: package.json
         display: false
@@ -102,11 +117,13 @@ steps:
         display: true
         explain:
           pre: >-
+            #### src/App.vue
+
+
             `src/App.vue` 就是 Vue
-            为我们提供的组件文件，使得我们可以以一个个组件来组织代码，并通过组件的组合来构建任意规模的项目。
-
-
-            一般比较小的组件会包含三个部分：
+            为我们提供的组件文件，使得我们可以以组件的形式来组织代码，并通过组件的组合来构建任意规模的项目，代码如下：
+          post: >-
+            可以看到， `App` 组件包含了三个部分的代码：
 
 
             - `template`
@@ -116,20 +133,18 @@ steps:
             - `style`
 
 
-            其实就是对应了传统 Web 三剑客，`HTML`、`JavaScript`、`CSS`。
+            其实就是对应了传统 Web "三剑客"，`HTML`、`JavaScript`、`CSS`。
 
 
             这里在 `template` 部分展示了一张 Vue 的 logo 图片，然后显示此刻渲染的路由组件：`<router-view
-            />`。我们将在后面继续讲解路由，所以这里不懂没有关系。
+            />`。我们将在后面继续讲解路由，这里不懂也没有关系哦。`script` 部分，主要是导出了一个名为 `App` 的组件。`style`
+            部分就是我们熟悉的 CSS 代码了。
 
 
-            `script` 部分，主要是导出了一个名为 `App` 的组件。
+            ::: info
 
-
-            `style` 部分就是我们熟悉的 CSS 代码了。
-          post: >-
-            上面这个是一般比较小的组件的写法，当组件中涉及的代码较多时，我们需要把 `script` 和 `style` 抽成独立的 `.js` 和
-            `.css` 文件。就像下面这样。
+            上面所讲的是比较小的组件的写法，当组件中涉及的代码较多时，我们需要把 `script` 和 `style` 抽成独立的 `.js` 和
+            `.css` 文件。就像下面这样：
 
 
             ```JavaScript
@@ -148,29 +163,35 @@ steps:
 
             ```
 
+            :::
+
 
             Vue 组件和模板语法是 Vue 的核心概念，我们在后面会以实战的形式重点讲解这些内容。
       - file: src/router/index.js
         display: true
         explain:
-          pre: >-
-            最后是我们的 `src/router/index.js` 文件，这个是 Vue 为我们提供的路由，我们在这个文件里面通过
-            `routes` 数组定义了所有我们项目需要用到的页面，比如初始化时为我们生成的 `HelloWorld.vue` 就是我们的网站首页
-            -- 我们打开浏览器访问到的第一个页面，因为它的路径（`path`）定义为 `/` 。此外一个页面定义还需要
-            `name`，它代表此页面在 `vue-router` 中的标识符，`component` 代表此页面需要渲染的组件页面。
-          post: ""
+          pre: |-
+            #### src/router/index.js
+
+            `src/router/index.js` 文件是 Vue 为我们提供的路由文件，代码如下：
+          post: >-
+            在路由文件中，通过 `routes` 数组定义了项目所有的页面，比如初始化时生成的 `HelloWorld.vue` 就是我们的网站首页
+            -- 也就是打开浏览器访问到的第一个页面，因为它的路径（`path`）定义为 `/` 。此外一个页面定义还需要
+            `name`，它代表此页面在 `vue-router` 中的标识符，`component` 则代表此页面渲染时的所用到的组件。
       - file: src/assets/logo.png
         display: false
       - file: src/components/HelloWorld.vue
         display: true
         explain:
-          pre: >-
-            最后是 `src/components/HelloWorld.vue` 文件。
+          pre: |-
+            #### src/components/HelloWorld.vue
 
-
-            我们可以看到，其结构大致与 `App.vue` 类似。其中也有一些不同，比如 `script` 里面的 `data` 字段，还有
-            `template` 中的 `{{ }}` 语法。这个我们会在下一节进行讲解。
+            最后是 `src/components/HelloWorld.vue` 文件，是脚手架代码为我们提供的一个实例组件，代码如下：
           post: >-
+            可以看到，其结构大致与 `App.vue` 类似。其中也有一些不同，比如 `script` 里面的 `data` 字段，还有
+            `template` 中的 `{{ }}` 语法。这个我们会在下一节进行讲解。
+
+
             当我们打开浏览器时，地址为：`http://localhost:8080/` 此时路径为 `/`，激活 `HelloWorld.vue`
             组件，所以最后我们整个项目渲染 `App.vue` 的内容，显示的结构即为：
 
@@ -185,9 +206,9 @@ steps:
         display: false
     explain:
       pre: >-
-        Vue 是[尤雨溪](https://evanyou.me/) 在2014年创建的一个前端框架，目前
+        Vue 是[尤雨溪](https://evanyou.me/)在 2014 年创建的一个前端框架，目前
         [Github](https://github.com/vuejs/vue) Star 数高达150K，是 Star 数最高的前端项目，并且
-        Vue 有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
+        Vue 有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久地发展。
 
 
         目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像
@@ -198,15 +219,15 @@ steps:
 
 
         看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life
-        （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！
+        （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随我的脚步，彻底掌握 Vue 开发！
 
 
         ### 代码
 
 
         你可以在 Github
-        查看完整的源码。1）[前端](https://github.com/pftom/vue-online-shop-frontend)
-        2）[后端](https://github.com/pftom/vue-online-shop-backend)
+        查看完整的源码：1）[前端](https://github.com/pftom/vue-online-shop-frontend)
+        2）[后端](https://github.com/pftom/vue-online-shop-backend)。
 
 
         ### 项目准备
@@ -215,11 +236,8 @@ steps:
         #### 安装依赖
 
 
-        安装 Node.js，你可以去 [Node.js](https://nodejs.org/en/) 官网下载安装包，Node.js
-        是跨平台的，所以不用担心你的电脑无法使用。
-
-
-        通过 Node.js 安装包安装，会同时安装 Node.js 包管理工具 Npm，用于便捷的管理项目依赖和下载第三方包。
+        安装 Node.js，你可以去 [Node.js](https://nodejs.org/en/) 官网下载安装包，会同时安装 Node.js
+        包管理工具 Npm，用于便捷的管理项目依赖和下载第三方包。
 
 
         打开终端，输入如下命令测试是否安装成功：
@@ -237,8 +255,16 @@ steps:
         如果在你的终端有如上输出，那么代表你安装成功。
 
 
-        > 提示：通过上面安装包安装，你会安装最新的 Node 稳定版本，这可能和我的机器上的 Node
+
+        ::: info
+
+        **提示**
+
+
+        通过上面安装包安装，你会安装最新的 Node 稳定版本，这可能和我的机器上的 Node
         版本不一致，但是不用担心，本教程使用到的代码语法适用于绝大多数新的或更老的 Node。
+
+        :::
 
 
         安装 vue-cli，在绝大多数场景下，我们使用 vue-cli 来初始化我们的 vue 项目，本教程也不例外，在终端运行如下命令来安装：
@@ -262,7 +288,14 @@ steps:
         ```
 
 
-        > 官方的 cli 工具已经纳入到 @vue/cli 之下，这里我们使用的是相对较老的版本，但是原理基本类似，不影响我们学习 Vue 的开发。
+        ::: info
+
+        **提示**
+
+
+        官方的 cli 工具已经纳入到 `@vue/cli` 之下，这里我们使用的是相对较老的版本，但是原理基本类似，不影响我们学习 Vue 的开发。
+
+        :::
 
 
         上面两个安装步骤已经足够完成我们的教程的学习，但是我想额外推荐你一款编辑器，VSCode，你可以通过访问
@@ -286,7 +319,15 @@ steps:
         ```
 
 
-        > 运行上面的命令之后，会出现一系列选项，在初学阶段我们没有必要理会这些选项，你大可以一路回车，快速完成项目的初始化。
+
+        ::: info
+
+        **提示**
+
+
+        运行上面的命令之后，会出现一系列选项，在初学阶段我们没有必要理会这些选项，你大可以一路回车，快速完成项目的初始化。
+
+        :::
 
 
         当项目初始化成功之后，接下来通过如下命令开启项目：
@@ -301,11 +342,19 @@ steps:
         ```
 
 
-        接着打开浏览器，输入 `http://localhost:8080/` 查看我们初始好的项目效果。
+        接着打开浏览器，访问 `http://localhost:8080/` 查看我们初始好的项目效果。
 
 
-        > 注意：如果你使用 VSCode 编辑器打开项目进行开发，在运行 `code project-name` 之前需要安装 `code`
-        脚本，具体我找了一篇教程：https://www.cnblogs.com/Zhangcsc/p/11362987.html
+
+        ::: warning
+
+        **注意**
+
+
+        如果你使用 VSCode 编辑器打开项目进行开发，在运行 `code project-name` 之前需要安装 `code`
+        脚本，具体我找了一篇教程：https://www.cnblogs.com/Zhangcsc/p/11362987.html。
+
+        :::
 
 
         ![初始化项目效果](./tuture-assets/c5019a89d14f9f9118f22b61136c02c3)
@@ -314,8 +363,8 @@ steps:
 
         通过一窥 `vue-cli` 为我们初始化的项目代码，我们可以学到如下的知识：
 
-        - Vue 通过组件来组织项目，单个组件就是我们传统的 Web 三剑客：HTML、JavaScript、CSS。
-        - Vue 通过路由来定义多个页面，并且进行页面之间的跳转
+        - Vue 通过组件来组织项目，单个组件就是我们传统的 Web "三剑客"：HTML、JavaScript、CSS。
+        - Vue 通过路由来定义多个页面，并且进行页面之间的跳转。
         - 一个页面是一个组件，一个组件可以由很多组件组成，通过这种组合式的思想，我们可以编写任意复杂的项目。
   - name: 编写你的第一个 Vue 页面
     commit: 13f202a
@@ -325,57 +374,70 @@ steps:
       - file: src/components/Home.vue
         display: true
         explain:
-          pre: 在 `src/components` 下面创建 `Home.vue` 文件，然后编写如下代码。
+          pre: |-
+            ### 编写页面组件
+
+            在 `src/components` 下面创建 `Home.vue` 文件，然后编写如下代码：
           post: >-
             在上面，我们创建了一个名为 `Home.vue` 的 Vue 组件，可以看到它和我们之前的 `HelloWorld.vue`
-            的内容大致相仿，但是也有一些不同的地方。
+            的内容大致相仿，但是也有一些不同的地方：
 
 
-            首先，我们没有加入 `style` 部分，因为本教程致力于讲解如何用 Vue
-            实现一个迷你淘宝的功能逻辑部分，如果加入了过多无关的元素会让讲解变得复杂，代码也不容易理解。
+            - 首先，我们暂时没有写样式（没有 `style` 部分），而是先专注于基础知识的讲解。在后续教程中，我们会使用 [Element
+            UI](https://element.eleme.cn/) 组件库让我们的界面变得专业美观。
 
-
-            > 如果有机会，后面我会出一篇新教程，基于此教程专门讲解如何让我们的项目更加美观，敬请期待。
-
-
-            其次，我们在 `script` 中引入了 `data` ，在 `template` 引入了插值语法 `{{var}}`。
-
-
-            其中 `data` 是声明此组件的初始化数据，而 `{{var}}` 插值语法是方便将数据渲染到视图模板中。
+            - 其次，我们在 `script` 中引入了 `data` ，在 `template` 引入了插值语法 `{{var}}`。其中
+            `data` 是声明此组件的初始化数据，而 `{{var}}` 插值语法是方便将数据渲染到视图模板中。
       - file: src/router/index.js
         display: true
         explain:
-          pre: 接着，我们在 `src/router/index.js` 路由中声明 `Home` 组件。
+          pre: >-
+            ### 接入路由
+
+
+            接着，我们在 `src/router/index.js` 路由中将主页路由 `/` 所绑定的组件从默认的 `HelloWorld`
+            修改为刚才写好的 `Home` 组件：
           post: |-
-            现在我们保存代码，打开浏览器，看到的内容应该就和我们在 `Home.vue` 里面编写的内容一样。
+            现在我们保存代码，打开浏览器，就会显示刚才在 `Home.vue` 里面填写的那个标题：
 
             ![Home.vue](./tuture-assets/edd8a53811e78bacd91ace31c3691c70)
     explain:
-      pre: 下面我们来编写我们的迷你淘宝的首页。
+      pre: 下面我们来编写电商应用的首页。
   - name: 使用路由进行多页面跳转
     commit: f0206c2
     diff:
       - file: src/App.vue
         display: true
         explain:
-          pre: >-
-            首先修改 `App.vue` ，加入三个导航链接 `router-link`。`router-link` 和 `a` 标签类似，只不过
-            Vue 为它添加一些额外的优化逻辑。
+          pre: |-
+            ### 添加首页导航
 
+            首先修改 `App.vue` ，加入三个导航链接 `router-link`，方便让用户跳转到到自己想看的页面，代码如下：
+          post: |
 
-            添加的三个导航链接用户让用户方便的调整到自己想看的页面。
+            ::: info
+            **提示**
+
+            `router-link` 和 `a` 标签类似，只不过 Vue 为它添加一些额外的优化逻辑。
+            :::
       - file: src/components/HelloWorld.vue
         display: false
       - file: src/pages/Admin.vue
         display: true
         explain:
           pre: >-
+            ### 创建后台管理页面
+
+
             接着我们编写 `Admin.vue` 组件，但这里稍微有点不同，即我们在 `src/pages` 下创建 `Admin.vue`
-            组件，因为对于页面级组件，我们倾向于将其放到一个特殊 `pages` 文件夹，这样方便组织项目。
+            组件，因为对于页面级组件，我们倾向于将其放到一个特殊 `pages` 文件夹，这样方便组织项目。其代码如下：
       - file: src/pages/Cart.vue
         display: true
         explain:
-          pre: "然后是我们的购物车页面 `Cart.vue` "
+          pre: |-
+            ### 创建购物车页面
+
+            然后是我们的购物车页面 `Cart.vue`，代码如下：
       - file: src/pages/Home.vue
         display: false
         explain:
@@ -385,42 +447,55 @@ steps:
       - file: src/router/index.js
         display: true
         explain:
-          pre: 完成三个页面，接着就是在我们的 `src/routes/index.js` 中导入并申明上面三个页面。
-          post: |-
-            保存我们写好的代码，然后打开浏览器，我们可以看到下面的效果：
+          pre: >-
+            ### 将新页面导入路由
 
-            ![Multi-Route](./tuture-assets/bb0a5726073b43a60328bf2f73a86bef)
 
-            你可以点击头部的三个导航链接，下面的标题内容会随着点击的链接变化，恭喜你！你已经拥有了一个多页面的项目了。
+            最后，我们把上一步中创建的 `Home.vue` 移到 `src/pages` 目录中，并在路由文件
+            `src/routes/index.js` 中导入这三个页面，代码如下：
+          post: ''
     explain:
       pre: |-
-        一个经典的商城页应该要包括如下部分：
+        一个经典的电商应用通常包括如下部分：
 
         - 商品展示列表 （`Home.vue`）
         - 商品详情（`Detail.vue`）
         - 购物车（`Cart.vue`）
 
-        这里因为我们追求简单，也将商品的后台管理内容 （`Admin.vue`）也放入了我们的项目中。
+        这里因为我们追求简单，也将商品的后台管理页面 （`Admin.vue`）放入了项目中。
 
-        现在我们先来实现商品展示列表，购物车，和后台管理页的模板内容，因为商品详情页后面将会使用组件进行复用，所以这里我们暂时先不创建。
+        现在我们先来实现商品展示列表、购物车和后台管理页面的模板内容。因为商品详情页后面将会使用组件进行复用，所以这里我们暂时先不创建。
+      post: |-
+        保存代码，然后打开浏览器，我们可以看到下面的效果：
+
+        ![Multi-Route](./tuture-assets/bb0a5726073b43a60328bf2f73a86bef)
+
+        你可以点击头部的三个导航链接，下面的标题内容会随着点击的链接变化。恭喜你，你已经成功地实现了一个基于 Vue 的多页面网站了！
   - name: 使用嵌套路由和动态路由合理组织页面
     commit: aca2bb6
     diff:
       - file: src/router/index.js
         display: true
         explain:
-          pre: |-
-            在我们的迷你淘宝项目中，后台管理页 `Admin` 可以涉及到很多操作页面比如：
+          pre: >-
+            ### 升级路由
+
+
+            在我们的商城项目中，后台管理页 `Admin` 涉及到很多操作页面，比如：
+
 
             - `/create` 创建新的商品
+
             - `/edit` 编辑商品信息
 
-            让我们通过嵌套路由的方式将它们组织在一起。
+
+            让我们通过**嵌套路由**的方式将它们组织在一起。首先在路由文件 `src/router/index.js`
+            中声明后台管理所有用到的页面组件（我们马上就会去实现它们）：
           post: >-
             嵌套路由的用法就是给需要归为一类的页面设置一个入口页面，然后把这一类页面都放到这个路由页面路由定义的 `children` 字段数组中。
 
 
-            通过上面我们可以看到，我们的 `Admin` 类别下有四个组件，`Index` 是我们 `Admin` 类别的入口组件，也是作为
+            通过上面的代码我们可以看到，`Admin` 类别下有四个组件，`Index` 是我们 `Admin` 类别的入口组件，也是作为
             `path = /admin` 的渲染组件，然后其他组件就放到 `path = /admin` 这个路由定义的 `children`
             数组里，其定义和其他父级一致。
 
@@ -430,19 +505,29 @@ steps:
 
             - 很清晰的组织了一类页面，方便阅读。
 
-            - 在定于路由的 `path` 的时候，复用了父级的 `path`，即现在我们的 `New`
+            - 在定义路由的 `path` 的时候，复用了父级的 `path`，即现在我们的 `New`
             这个路由，它在浏览器中访问的路径为：`'/admin' +  'new'`，如果我们统一放到 `routes`
             数组的第一级定义，那么后面的 `Products` 和 `Edit` 的 `path` 都要带上诸如 `/admin` 和
             `/admin/edit/:id` 这样长长的路径，显得特别复杂。
 
 
             这里还有一个改变就是，我们发现 `Edit` 这个路由的 `path` 有点不太一样，它有个特殊的标志
-            `edit/:id`，这种写法被称为动态路由，即 `:id` 会匹配任意字符串，所以用户访问
+            `edit/:id`，这种写法被称为**动态路由**，即 `:id` 会匹配任意字符串，所以用户访问
             `/admin/edit/<any-string>` 都会激活 `Edit` 路由，从而渲染 `Edit.vue` 组件。
+      - file: src/pages/admin/Index.vue
+        display: true
+        explain:
+          pre: |-
+            ### 创建 Admin 的子页面
+
+            首先创建 `Index.vue` 入口组件，代码如下：
+          post: >-
+            可以看到，它作为嵌套路由的入口级组件，和我们之前在 `App.vue` 里面看到的样子类似，在其中会有 `router-link`
+            导向更深层级的路由，`router-view` 用于渲染子路由组件。
       - file: src/pages/admin/Edit.vue
         display: true
         explain:
-          pre: 这里我们接着来创建一下 `Edit.vue` 组件
+          pre: 创建 `src/pages/admin/Edit.vue` 组件，代码如下：
           post: >-
             可以看到，当用户访问 `/admin/edit/:id`，会激活渲染 `Edit.vue` 组件，我们可以通过
             `$route.params.id` 的方式获取用户输入的路径 `:id` 部分。比如我们在浏览器中输入
@@ -450,31 +535,35 @@ steps:
             Admin/Edit/52tuture"`。
 
 
+
+            ::: info
+
+            **提示**
+
+
             `$route` 这个变量是 Vue 在运行时为我们自动插入到所有组件属性中的，所有我们不用手动去管理它。
-      - file: src/pages/admin/Index.vue
-        display: true
-        explain:
-          pre: >-
-            然后创建 `Index.vue` 入口组件，可以看到，它作为嵌套路由的入口级组件，和我们之前在 `App.vue`
-            里面看到的样子类似，在其中会有 `router-link` 导向更深层级的路由，`router-view` 用于渲染子路由组件。
+
+            :::
       - file: src/pages/admin/New.vue
         display: true
         explain:
-          pre: 接着创建 `New.vue` 、`Products.vue` 。
-          post: ""
+          pre: 创建 `src/pages/admin/New.vue`，代码如下：
+          post: ''
       - file: src/pages/admin/Products.vue
         display: true
+        explain:
+          pre: 创建 `src/pages/admin/Products.vue` ，代码如下：
       - file: src/pages/Admin.vue
         display: false
     explain:
       pre: >-
         随着页面的增多，如果我们把所有的页面都塞到一个 `routes` 数组里面会显得很乱，你无法确定哪些页面存在关系。还好 `vue-router`
-        提供给我们嵌套路由的功能，让我们能把相关联的页面组织在一起。
+        提供了嵌套路由的功能，让我们能把相关联的页面组织在一起。
       post: |-
         保存我们编写的内容，打开浏览器，我们可以看到如下内容：
 
         ![52tuture](./tuture-assets/d652313c1dcd035889405c8d238c8a21)
-  - name: 了解 Vue 模板语法和双向绑定
+  - name: 用模板语法和双向绑定实现数据的添加
     commit: b3771b6
     diff:
       - file: package-lock.json
@@ -483,7 +572,7 @@ steps:
       - file: src/components/products/ProductForm.vue
         display: true
         explain:
-          pre: 我们在 `components` 中创建 `ProductForm.vue` 表单组件，编写如下代码：
+          pre: 我们在 `src/components` 中创建 `ProductForm.vue` 表单组件，代码如下：
           post: >+
             这段代码看起来很长，你可能被吓到了，让我们一段一段来拆解它。
 
@@ -747,8 +836,12 @@ steps:
             `:model="model"`、`:manufacturers="manufacturers"` 和事件绑定
             `@save-product="saveProduct"` 的方式传递给表单组件。
     explain:
-      pre: >-
-        当我们完成了迷你淘宝的基本页面框架之后，我们就可以开始考虑具体页面的内容了。首先我们要考虑的就是数据的来源，即添加商品页面，有了添加商品的入口，我们就可以展示商品列表，获取商品详情，甚至是修改商品信息。
+      pre: >+
+        当我们完成了商城应用的基本页面框架之后，我们就可以开始考虑具体页面的内容了。首先我们要考虑的就是数据的来源，即添加商品页面。有了添加商品的入口，我们就可以展示商品列表，获取商品详情，甚至是修改商品信息。
+
+
+        不过在此之前，我们打算先复习一下 Vue 的一些重要知识点。如果你已经很熟悉了，可以直接跳到下面实现 ProductForm.vue 的部分。
+
       post: >-
         当保存上面编写的代码之后，我们打开浏览器，点击导航链接 `Admin`，然后点击子导航链接 `New Products`，切换到我们的
         `New.vue` 添加商品页面，我们可以看到如下的效果：
@@ -772,8 +865,9 @@ steps:
         - Vue 模板语法
 
 
-        有了这些知识我们可以实现绝大多数前端功能了，并且可以完成一些比较小的前端项目，如果要完成大型且数据逻辑复杂的应用，我们目前学到的知识就力不从心了，但是没关系，我们将在后面学习
-        Vuex 这一前端状态管理工具，有了 Vuex 的加持，我们就能用 Vuex 写出任意复杂的应用了。
+        掌握了这些知识后，我们已经可以实现很多前端的功能，完成一些简单的 Vue
+        应用了。但是如果要完成数据逻辑复杂的大型应用，目前学到的知识就力不从心了。但是没关系，我们将在后面学习 Vuex 这一前端状态管理工具，有了
+        Vuex 的加持，我们就能用 Vuex 写出任意复杂的应用了。
 
 
         但是请先别着急，让我们先做点别的事，比如，干掉我们硬编码的假数据，试试真实的数据，并且还能持久化保存我们的数据，这就需要后端的介入了，在下一节中，我会带你手把手实现一个
