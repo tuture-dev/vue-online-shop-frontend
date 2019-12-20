@@ -8,16 +8,16 @@
 </template>
 
 <script>
-import ProductList from '@/components/products/ProductList.vue';
-  export default {
-    name: 'home',
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      };
-    },
-    components: {
-      'product-list': ProductList
-    }
+import ProductList from "@/components/products/ProductList.vue";
+export default {
+  name: "home",
+  data() {
+    return {
+      msg: "Welcome to Your Vue.js App"
+    };
+  },
+  components: {
+    "product-list": ProductList
   }
+};
 </script>

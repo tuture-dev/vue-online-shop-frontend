@@ -3,7 +3,7 @@ topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
 created: '2019-10-17T00:00:00.509Z'
-updated: 2019-12-20T10:39:56.284Z
+updated: 2019-12-20T13:39:53.582Z
 categories:
   - 前端
   - Vue
@@ -108,8 +108,7 @@ steps:
             - 将项目涉及的 JavaScript 和 CSS 代码以 `script` 和 `link` 的方式插入到 `index.html`
             中
 
-
-            最后打开  `index.html` ，我们就可以在浏览器中看到基于 Vue 编写好的前端项目。
+            - 开启开发服务器，打开浏览器，进而浏览器将 `index.html` 渲染，我们就可以看到写好的 Vue 页面效果。
       - file: package-lock.json
       - file: package.json
         display: false
@@ -174,10 +173,26 @@ steps:
             #### src/router/index.js
 
             `src/router/index.js` 文件是 Vue 为我们提供的路由文件，代码如下：
-          post: >-
+          post: >
             在路由文件中，通过 `routes` 数组定义了项目所有的页面，比如初始化时生成的 `HelloWorld.vue` 就是我们的网站首页
             -- 也就是打开浏览器访问到的第一个页面，因为它的路径（`path`）定义为 `/` 。此外一个页面定义还需要
             `name`，它代表此页面在 `vue-router` 中的标识符，`component` 则代表此页面渲染时的所用到的组件。
+
+
+
+            ::: info
+
+            **提示**
+
+
+            这里我们可以看到导出 `HelloWorld` 组件时，我们在路径最前面加上了 `"@"`，那是因为我们在 `webpack`
+            配置中将会 `"@"` 
+
+            映射成 `resolve('src')`，也就是我们项目目录下 `src` 文件夹的路径，最后我们的
+            `'@/components/HelloWorld'` 的实际上的效果相当于取到了项目目录 `src` 文件夹里面的
+            `components/HelloWorld` 组件。
+
+            :::
       - file: src/assets/logo.png
         display: false
       - file: src/components/HelloWorld.vue
@@ -318,6 +333,10 @@ steps:
 
         ```
 
+        命令行接着会显示一些列选项让你选择，具体我们的选择如下图：
+
+
+        ![](tuture-assets/142621576840065_.pic.jpg)
 
 
         ::: info
@@ -325,7 +344,8 @@ steps:
         **提示**
 
 
-        运行上面的命令之后，会出现一系列选项，在初学阶段我们没有必要理会这些选项，你大可以一路回车，快速完成项目的初始化。
+        其中 `Author` 字段你可以填自己的昵称，然后我们在选择了安装 `vue-router` 之后，其他的都选择了
+        `no`，因为本篇教程是面向初学者的实战教程，如果引入了过多和 Vue 核心无关的概念，就会引起很多困惑，所以这里我们不配置它们
 
         :::
 
@@ -572,250 +592,61 @@ steps:
       - file: src/components/products/ProductForm.vue
         display: true
         explain:
-          pre: 我们在 `src/components` 中创建 `ProductForm.vue` 表单组件，代码如下：
-          post: >+
+          pre: >-
+            讲解完 Vue 的基础知识之后，我们马上将所有的知识运用起来，来编写我们的 `ProductForm.vue` 
+            组件，它用来添加或者更新商品的信息。
+
+
+            我们在 `src/components` 中创建 `ProductForm.vue` 表单组件，代码如下：
+          post: >-
             这段代码看起来很长，你可能被吓到了，让我们一段一段来拆解它。
 
 
             首先它由两个部分组成，分别是 `script` 和 `template` ，我们先来看一看 `script` 部分。
 
 
-            ### Vue 实例：Methods 和 Props
+            这里我们的 `props` 接收来自父组件的三个参数：`model`、`manufacturers`、`isEditing`。
 
 
-            首先它多了两个我们之前没看过 `props` 和 `methods` ，`props` 是 Vue
-            进行组件之间传参的形式，比如这里我们的 `props`
-            接收来自父组件的三个参数：`model`、`manufacturers`、`isEditing`。
-
-
-            然后是 `methods` ，`methods` 是用来定义在组件中会用到的一些方法，如果说我们前面提到的 `data`
-            ，是从数据从逻辑层（JS）向视图层（Html）流动的话，那么这里的 `methods` 就是视图层触发事件，如
-            click、submit等，反过来修改逻辑层的数据的方法，`methods` 使得数据可以双向流动。比如这里，我们定义了一个
-            `saveProduct` 方法，就是当用户填写完商品信息的表单之后，点击提交按钮会触发的方法，在 `saveProduct`
-            内部，我们调用了父组件的 `save-product` 方法，并把修改后的 `this.mode`
+            然后我们定义了一个 `saveProduct` 方法，就是当用户填写完商品信息的表单之后，点击提交按钮会触发的方法，在
+            `saveProduct` 内部，我们调用了父组件的 `save-product` 方法，并把修改后的 `this.model`
             变量内容传给父组件。所以这里我们还可以看到，`methods`
             不仅可以使得数据可以双向流动，而且还可以在子组件反向操作父组件的内容，使得数据还可以上下流动。
-
-
-            ### 模板语法：v-bind、v-on
 
 
             接下来我们再来谈一谈 `template` 里面发生的事情。
 
 
-            可以看到 `template` 里面就是一个表单，这个表单定义了一个 `submit` 事件，这个事件触发会调用我们上面提到的
-            `saveProduct` 方法，但是这里好像多了一些我们之前在 `HTML` 里面没有看到的内容，接着我们定义了好几个 `class`
-            为 `form-group` 的元素块，每个块代表我们创建商品所需要填写的相关信息，最后的 `form-group`
-            是我们提交商品信息的按钮，可以看到它它里面也有一些我们之前在 HTML 里面没有看到的信息，不用担心，我们接下来都会一一讲解。
+            可以看到 `template` 里面就是一个表单，这个表单定义了一个 `submit` 事件，并且使用了禁用默认事件的简洁写法
+            `@submit.prevent`。 这个事件触发会调用我们上面提到的 `saveProduct` 方法。
 
 
-            首先我们来看一看 `form` 元素的 `submit` 事件提交部分，它的样子怪怪的，我们需要再进行一下拆解。首先我们先拿掉
-            `prevent` ，它变成了 `@submit="saveProduct"`，接着我们将 `@` 替换成 `v-on`，它变成了
-            `v-on:submit="saveProduct"` ，这是 Vue 的模板语法，通过 `v-on` 的方式接管了之前在 HTML 中
-            `onEvent` 。
+            接着我们定义了好几个 `class` 为 `form-group`
+            的元素块，每个块代表我们创建商品所需要填写的相关信息，我们注意到，前两个 `form-group` 使用 `v-model`
+            双向绑定语法分别绑定了 `model` 的 `name` 和 `price` 属性。
 
 
-            比如之前我们在 HTML 中的写法是这样的：
+            第三个 `form-group` 我们首先在 `select` 标签中使用 `v-model` 双向绑定了
+            `model.manufacturer`，表示我们在视图里面进行选择时，会修改对应的 `model.manufacturer` 属性。
 
 
-            ```HTML
+            接着我们对 `manufacturers` 进行循环遍历，构造多个 `option` 标签选项，然后使用了属性绑定语法的简洁写法绑定了
+            `option` 的 `value` 和 `selected` 属性，`value` 属性赋值为
+            `manufacturer._id`，`selected` 属性会进行判断，`model.manufacturer &&
+            model.manufacturer._id` 表示首先检验 `model` 的 `manufacturer`
+            属性是否存在，正常情况下它应该是一个对象，如果 `model.manufacturer` 属性存在，那么获取
+            `model.manufacturer._id`，然后用获取到的这个  `model.manufacturer._id` 和
+            `manufacturer._id` 进行比较，如果一致，那么 `selected` 属性为 `true`，不一致就为 `false`。
 
-            <div onclick="alert('I love tuture')">
 
-            Hello Tuture
+            然后我们来看一下第二段 `form-group`，也就是第 4-6 个 `form-group`。
 
-            </div>
 
-            ```
+            可以看到前两个 `form-group` 使用 `v-model` 双向绑定了 `model.image` 和
+            `model.description ` ，表示当用户
 
 
-            现在在 Vue 的模板语法中我们需要写出这样：
-
-
-            ```HTML
-
-            <div v-on:click="alert('I love tuture')">
-
-            Hello Tuture
-
-            </div>
-
-            ```
-
-
-            类似的 `onEvent` 都要改成 `v-on:Event`。然后这样写显得比较冗余，所以 Vue 支持简化写法，用 `@` 替换
-            `v-on:` 部分，我们就可以写出这样：
-
-
-            ```HTML
-
-            <div @click="alert('I love tuture')">
-
-            Hello Tuture
-
-            </div>
-
-            ```
-
-
-            调用事件之后我们一般有一些这样的操作，比如禁用浏览器默认行为，然后自己去处理事件，获取后端数据，以前我们会这样写：
-
-
-            ```HTML
-
-            <div onclick="saveProduct()">
-
-            Hello Tuture
-
-
-            <script>
-
-            var saveProduct = function (e) {
-              e.preventDefault();
-
-              // do something you like
-            }
-
-            </script>
-
-            ```
-
-
-            但是这样写又显得特别繁琐了，Vue 也觉得这样可以简化，于是我们直接将这些禁止默认行为的调用作为绑定事件的属性来进行处理，于是乎在
-            Vue 中我们可以写出这样：
-
-
-            ```JavaScript
-
-            <template>
-              <div @click.prevent="saveProduct">
-              Hello Tuture
-              </div>
-            </template>
-
-
-            <script>
-
-            export default {
-              methods: {
-                saveProduct() {
-                  // do something you like
-                }
-              }
-            }
-
-            </script>
-
-            ```
-
-
-            不知道看了上面的长文，你有没有一点晕，不管你晕不晕，我是得喝口水缓一下。 - v -
-
-
-            ### 模板语法：v-model 双向绑定
-
-
-            前面我们提到通过 `{{}}` 插值语法渲染来自 `data` 的数据实现了逻辑层向视图层的数据流动，通过 `methods`
-            在视图层操作逻辑层的数据，实现了视图层的数据向逻辑层的数据流动，从而达到了双向绑定，当我们的应用越来越复杂，我们会发现这样的数据双向流动会越来越频繁，而且粒度也会大小不一，有很多单纯修改某个值的方法调用就会显得特别繁杂，因此
-            Vue 通过提供 `v-model` 进行了视图层和逻辑层的双向绑定，让我们来看我们项目中的例子, 也就是第一个
-            `form-group` ：
-
-
-            ```HTML
-
-            <input
-              type="text"
-              placeholder="Name"
-              v-model="model.name"
-              name="name"
-              class="form-control" />
-            ```
-
-
-            这里我们通过申明 `v-mode` 将此 input 的值和我们在 Vue 实例中的 `model` 的 `name`
-            属性进行了双向绑定，即当 `model.name` 发生变化，input 的值也会跟着变化，当 input 的值发生变化，我们
-            `model.name` 的值也会被修改，这一切都是自动发生的，不需要我们额外的添加 `methods` 里面的方法调用来手动修改。
-
-
-            ### 模板语法：循环
-
-
-            接下来我们看看第三个 `form-group`，就是选择我们商品的 `manufacturer`
-            的那个，我们可以从这段奇怪的代码里看到一些熟悉的东西，比如我们的 `for in` 循环，还有一些不熟悉的，比如
-            `v-model`，比如 `:value` 和 `:selected`，`v-model` 我们晚点再讲，先让我们来看一看 `for
-            in` 循环和 `:value`。
-
-
-            我们已经看到在 Vue 模板中我们可以使用如下的功能：
-
-
-            - `{{}}` 插值语法将 `data` 渲染到 HTML 元素内容中
-
-            - `v-on` 或者简化写法 `@` ，等用来取代 HTML 的事件绑定
-
-
-            有了上面的功能，我们可以让 HTML 动起来了，但是还缺点什么，比如我们的 HTML 属性，如 `id`、`class`
-            等，是不是也能动态的获取变化值，这里的动态值就是通过 `:id="id"` 或者 `:class="class"` 等来操作的，其中
-            `:id` 是 `v-bind:id` 的简化写法，`:id="id"` 后面的字符串中的 `id` 代表我们在 data
-            中定义的变量值，它可以动态的变化。
-
-
-            好了，Vue 替我们接管了 HTML 元素属性值、事件处理、元素内容，这些都还只属于原来 HTML 的部分，它更强大的一点就是将 JS
-            的功能引入了模板语法中，使得我们可以实现类似循环，条件选择操作等功能。
-
-
-            比如我们第三个 `form-group` 中看到的 `v-for="manufacturer in manufacturers"`
-            。这个语法就牛逼了，它允许我们遍历一个数组并且批量的生成一系列 HTML
-            元素，瞬间可以完成我们的商品列表的展示有木有，因为商品列表展示就是一系列相同结构，不同内容的元素组成的。这里
-            `manufacturers` 数组是组件 `data` 中的数据，`manufacturer` 是遍历中的单个数据。
-
-
-            我们来看个例子理解一下：
-
-
-            ```HTML
-
-            <!--
-
-            manufacturers = [
-              { _id: 1, name: 'Apple' },
-              { _id: 2, name: 'Huawei' }
-            ]
-
-
-            model = { _id: 1, name: 'Apple' }
-
-             -->
-            <template v-for="manufacturer in manufacturers">
-              <option :value="manufacturer._id" :selected="manufacturer._id == (model.manufacturer && model.manufacturer._id)">{{manufacturer.name}}</option>
-            </template>
-
-            ```
-
-
-            最后渲染的结果为：
-
-
-            ```HTML
-
-            <option value="1" selected="true">Apple</option>
-
-            <option value="2" selected="false">Huawei</option>
-
-            ```
-
-
-            ### 模板语法：条件选择
-
-
-            上面的讲述了循环是如何在 Vue 中使用的，下面我们来看一看条件语法是如何在 Vue 中使用的，让我们看到最后一个
-            `form-group`，就是我们最后提交表单的按钮那个部分。可以看到在代码中出现了 `v-if` 和 `v-else` 等内容，当
-            `isEditing` 为 `true` 的时候，Vue 就会渲染 `Update Product` 按钮，否则就会渲染 `Add
-            Product` 按钮。
-
-
-            当然你可以添加诸如 `v-else-if` 的标签来做多重判断。
-
+            最后一个 `form-group` 我们使用了条件选择语法，判断 `isEditing`，来渲染不同的按钮文案。
       - file: src/main.js
         display: false
       - file: src/pages/admin/New.vue
@@ -840,7 +671,465 @@ steps:
         当我们完成了商城应用的基本页面框架之后，我们就可以开始考虑具体页面的内容了。首先我们要考虑的就是数据的来源，即添加商品页面。有了添加商品的入口，我们就可以展示商品列表，获取商品详情，甚至是修改商品信息。
 
 
-        不过在此之前，我们打算先复习一下 Vue 的一些重要知识点。如果你已经很熟悉了，可以直接跳到下面实现 ProductForm.vue 的部分。
+        不过在此之前，我们打算先复习一下 Vue 的一些重要知识点。如果你已经很熟悉了，可以直接跳到下面实现 ProductForm.vue
+        的代码部分。
+
+
+        ### Vue 实例：Props 和 Methods 
+
+
+        #### Props
+
+
+        `props` 是 Vue 进行组件之间传参的形式。比如我们有如两个组件 `New.vue` 和 `ProductForm.vue`，在
+        `New.vue` 组件中需要使用到 `ProductForm.vue` 组件。
+
+
+        我们的 `New.vue` 组件是用来创建商品的，它的代码大致是这样的：
+
+
+        ```JavaScript
+
+        import ProductForm from '@/components/ProductForm.vue';
+
+
+        <ProductForm  :manufacturers="manufacturers" />
+
+        ```
+
+
+        它需要给 `ProductForm.vue` 组件传递一个 `manufacturers`
+        属性，以确保我们在创建商品时，可以选择这个商品所属的制造商，接着我们就可以在 `ProductForm.vue` 中的 `props`
+        中取到这个 `manufacturers` 属性。`ProductForm.vue` 的代码大致是这样的：
+
+
+        ```JavaScript
+
+        <template>
+
+        <!-- 模板部分 -->
+
+        </template>
+
+
+        <script>
+
+        export default {
+          props: ['manufacturers'],
+        }
+
+        </script>
+
+        ```
+
+
+        可以看到，我们在 `ProductForm.vue` 的 `script` 部分导出的对象里面找到 `props` 属性，然后取到
+        `manufacturers` 属性。
+
+
+        #### Methods
+
+
+        然后是 `methods` ，`methods` 是用来定义在组件中会用到的一些方法，如果说我们前面提到的 `data`
+        ，是从数据从逻辑层（JS）向视图层（Html）流动的话，那么这里的 `methods` 就是视图层触发事件，如
+        click、submit等，反过来修改逻辑层的数据的方法，`methods` 使得数据可以双向流动。
+
+
+        让我们在完善一下我们的 `ProductForm.vue` ，看一下 Methods 在 Vue 中是如何运作的：
+
+
+        ```JavaScript
+
+        <template>
+
+        <form @submit.prevent="saveProduct">
+
+        <!-- 其他表单，如 input 等 -->
+
+
+        <div class="form-group new-button">
+          <button class="button">Add Product</button>
+        </div>
+
+        </form>
+
+        </template>
+
+
+        <script>
+
+        export default {
+          data: { isSaved: false },
+          props: ['manufacturers'],
+          methods: {
+            saveProduct() {
+               this.isSaved = true;
+
+              // 完成一些保存创建商品的逻辑 ...
+            }
+          }
+        }
+
+        </script>
+
+        ```
+
+
+        可以看到，我们可以通过在 `template` （视图层）通过点击提交按钮，发起表单提交事件，进而调用在 `script` 中定义在
+        `methods` 属性中的 `saveProduct` 方法，这个方法可以进一步修改定义在定义在 `data` 属性中的数据；甚至如果父组件
+        `New.vue` 传递了方法（以 `props` 的形式）给 `ProductForm.vue` 组件，我们可在 `saveProduct`
+        调用这个传递下来的方法，进而可以影响到父组件 `New.vue` 中的数据。我们将在后面的正式实现 `ProductForm` 组件时讲解到它。
+
+
+        ### 模板语法：v-on
+
+
+        接下来我们再来谈一谈 v-bind 和 v-on 。
+
+
+        在 Vue 中，我们通过 `v-on` 的方式接管了之前在 HTML 中 `onEvent` ：
+
+
+        比如之前我们在 HTML 中的写法是这样的：
+
+
+        ```HTML
+
+        <div onclick="alert('I love tuture')">
+
+        Hello Tuture
+
+        </div>
+
+        ```
+
+
+        现在在 Vue 的模板语法中我们需要写出这样：
+
+
+        ```HTML
+
+        <div v-on:click="alert('I love tuture')">
+
+        Hello Tuture
+
+        </div>
+
+        ```
+
+
+        类似的 `onEvent` 都要改成 `v-on:Event`。然后这样写显得比较冗余，所以 Vue 支持简化写法，用 `@` 替换
+        `v-on:` 部分，我们就可以写出这样：
+
+
+        ```HTML
+
+        <div @click="alert('I love tuture')">
+
+        Hello Tuture
+
+        </div>
+
+        ```
+
+
+        调用事件之后我们一般有一些这样的操作，比如禁用浏览器默认行为，然后自己去处理事件，获取后端数据，以前我们会这样写：
+
+
+        ```HTML
+
+        <div onclick="saveProduct()">
+
+        Hello Tuture
+
+
+        <script>
+
+        var saveProduct = function (e) {
+          e.preventDefault();
+
+          // do something you like
+        }
+
+        </script>
+
+        ```
+
+
+        但是这样写又显得特别繁琐了，Vue 也觉得这样可以简化，于是我们直接将这些禁止默认行为的调用作为绑定事件的属性来进行处理，于是乎在 Vue
+        中我们可以写出这样：
+
+
+        ```JavaScript
+
+        <template>
+          <div @click.prevent="saveProduct">
+          Hello Tuture
+          </div>
+        </template>
+
+
+        <script>
+
+        export default {
+          methods: {
+            saveProduct() {
+              // do something you like
+            }
+          }
+        }
+
+        </script>
+
+        ```
+
+
+        不知道看了上面的长文，你有没有一点晕，不管你晕不晕，我是得喝口水缓一下。 - v -
+
+
+        ### 模板语法：v-bind
+
+
+        我们已经看到在 Vue 模板中我们可以使用如下的功能：
+
+
+        - `{{}}` 插值语法将 `data` 渲染到 HTML 元素内容中
+
+        - `v-on` 或者简化写法 `@` ，等用来取代 HTML 的事件绑定
+
+
+        有了上面的功能，我们可以让 HTML 动起来了，但是还缺点什么，比如我们的 HTML 属性，如 `id`、`class`
+        等，是不是也能动态的获取变化值，你还别说，还真的可以，Vue 模板语法为我们提供了 `v-bind` 用于动态绑定属性值，我们来看个例子：
+
+
+        ```JavaScript
+
+        <template>
+
+        <option v-bind:id="_id"  v-bind:value="value" />
+
+        </template>
+
+
+        <script>
+
+        export default {
+          data: { _id: '1', value: "Xiaomi" },
+        }
+
+        </script>
+
+        ```
+
+        可以看到，我们在 `script` 中导出的对象属性 `data` 中，定义了 `_id` 和 `value` 值，然后我们通过在
+        `<template>` 模板中使用 `v-bind` 语法动态的给 `option` 标签的 `id` 和 `value`
+        属性赋值，最后的结果看起来是这样的：
+
+
+        ```JavaScript
+
+        <option id="1" value="Xiaomi" />
+
+        ```
+
+
+        当然，当需要绑定的属性多了，每次都写 `v-bind` 显得相当繁琐，所以 Vue 为我们提供了 `v-bind` 的简洁语法
+        `:`，即我们之前的绑定语法从 `v-bind:id="_id"` 变成了 `:id="_id"`。
+
+
+        上面的代码用简洁语法改写如下：
+
+
+        ```JavaScript
+
+        <template>
+
+        <option :id="_id"  :value="value" />
+
+        </template>
+
+
+        <script>
+
+        export default {
+          data: { _id: '1', value: "Xiaomi" },
+        }
+
+        </script>
+
+        ```
+
+
+        ### 模板语法：v-model 双向绑定
+
+
+        前面我们提到通过 `{{}}` 插值语法渲染来自 `data` 的数据实现了逻辑层向视图层的数据流动，通过 `methods`
+        在视图层操作逻辑层的数据，实现了视图层的数据向逻辑层的数据流动，从而达到了双向绑定，当我们的应用越来越复杂，我们会发现这样的数据双向流动会越来越频繁，而且粒度也会大小不一，有很多单纯修改某个值的方法调用就会显得特别繁杂，因此
+        Vue 通过提供 `v-model` 进行了视图层和逻辑层的双向绑定，让我们来看个例子：
+
+
+        ```HTML
+
+        <template>
+
+        <!-- 其他代码 ... -->
+
+        <input
+          type="text"
+          placeholder="Name"
+          v-model="name"
+        />
+
+        <!-- 其他代码 ... -->
+
+        </template>
+
+
+        <script>
+
+        export default {
+          data: { name: 'ProductForm' },
+        }
+
+        </script>
+
+        ```
+
+
+        这里我们通过申明 `v-mode` 将此 input 的值和我们在 Vue 实例中的 `model` 的 `name` 属性进行了双向绑定，即当
+        data 中的 `name` 发生变化，input 的值也会跟着变化，当 input 的值发生变化，我们 data 中的 `name`
+        的值也会被修改，这一切都是自动发生的，不需要我们额外的添加 `methods` 里面的方法调用来手动修改。
+
+
+        ### 模板语法：循环
+
+
+        好了，Vue 替我们接管了 HTML 元素属性值、事件处理、元素内容，这些都还只属于原来 HTML 的部分，它更强大的一点就是将 JS
+        的功能引入了模板语法中，使得我们可以实现类似循环，条件选择操作等功能。
+
+
+        接下来我们先来看一下 Vue 为我们提供的 “循环” 模板语法， 它使得我们可以快速渲染大量具有相似结构的数据，比如渲染一个数组的数据，生成一个
+        HTML 元素列表，这在我们平时看到的新闻 App
+        里面很常见，我们浏览新闻时，发现其实每条新闻的结构都很相似，并且有很多条新闻（可能多大几百上千条），如果每一条我们都手动写 HTML
+        代码的话，无疑显得相当繁琐，并且数据一多，我们手动就显得无能为力了，而 Vue 为我们提供的 “循环”
+        模板语法，使得我们可以通过非常简单的写法就可以渲染大量数据，我们来看个例子：
+
+
+        ```HTML
+
+        <!--
+
+        manufacturers = [
+          { _id: 1, name: 'Apple' },
+          { _id: 2, name: 'Xiaomi' }
+        ]
+
+
+        model = { _id: 1, name: 'Apple' }
+
+         -->
+        <template v-for="manufacturer in manufacturers">
+          <option :value="manufacturer._id" :selected="manufacturer._id == model._id">{{manufacturer.name}}</option>
+        </template>
+
+        ```
+
+
+        最后渲染的结果为：
+
+
+        ```HTML
+
+        <option value="1" selected="true">Apple</option>
+
+        <option value="2" selected="false">Xiaomi</option>
+
+        ```
+
+
+        注意到，如果我们在写 “循环” 语法时，使用了一个额外的标签 `template` 来包裹我们需要渲染的 HTML 元素，这也是 Vue
+        推荐的写法；我们在 `template` 标签的属性上添加 `v-for` 然后给它赋值 `"manufacturer in
+        manufacturers"`，通过这样的形式进行列表数据的遍历，每次从 `manufacturers` 中取一个元素，并赋值给
+        `manufacturer` ，然后我们就可以在 `option`  标签中使用 `manufacturer` 和我们定义的 `model`
+        进行比较。
+
+
+        因为我们的 `model._id` 为 `1`，它和 `manufacturers` 数组的第一项元素的 `_id` 一致，所以我们返回的两个
+        `option` 标签，第一个 `selected` 属性为 `true`，第二个为 `false`。
+
+
+        ### 模板语法：条件选择
+
+
+        上面的讲述了循环是如何在 Vue 中使用的，下面我们来看一看条件语法是如何在 Vue 中使用的：
+
+
+        ```JavaScript
+
+        <span v-if="isEditing">Update Product</span>
+
+        <span v-else>Add Product</span>
+
+
+        <script>
+
+        export default {
+          data: { isEditing: false },
+        }
+
+        </script>
+
+        ```
+
+
+        我们可以看到，通过在标签上加 `v-if` 并后面紧跟加 `v-else` 的标签我们可以判断最终渲染的标签，比如我们这里
+        `isEditing` 为 `false`，那么我们最终渲染的结果为：
+
+
+        ```JavaScript
+
+        <span >Add Product</span>
+
+        ```
+
+
+        当然你可以添加诸如 `v-else-if` 的标签来做多重判断。
+
+
+
+        ::: info
+
+        **提示**
+
+
+        这里的带 `v-if`、`v-else-if` 或 `v-else`
+        的标签需要依次紧跟着前面的标签，不能在这些带条件属性的标签中插入其他不带条件的标签，比如下面这段代码就是错误的：
+
+
+        ```JavaScript
+
+        <span v-if="isEditing">Update Product</span>
+
+        <span>我是错误插入的标签</span>
+
+        <span v-else>Add Product</span>
+
+
+        <script>
+
+        export default {
+          data: { isEditing: false },
+        }
+
+        </script>
+
+        ```
+
+
+        :::
+
+
+
 
       post: >-
         当保存上面编写的代码之后，我们打开浏览器，点击导航链接 `Admin`，然后点击子导航链接 `New Products`，切换到我们的
@@ -1038,7 +1327,7 @@ description: >-
 
 
   目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像 Element
-  、mpvue、iView 这样优秀的基于 Vue 开源项目存在，所以学习 Vue 是一个不错的投资，当你学会
+  、mpvue、iView 这样优秀的基于 Vue 的开源项目存在，所以学习 Vue 是一个不错的投资，当你学会
   Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。
 
 
