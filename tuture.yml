@@ -3,7 +3,7 @@ topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
 created: '2019-10-17T00:00:00.509Z'
-updated: 2019-12-20T13:39:53.582Z
+updated: 2019-12-21T01:52:00.483Z
 categories:
   - 前端
   - Vue
@@ -174,9 +174,16 @@ steps:
 
             `src/router/index.js` 文件是 Vue 为我们提供的路由文件，代码如下：
           post: >
-            在路由文件中，通过 `routes` 数组定义了项目所有的页面，比如初始化时生成的 `HelloWorld.vue` 就是我们的网站首页
-            -- 也就是打开浏览器访问到的第一个页面，因为它的路径（`path`）定义为 `/` 。此外一个页面定义还需要
-            `name`，它代表此页面在 `vue-router` 中的标识符，`component` 则代表此页面渲染时的所用到的组件。
+            首先我们导出了 Vue 类，以及 Router 类
+
+
+            在路由文件中，通过 `routes` 数组定义了项目所有的页面，每个页面是一个类似 `{ path, name, component
+            }` 的对象。
+
+
+            比如初始化时生成的 `HelloWorld.vue` 就是我们的网站首页 --
+            也就是打开浏览器访问到的第一个页面，因为它的路径（`path`）定义为 `/` 。此外一个页面定义还需要 `name`，它代表此页面在
+            `vue-router` 中的标识符，`component` 则代表此页面渲染时的所用到的组件。
 
 
 
@@ -241,8 +248,7 @@ steps:
 
 
         你可以在 Github
-        查看完整的源码：1）[前端](https://github.com/pftom/vue-online-shop-frontend)
-        2）[后端](https://github.com/pftom/vue-online-shop-backend)。
+        查看完整的源码：[源码地址](https://github.com/pftom/vue-online-shop-frontend/tree/aca2bb64cbdaebb7e4a62e252bc00a439eede9a5)。
 
 
         ### 项目准备
@@ -251,8 +257,8 @@ steps:
         #### 安装依赖
 
 
-        安装 Node.js，你可以去 [Node.js](https://nodejs.org/en/) 官网下载安装包，会同时安装 Node.js
-        包管理工具 Npm，用于便捷的管理项目依赖和下载第三方包。
+        安装 Node.js，你可以去 [Node.js](https://nodejs.org/en/) 官网下载安装包，通过安装包安装会同时安装
+        Node.js 包管理工具 Npm，用于便捷的管理项目依赖和下载第三方包。
 
 
         打开终端，输入如下命令测试是否安装成功：
@@ -317,8 +323,9 @@ steps:
         [VSCode](https://code.visualstudio.com/) 官网安装。
 
 
-        在 VSCode 里面找到 Vue 插件，可以获得代码语法高亮以及自动格式化非常便捷的功能，并且 VSCode 天然对 JavaScript
-        的支持，会大大提高我们的开发效率，本教程所涉及项目的开发都是使用 VSCode 完成的。
+        在 VSCode 里面找到 Vue
+        插件，可以获得[代码语法高亮以及自动格式化](https://marketplace.visualstudio.com/items?itemName=octref.vetur)非常便捷的功能，并且
+        VSCode 天然对 JavaScript 的支持，会大大提高我们的开发效率，本教程所涉及项目的开发都是使用 VSCode 完成的。
 
 
         #### 初始化项目
@@ -372,7 +379,7 @@ steps:
 
 
         如果你使用 VSCode 编辑器打开项目进行开发，在运行 `code project-name` 之前需要安装 `code`
-        脚本，具体我找了一篇教程：https://www.cnblogs.com/Zhangcsc/p/11362987.html。
+        脚本，具体我找了一篇教程：[戳我访问](https://www.cnblogs.com/Zhangcsc/p/11362987.html)。
 
         :::
 
