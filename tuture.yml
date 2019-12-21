@@ -3,7 +3,7 @@ topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
 created: '2019-10-17T00:00:00.509Z'
-updated: 2019-12-21T01:52:00.483Z
+updated: 2019-12-21T01:51:24.479Z
 categories:
   - 前端
   - Vue
@@ -22,7 +22,7 @@ splits:
       看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life
       （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！
     start: 6f2924b
-    end: b3771b6
+    end: aca2bb6
     id: 0b662ce
 steps:
   - name: 快速入门
@@ -193,7 +193,7 @@ steps:
 
 
             这里我们可以看到导出 `HelloWorld` 组件时，我们在路径最前面加上了 `"@"`，那是因为我们在 `webpack`
-            配置中将会 `"@"` 
+            配置中将会 `"@"`
 
             映射成 `resolve('src')`，也就是我们项目目录下 `src` 文件夹的路径，最后我们的
             `'@/components/HelloWorld'` 的实际上的效果相当于取到了项目目录 `src` 文件夹里面的
@@ -240,8 +240,21 @@ steps:
         Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。
 
 
-        看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life
-        （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随我的脚步，彻底掌握 Vue 开发！
+        看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个迷你全栈电商网站。并在实战的过程中，了解 Vue
+        的全貌，现在就打开电脑，跟随我的脚步，彻底掌握 Vue 开发！本系列教程的规划如下：
+
+
+        1. **第一部分**（也就是这篇教程）：用 Vue 搭建前端项目的骨架，实现基于嵌套、动态路由的多页面跳转。
+
+        2. **第二部分**（写作中）：用 Express 实现后端 REST API，并使用 MongoDB 进行数据存储。
+
+        3. **第三部分**（写作中）：通过 Vue 的双向数据绑定和模板语法实现数据添加，并用 Vuex 实现前端的状态管理。
+
+        4. **第四部分**（写作中）：用 Element UI 组件库让界面更加专业美观，并且用 Docker 和 Docker Compose
+        部署我们的全栈项目。
+
+
+        ***记得点个赞，鼓励我们更快更好地写完剩下的教程！你也可以在评论区留言，告诉我们想要实现什么功能，我们一定会仔细考虑的哦！***
 
 
         ### 代码
@@ -495,7 +508,7 @@ steps:
       post: |-
         保存代码，然后打开浏览器，我们可以看到下面的效果：
 
-        ![Multi-Route](./tuture-assets/bb0a5726073b43a60328bf2f73a86bef)
+        ![](tuture-assets/router-demo.gif)
 
         你可以点击头部的三个导航链接，下面的标题内容会随着点击的链接变化。恭喜你，你已经成功地实现了一个基于 Vue 的多页面网站了！
   - name: 使用嵌套路由和动态路由合理组织页面
@@ -586,10 +599,15 @@ steps:
       pre: >-
         随着页面的增多，如果我们把所有的页面都塞到一个 `routes` 数组里面会显得很乱，你无法确定哪些页面存在关系。还好 `vue-router`
         提供了嵌套路由的功能，让我们能把相关联的页面组织在一起。
-      post: |-
+      post: >-
         保存我们编写的内容，打开浏览器，我们可以看到如下内容：
 
-        ![52tuture](./tuture-assets/d652313c1dcd035889405c8d238c8a21)
+
+        ![](tuture-assets/router-demo2.gif)
+
+
+        至此，我们的迷你全栈电商应用的第一部分就完成了，在接下来的教程中，我们将用 Express 和 MongoDB 搭建这个电商应用的后端
+        API，不见不散哦~
   - name: 用模板语法和双向绑定实现数据的添加
     commit: b3771b6
     diff:
@@ -600,7 +618,10 @@ steps:
         display: true
         explain:
           pre: >-
-            讲解完 Vue 的基础知识之后，我们马上将所有的知识运用起来，来编写我们的 `ProductForm.vue` 
+            ### 动手实现
+
+
+            讲解完 Vue 的基础知识之后，我们马上将所有的知识运用起来，来编写我们的 `ProductForm.vue`
             组件，它用来添加或者更新商品的信息。
 
 
@@ -682,17 +703,15 @@ steps:
         的代码部分。
 
 
-        ### Vue 实例：Props 和 Methods 
+        ### Vue 实例：Props 和 Methods
 
 
         #### Props
 
 
         `props` 是 Vue 进行组件之间传参的形式。比如我们有如两个组件 `New.vue` 和 `ProductForm.vue`，在
-        `New.vue` 组件中需要使用到 `ProductForm.vue` 组件。
-
-
-        我们的 `New.vue` 组件是用来创建商品的，它的代码大致是这样的：
+        `New.vue` 组件中需要使用到 `ProductForm.vue` 组件。其中 `New.vue`
+        组件是用来创建商品的，它的代码大致是这样的：
 
 
         ```JavaScript
@@ -700,7 +719,7 @@ steps:
         import ProductForm from '@/components/ProductForm.vue';
 
 
-        <ProductForm  :manufacturers="manufacturers" />
+        <ProductForm :manufacturers="manufacturers" />
 
         ```
 
@@ -1095,7 +1114,7 @@ steps:
 
         ```JavaScript
 
-        <span >Add Product</span>
+        <span>Add Product</span>
 
         ```
 
@@ -1113,7 +1132,7 @@ steps:
         的标签需要依次紧跟着前面的标签，不能在这些带条件属性的标签中插入其他不带条件的标签，比如下面这段代码就是错误的：
 
 
-        ```JavaScript
+        ```html
 
         <span v-if="isEditing">Update Product</span>
 
