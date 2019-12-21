@@ -10,7 +10,7 @@ categories:
   - 入门
 github: 'https://github.com/pftom/vue-online-shop-frontend'
 splits:
-  - name: 从零到部署：用 Vue 和 Express 实现简单的全栈电商应用
+  - name: 从零到部署：用 Vue 和 Express 实现一个迷你全栈电商应用（一）
     description: >-
       Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
       有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
@@ -23,6 +23,7 @@ splits:
       （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！
     start: 6f2924b
     end: aca2bb6
+    cover: tuture-assets/vue-cover.png
     id: 0b662ce
 steps:
   - name: 快速入门
@@ -1363,6 +1364,16 @@ steps:
         display: true
       - file: src/store/mutations.js
         display: true
+  - name: 大量改进最后一步内容
+    commit: 3d2a6b7
+    diff:
+      - file: build/webpack.base.conf.js
+        display: true
+      - file: src/pages/Home.vue
+        display: true
+      - file: tuture-assets/142621576840065_.pic.jpg
+        display: true
+      - file: tuture.yml
 description: >-
   Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
   有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
