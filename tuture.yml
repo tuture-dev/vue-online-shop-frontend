@@ -2,13 +2,13 @@ name: 从零到部署：用 Vue 和 Express 实现一个迷你全栈电商应用
 topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
-created: "2019-10-17T00:00:00.509Z"
-updated: 2019-12-21T01:51:24.479Z
+created: '2019-10-17T00:00:00.509Z'
+updated: 2019-12-21T02:14:03.024Z
 categories:
   - 前端
   - Vue
   - 入门
-github: "https://github.com/pftom/vue-online-shop-frontend"
+github: 'https://github.com/pftom/vue-online-shop-frontend'
 splits:
   - name: 从零到部署：用 Vue 和 Express 实现简单的全栈电商应用
     description: >-
@@ -174,11 +174,14 @@ steps:
 
             `src/router/index.js` 文件是 Vue 为我们提供的路由文件，代码如下：
           post: >
-            首先我们导出了 Vue 类，以及 Router 类
+            首先我们导出了 Vue 类，以及 Router 类，以及我们的 `HelloWorld` 组件。
 
 
-            在路由文件中，通过 `routes` 数组定义了项目所有的页面，每个页面是一个类似 `{ path, name, component
-            }` 的对象。
+            接着我们使用 `Vue.use(Router)` 告诉 Vue，我们应用接入了路由。
+
+
+            在导出的路由实例中，我们通过 `routes` 数组定义了项目所有的页面，每个页面是一个类似 `{ path, name,
+            component }` 的对象。
 
 
             比如初始化时生成的 `HelloWorld.vue` 就是我们的网站首页 --
@@ -254,7 +257,13 @@ steps:
         部署我们的全栈项目。
 
 
+
+        ::: primary
+
         ***记得点个赞，鼓励我们更快更好地写完剩下的教程！你也可以在评论区留言，告诉我们想要实现什么功能，我们一定会仔细考虑的哦！***
+
+        :::
+
 
 
         ### 代码
@@ -427,7 +436,8 @@ steps:
             UI](https://element.eleme.cn/) 组件库让我们的界面变得专业美观。
 
             - 其次，我们在 `script` 中引入了 `data` ，在 `template` 引入了插值语法 `{{var}}`。其中
-            `data` 是声明此组件的初始化数据，而 `{{var}}` 插值语法是方便将数据渲染到视图模板中。
+            `data` 是声明此组件的初始化数据，而 `{{var}}` 插值语法是方便将数据渲染到视图模板中；这里我们将在 `script`
+            中定义的 `data` 中的 `msg` 插值到视图模板中，最终会渲染一个 `h1` 标签，标签内容就为 `msg` 的内容。
       - file: src/router/index.js
         display: true
         explain:
@@ -454,12 +464,9 @@ steps:
 
             首先修改 `App.vue` ，加入三个导航链接 `router-link`，方便让用户跳转到到自己想看的页面，代码如下：
           post: |
-
-            ::: info
-            **提示**
+            这里我们在头部添加了三个 `router-link` 代表我们的头部导航。
 
             `router-link` 和 `a` 标签类似，只不过 Vue 为它添加一些额外的优化逻辑。
-            :::
       - file: src/components/HelloWorld.vue
         display: false
       - file: src/pages/Admin.vue
@@ -471,6 +478,7 @@ steps:
 
             接着我们编写 `Admin.vue` 组件，但这里稍微有点不同，即我们在 `src/pages` 下创建 `Admin.vue`
             组件，因为对于页面级组件，我们倾向于将其放到一个特殊 `pages` 文件夹，这样方便组织项目。其代码如下：
+          post: 可以看到这个页面内容和我们之前的 `Home.vue` 内容相似。
       - file: src/pages/Cart.vue
         display: true
         explain:
@@ -478,6 +486,7 @@ steps:
             ### 创建购物车页面
 
             然后是我们的购物车页面 `Cart.vue`，代码如下：
+          post: 可以看到这个页面内容和我们之前的 `Home.vue` 内容相似。
       - file: src/pages/Home.vue
         display: false
         explain:
@@ -493,7 +502,7 @@ steps:
 
             最后，我们把上一步中创建的 `Home.vue` 移到 `src/pages` 目录中，并在路由文件
             `src/routes/index.js` 中导入这三个页面，代码如下：
-          post: ""
+          post: ''
     explain:
       pre: |-
         一个经典的电商应用通常包括如下部分：
@@ -563,7 +572,12 @@ steps:
             首先创建 `Index.vue` 入口组件，代码如下：
           post: >-
             可以看到，它作为嵌套路由的入口级组件，和我们之前在 `App.vue` 里面看到的样子类似，在其中会有 `router-link`
-            导向更深层级的路由，`router-view` 用于渲染子路由组件。
+            导向更深层级的路由.
+
+
+            `router-view` 用于渲染子路由组件，比如我们此时访问 `/admin/new` 页面，那么 `router-view`
+            部分会被替换成 `New.vue` 组件的内容，因为我们在之前的嵌套路由定义中  `path` 为 `new` 的渲染组件为
+            `New.vue`。
       - file: src/pages/admin/Edit.vue
         display: true
         explain:
@@ -588,7 +602,7 @@ steps:
         display: true
         explain:
           pre: 创建 `src/pages/admin/New.vue`，代码如下：
-          post: ""
+          post: ''
       - file: src/pages/admin/Products.vue
         display: true
         explain:
