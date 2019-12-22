@@ -2,13 +2,13 @@ name: 从零到部署：用 Vue 和 Express 实现一个迷你全栈电商应用
 topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
-created: '2019-10-17T00:00:00.509Z'
-updated: 2019-12-21T02:32:20.288Z
+created: "2019-10-17T00:00:00.509Z"
+updated: 2019-12-22T08:08:17.483Z
 categories:
   - 前端
   - Vue
   - 入门
-github: 'https://github.com/pftom/vue-online-shop-frontend'
+github: "https://github.com/pftom/vue-online-shop-frontend"
 splits:
   - name: 从零到部署：用 Vue 和 Express 实现一个迷你全栈电商应用（一）
     description: >-
@@ -25,6 +25,7 @@ splits:
     end: aca2bb6
     cover: tuture-assets/vue-cover.png
     id: 0b662ce
+    cover: tuture-assets/cover-1.png
 steps:
   - name: 快速入门
     commit: 6f2924b
@@ -154,6 +155,7 @@ steps:
             <template>
               <div id="app">
                 <img src="./assets/hello.png">
+                <router-view/>
               </div>
             </template>
 
@@ -505,7 +507,7 @@ steps:
 
             最后，我们把上一步中创建的 `Home.vue` 移到 `src/pages` 目录中，并在路由文件
             `src/routes/index.js` 中导入这三个页面，代码如下：
-          post: ''
+          post: ""
     explain:
       pre: |-
         一个经典的电商应用通常包括如下部分：
@@ -605,7 +607,7 @@ steps:
         display: true
         explain:
           pre: 创建 `src/pages/admin/New.vue`，代码如下：
-          post: ''
+          post: ""
       - file: src/pages/admin/Products.vue
         display: true
         explain:
@@ -702,7 +704,7 @@ steps:
 
             编写完上面的表单之后，我们在 `New.vue` 中引入我们创建的表单组件：
           post: >-
-            当一个组件要使用在模板语法中使用另外一个组件时，需要什么此组件，即在组件的 `components`
+            当一个组件要在模板语法中使用另外一个组件时，需要申明此组件，即在组件的 `components`
             属性中申明要使用的组件，比如我们上面使用名为 `'product-form'` 的名称来申明使用 `ProductForm`
             组件，这样在 `template` 中我们就可以以 `<product-form />` 形式使用导入的表单组件。
 
@@ -1212,57 +1214,266 @@ steps:
         display: true
         explain:
           pre: |-
+            ### 安装依赖
+
             首先我们打开命令行，进入项目目录，执行如下命令安装 Vuex:
 
             ```shell
             npm install vuex
             ```
+
+            当安装完 `vuex` 之后，我们的 `package.json` 文件的 `dependencies` 多个一个 `vuex`：
       - file: src/store/index.js
         display: true
         explain:
-          pre: 然后我们创建 store 文件，并编写如下内容：
+          pre: >-
+            ### 创建 Vuex Store
+
+
+            Vuex 是一个前端状态管理工具，它致力于接管 Vue 的状态，使得 Vue 专心做好渲染页面的事情；它类似在前端建立了一个
+            “数据库”，然后将所有的前端状态都保存在这个 “数据库” 里面。这个 “数据库” 其实就是一个普通的 JavaScript 对象。
+
+
+            好了，讲述了 Vuex 是干什么的了，我们来看一下如何在 Vue 中运用 Vuex。Vuex 建立的这个 “数据库” 一般用术语
+            `store` 来表示，通常我们建立一个单独的 `store` 文件夹，用于保存和 `store` 有关的内容，我们建立在 `src`
+            文件夹下建立 `store` 文件夹，然后在里面创建 `index.js` 文件，在里面编写如下内容：
           post: >-
             上面的代码可以分为三部分。
 
 
-            首先我们导入 `vue` 和 `vuex` 。
+            - 首先我们导入 `vue` 和 `vuex` 。
 
+            - 然后我们调用 `Vue.use` 方法，告诉 Vue 我们将使用 `vuex`，这和我们之前使用 `Vue.use(router)`
+            的原理一样。
 
-            然后我们调用 `Vue.use` 方法，使用 `vuex`。
-
-
-            最后我们导出, `Vuex.Store` 实例，并且传入了 `strict` 和 `state` 参数，这里 `strict`
-            参数表示，我们必须使用 Vuex 的 Mutation 方法来改变 `state`，否则就会报错。而 `state`
-            参数用来存放我们全局的状态，比如我们这里定义了 `cart` 、 `showLoader`
-            等属性都是后面我们完善迷你淘宝的内容需要的数据。
+            - 最后我们导出 `Vuex.Store` 实例，并且传入了 `strict` 和 `state` 参数，这里 `strict`
+            参数表示，我们必须使用 Vuex 的 Mutation 方法来改变 `state`，否则就会报错（关于 Mutation 我们将在
+            “使用 Vuex 进行状态管理” 一节讲解）。而 `state` 参数用来存放我们全局的状态，比如我们这里定义了 `cart` 、
+            `showLoader` 等属性都是后面我们完善迷你淘宝的内容需要的数据。
       - file: src/main.js
         display: true
         explain:
           pre: >-
-            接着我们在 `main.js` 里面导入我们的 `store` 实例，并且在 Vue 实例初始化时，传入我们的 `store`
-            实例，这样，当我们开启项目之后，Vue 就会将 Store 里面的 `state` 注入到所有的 Vue 组件中，这样所以的 Vue
-            组件共享同一个全局的 `state` ，它其实就是一个 JS
-            对象，从而避免了组件嵌套层级过深时，组件之间传递属性的复杂性，让属性的定义，获取，修改非常直观，方便开发大型应用和团队协作。
+            ### 将 Vuex 和 Vue 整合
+
+
+            当我们创建并导出了 Vuex 的 `store` 实例之后，我们需要使用它。打开 `main.js` 文件，在开头导出我们实例化的
+            `store` ，以及将 `store` 添加到 Vue 初始化的参数列表里：
+          post: >-
+            可以看到，在上面的文件中，我们一开头导入了我们之前在 `src/store/index.js` 里定义的 `store` 实例，接着，在
+            Vue 实例初始化时，我们将这个 `store` 实例使用对象属性简洁写法添加到了参数列表里。
+
+
+            当我们将 `store` 当做参数传给 Vue 进行初始化之后，Vue 就会将 Store 里面的 `state` 注入到所有的 Vue
+            组件中，这样所有的 Vue 组件共享同一个全局的 `state` ，它其实就是一个 JS 对象，应用中所有状态的变化都是对
+            `state` 进行操作，然后响应式的触发组件的重新渲染，所以这里的 `state` 也有 “数据的唯一真相来源” 的称谓。
+
+
+            这种将状态保存到一个全局的 JavaScript 对象 -- state 中，然后所有的增、删、改、查操作都是对这个
+            JavaScript
+            对象进行，使得我们可以避免组件嵌套层级过深时，组件之间传递属性的复杂性，让属性的定义，获取，修改非常直观，方便开发大型应用和团队协作。
       - file: src/pages/admin/Products.vue
         display: true
+        explain:
+          pre: >-
+            ### 查看 Vuex 整合后的效果
+
+
+            在将 Vuex 和 Vue 整合好之后，我们马上来看一下 Vuex
+            带来的效果，不过在此之前我们先来讲一讲什么是计算属性（`computed`）。
+
+
+            #### 计算属性（Computed）
+
+
+            首先我们新增了 `script` 部分，然后在导出的对象里面增加了一个 `computed`
+            属性，这个属性里面的内容用于申明一些可能要在 `template` 里面使用的复杂表达式。我们来看一个例子来讲解一下
+            `computed` 属性：
+
+
+            我们在模板中可能要获取一个多级嵌套对象里面的某个数据，或者要渲染的数据需要经过复杂的表达式来计算，比如我们要渲染这样一个数据
+            `obj1.obj2.obj3.a + obj1.obj4.b`，写在模板里就是这样的：
+
+
+            ```HTML
+
+            <template>
+
+            <div>
+              {{ obj1.obj2.obj3.a + obj1.obj4.b }}
+            </div>
+
+            </template>
+
+            <script>
+
+            export default {
+              data: {
+                obj1: {
+                  obj2: {
+                    obj3: {
+                      a
+                    }
+                  },
+                  obj4: {
+                    b
+                  }
+                }
+              }
+            }
+
+            </script>
+
+            ```
+
+
+            可以看到，我们一眼看上去，这个模板里面有这样一个复杂的表达式，很不容易反应出来它到底要渲染什么，这样代码的可读性就很差，所以 Vue
+            为我们提供了计算属性（ `computed`
+            ），用于用简单的变量来代表复杂的表达式结果，进而简化模板中插值的内容，让我们的模板看起来可读性更好，上面的代码使用计算属性来改进会变成下面这样：
+
+
+
+            ```JavaScript
+
+            <template>
+
+            <div>
+              {{ addResult }}
+            </div>
+
+            </template>
+
+
+            <script>
+
+            export default {
+              data: {
+                obj1: {
+                  obj2: {
+                    obj3: {
+                      a
+                    }
+                  },
+                  obj4: {
+                    b
+                  }
+                }
+              },
+              computed: {
+                addResult() {
+                  return this.obj1.obj2.obj3.a + this.obj1.obj4.b
+                }
+              }
+            }
+
+            </script>
+
+            ```
+
+
+            可以看到，当我们使用了计算属性 `addResult` 之后，我们在模板里面的写法就简化了很多，而且一目了然我们是渲染了什么。
+
+
+            了解了计算属性之后，我们打开 `src/pages/admin/Products.vue`，对内容作出如下改进以查看 Vuex 和
+            Vue 整合之后的效果：
+          post: >+
+            可以看到，上面的内容改进主要分为两个部分：
+
+
+            - 首先我们定义了一个 `product` 计算属性，它里面返回一个从 `store` 中保存的 `state`取到的
+            `products` 数组的第一个元素，注意到当我们在 “将 Vuex 和 Vue 整合” 这一小节中将 `store` 作为 Vue
+            初始化实例参数，所以我们在所有的 Vue 组件中可以通过 `this.$store.state` 的形式取到 Vuex Store
+            中保存的 `state`。
+
+            - 接着我们使用了计算属性 `product`，取到了它的 `name` 属性进行渲染。
+
+
+
     explain:
       pre: >-
         我们之前讲解了 Vue
         的基础部分，你可以做一些比较简单的页面，但是针对复杂的应用，比如组件嵌套超过3级，我们前面讲解的知识处理起来就很费力了，还好 Vue
         社区为我们打造了状态管理容器 Vuex，用来处理大型复杂的应用。
+      post: >-
+        ### 小结
+
+
+        在这一小节中，我们学习了如何将 Vuex 整合进 Vue 中：
+
+
+        - 首先我们安装了 `vuex` 依赖
+
+        - 接着我们在 `src` 下面创建了 `store` 文件夹，用于保存 Vuex 相关的内容，在 `store` 文件下之下，我们创建了
+        `index.js` 文件，在里面实例化了 `Vuex.Store` 类，我们在实例化的过程中传递了两个参数：`strict` 和
+        `state`，`strict` 表示我们告诉 Vue，只允许 `Mutation` 方法才能修改
+        `state`，确保修改状态的唯一性；`state` 是我们整个应用的状态，整个应用的状态都是从它获取，整个应用状态的改变都是修改它，所以这个
+        `state` 也有 “数据的唯一真相来源” 的称谓。
+
+        - 然后我们通过在 `main.js` 里面导入实例化的 `store`，将它加入到初始化 Vue 实例的参数列表中，实现了 Vuex 和
+        Vue 的整合。
+
+        - 最后我们讲解了计算属性，然后通过在计算属性中获取 `this.$store.state` 的方式展示了 Vuex 整合之后的效果。
+
+
+        好了，我们已经整合了 Vuex，并在 Vue 组件中获取了保存在 Vuex Store
+        中的状态（state），接下来我们来看一下如何修改这个状态。
   - name: 使用 Mutation 修改本地状态
     commit: 3b00854
     diff:
-      - file: src/components/products/ProductList.vue
+      - file: src/store/index.js
         display: true
-      - file: src/pages/Cart.vue
+        explain:
+          post: >-
+            可以看到上面的代码改进氛围两个部分：
+
+
+            - 首先我们扩充了 `state` 中的 `products`
+            属性，在里面保存一开始我们的迷你电商平台的初始数据，这里我们是硬编码到代码中的，在下一节 “使用 Action
+            获取远程数据”中，我们将动态获取后端服务器的数据。
+
+            - 接着我们在 Vuex.Store 实例化的参数中添加了一个 `mutations` 属性，在里面定义了两个方法
+            `ADD_TO_CART` 和
+            `REMOVE_FROM_CART`，分别代表响应从视图层发起的对应将商品添加至购物车和从购物车移除商品的动作。
+      - file: src/components/products/ProductList.vue
         display: true
       - file: src/pages/Home.vue
         display: true
+      - file: src/pages/Cart.vue
+        display: true
       - file: src/pages/admin/New.vue
-        display: true
-      - file: src/store/index.js
-        display: true
+        display: false
+    explain:
+      pre: >-
+        我们在上一节中定义了 Vuex Store，并在里面保存了全局的状态 `state`，这一节我们来学习如何修改这一状态。
+
+
+        Vuex 为我们提供了 `Mutation`，它是修改 Vuex Store 中保存状态的唯一手段。
+
+
+        Mutation 是定义在 Vuex Store 的 `mutation` 属性中的一些列方法，用于响应从 Vue
+        视图层发出来的事件或动作，一个 Mutation 是形如 `(state, payload) => newState` 的方法：
+
+
+        ```JavaScript
+
+        ACTION_NAME(state, payload) {
+          // 对 `state` 进行操作以返回新的 `state`
+          return newState;
+        }
+
+        ```
+
+
+        其中方法名 `ACTION_NAME` 用于对应从视图层里面发出的事件或动作的名称，方法接收两个参数 `state` 和
+        `payload`，`state` 就是我们 Vuex Store 中保存的 `state`，`payload`
+        是被响应的那个事件或动作携带的参数，然后我们通过 `payload` 的参数来操作现有的 `state`，返回新的
+        `state`，通过这样的方式，我们就可以响应修改 Vuex Store 中保存的全局状态。
+
+
+        了解了 Mutation 的概念之后，我们马上来看一下如何运用它。
+
+
+        我们打开 `src/store/index.js` 文件，修改其中的 `state` 并加上 `mutations` 如下：
   - name: 使用 Action 获取远程数据
     commit: b14d923
     diff:
