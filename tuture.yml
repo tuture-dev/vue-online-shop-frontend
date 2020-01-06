@@ -2,15 +2,15 @@ name: 从零到部署：用 Vue 和 Express 实现一个迷你全栈电商应用
 topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
-created: "2019-10-17T00:00:00.509Z"
-updated: 2019-12-22T08:08:17.483Z
+created: '2019-10-17T00:00:00.509Z'
+updated: 2020-01-06T08:30:23.331Z
 categories:
   - 前端
   - Vue
   - 入门
-github: "https://github.com/pftom/vue-online-shop-frontend"
+github: 'https://github.com/pftom/vue-online-shop-frontend'
 splits:
-  - name: 从零到部署：用 Vue 和 Express 实现一个迷你全栈电商应用（一）
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（一）
     description: >-
       Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
       有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
@@ -24,7 +24,14 @@ splits:
     start: 6f2924b
     end: aca2bb6
     id: 0b662ce
-    cover: tuture-assets/cover-1.png
+    cover: tuture-assets/cover-1.jpg
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）
+    description: >-
+      在这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着讲解最常见的 Vue 模板语法，并通过实例的方式将这些模板语法都实践一番，最后将讲解 Vue 组件的组合，并完成了我们的发表商品页面。
+    start: b3771b6
+    end: b3771b6
+    id: 5e10a4665188253a800423a5
+    cover: tuture-assets/cover-3.jpg
 steps:
   - name: 快速入门
     commit: 6f2924b
@@ -506,7 +513,7 @@ steps:
 
             最后，我们把上一步中创建的 `Home.vue` 移到 `src/pages` 目录中，并在路由文件
             `src/routes/index.js` 中导入这三个页面，代码如下：
-          post: ""
+          post: ''
     explain:
       pre: |-
         一个经典的电商应用通常包括如下部分：
@@ -606,7 +613,7 @@ steps:
         display: true
         explain:
           pre: 创建 `src/pages/admin/New.vue`，代码如下：
-          post: ""
+          post: ''
       - file: src/pages/admin/Products.vue
         display: true
         explain:
@@ -648,7 +655,7 @@ steps:
             这段代码看起来很长，你可能被吓到了，让我们一段一段来拆解它。
 
 
-            首先它由两个部分组成，分别是 `script` 和 `template` ，我们先来看一看 `script` 部分。
+            #### script 部分
 
 
             这里我们的 `props` 接收来自父组件的三个参数：`model`、`manufacturers`、`isEditing`。
@@ -658,6 +665,9 @@ steps:
             `saveProduct` 内部，我们调用了父组件的 `save-product` 方法，并把修改后的 `this.model`
             变量内容传给父组件。所以这里我们还可以看到，`methods`
             不仅可以使得数据可以双向流动，而且还可以在子组件反向操作父组件的内容，使得数据还可以上下流动。
+
+
+            #### template 部分
 
 
             接下来我们再来谈一谈 `template` 里面发生的事情。
@@ -689,7 +699,8 @@ steps:
 
 
             可以看到前两个 `form-group` 使用 `v-model` 双向绑定了 `model.image` 和
-            `model.description ` ，表示当用户
+            `model.description ` ，表示当用户上传了商品图片和描述之后，对应的 `model.image`
+            就会变成用户上传的商品图片，`model.description` 就会变成用户撰写的商品描述。
 
 
             最后一个 `form-group` 我们使用了条件选择语法，判断 `isEditing`，来渲染不同的按钮文案。
@@ -714,6 +725,22 @@ steps:
             `@save-product="saveProduct"` 的方式传递给表单组件。
     explain:
       pre: >+
+        这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着我们又讲解了最常见的 Vue
+        模板语法，并通过实例的方式将这些模板语法都实践了一番，最后我们讲解了 Vue 组件的组合，并完成了我们的发表商品页面。
+
+
+        欢迎阅读《从零到部署：用 Vue 和 Express 实现迷你全栈电商应用》系列：
+
+
+        - [从零到部署：用 Vue 和 Express
+        实现迷你全栈电商应用（一）](https://tuture.co/2019/10/17/0b662ce/)
+
+        - [从零到部署：用 Vue 和 Express
+        实现迷你全栈电商应用（二）](https://tuture.co/2019/10/21/cb08dc8/)
+
+        - 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）（也就是这篇）
+
+
         当我们完成了商城应用的基本页面框架之后，我们就可以开始考虑具体页面的内容了。首先我们要考虑的就是数据的来源，即添加商品页面。有了添加商品的入口，我们就可以展示商品列表，获取商品详情，甚至是修改商品信息。
 
 
@@ -1180,7 +1207,7 @@ steps:
         `New.vue` 添加商品页面，我们可以看到如下的效果：
 
 
-        ![New.vue](./tuture-assets/2a340eeb04a07c1aae2bcd0387931c52)
+        ![](./tuture-assets/2a340eeb04a07c1aae2bcd0387931c52)
 
 
         ### 小结
@@ -1201,10 +1228,6 @@ steps:
         掌握了这些知识后，我们已经可以实现很多前端的功能，完成一些简单的 Vue
         应用了。但是如果要完成数据逻辑复杂的大型应用，目前学到的知识就力不从心了。但是没关系，我们将在后面学习 Vuex 这一前端状态管理工具，有了
         Vuex 的加持，我们就能用 Vuex 写出任意复杂的应用了。
-
-
-        但是请先别着急，让我们先做点别的事，比如，干掉我们硬编码的假数据，试试真实的数据，并且还能持久化保存我们的数据，这就需要后端的介入了，在下一节中，我会带你手把手实现一个
-        Node.js 后端 API 应用，有了它，我们的前端就真正的活起来了，数据也可以持久保存了！
   - name: 使用 Vuex 进行状态管理
     commit: 4bc407e
     diff:
