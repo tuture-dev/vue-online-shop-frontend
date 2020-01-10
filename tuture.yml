@@ -3,7 +3,7 @@ topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
 created: '2019-10-17T00:00:00.509Z'
-updated: 2020-01-06T08:30:23.331Z
+updated: 2020-01-10T06:38:47.964Z
 categories:
   - 前端
   - Vue
@@ -27,7 +27,8 @@ splits:
     cover: tuture-assets/cover-1.jpg
   - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）
     description: >-
-      在这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着讲解最常见的 Vue 模板语法，并通过实例的方式将这些模板语法都实践一番，最后将讲解 Vue 组件的组合，并完成了我们的发表商品页面。
+      在这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着讲解最常见的 Vue
+      模板语法，并通过实例的方式将这些模板语法都实践一番，最后将讲解 Vue 组件的组合，并完成了我们的发表商品页面。
     start: b3771b6
     end: b3771b6
     id: 5e10a4665188253a800423a5
@@ -183,7 +184,7 @@ steps:
 
             `src/router/index.js` 文件是 Vue 为我们提供的路由文件，代码如下：
           post: >
-            首先我们导出了 Vue 类，以及 Router 类，以及我们的 `HelloWorld` 组件。
+            首先我们导入了 Vue 类，以及 Router 类，以及我们的 `HelloWorld` 组件。
 
 
             接着我们使用 `Vue.use(Router)` 告诉 Vue，我们应用接入了路由。
@@ -1446,7 +1447,7 @@ steps:
         display: true
         explain:
           post: >-
-            可以看到上面的代码改进氛围两个部分：
+            可以看到上面的代码改进分为两个部分：
 
 
             - 首先我们扩充了 `state` 中的 `products`
@@ -1456,23 +1457,45 @@ steps:
             - 接着我们在 Vuex.Store 实例化的参数中添加了一个 `mutations` 属性，在里面定义了两个方法
             `ADD_TO_CART` 和
             `REMOVE_FROM_CART`，分别代表响应从视图层发起的对应将商品添加至购物车和从购物车移除商品的动作。
+          pre: 我们打开 `src/store/index.js` 文件，修改其中的 `state` 并加上 `mutations` 如下：
       - file: src/components/products/ProductList.vue
         display: true
+        explain:
+          pre: >-
+            我们再来看`src/components/products/ProductList.vue`文件，它是商品列表组件，用来展示商品的详细信息。
+          post: >-
+            我们首先来看该组件的`script`部分，先定义了一个计算属性`products`，通过`this.$store.state.products`从本地状态中获取到了`products`数组，并作为计算属性`products`的返回值；除此之外还定义了一个点击事件`addToCart`，并且传入了当前处于激活状态的`product`参数。当用户点击`添加购物车`时，触发`addToCart`事件，也就是上面所说的视图层发出的事件。这里是通过`this.$store.commit`将携带当前商品的对象`{product}`作为载荷提交到类型为`ADD_TO_CART`的`mutation`中，在`mutation`中进行本地状态修改，我们会在后面抽离出的`mutations`文件中看到具体的操作。
+
+
+            然后我们来看该组件的`template`部分，使用`v-for`将从本地获取到的`products`数组进行遍历，每个`product`对象的详细信息都会显示在模板中。在每个`product`对象信息的最后都添加了一个添加到购物的按钮，允许我们将指定商品添加到购物车。
       - file: src/pages/Home.vue
         display: true
       - file: src/pages/Cart.vue
         display: true
+        explain:
+          pre: 我们进入`src/pages/Cart.vue`文件添加如下代码，将购物车中的商品信息展示出来。
+          post: >-
+            我们在该组件中主要增加了两部分代码：
+
+
+
+            -
+            首先是`script`部分，我们增加了一个计算属性和一个点击事件。同样是通过`this.$store.state.cart`的方式从本地状态中获取购物车数组，并作为计算属性`cart`的返回值；当用户点击购物车中的某个商品将其移除购物车时就会触发`removeFromCart`事件，并且将要移除的商品id作为参数传入，然后也是通过`this.$store.commit`的方式将包含`productId`的对象作为载荷提交到类型为`REMOVE_FROM_CART`的`mutation`中，在`mutation`中进行本地状态修改，具体修改操作我们可以在后面抽离出的`mutations`文件中看到。
+
+
+            -
+            然后是`template`部分，我们通过`v-for`遍历了购物车数组，将购物车中的所有商品信息展示在模板中。并在每个商品信息的最后添加了一个移除购物车的按钮，当用户希望移除购物车中指定商品时，会触发`removeFromCart`事件。 
       - file: src/pages/admin/New.vue
         display: false
     explain:
-      pre: >-
+      pre: >
         我们在上一节中定义了 Vuex Store，并在里面保存了全局的状态 `state`，这一节我们来学习如何修改这一状态。
 
 
         Vuex 为我们提供了 `Mutation`，它是修改 Vuex Store 中保存状态的唯一手段。
 
 
-        Mutation 是定义在 Vuex Store 的 `mutation` 属性中的一些列方法，用于响应从 Vue
+        Mutation 是定义在 Vuex Store 的 `mutation` 属性中的一系列方法，用于响应从 Vue
         视图层发出来的事件或动作，一个 Mutation 是形如 `(state, payload) => newState` 的方法：
 
 
@@ -1486,6 +1509,7 @@ steps:
         ```
 
 
+
         其中方法名 `ACTION_NAME` 用于对应从视图层里面发出的事件或动作的名称，方法接收两个参数 `state` 和
         `payload`，`state` 就是我们 Vuex Store 中保存的 `state`，`payload`
         是被响应的那个事件或动作携带的参数，然后我们通过 `payload` 的参数来操作现有的 `state`，返回新的
@@ -1493,9 +1517,17 @@ steps:
 
 
         了解了 Mutation 的概念之后，我们马上来看一下如何运用它。
+      post: >
+        ### 小结
 
 
-        我们打开 `src/store/index.js` 文件，修改其中的 `state` 并加上 `mutations` 如下：
+        在这一部分中我们学习了如何发起修改本地状态的“通知”：
+
+        - 首先我们需要在 Vuex.Store 实例化的参数中添加一个 `mutations`
+        属性，在该属性中添加对应的方法，比如`ADD_TO_CART`和`REMOVE_FROM_CART`。
+
+        -
+        然后我们需要通过用户不同的操作（比如点击添加购物车或者移除购物车）来发起“通知”，进而通过`this.$store.commit`的方式将需要操作的对象作为载荷提交到对应类型（也就是`ADD_TO_CART`和`REMOVE_FROM_CART`）的`mutation`中，在`mutation`中进行本地状态修改。
   - name: 使用 Action 获取远程数据
     commit: b14d923
     diff:
@@ -1504,21 +1536,127 @@ steps:
         display: true
       - file: src/components/products/ProductList.vue
         display: true
+        explain:
+          pre: >-
+            再来看`src/components/products/ProductList.vue`文件，我们对其做了修改，主要添加了生命周期函数`created`，在该组件刚被创建时首先判断本地`products`中是否有商品，如果没有就向后端发起网络请求获取数据。
+          post: >-
+            `ProductList.vue`组件是用来展示本地中的商品信息，在该组件刚被创建时判断`this.products.length
+            ===
+            0`是`true`还是`false`，如果是`true`则证明本地中还没有任何商品，需要向后端获取商品数据，于是通过`this.$store.dispatch`的方式触发类型为`allProducts`的`action`中，在`action`中进行异步操作，发起网络请求向后端请求商品数据并返回；如果是`false`则证明本地中存在商品，所以可以直接从本地获取然后进行渲染。
       - file: src/pages/Cart.vue
         display: true
       - file: src/store/index.js
         display: true
+        explain:
+          pre: 再次来到`src/store/index.js`文件，我们对其进行了修改，加入`Action`需要的相关依赖和配置。
+          post: |2-
+             首先我们添加了`Action`的相关依赖，导入了 `axios` 和 `API_BASE`。`axios` 是基于 `promise` 的 `HTTP`库，其实就是通过 `promise` 实现对 `ajax` 技术的一种封装，用于向后端发送网络请求；`API_BASE`是我们定义的基础接口。
+
+             然后我们在`store`实例中的`mutations`属性中添加了`ALL_PRODUCTS`和`ALL_PRODUCTS_SUCCESS`方法，用来响应`action`中提交的对应类型事件。除此之外我们添加了`actions`属性，在`actions`属性中定义了`allProducts`方法用于响应视图层分发的对应类型的事件。
+
+
+              - 我们可以看到`allProducts`方法中传入了`{ commit }`参数，这是采用了解构赋值的方式`const { 
+              commit } = context`，避免后面使用`context.commit`过于繁琐。
+              - 在发送网络请求之前我们进行了一次提交，提交到了类型为`ALL_PRODUCTS`的`mutation`中，在 
+              `mutation`中`state.showLoader = true;`表示显示加载状态。
+              - 开始发送网络请求，我们将从后端获取远程数据，并将响应的数据放在一个对象中作为载荷提交 
+              到类型为`ALL_PRODUCTS_SUCCESS`的`mutation`中，在`mutation`中设置`state.showLoader = 
+              true;`表示数据加载完成，并将`action`中提交的数据保存到本地，完成本地数据的更新。
+    explain:
+      pre: >-
+        我们在上一节中学习了如何在视图层发起本地状态修改的“通知”，这一节我们来学习如何从后端获取远程数据。
+
+
+        Vuex 为我们提供了
+        `Action`，它是用来进行异步操作，我们可以在这里向后端发起网络数据请求，并将请求到的数据提交到对应的`mutation`中。
+
+
+        Action是定义在 Vuex Store 的 `action` 属性中的一系列方法，用于响应从 Vue 视图层分发出来的事件或动作，一个
+        Action是形如 `(context, payload) =>response.data` 的方法：
+
+
+        ```JavaScript
+
+        productById(context, payload) {
+            //进行异步操作，从后端获取远程数据并返回
+            return  response.data;
+          }
+        ```
+
+
+        其中方法名`productById`用于对应从视图层里面分发出的事件或动作的名称，方法接收两个参数 `context` 和 `payload`，
+        `context`指的是 `action`的上下文，与`store`实例具有相同的方法和属性，因此我们可以调用
+        `context.commit`提交一个 `mutation`，或者通过 `context.state`和
+        `context.getters`来获取 `state`和 `getters`，但是 `context`对象又不是`store`实例本身。
+        `payload`是分发时携带的参数，然后我们通过
+        `payload`中的参数来进行异步操作，从而获取后端响应数据并返回。这样我们就可以根据用户的操作同步更新后端数据，并将后端响应的数据提交给
+        `mutation`，然后利用 `mutation`进行本地数据更新。
+      post: >-
+        ### 小结
+
+
+        在这一部分中我们学习了如何使用`Action`获取远程数据，并将获取的数据提交到对应的`Mutation`中：
+
+
+        - 首先我们需要导入相关依赖： `axios` 和 `API_BASE`，由于发起网络请求。
+
+        - 其次我们需要在`store`实例中添加`actions`属性，并在`actions`属性定义对应的方法，用于响应视图层分发的对应类型的事件。
+
+        -
+        在不同的方法中发起不同的网络请求，你是需要从后端获取数据，还是修改后端数据等等。然后将后端响应的数据结果提交到对应类型的`mutation`中。
   - name: 使用 Vue 组件简化页面逻辑
     commit: 6f96d15
     diff:
       - file: src/components/products/ProductButton.vue
         display: true
+        explain:
+          pre: >-
+            我们打开`src/components/products/ProductButton.vue`文件，它是用于操作商品在购物车中状态的按钮组件。
+          post: >-
+            该组件通过`v-if`判断`isAdding`是`true`还是`false`来决定创建加入购物车按钮还是从购物车移除按钮。`cart`数组是通过`this.$store.state.cart`从本地获取的。在`isAdding`中我们先令其为`true`，然后通过`cart`数组的`map`方法遍历数组，判断当前商品是否在购物车中，如果不在则`isAdding`为`true`，创建加入购物车按钮；如果在则`isAdding`为`false`，创建从购物车移除按钮。
+
+
+            对应的两个按钮添加了两个点击事件：`addToCart`和`removeFromCart`
+
+            -
+            当点击加入购物车按钮时触发`addToCart`，我们通过`this.$store.commit`的方式将包含当前商品的对象作为载荷直接提交到类型为`ADD_TO_CART`的`mutation`中，将该商品添加到本地购物车中。
+
+            -
+            当点击从购物车移除按钮时触发`removeFromCart`，我们也是通过`this.$store.commit`的方式将包含当前商品id的对象作为载荷直接提交到类型为`REMOVE_FROM_CART`的`mutation`中，将该商品从本地购物车中移除。
       - file: src/components/products/ProductItem.vue
         display: true
+        explain:
+          pre: >-
+            `src/components/products/ProductItem.vue`文件为商品信息组件，用来展示商品详细信息，并且注册了上面讲的按钮组件，改变商品在购物车中的状态。
+          post: 将父组件传入的`product`信息展示在模板中。
       - file: src/components/products/ProductList.vue
         display: true
+        explain:
+          pre: >-
+            `src/components/products/ProductList.vue`是商品列表组件，用来展示本地中的所有商品。使用了`ProductItem`组件简化了该组件模板中的复杂逻辑。
+          post: >-
+            这部分代码是将之前展示商品信息的逻辑代码封装到了子组件`ProductItem`中，然后导入并注册子组件`ProductItem`，再将子组件挂载到模板中。
+
+
+            通过`this.$store.state.products`从本地获取`products`数组，并返回给计算属性`products`。然后在模板中利用`v-for`遍历`products`数组，并将每个`product`对象传给每个子组件`ProductItem`，在每个子组件中展示对应的商品信息。
       - file: src/pages/Cart.vue
         display: true
+        explain:
+          pre: >-
+            `src/pages/Cart.vue`是购物车组件，是用来展示购物车中所有商品的信息，这里也使用了子组件`ProductItem`简化了页面逻辑。
+          post: >-
+            这里也是首先导入并注册子组件`ProductItem`，然后在模板中挂载子组件。通过`this.$store.state.cart`的方式从本地获取购物车数组，并返回给计算属性`cart`。在模板中通过`v-for`遍历购物车数组，并将购物车中每个商品对象传给对应的子组件`ProductItem`，通过子组件来展示对应的商品信息。
+    explain:
+      pre: >-
+        前面我们已经学习了如何使用`Vuex`进行状态管理，如何使用`Action`获取远程数据以及如何使用`Mutation`修改本地状态，实现了用户修改客户端数据的同时，同步更新后端数据，然后更新本地数据，最后进行重新渲染。这一节我们将使用`Vue`组件化的思想来简化复杂的页面逻辑。
+      post: |-
+        ### 小结
+
+        这一节我们学习了如何使用Vue组件来简化页面逻辑：
+
+        - 首先我们需要通过`import`的方式导入子组件。
+        - 然后在`components`中注册子组件。
+        - 最后将子组件挂载到模板中，并将需要子组件展示的数据传给子组件。
   - name: 使用 Vuex Getters 复用本地数据获取逻辑
     commit: c999bac
     diff:
@@ -1528,16 +1666,94 @@ steps:
         display: true
       - file: src/components/products/ProductList.vue
         display: true
+        explain:
+          pre: >-
+            我们又来到了`src/components/products/ProductList.vue`文件中，我们对其进行了修改，使用了Vuex
+            Getters复用了本地数据获取逻辑。
+          post: >-
+            我们在计算属性`products`中使用`this.$store.getters.allProducts`属性访问的方式调用`getters`中的`allProducts`属性，我们也知道在对应的`getter`中获取到了本地中的`products`数组。
       - file: src/pages/Cart.vue
         display: true
       - file: src/pages/Detail.vue
         display: true
+        explain:
+          pre: >-
+            `src/pages/Detail.vue`文件是商品详情组件，这里使用了子组件`ProductDetail
+            `简化了页面逻辑，并通过方法访问的形式获取到了对应的`getter`属性。
+          post: >-
+            该组件中定义了一个计算属性`product`，用于返回本地状态中指定的商品。这里我们使用了`this.$store.getters.productById(id)`方法访问的方式获取本地中指定的商品，这里的id参数通过`this.$route.params['id']`从当前处于激活状态的路由对象中获取，并传入对应的`getter`中，进而从本地中获取指定商品。
+
+
+            在该组件刚被创建时判断当前本地中是否有该商品，如果没有则通过`this.$store.dispatch`的方式将包含当前商品id的对象作为载荷分发到类型为`productById`的`action`中，在`action`中进行异步操作从后端获取指定商品，然后提交到对应的`mutation`中进行本地状态修改，这已经使我们习惯的思路了。
       - file: src/pages/admin/Products.vue
         display: true
+        explain:
+          pre: >-
+            `src/pages/admin/Products.vue`是本地商品组件，我们通过属性访问的方式调用对应的`getter`属性，从而获取本地商品。
+          post: >-
+            我们通过`this.$store.getters.allProducts`属性访问的方式调用对应`getter`中的`allProducts`属性，并返回本地商品数组中的第一个商品。
       - file: src/router/index.js
         display: true
       - file: src/store/index.js
         display: true
+        explain:
+          pre: >-
+            我们又来到了`src/store/index.js`文件，在这里我们添加了一些需要用到的`action`属性和`mutation`属性以及这一节的主角`getters`。
+          post: >-
+            这里主要添加了三部分内容：
+
+            -
+            在`actions`中添加了`productById`属性，当视图层通过指定id分发到类型为`PRODUCT_BY_ID`的`action`中，这里会进行异步操作从后端获取指定商品，并将该商品提交到对应类型的`mutation`中，就来到了下一步。
+
+            -
+            在`mutations`中添加了`PRODUCT_BY_ID`和`PRODUCT_BY_ID_SUCCESS`属性，响应指定类型提交的事件，将提交过来的商品保存到本地。
+
+            -
+            添加了`getters`并在`getters`中添加了`allProducts`属性和`productById`方法，用于获取本地数据。在`allProducts`中获取本地中所有的商品；在`productById`通过传入的id查找本地商品中是否存在该商品，如果存在则返回该商品，如果不存在则返回空对象。
+    explain:
+      pre: >+
+        在前面我们使用`Vuex`进行状态管理是通过`this.$store.state`的方式获取本地数据，而在这一节我们使用`Vuex
+        Getters`来复用本地数据的获取逻辑。
+
+
+        `Vuex`允许我们在 `store` 中定义“getter”（可以认为是 `store`的计算属性）。就像计算属性一样，`getter`
+        的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算。
+
+
+        `Getter`也是定义在 Vuex Store 的 `getter`
+        属性中的一系列方法，用于获取本地状态中的数据。我们可以通过两种方式访问`getter`，一个是通过属性访问，另一个是通过方法访问。
+
+        - 属性访问的方式为`this.$store.getter.allProducts`，对应的`getter`如下：
+
+        ```JavaScript
+
+        allProducts(state) {
+            //返回本地中的数据
+            return state.products;
+        }
+
+        ```
+
+        - 方法访问的方式为`this.$store.getter.productById(id)`，对应的`getter`如下：
+
+        ```JavaScript
+
+        productById: (state, getters) => id => {
+              //通过传入的id参数进行一系列操作并返回本地数据
+              return state.product;
+          }
+        ```
+
+        我们可以看到`Getter`可以接受两个参数：`state`和`getters`，`state`就表示本地数据源；我们可以通过第二个参数`getters`获取到不同的`getter`属性。
+
+
+      post: |-
+        ### 小结
+
+        这一节中我们学会了如何使用`Vuex Getters`来复用本地数据的获取逻辑：
+        - 我们需要先在`store`实例中添加`getters`属性，并在`getters`属性中定义不同的属性或者方法。
+        - 在这些不同类型的`getter`中，我们可以获取本地数据。
+        - 我们可以通过属性访问和方法访问的方式来调用我们的`getter`。
   - name: 抽出 Getters 和 Mutations 逻辑
     commit: 4cc00dd
     diff:
@@ -1545,16 +1761,79 @@ steps:
         display: true
       - file: src/pages/admin/Manufacturers.vue
         display: true
+        explain:
+          pre: '`src/pages/admin/Manufacturers.vue`是本地制造商组件，展示制造商信息。'
+          post: >-
+            这里首先定义了一个计算属性`manufacturers`，通过`this.$store.getters.allManufacturers`属性访问的形式调用对应的`getter`属性`allManufacturers`从本地获取`manufacturers`，并返回给计算属性`manufacturers`。
+
+
+            然后在该组件刚被创建时判断本地中是否存在`manufacturers`，如果没有则通过`this.$store.dispatch`分发到类型为`allManufacturers`的`action`中进行异步操作获取所有制造商，并将获取的制造商提交到对应的`mutation`中，在`mutation`中修改本地状态，将获取的所有制造商保存到本地。
+
+
+            最后利用`v-for`在表格中遍历`manufacturers`，每个制造商的信息在一行展示，除了信息之外还有两个功能（修改和删除制造商），点击修改则会根据`'/admin/manufacturers/edit/'
+            +
+            manufacturer._id`路由到指定页面；点击删除则会触发`removeManufacturer`事件，首先询问用户是否同意删除，若用户同意则将选中制造商的id作为载荷分发到类型为`removeManufacturer`的`action`中，在`action`中进行异步操作删除后端对应商品，并将对应商品id提交到对应的`mutation`中，在`mutation`中进行本地状态修改，删除本地对应的商品。
       - file: src/pages/admin/Products.vue
         display: true
+        explain:
+          pre: 我们又来到`src/pages/admin/Products.vue`文件，这里我们做了一些修改，将商品的详细信息放在表格中展示。
+          post: >-
+            这部分代码逻辑与`src/pages/admin/Manufacturers.vue`组件中的代码逻辑相似，如果您理解了上面的代码逻辑，那么我相信您肯定也理解这部分代码逻辑，所以这里就不再赘述了。
       - file: src/router/index.js
         display: true
       - file: src/store/getters.js
         display: true
+        explain:
+          pre: >-
+            `src/store/getters.js`文件就是我们放各种不同类型的`getter`属性和方法的地方，这里我们导出了两个对象分别为`productGetters`和`manufacturerGetters`，分别代表有关商品的`getter`属性与方法和有关制造商的`getter`属性与方法。
+          post: >-
+            在`productGetters`对象中定义的就是有关商品的`getter`属性和方法，如`allProducts`，`productById`等等；在`manufacturerGetters`对象中定义的就是有关制造商的`getter`属性和方法，如`allManufacturers`等等。
       - file: src/store/index.js
         display: true
+        explain:
+          pre: >-
+            我们再回到`src/store/index.js`文件，这里就是抽离`getters`和`mutations`逻辑之后的`store`实例，看起来是不是轻盈了很多，也增强了代码的可读性。
+          post: >-
+            这里首先导入了`getters'`和`mutations`文件中导出的所有对象，然后在`store`实例的`getters'`和`mutations`属性中通过对象展开运算符的方式将对应的属性和方法抽离出去。
+
+
+            除此之外又向`actions`中添加了一些`action`属性，因为此时`actions`还未被抽离，所有显得有些臃肿，不过在后面我们马上也会将它抽离出来。
       - file: src/store/mutations.js
         display: true
+        explain:
+          pre: >-
+            `src/store/mutations.js`文件就是我们从`store`实例中的`mutations`属性中抽取出来的各种`mutation`属性，这里我们定义了三个对象分别为`productMutations`，`cartMutations`以及`manufacturerMutations
+            `。
+          post: >-
+            在`productMutations`对象中定义了有关商品响应Vue视图层以及`avtion`中提交的事件，比如`ALL_PRODUCTS`，`ALL_PRODUCTS_SUCCESS`，`PRODUCT_BY_ID`以及`PRODUCT_BY_ID_SUCCESS`等等。
+
+
+            在`cartMutations`对象中定义了有关购物车响应Vue视图层提交的事件，比如`ADD_TO_CART`，`REMOVE_FROM_CART`等等。
+
+
+            在`manufacturerMutations
+            `对象中定义了有关制造商响应Vue视图层以及`avtion`中提交的事件，比如`ALL_MANUFACTURERS`，`ALL_MANUFACTURERS_SUCCESS`，`REMOVE_MANUFACTURER`以及`REMOVE_MANUFACTURER_SUCCESS`等等。
+    explain:
+      pre: >-
+        这一节我们来学习如何抽出在`store`实例中定义的复杂`getters`和`mutation`逻辑。
+
+
+        我们发现之前我们直接把所有的`getter`属性和方法都定义在了`store`实例中的`getters`属性中，所有的`mutation`属性也都定义在了`store`实例中的`mutations`属性中，这样显得`store`实例特别的累赘，因此我们可以通过对象展开运算符将这些复杂的逻辑抽取到对应的
+        `Getters` 和 `Mutations`文件中。
+      post: >-
+        ### 小结
+
+
+        这一节我们学习了如何抽出`Getters`和`Mutations`逻辑，减轻`store`实例中的负载：
+
+
+        -
+        首先我们需要分别创建`getters`和`mutations`JS文件，在两个JS文件中分别定义不同类型的`getters`和`mutations`对象并导出，然后在`getters`和`mutations`对象中定义相应的一些属性和方法。
+
+        -
+        在`store`的`index`文件中导入这些`getters`和`mutations`对象，并在`store`实例的`getters`和`mutations`属性中通过对象展开运算符混入这些对象。
+
+        - 我们可以使用`this.$store.getters.属性`和`this.$store.mutations.属性`的方式调用.
   - name: 抽出 Actions 逻辑
     commit: 1a54d5e
     diff:
@@ -1562,50 +1841,161 @@ steps:
         display: true
       - file: src/pages/admin/Edit.vue
         display: true
+        explain:
+          pre: >-
+            `src/pages/admin/Edit.vue`是商品编辑组件，当触发`'/admin/edit/' +
+            product._id`就会路由到指定商品信息编辑页面，然后对商品信息进行修改。
+          post: >-
+            我们先来看该组件的`script`部分，首先定义了两个计算属性`model`和`manufacturers`返回本地商品和制造商。通过方法访问的方式调用指定的`getter`属性`productById`，参数为当前处于激活状态的路由对象的id，这里返回`product`的拷贝，是为了在修改
+            `product`的拷贝之后，在保存之前不修改本地 Vuex store
+            的`product`属性。计算属性`manufacturers`通过相同的方式获取本地数据。
+
+
+            当该组件刚被创建时判断计算属性`model`中是否有值，如果没有则表示本地中没有该商品，将包含该商品id的对象作为载荷分发到类型为`productById`的`action`中，在`action`中进行异步操作从后端获取对应商品，并提交到对应类型的`mutation`中，在`mutation`中将获取到的商品保存到本地。除此之外判断计算属性`manufacturers`中是否有值，如果没有则通过相同的方式从后端获取并保存到本地。
+
+
+            在`template`中使用了子组件`ProductForm`用表单的形式来展示商品信息，当用户提交表单则会向父组件发射`save-product`事件，父组件监听到之后触发`updateProduct`事件，并将传入的商品参数作为载荷分发到类型为`updateProduct`的`action`中，通知后端进行同步更新数据并提交到对应的`mutation`中进行本地数据更新。
       - file: src/pages/admin/New.vue
         display: true
+        explain:
+          pre: >-
+            `src/pages/admin/New.vue`是添加商品组件，与`Edit.vue`组件功能相似，只是一个是修改商品信息，一个是添加商品信息。
+          post: >-
+            该组件代码逻辑和`Edit.vue`组件相似，只是在这里我们定义的计算属性`model`返回一个空对象作为默认值，因为我们是添加商品，本地中还不存在该商品。
       - file: src/store/actions.js
         display: true
+        explain:
+          pre: >-
+            `src/store/actions.js`文件就是我们从`store`实例的`actions`属性中抽取出来的不同类型的`action`属性，这里我们定义了两个`Actions`对象：`productActions`和`manufacturerActions`，分别表示有关商品和制造商对视图层分发的事件作出的响应，并导出了这两个对象。
+          post: >-
+            在该文件中我们首先导入`axios`依赖，以及定义了`API_BASE`作为网络请求的基础接口。
+
+
+            然后我们定义并导出了两个对象：
+
+            -
+            在`productActions`对象中定义了一些有关商品在视图层分发对应的事件时，`action`作出的响应，比如`allProducts`，`productById`，`removeProduct`以及`updateProduct`等等。
+
+            -
+            在`manufacturerActions`对象中定义了一些有关制造商在视图层分发对应的事件时，`action`作出的响应，比如`allManufacturers`，`removeManufacturer`等等。
       - file: src/store/index.js
         display: true
+        explain:
+          pre: 我们再次来到`src/store/index.js`文件中，添加有关抽取`Actions`逻辑之后的信息。
+          post: >-
+            这里又导入了`actions`JS文件中导出的一些对象，并通过对象展开运算符在`store`实例的`actions`属性中混入了不同类型的`action`属性。
       - file: src/store/mutations.js
         display: true
+        explain:
+          pre: 我们在`src/store/mutations.js`文件中又添加了一些`mutation`属性。
+          post: >-
+            上述添加的都是有关商品的`mutation`属性：`UPDATE_PRODUCT`，`UPDATE_PRODUCT_SUCCESS`，`ADD_PRODUCT`以及`ADD_PRODUCT_SUCCESS`分别表示更新商品信息，更新商品信息成功，添加商品以及添加商品成功。
+    explain:
+      pre: 上一节我们学习了如何抽出`Getters`和`Mutations`逻辑，这一节我们将来学习如何抽出`Actions`逻辑。
+      post: >-
+        ### 小结
+
+
+        这一节我们学习了如何抽出`Actions`逻辑，减轻`store`实例中的负载：
+
+
+        -
+        首先我们需要创建`actions`JS文件，在文件中定义不同类型的`Actions`对象并导出，然后在`Actions`对象中定义相应的一些属性。
+
+        -
+        在`store`的`index`文件中导入这些`Actions`对象，并在`store`实例的`actions`属性中通过对象展开运算符混入这些对象。
+
+        - 我们可以使用`this.$store.actions.属性`的方式调用。
   - name: 干掉 mutation-types 硬编码
     commit: 1cf95ac
     diff:
       - file: src/components/ManufacturerForm.vue
         display: true
+        explain:
+          pre: '`src/components/ManufacturerForm.vue`文件是展示制造商信息的表单组件。'
+          post: >-
+            该组件通过父子组件传值从父组件获取到了`model`和`isEditing`的值，并将`model`对象的信息展示在表单中。
+
+
+            表单信息中还通过`v-if`来判断`isEditing`的值是`true`还是`false`，如果是`true`则创建`Update
+            Manufacturer`，反之创建`Add Manufacturer`。
+
+
+            当用户提交表单时触发`saveManufacturer`事件，此时会向父组件发送类型为`save-manufacturer`的事件通知其保存此次的修改操作。
       - file: src/pages/admin/EditManufacturers.vue
         display: true
+        explain:
+          pre: '`src/pages/admin/EditManufacturers.vue`是修改制造商组件。'
+          post: >-
+            该组件刚被创建时将当前处于激活状态的路由对象的id参数作为载荷分发到类型为`manufacturerById`的`action`中，在`action`中进行异步操作从服务器获取对应制造商，然后将该制造商提交到对应`mutation`中进行本地状态修改，将获取到的制造商保存到本地。
+
+
+            我们定义了计算属性`model`返回`manufacturer`的拷贝，是为了在修改`manufacturer`的拷贝之后，在保存之前不修改本地
+            `store`中的`manufacturer`属性。这里以方法访问的形式从`getters`中通过当前激活的路由对象中的id参数获取本地状态中的对应制造商作为`manufacturer`的拷贝，并返回给计算属性`model`，然后传给子组件`ManufacturerForm`。
+
+
+            该组件在`addManufacturer`事件中将子组件传入的新制造商对象作为载荷分发到类型为`updateManufacturer`的`action`中，在`action`中进行异步操作修改后端对应的商品信息，然后将新对象提交到对应的`mutation`中进行本地状态修改，修改本地状态中的`manufacturer`对象。
       - file: src/pages/admin/Index.vue
         display: true
       - file: src/pages/admin/Manufacturers.vue
         display: true
+        explain:
+          pre: '`src/pages/admin/Manufacturers.vue`是展示本地所有制造商的组件。'
+          post: >-
+            这里直接在该组件被创建时分发到类型为`allManufacturers`的`actions`中，然后从后端获取所有制造商，最后保存到本地。
       - file: src/pages/admin/NewManufacturers.vue
         display: true
+        explain:
+          pre: '`src/pages/admin/NewManufacturers.vue`是添加制造商组件，和添加商品组件代码逻辑类似。'
+          post: 该组件逻辑代码与`New.vue`组件类似，一个是添加商品组件，一个是添加制造商组件，您可以对比着来看。
       - file: src/pages/admin/Products.vue
         display: true
+        explain:
+          pre: 我们再次来到`src/pages/admin/Products.vue`文件，对其做了一下修改。
+          post: 在该组件刚被创建时我们不再进行判，直接向后端发起请求获取商品数据，并保存到本地。
       - file: src/router/index.js
         display: true
       - file: src/store/actions.js
         display: true
+        explain:
+          pre: 我们再次来到`src/store/actions.js`文件中，对其进行进一步完善。
+          post: 这里我们导入了`mutation-types`文件中定义的一些常量对象，替换掉了对应的事件类型。
       - file: src/store/getters.js
         display: true
+        explain:
+          pre: >-
+            我们在`src/store/getters.js`文件的`manufacturerGetters
+            `对象中又添加了一个`manufacturerById`方法，用于获取本地中指定的制造商。
+          post: >-
+            `manufacturerById`方法中的id参数是Vue视图层通过方法调用时传入的id，通过这个id判断本地中是否存在该制造商，如果存在则返回该制造商，如果不存在则返回一个空对象。
       - file: src/store/index.js
         display: true
+        explain:
+          pre: 我们在`src/store/index.js`文件中又进行了完善。
+          post: 我们在`store`实例的`state`中又添加了一个`manufacturer`属性，并给了它一个默认值为空对象。
       - file: src/store/mutation-types.js
         display: true
+        explain:
+          pre: '`src/store/mutation-types.js`文件是定义一些常量对象来代替各种事件类型，并导出这些常量对象。'
       - file: src/store/mutations.js
         display: true
+        explain:
+          pre: 再次对`src/store/mutations.js`文件进行完善。
+          post: 这里我们导入了`mutation-types`文件中定义的一些常量对象，替换掉了对应的事件类型。
+    explain:
+      post: |-
+        ### 小结
+
+        这一部分我们主要是通过定义一些常量对象替换了所有的事件类型字符串。
   - name: 大量改进最后一步内容
     commit: 3d2a6b7
     diff:
       - file: build/webpack.base.conf.js
-        display: true
+        display: false
       - file: src/pages/Home.vue
         display: true
       - file: tuture-assets/142621576840065_.pic.jpg
-        display: true
+        display: false
       - file: tuture.yml
 description: >-
   Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
