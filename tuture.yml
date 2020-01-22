@@ -3,7 +3,7 @@ topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
 created: '2019-10-17T00:00:00.509Z'
-updated: 2020-01-10T06:38:47.964Z
+updated: 2020-01-22T14:05:03.027Z
 categories:
   - 前端
   - Vue
@@ -1611,6 +1611,8 @@ steps:
         display: true
         explain:
           pre: >-
+            ### 首先我们先来创建组件
+
             我们打开`src/components/products/ProductButton.vue`文件，它是用于操作商品在购物车中状态的按钮组件。
           post: >-
             该组件通过`v-if`判断`isAdding`是`true`还是`false`来决定创建加入购物车按钮还是从购物车移除按钮。`cart`数组是通过`this.$store.state.cart`从本地获取的。在`isAdding`中我们先令其为`true`，然后通过`cart`数组的`map`方法遍历数组，判断当前商品是否在购物车中，如果不在则`isAdding`为`true`，创建加入购物车按钮；如果在则`isAdding`为`false`，创建从购物车移除按钮。
@@ -1626,9 +1628,18 @@ steps:
       - file: src/components/products/ProductItem.vue
         display: true
         explain:
-          pre: >-
-            `src/components/products/ProductItem.vue`文件为商品信息组件，用来展示商品详细信息，并且注册了上面讲的按钮组件，改变商品在购物车中的状态。
-          post: 将父组件传入的`product`信息展示在模板中。
+          pre: >
+            ### 然后我们导入，注册并使用组件
+
+            `src/components/products/ProductItem.vue`文件为商品信息组件，用来展示商品详细信息，并且注册了上面讲的按钮组件，改变商品在购物车中的状态，除此之外我们还使用了之前创建好的`ProductButton`组件，实现对商品在购物车中的状态进行修改。
+
+            - 首先通过`import ProductButton from
+            './ProductButton'`导入创建好的`ProductButton`组件。
+
+            - 然后在`components`中注册组件。
+
+            - 最后在模板中使用该组件。
+          post: 将父组件传入的`product`对象展示到模板中，并将该`product`对象传到子组件`ProductButton`中。
       - file: src/components/products/ProductList.vue
         display: true
         explain:
@@ -1649,6 +1660,9 @@ steps:
     explain:
       pre: >-
         前面我们已经学习了如何使用`Vuex`进行状态管理，如何使用`Action`获取远程数据以及如何使用`Mutation`修改本地状态，实现了用户修改客户端数据的同时，同步更新后端数据，然后更新本地数据，最后进行重新渲染。这一节我们将使用`Vue`组件化的思想来简化复杂的页面逻辑。
+
+
+        所谓的`Vue`组件化思想就是将页面中某一部分的功能代码封装到一个单独的`.vue`文件中，这个单独的`.vue`文件就是一个组件。只要在该页面中导入并注册封装好的组件，我们就可以直接使用这个组件来代替这部分复杂的功能代码，从而简化了页面的复杂逻辑。
       post: |-
         ### 小结
 
@@ -1662,13 +1676,20 @@ steps:
     diff:
       - file: src/components/products/ProductDetail.vue
         display: true
+        explain:
+          pre: 我们首先创建了`src/components/products/ProductDetail.vue`组件，用于展示商品详情。
+          post: 该组件将父组件传入的`product`对象展示在了模板中，并复用了`ProductButton`组件。
       - file: src/components/products/ProductItem.vue
         display: true
+        explain:
+          pre: >-
+            再次进入`src/components/products/ProductItem.vue`文件中，我们对其进行了修改，将模板中的商品信息用`Vue`原生组件`router-link`包裹起来，实现商品信息可点击查看详情。
+          post: 该组件经过修改之后实现了点击商品的任何一条信息，都会触发路由跳转到商品详情页，并将该商品id通过动态路由的方式传递到详情页。
       - file: src/components/products/ProductList.vue
         display: true
         explain:
           pre: >-
-            我们又来到了`src/components/products/ProductList.vue`文件中，我们对其进行了修改，使用了Vuex
+            再次进入`src/components/products/ProductList.vue`文件，我们对其进行了修改，使用了Vuex
             Getters复用了本地数据获取逻辑。
           post: >-
             我们在计算属性`products`中使用`this.$store.getters.allProducts`属性访问的方式调用`getters`中的`allProducts`属性，我们也知道在对应的`getter`中获取到了本地中的`products`数组。
@@ -1694,11 +1715,14 @@ steps:
             我们通过`this.$store.getters.allProducts`属性访问的方式调用对应`getter`中的`allProducts`属性，并返回本地商品数组中的第一个商品。
       - file: src/router/index.js
         display: true
+        explain:
+          pre: 我们打开`src/router/index.js`文件，导入了`Detail `组件，并添加了对应的路由参数。
+          post: ''
       - file: src/store/index.js
         display: true
         explain:
           pre: >-
-            我们又来到了`src/store/index.js`文件，在这里我们添加了一些需要用到的`action`属性和`mutation`属性以及这一节的主角`getters`。
+            再进入`src/store/index.js`文件，我们添加了一些需要用到的`action`属性和`mutation`属性以及这一节的主角`getters`。
           post: >-
             这里主要添加了三部分内容：
 
@@ -1778,9 +1802,11 @@ steps:
         explain:
           pre: 我们又来到`src/pages/admin/Products.vue`文件，这里我们做了一些修改，将商品的详细信息放在表格中展示。
           post: >-
-            这部分代码逻辑与`src/pages/admin/Manufacturers.vue`组件中的代码逻辑相似，如果您理解了上面的代码逻辑，那么我相信您肯定也理解这部分代码逻辑，所以这里就不再赘述了。
+            这部分代码逻辑与`src/pages/admin/Manufacturers.vue`组件中的代码逻辑相似，如果您理解了上面的代码逻辑，那么我们相信您肯定也理解这部分代码，所以这里就不再赘述了。
       - file: src/router/index.js
         display: true
+        explain:
+          pre: 再次进入`src/router/index.js`文件，这里我们导入了制造商组件并增加了制造商相关路由参数。
       - file: src/store/getters.js
         display: true
         explain:
@@ -1955,6 +1981,8 @@ steps:
           post: 在该组件刚被创建时我们不再进行判，直接向后端发起请求获取商品数据，并保存到本地。
       - file: src/router/index.js
         display: true
+        explain:
+          pre: 再次进入`src/router/index.js`文件，导入了添加制造商和修改制造商的组件并增加相关路由参数。
       - file: src/store/actions.js
         display: true
         explain:
