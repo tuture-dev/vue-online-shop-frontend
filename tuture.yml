@@ -4,6 +4,7 @@ topics:
 id: 092faf468f0108b393159a8456de3e15
 created: '2019-10-17T00:00:00.509Z'
 updated: 2020-01-22T14:05:03.027Z
+updated: 2020-01-11T06:07:48.161Z
 categories:
   - 前端
   - Vue
@@ -24,6 +25,8 @@ splits:
     start: 6f2924b
     end: aca2bb6
     id: 0b662ce
+    created: '2019-10-17T00:00:00.509Z'
+    updated: 2019-12-11T06:07:48.161Z
     cover: tuture-assets/cover-1.jpg
   - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）
     description: >-
@@ -32,7 +35,21 @@ splits:
     start: b3771b6
     end: b3771b6
     id: 5e10a4665188253a800423a5
+    created: '2019-12-18T00:00:00.509Z'
+    updated: 2020-01-04T06:07:48.161Z
     cover: tuture-assets/cover-3.jpg
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）
+    description: >-
+      随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库 Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。
+    start: 4bc407e
+    end: b14d923
+    topics:
+      - Vue
+      - Vuex
+    id: ae8a389b0b6f1fb121a6881d2ec2544f
+    created: '2020-01-10T00:00:00.509Z'
+    updated: 2020-01-11T06:07:48.161Z
+    cover: tuture-assets/cover-4.jpg
 steps:
   - name: 快速入门
     commit: 6f2924b
@@ -1234,18 +1251,9 @@ steps:
     diff:
       - file: package-lock.json
       - file: package.json
-        display: true
+        display: false
         explain:
-          pre: |-
-            ### 安装依赖
-
-            首先我们打开命令行，进入项目目录，执行如下命令安装 Vuex:
-
-            ```shell
-            npm install vuex
-            ```
-
-            当安装完 `vuex` 之后，我们的 `package.json` 文件的 `dependencies` 多个一个 `vuex`：
+          pre: ''
       - file: src/store/index.js
         display: true
         explain:
@@ -1257,22 +1265,22 @@ steps:
             “数据库”，然后将所有的前端状态都保存在这个 “数据库” 里面。这个 “数据库” 其实就是一个普通的 JavaScript 对象。
 
 
-            好了，讲述了 Vuex 是干什么的了，我们来看一下如何在 Vue 中运用 Vuex。Vuex 建立的这个 “数据库” 一般用术语
-            `store` 来表示，通常我们建立一个单独的 `store` 文件夹，用于保存和 `store` 有关的内容，我们建立在 `src`
-            文件夹下建立 `store` 文件夹，然后在里面创建 `index.js` 文件，在里面编写如下内容：
+            好了，讲述了 Vuex 是干什么之后，我们来看一下如何在 Vue 中运用 Vuex。Vuex 建立的这个 “数据库” 一般用术语
+            `store` 来表示，通常我们建立一个单独的 `store` 文件夹，用于保存和 `store` 有关的内容。我们在 `src`
+            文件夹下建立 `store` 文件夹，然后在里面创建 `index.js` 文件，代码如下：
           post: >-
             上面的代码可以分为三部分。
 
 
-            - 首先我们导入 `vue` 和 `vuex` 。
+            - 首先我们导入 `Vue` 和 `Vuex`
 
-            - 然后我们调用 `Vue.use` 方法，告诉 Vue 我们将使用 `vuex`，这和我们之前使用 `Vue.use(router)`
-            的原理一样。
+            - 然后我们调用 `Vue.use` 方法，告诉 Vue 我们将使用 `Vuex`，这和我们之前使用 `Vue.use(router)`
+            的原理一样
 
-            - 最后我们导出 `Vuex.Store` 实例，并且传入了 `strict` 和 `state` 参数，这里 `strict`
-            参数表示，我们必须使用 Vuex 的 Mutation 方法来改变 `state`，否则就会报错（关于 Mutation 我们将在
-            “使用 Vuex 进行状态管理” 一节讲解）。而 `state` 参数用来存放我们全局的状态，比如我们这里定义了 `cart` 、
-            `showLoader` 等属性都是后面我们完善迷你淘宝的内容需要的数据。
+            - 最后我们导出 `Vuex.Store` 实例，并且传入了 `strict` 和 `state` 参数。这里 `strict`
+            参数表示，我们必须使用 Vuex 的 Mutation 函数来改变 `state`，否则就会报错（关于 Mutation 我们将在
+            “使用 Vuex 进行状态管理” 一节讲解）。而 `state` 参数用来存放我们全局的状态，比如我们这里定义了 `cart`、
+            `showLoader` 等属性都是后面我们完善应用的内容需要的数据。
       - file: src/main.js
         display: true
         explain:
@@ -1280,8 +1288,8 @@ steps:
             ### 将 Vuex 和 Vue 整合
 
 
-            当我们创建并导出了 Vuex 的 `store` 实例之后，我们需要使用它。打开 `main.js` 文件，在开头导出我们实例化的
-            `store` ，以及将 `store` 添加到 Vue 初始化的参数列表里：
+            当我们创建并导出了 Vuex 的 `store` 实例之后，我们就可以使用它了。打开 `src/main.js`
+            文件，在开头导入之前创建的 `store` ，并将 `store` 添加到 Vue 初始化的参数列表里，代码如下：
           post: >-
             可以看到，在上面的文件中，我们一开头导入了我们之前在 `src/store/index.js` 里定义的 `store` 实例，接着，在
             Vue 实例初始化时，我们将这个 `store` 实例使用对象属性简洁写法添加到了参数列表里。
@@ -1403,7 +1411,7 @@ steps:
             可以看到，上面的内容改进主要分为两个部分：
 
 
-            - 首先我们定义了一个 `product` 计算属性，它里面返回一个从 `store` 中保存的 `state`取到的
+            - 首先我们定义了一个 `product` 计算属性，它里面返回一个从 `store` 中保存的 `state` 取到的
             `products` 数组的第一个元素，注意到当我们在 “将 Vuex 和 Vue 整合” 这一小节中将 `store` 作为 Vue
             初始化实例参数，所以我们在所有的 Vue 组件中可以通过 `this.$store.state` 的形式取到 Vuex Store
             中保存的 `state`。
@@ -1414,9 +1422,23 @@ steps:
 
     explain:
       pre: >-
-        我们之前讲解了 Vue
-        的基础部分，你可以做一些比较简单的页面，但是针对复杂的应用，比如组件嵌套超过3级，我们前面讲解的知识处理起来就很费力了，还好 Vue
-        社区为我们打造了状态管理容器 Vuex，用来处理大型复杂的应用。
+        我们在[第一篇](https://tuture.co/2019/10/17/0b662ce/)和[第三篇](https://tuture.co/2019/10/17/5e10a46/)中讲解了
+        Vue
+        的基础部分，利用这些知识你已经可以实现一些比较简单的应用了。但是针对复杂的应用，比如组件嵌套超过三级，我们前面讲解的知识处理起来就很费力了，还好
+        Vue 社区为我们打造了状态管理容器 [Vuex](https://vuex.vuejs.org/zh/)，用来处理大型应用的数据和状态管理。
+
+
+        ### 安装 Vuex 依赖
+
+
+        首先我们打开命令行，进入项目目录，执行如下命令安装 Vuex:
+
+
+        ```shell
+
+        npm install vuex
+
+        ```
       post: >-
         ### 小结
 
@@ -1454,37 +1476,66 @@ steps:
             属性，在里面保存一开始我们的迷你电商平台的初始数据，这里我们是硬编码到代码中的，在下一节 “使用 Action
             获取远程数据”中，我们将动态获取后端服务器的数据。
 
-            - 接着我们在 Vuex.Store 实例化的参数中添加了一个 `mutations` 属性，在里面定义了两个方法
+            - 接着我们在 `Vuex.Store` 实例化的参数中添加了一个 `mutations` 属性，在里面定义了两个函数
             `ADD_TO_CART` 和
             `REMOVE_FROM_CART`，分别代表响应从视图层发起的对应将商品添加至购物车和从购物车移除商品的动作。
-          pre: 我们打开 `src/store/index.js` 文件，修改其中的 `state` 并加上 `mutations` 如下：
+          pre: |-
+            ### 初始化状态（硬编码）
+
+            我们打开 `src/store/index.js` 文件，修改其中的 `state` 并加上 `mutations` 如下：
       - file: src/components/products/ProductList.vue
         display: true
         explain:
           pre: >-
-            我们再来看`src/components/products/ProductList.vue`文件，它是商品列表组件，用来展示商品的详细信息。
+            ### 创建 ProductList 组件
+
+
+            接着创建 `src/components/products/ProductList.vue`
+            文件，它是商品列表组件，用来展示商品的详细信息，代码如下：
           post: >-
-            我们首先来看该组件的`script`部分，先定义了一个计算属性`products`，通过`this.$store.state.products`从本地状态中获取到了`products`数组，并作为计算属性`products`的返回值；除此之外还定义了一个点击事件`addToCart`，并且传入了当前处于激活状态的`product`参数。当用户点击`添加购物车`时，触发`addToCart`事件，也就是上面所说的视图层发出的事件。这里是通过`this.$store.commit`将携带当前商品的对象`{product}`作为载荷提交到类型为`ADD_TO_CART`的`mutation`中，在`mutation`中进行本地状态修改，我们会在后面抽离出的`mutations`文件中看到具体的操作。
+            我们首先来看该组件的 `script` 部分：
 
 
-            然后我们来看该组件的`template`部分，使用`v-for`将从本地获取到的`products`数组进行遍历，每个`product`对象的详细信息都会显示在模板中。在每个`product`对象信息的最后都添加了一个添加到购物的按钮，允许我们将指定商品添加到购物车。
+            - 先定义了一个计算属性 `products`，通过 `this.$store.state.products` 从本地状态中获取到了
+            `products` 数组，并作为计算属性 `products` 的返回值
+
+            - 然后定义了一个点击事件 `addToCart`，并且传入了当前处于激活状态的 `product`
+            参数。当用户点击“添加购物车”时，触发 `addToCart` 事件，也就是上面所说的视图层发出的事件。这里是通过 `this
+            .$store.commit` 将携带当前商品的对象 `{product}` 作为载荷提交到类型为`ADD_TO_CART`的
+            `mutation` 中，在 `mutation` 中进行本地状态修改，我们会在后面抽离出的 `mutations`
+            文件中看到具体的操作。
+
+
+            再看该组件的 `template` 部分，使用 `v-for` 将从本地获取到的 `products` 数组进行遍历，每个
+            `product` 对象的详细信息都会显示在模板中。此外，我们还在每个 `product`
+            对象信息的最后添加了一个“加入购物车”的按钮，允许我们将指定商品添加到购物车。
       - file: src/pages/Home.vue
         display: true
+        explain:
+          pre: |-
+            ### 在页面中接入数据
+
+            Store 和组件都搞定之后，我们就可以在之前的页面中接入数据了。修改主页 `src/pages/Home.vue`，代码如下：
+          post: 可以看到，我们在导入 `ProductList` 组件后，将其注册到 `components` 中，然后在模板中使用这个组件。
       - file: src/pages/Cart.vue
         display: true
         explain:
-          pre: 我们进入`src/pages/Cart.vue`文件添加如下代码，将购物车中的商品信息展示出来。
+          pre: 接着修改购物车页面 `src/pages/Cart.vue` 文件，将购物车中的商品信息展示出来，添加代码如下：
           post: >-
             我们在该组件中主要增加了两部分代码：
 
 
 
-            -
-            首先是`script`部分，我们增加了一个计算属性和一个点击事件。同样是通过`this.$store.state.cart`的方式从本地状态中获取购物车数组，并作为计算属性`cart`的返回值；当用户点击购物车中的某个商品将其移除购物车时就会触发`removeFromCart`事件，并且将要移除的商品id作为参数传入，然后也是通过`this.$store.commit`的方式将包含`productId`的对象作为载荷提交到类型为`REMOVE_FROM_CART`的`mutation`中，在`mutation`中进行本地状态修改，具体修改操作我们可以在后面抽离出的`mutations`文件中看到。
+            - 首先是 `script` 部分，我们增加了一个计算属性和一个点击事件。同样是通过 `this.$store.state.cart`
+            的方式从本地状态中获取购物车数组，并作为计算属性 `cart` 的返回值；当用户点击购物车中的某个商品将其移除购物车时就会触发
+            `removeFromCart` 事件，并且将要移除的商品 id 作为参数传入，然后也是通过 `this.$store.commit`
+            的方式将包含 `productId` 的对象作为载荷提交到类型为 `REMOVE_FROM_CART` 的 `mutation` 中，在
+            `mutation` 中进行本地状态修改，具体修改操作我们可以在后面抽离出的 `mutations` 文件中看到。
 
 
-            -
-            然后是`template`部分，我们通过`v-for`遍历了购物车数组，将购物车中的所有商品信息展示在模板中。并在每个商品信息的最后添加了一个移除购物车的按钮，当用户希望移除购物车中指定商品时，会触发`removeFromCart`事件。 
+            - 然后是 `template` 部分，我们通过 `v-for`
+            遍历了购物车数组，将购物车中的所有商品信息展示在模板中。并在每个商品信息的最后添加了一个移除购物车的按钮，当用户希望移除购物车中指定商品时，会触发
+            `removeFromCart` 事件。
       - file: src/pages/admin/New.vue
         display: false
     explain:
@@ -1492,11 +1543,14 @@ steps:
         我们在上一节中定义了 Vuex Store，并在里面保存了全局的状态 `state`，这一节我们来学习如何修改这一状态。
 
 
+        ### 理解 Mutation：修改状态的唯一手段
+
+
         Vuex 为我们提供了 `Mutation`，它是修改 Vuex Store 中保存状态的唯一手段。
 
 
-        Mutation 是定义在 Vuex Store 的 `mutation` 属性中的一系列方法，用于响应从 Vue
-        视图层发出来的事件或动作，一个 Mutation 是形如 `(state, payload) => newState` 的方法：
+        Mutation 是定义在 Vuex Store 的 `mutation` 属性中的一系列形如 `(state, payload) =>
+        newState` 的函数，用于响应从 Vue 视图层发出来的事件或动作，例如：
 
 
         ```JavaScript
@@ -1509,8 +1563,7 @@ steps:
         ```
 
 
-
-        其中方法名 `ACTION_NAME` 用于对应从视图层里面发出的事件或动作的名称，方法接收两个参数 `state` 和
+        其中方法名 `ACTION_NAME` 用于对应从视图层里面发出的事件或动作的名称，这个函数接收两个参数 `state` 和
         `payload`，`state` 就是我们 Vuex Store 中保存的 `state`，`payload`
         是被响应的那个事件或动作携带的参数，然后我们通过 `payload` 的参数来操作现有的 `state`，返回新的
         `state`，通过这样的方式，我们就可以响应修改 Vuex Store 中保存的全局状态。
@@ -1518,92 +1571,182 @@ steps:
 
         了解了 Mutation 的概念之后，我们马上来看一下如何运用它。
       post: >
+        ### 查看效果
+
+
+        在项目根目录下运行 `npm start`，进入开发服务器查看效果：
+
+
+        ![](tuture-assets/mutation-demo.gif)
+
+
+        可以看到，一开始我们的购物车是空的，然后随便选了两款手机，点击“加入购物车”，然后就可以在购物车页面看到了！我们还可以将购物车中的商品移除。
+
+
         ### 小结
 
 
         在这一部分中我们学习了如何发起修改本地状态的“通知”：
 
-        - 首先我们需要在 Vuex.Store 实例化的参数中添加一个 `mutations`
-        属性，在该属性中添加对应的方法，比如`ADD_TO_CART`和`REMOVE_FROM_CART`。
+        - 首先我们需要在 `Vuex.Store` 实例化的参数中添加一个 `mutations` 属性，在该属性中添加对应的方法，比如
+        `ADD_TO_CART` 和 `REMOVE_FROM_CART`。
 
-        -
-        然后我们需要通过用户不同的操作（比如点击添加购物车或者移除购物车）来发起“通知”，进而通过`this.$store.commit`的方式将需要操作的对象作为载荷提交到对应类型（也就是`ADD_TO_CART`和`REMOVE_FROM_CART`）的`mutation`中，在`mutation`中进行本地状态修改。
+        - 然后我们需要通过用户不同的操作（比如点击添加购物车或者移除购物车）来发起“通知”，进而通过 `this.$store.commit`
+        的方式将需要操作的对象作为载荷提交到对应类型（也就是 `ADD_TO_CART` 和 `REMOVE_FROM_CART`）的
+        `mutation` 中，在 `mutation` 中进行本地状态修改。
   - name: 使用 Action 获取远程数据
     commit: b14d923
     diff:
       - file: package-lock.json
       - file: package.json
+        display: false
+      - file: src/store/index.js
         display: true
+        explain:
+          pre: |-
+            ### 实现第一个 Action
+
+            让我们趁热打铁，实现第一个 Action。再次来到 `src/store/index.js` 文件，修改代码如下：
+          post: >+
+            可以看到，我们做了以下几件事：
+
+
+            1. 导入了 `axios`，并定义了 `API_BASE` 后端接口根路由；
+
+            2. 我们在 `store` 中去掉了之前硬编码的假数据，使 `products` 默认值为空数组；
+
+            3. 然后在 `mutations` 属性中添加了 `ALL_PRODUCTS` 和 `ALL_PRODUCTS_SUCCESS`
+            方法，用来响应 `action` 中提交的对应类型事件；`ALL_PRODUCTS` 将 `state.showLoader` 设为
+            `true`，显示加载状态；`ALL_PRODUCTS_SUCCESS` 将 `action` 中提交的数据保存到 `state`
+            中，并取消加载状态；
+
+            4. 最后添加了 `actions` 属性，在 `actions` 属性中定义了 `allProducts`
+            函数用于响应视图层分发的对应类型的事件；我们首先提交了类型为 `ALL_PRODUCTS` 的 `mutation` ，接着在
+            `axios` 请求成功后提交 `ALL_PRODUCTS_SUCCESS`，并附带 `products` 数据体（`payload`）
+
+
+
+            ::: info
+
+            **提示**
+
+
+            我们可以看到 `allProducts` 方法中传入了 `{ commit }` 参数，这是采用了解构赋值的方式 `const {
+              commit } = context`，避免后面使用 `context.commit` 过于繁琐。
+            :::
+
       - file: src/components/products/ProductList.vue
         display: true
         explain:
           pre: >-
-            再来看`src/components/products/ProductList.vue`文件，我们对其做了修改，主要添加了生命周期函数`created`，在该组件刚被创建时首先判断本地`products`中是否有商品，如果没有就向后端发起网络请求获取数据。
+            ### 更新 ProductList 组件
+
+
+            再来看 `src/components/products/ProductList.vue`
+            文件，我们对其做了修改，主要添加了生命周期函数 `created`，在该组件刚被创建时首先判断本地 `products`
+            中是否有商品，如果没有就向后端发起网络请求获取数据。代码如下：
           post: >-
-            `ProductList.vue`组件是用来展示本地中的商品信息，在该组件刚被创建时判断`this.products.length
-            ===
-            0`是`true`还是`false`，如果是`true`则证明本地中还没有任何商品，需要向后端获取商品数据，于是通过`this.$store.dispatch`的方式触发类型为`allProducts`的`action`中，在`action`中进行异步操作，发起网络请求向后端请求商品数据并返回；如果是`false`则证明本地中存在商品，所以可以直接从本地获取然后进行渲染。
+            注意到我们修改了两个地方：
+
+
+            - 调整模板中“生产厂商”字段，把 `{{product.manufacturer}}` 修改为
+            `{{product.manufacturer.name}}`
+
+            - 添加 `created` 生命周期方法，在该组件刚被创建时判断 `this.products.length === 0` 是
+            `true` 还是 `false`，如果是 `true` 则证明本地中还没有任何商品，需要向后端获取商品数据，于是通过
+            `this.$store.dispatch` 的方式触发类型为 `allProducts` 的 `action` 中，在
+            `action` 中进行异步操作，发起网络请求向后端请求商品数据并返回；如果是 `false`
+            则证明本地中存在商品，所以可以直接从本地获取然后进行渲染。
       - file: src/pages/Cart.vue
         display: true
-      - file: src/store/index.js
-        display: true
         explain:
-          pre: 再次来到`src/store/index.js`文件，我们对其进行了修改，加入`Action`需要的相关依赖和配置。
-          post: |2-
-             首先我们添加了`Action`的相关依赖，导入了 `axios` 和 `API_BASE`。`axios` 是基于 `promise` 的 `HTTP`库，其实就是通过 `promise` 实现对 `ajax` 技术的一种封装，用于向后端发送网络请求；`API_BASE`是我们定义的基础接口。
-
-             然后我们在`store`实例中的`mutations`属性中添加了`ALL_PRODUCTS`和`ALL_PRODUCTS_SUCCESS`方法，用来响应`action`中提交的对应类型事件。除此之外我们添加了`actions`属性，在`actions`属性中定义了`allProducts`方法用于响应视图层分发的对应类型的事件。
-
-
-              - 我们可以看到`allProducts`方法中传入了`{ commit }`参数，这是采用了解构赋值的方式`const { 
-              commit } = context`，避免后面使用`context.commit`过于繁琐。
-              - 在发送网络请求之前我们进行了一次提交，提交到了类型为`ALL_PRODUCTS`的`mutation`中，在 
-              `mutation`中`state.showLoader = true;`表示显示加载状态。
-              - 开始发送网络请求，我们将从后端获取远程数据，并将响应的数据放在一个对象中作为载荷提交 
-              到类型为`ALL_PRODUCTS_SUCCESS`的`mutation`中，在`mutation`中设置`state.showLoader = 
-              true;`表示数据加载完成，并将`action`中提交的数据保存到本地，完成本地数据的更新。
+          pre: 最后我们也同样需要调整一下 `src/pages/Cart.vue` 中的“生产厂商”字段，修改其模板代码如下：
+          post: '同样把 `{{product.manufacturer}}` 修改为 `{{product.manufacturer.name}}`。'
     explain:
       pre: >-
-        我们在上一节中学习了如何在视图层发起本地状态修改的“通知”，这一节我们来学习如何从后端获取远程数据。
+        我们在上一节中学习了如何在视图层发起本地状态修改的“通知”，这一节我们来学习如何从后端获取远程数据。请求库我们采用的是
+        [axios](https://www.npmjs.com/package/axios)，通过以下命令安装依赖：
 
 
-        Vuex 为我们提供了
-        `Action`，它是用来进行异步操作，我们可以在这里向后端发起网络数据请求，并将请求到的数据提交到对应的`mutation`中。
+        ```bash
+
+        npm install axios
+
+        ```
 
 
-        Action是定义在 Vuex Store 的 `action` 属性中的一系列方法，用于响应从 Vue 视图层分发出来的事件或动作，一个
-        Action是形如 `(context, payload) =>response.data` 的方法：
+        ### 理解 Action：异步操作
+
+
+        Vuex 为我们提供了 `Action`，它是用来进行异步操作，我们可以在这里向后端发起网络数据请求，并将请求到的数据提交到对应的
+        `mutation` 中。
+
+
+        Action 是定义在 Vuex Store 的 `action` 属性中的一系列方法，用于响应从 Vue 视图层分发出来的事件或动作，一个
+        Action 是形如 `(context, payload) => response.data` 的函数：
 
 
         ```JavaScript
 
         productById(context, payload) {
-            //进行异步操作，从后端获取远程数据并返回
-            return  response.data;
-          }
+          // 进行异步操作，从后端获取远程数据并返回
+          return response.data;
+        }
+
         ```
 
 
-        其中方法名`productById`用于对应从视图层里面分发出的事件或动作的名称，方法接收两个参数 `context` 和 `payload`，
-        `context`指的是 `action`的上下文，与`store`实例具有相同的方法和属性，因此我们可以调用
-        `context.commit`提交一个 `mutation`，或者通过 `context.state`和
-        `context.getters`来获取 `state`和 `getters`，但是 `context`对象又不是`store`实例本身。
-        `payload`是分发时携带的参数，然后我们通过
-        `payload`中的参数来进行异步操作，从而获取后端响应数据并返回。这样我们就可以根据用户的操作同步更新后端数据，并将后端响应的数据提交给
-        `mutation`，然后利用 `mutation`进行本地数据更新。
+        其中：
+
+
+        - 函数名 `productById` 用于对应从视图层里面分发出的事件或动作的名称
+
+        - 函数接收两个参数 `context` 和 `payload`
+
+        - `context` 指的是 `action` 的上下文，与 `store` 实例具有相同的方法和属性，因此我们可以调用
+        `context.commit` 提交一个 `mutation`，或者通过
+         `context.state` 和 `context.getters` 来获取 `state` 和 `getters`，但是 `context` 对象又不是 `store` 实例本身
+        - `payload` 是分发时携带的参数，然后我们通过 `payload`
+        中的参数来进行异步操作，从而获取后端响应数据并返回。这样我们就可以根据用户的操作同步更新后端数据，并将后端响应的数据提交给
+        `mutation`，然后利用
+         `mutation` 进行本地数据更新。
       post: >-
+        ### 查看效果
+
+
+        在测试这一步效果之前，首先确保 MongoDB 和后端 API
+        服务器已经开启。同时，如果你之前没有在[第二篇教程](https://tuture.co/2019/10/21/cb08dc8/)中测试过，很有可能你的数据库是空的，那么可以下载我们提供的
+        MongoDB JSON 数据文件
+        [manufacturers.json](https://raw.githubusercontent.com/tuture-dev/vue-online-shop-backend/master/data/manufacturers.json)
+        和
+        [products.json](https://raw.githubusercontent.com/tuture-dev/vue-online-shop-backend/master/data/products.json)，然后运行以下命令：
+
+
+        ```bash
+
+        mongoimport -d test -c manufacturers manufacturers.json
+
+        mongoimport -d test -c products products.json
+
+        ```
+
+
+        然后再进入前端测试，你应该就可以看到从后台获取到的数据，然后同样可以添加到购物车哦！
+
+
         ### 小结
 
 
-        在这一部分中我们学习了如何使用`Action`获取远程数据，并将获取的数据提交到对应的`Mutation`中：
+        在这一部分中我们学习了如何使用 `Action` 获取远程数据，并将获取的数据提交到对应的 `Mutation` 中：
 
 
-        - 首先我们需要导入相关依赖： `axios` 和 `API_BASE`，由于发起网络请求。
+        - 首先我们需要导入相关依赖：`axios` 和 `API_BASE`，由于发起网络请求。
 
-        - 其次我们需要在`store`实例中添加`actions`属性，并在`actions`属性定义对应的方法，用于响应视图层分发的对应类型的事件。
+        - 其次我们需要在 `store` 实例中添加 `actions` 属性，并在 `actions`
+        属性定义对应的方法，用于响应视图层分发的对应类型的事件。
 
-        -
-        在不同的方法中发起不同的网络请求，你是需要从后端获取数据，还是修改后端数据等等。然后将后端响应的数据结果提交到对应类型的`mutation`中。
+        - 在不同的方法中发起不同的网络请求，你是需要从后端获取数据，还是修改后端数据等等。然后将后端响应的数据结果提交到对应类型的
+        `mutation` 中。
   - name: 使用 Vue 组件简化页面逻辑
     commit: 6f96d15
     diff:
@@ -1659,10 +1802,15 @@ steps:
             这里也是首先导入并注册子组件`ProductItem`，然后在模板中挂载子组件。通过`this.$store.state.cart`的方式从本地获取购物车数组，并返回给计算属性`cart`。在模板中通过`v-for`遍历购物车数组，并将购物车中每个商品对象传给对应的子组件`ProductItem`，通过子组件来展示对应的商品信息。
     explain:
       pre: >-
+<<<<<<< HEAD
         前面我们已经学习了如何使用`Vuex`进行状态管理，如何使用`Action`获取远程数据以及如何使用`Mutation`修改本地状态，实现了用户修改客户端数据的同时，同步更新后端数据，然后更新本地数据，最后进行重新渲染。这一节我们将使用`Vue`组件化的思想来简化复杂的页面逻辑。
 
 
         所谓的`Vue`组件化思想就是将页面中某一部分的功能代码封装到一个单独的`.vue`文件中，这个单独的`.vue`文件就是一个组件。只要在该页面中导入并注册封装好的组件，我们就可以直接使用这个组件来代替这部分复杂的功能代码，从而简化了页面的复杂逻辑。
+=======
+        前面我们已经学习了如何使用 `Vuex` 进行状态管理，如何使用`Action`获取远程数据以及如何使用 `Mutation`
+        修改本地状态，实现了用户修改客户端数据的同时，同步更新后端数据，然后更新本地数据，最后进行重新渲染。这一节我们将使用`Vue`组件化的思想来简化复杂的页面逻辑。
+>>>>>>> 5375abcb493fb4998ffcbf79fec5c812135eb437
       post: |-
         ### 小结
 
