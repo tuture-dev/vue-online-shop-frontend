@@ -39,7 +39,8 @@ splits:
     cover: tuture-assets/cover-3.jpg
   - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）
     description: >-
-      随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库 Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。
+      随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库
+      Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。
     start: 4bc407e
     end: b14d923
     topics:
@@ -2168,6 +2169,14 @@ steps:
         display: true
       - file: tuture-assets/142621576840065_.pic.jpg
         display: false
+      - file: tuture.yml
+  - name: 合并冲突
+    commit: 82b303e
+    diff:
+      - file: tuture.yml
+  - name: 解决冲突2
+    commit: 37f901e
+    diff:
       - file: tuture.yml
 description: >-
   Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
