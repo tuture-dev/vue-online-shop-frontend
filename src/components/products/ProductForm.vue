@@ -113,7 +113,6 @@ export default {
   props: ["model", "manufacturers", "isEditing"],
   created() {
     const product = this.model;
-
     this.modelData = { ...product, manufacturer: { ...product.manufacturer } };
   },
   watch: {
@@ -123,6 +122,8 @@ export default {
   },
   methods: {
     onSubmit() {
+      const manufacturer = this.manufacturers.find(item => item.name === this.modelData.manufacturer.name);
+      this.modelData.manufacturer = manufacturer;
       this.$emit("save-product", this.modelData);
     }
   }

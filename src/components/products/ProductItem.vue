@@ -56,12 +56,6 @@ export default {
     console.log(this.products);
   },
   props: ['products'],
-  // data() {
-  //   return {
-  //     height="tableHeight"
-  //     tableHeight: window.innerHeight - 200
-  //   }
-  // },
   components: {
     'product-button': ProductButton,
   }
