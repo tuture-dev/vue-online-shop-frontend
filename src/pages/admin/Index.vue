@@ -2,7 +2,8 @@
   <div>
     <div class="admin-new">
       <div class="container">
-        <router-view></router-view>
+        <h1>In Admin</h1>
+        <router-view/>
       </div>
     </div>
   </div>

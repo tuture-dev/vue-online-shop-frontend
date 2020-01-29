@@ -74,6 +74,7 @@ export const productActions = {
       commit(ADD_PRODUCT_SUCCESS, {
         product: response.data,
       })
+      console.log(response.data);
     })
   }
 };

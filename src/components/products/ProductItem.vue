@@ -2,8 +2,7 @@
   <div class="products">
     <el-table
     class="table"
-    :data="products"
-    max-height="250">
+    :data="products">
       <el-table-column
         prop="name"
         label="产品名称"
@@ -49,7 +48,25 @@
     <product-button :product="product"></product-button>
   </div> -->
 </template>
-
+<script>
+import ProductButton from './ProductButton';
+export default {
+  name: 'product-item',
+  mounted() {
+    console.log(this.products);
+  },
+  props: ['products'],
+  // data() {
+  //   return {
+  //     height="tableHeight"
+  //     tableHeight: window.innerHeight - 200
+  //   }
+  // },
+  components: {
+    'product-button': ProductButton,
+  }
+}
+</script>
 <style>
 .products {
   padding-top: 10px;
@@ -68,14 +85,3 @@
   width: 50%;
 } */
 </style>
-
-<script>
-import ProductButton from './ProductButton';
-export default {
-  name: 'product-item',
-  props: ['products'],
-  components: {
-    'product-button': ProductButton,
-  }
-}
-</script>

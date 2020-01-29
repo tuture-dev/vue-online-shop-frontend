@@ -27,6 +27,7 @@ export default {
   },
   methods: {
     addProduct(model) {
+      console.log(model);
       this.$store.dispatch('addProduct', {
         product: model,
       })
