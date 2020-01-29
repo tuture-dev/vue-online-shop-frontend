@@ -2,10 +2,10 @@
   <div class="productInfo">
     <el-form class="form" ref="form" label-width="180px">
       <el-form-item label="Name">
-        <el-input v-model="model.name"></el-input>
+        <el-input v-model="modelData.name"></el-input>
       </el-form-item>
       <el-form-item label="Price">
-        <el-input v-model="model.price"></el-input>
+        <el-input v-model="modelData.price"></el-input>
       </el-form-item>
       <el-form-item label="Manufacturer ">
         <el-select
@@ -23,10 +23,10 @@
         </el-select>
       </el-form-item>
       <el-form-item label="Image ">
-        <el-input v-model="model.image"></el-input>
+        <el-input v-model="modelData.image"></el-input>
       </el-form-item>
       <el-form-item label="Description ">
-        <el-input type="textarea" v-model="model.description"></el-input>
+        <el-input type="textarea" v-model="modelData.description"></el-input>
       </el-form-item>
       <el-form-item>
         <el-button v-if="isEditing" type="primary" @click="onSubmit"

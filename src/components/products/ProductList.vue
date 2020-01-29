@@ -5,7 +5,7 @@
         This is ProductList
       </div>
       <!-- <template v-for="product in products"> -->
-        <product-item :products="products"></product-item>
+      <product-item :products="products"></product-item>
       <!-- </template> -->
     </div>
   </div>
