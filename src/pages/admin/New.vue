@@ -12,7 +12,7 @@ import ProductForm from '@/components/products/ProductForm.vue';
 export default {
   data() {
     return {
-      model: {manufacturer:{name: ''}}
+      model: {manufacturer:{name: '', _id: ''}}
     }
   },
   created() {
