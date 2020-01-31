@@ -72,7 +72,7 @@ export const productActions = {
     axios.put(`${API_BASE}/products/${product._id}`, product)
     .then(response => {
       commit(UPDATE_PRODUCT_SUCCESS, {
-        product: response.data,
+        product: product,
       });
       Message({
         message: '恭喜你，商品更新成功！',
@@ -149,7 +149,7 @@ export const manufacturerActions = {
     axios.put(`${API_BASE}/manufacturers/${manufacturer._id}`, manufacturer)
     .then(response => {
       commit(UPDATE_MANUFACTURER_SUCCESS, {
-        manufacturer: response.data,
+        manufacturer: manufacturer,
       });
       Message({
         message: '恭喜你，制造商更新成功！',
