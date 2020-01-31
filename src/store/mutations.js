@@ -60,13 +60,14 @@ export const productMutations = {
 
     const { product: newProduct } = payload;
     state.product = newProduct;
-    state.products = state.products.map(product => {
+    state.products = state.products.map( product => {
       if (product._id === newProduct._id) {
         return newProduct;
       }
-
       return product;
-    })
+    });
+
+    state.product = newProduct;
   },
   [ADD_PRODUCT](state) {
     state.showLoader = true;
@@ -137,9 +138,10 @@ export const manufacturerMutations = {
       if (manufacturer._id === newManufacturer._id) {
         return newManufacturer;
       }
-
       return manufacturer;
     });
+
+    state.manufacturer = newManufacturer;
   },
   [ADD_MANUFACTURER](state) {
     state.showLoader = true;

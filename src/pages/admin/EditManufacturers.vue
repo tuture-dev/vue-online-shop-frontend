@@ -24,9 +24,9 @@ export default {
     }
   },
   methods: {
-    addManufacturer(model) {
+    addManufacturer(newManufacturer) {
       this.$store.dispatch('updateManufacturer', {
-        manufacturer: model,
+        manufacturer: newManufacturer,
       })
     },
   },

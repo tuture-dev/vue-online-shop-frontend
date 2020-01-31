@@ -40,9 +40,9 @@ export default {
     }
   },
   methods: {
-    updateProduct(product) {
+    updateProduct(newProduct) {
       this.$store.dispatch("updateProduct", {
-        product
+        product: newProduct,
       });
     }
   },
