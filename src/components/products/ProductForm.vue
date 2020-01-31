@@ -1,6 +1,13 @@
 <template>
   <div class="productInfo">
-    <el-form class="form" ref="form" label-width="180px">
+    <el-form 
+    class="form" 
+    ref="form" 
+    label-width="180px"
+    v-loading="loading"
+    element-loading-text="拼命加载中"
+    element-loading-spinner="el-icon-loading"
+    element-loading-background="rgba(0, 0, 0, 0.8)">
       <el-form-item label="Name">
         <el-input v-model="modelData.name"></el-input>
       </el-form-item>
@@ -29,7 +36,7 @@
         <el-input type="textarea" v-model="modelData.description"></el-input>
       </el-form-item>
       <el-form-item>
-        <el-button v-if="isEditing" type="primary" @click="onSubmit"
+        <el-button v-if="isEditing" type="primary" native-type="submit" @click="onSubmit"
           >Update Product</el-button
         >
         <el-button v-else @click="onSubmit">Add Product</el-button>
@@ -120,10 +127,27 @@ export default {
       this.modelData = val;
     }
   },
+  computed: {
+    loading() {
+      return this.$store.state.showLoader
+    }
+  },
+  // updated() {
+  //   // 等待后端完成商品信息的同步更新，设置loading为false
+  //   const newProductName = this.$store.getters.productById(this.model._id);
+  //   const isLoaded = this.modelData.name === newProductName;
+  //   if(isLoaded) {
+  //     this.loading = false;
+  //   }
+  // },
   methods: {
     onSubmit() {
+      // 由于表单中只绑定了modelData.manufacturer.name，
+      // 缺少manufacturer._id,但是后端需要manufacturer整个对象,
+      // 所以需要将manufacturers中对应的manufacturer找出并覆盖到modelData中
       const manufacturer = this.manufacturers.find(item => item.name === this.modelData.manufacturer.name);
       this.modelData.manufacturer = manufacturer;
+      
       this.$emit("save-product", this.modelData);
     }
   }
