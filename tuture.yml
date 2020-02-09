@@ -3,7 +3,7 @@ topics:
   - Vue
 id: 092faf468f0108b393159a8456de3e15
 created: '2019-10-17T00:00:00.509Z'
-updated: 2020-01-22T14:05:03.027Z
+updated: 2020-02-10T01:26:46.165Z
 categories:
   - 前端
   - Vue
@@ -25,7 +25,7 @@ splits:
     end: aca2bb6
     id: 0b662ce
     created: '2019-10-17T00:00:00.509Z'
-    updated: 2019-12-11T06:07:48.161Z
+    updated: '2019-12-11T06:07:48.161Z'
     cover: tuture-assets/cover-1.jpg
   - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）
     description: >-
@@ -35,11 +35,12 @@ splits:
     end: b3771b6
     id: 5e10a4665188253a800423a5
     created: '2019-12-18T00:00:00.509Z'
-    updated: 2020-01-04T06:07:48.161Z
+    updated: '2020-01-04T06:07:48.161Z'
     cover: tuture-assets/cover-3.jpg
   - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）
     description: >-
-      随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库 Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。
+      随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库
+      Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。
     start: 4bc407e
     end: b14d923
     topics:
@@ -47,8 +48,22 @@ splits:
       - Vuex
     id: ae8a389b0b6f1fb121a6881d2ec2544f
     created: '2020-01-10T00:00:00.509Z'
-    updated: 2020-01-11T06:07:48.161Z
+    updated: '2020-01-11T06:07:48.161Z'
     cover: tuture-assets/cover-4.jpg
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（五）
+    description: >-
+      组件化和逻辑复用能帮助写出简洁易懂的代码，随着应用越写越复杂，我们有必要把视图层中重复的逻辑抽成组件，以求在多个页面中复用；同时对于 Vuex
+      端，Store 中的逻辑也会越来越臃肿，我们有必要使用 Vuex 提供的 Getters 来复用本地数据获取逻辑。在这篇教程中，我们将带领你抽出
+      Vue 组件简化页面逻辑，使用 Vuex Getters 复用本地数据获取逻辑。
+    start: 6f96d15
+    end: c999bac
+    topics:
+      - Vue
+      - Vuex
+    id: 6f96d15
+    created: '2020-02-11T00:00:00.509Z'
+    updated: '2020-02-11T06:07:48.161Z'
+    cover: tuture-assets/cover-5.jpg
 steps:
   - name: 快速入门
     commit: 6f2924b
@@ -1753,25 +1768,32 @@ steps:
         display: true
         explain:
           pre: >-
-            ### 首先我们先来创建组件
+            ### 实现 ProductButton 组件
 
-            我们打开`src/components/products/ProductButton.vue`文件，它是用于操作商品在购物车中状态的按钮组件。
+
+            我们打开 `src/components/products/ProductButton.vue`
+            文件，它是用于操作商品在购物车中状态的按钮组件，代码如下：
           post: >-
-            该组件通过`v-if`判断`isAdding`是`true`还是`false`来决定创建加入购物车按钮还是从购物车移除按钮。`cart`数组是通过`this.$store.state.cart`从本地获取的。在`isAdding`中我们先令其为`true`，然后通过`cart`数组的`map`方法遍历数组，判断当前商品是否在购物车中，如果不在则`isAdding`为`true`，创建加入购物车按钮；如果在则`isAdding`为`false`，创建从购物车移除按钮。
+            该组件通过 `v-if` 判断 `isAdding` 是否为 `true` 来决定创建加入购物车按钮还是从购物车移除按钮。`cart`
+            数组是通过 `this.$store.state.cart` 从本地获取的。在 `isAdding` 中我们先令其为
+            `true`，然后通过 `cart` 数组的 `map` 方法遍历数组，判断当前商品是否在购物车中，如果不在则 `isAdding` 为
+            `true`，创建加入购物车按钮；如果在则 `isAdding` 为 `false`，创建从购物车移除按钮。
 
 
-            对应的两个按钮添加了两个点击事件：`addToCart`和`removeFromCart`
+            对应的两个按钮添加了两个点击事件：`addToCart` 和`removeFromCart`
 
-            -
-            当点击加入购物车按钮时触发`addToCart`，我们通过`this.$store.commit`的方式将包含当前商品的对象作为载荷直接提交到类型为`ADD_TO_CART`的`mutation`中，将该商品添加到本地购物车中。
+            - 当点击加入购物车按钮时触发 `addToCart`，我们通过 `this.$store.commit`
+            的方式将包含当前商品的对象作为载荷直接提交到类型为 `ADD_TO_CART` 的 `mutation`
+            中，将该商品添加到本地购物车中。
 
             -
             当点击从购物车移除按钮时触发`removeFromCart`，我们也是通过`this.$store.commit`的方式将包含当前商品id的对象作为载荷直接提交到类型为`REMOVE_FROM_CART`的`mutation`中，将该商品从本地购物车中移除。
       - file: src/components/products/ProductItem.vue
         display: true
         explain:
-          pre: >
-            ### 然后我们导入，注册并使用组件
+          pre: >-
+            ### 实现 ProductItem 组件
+
 
             `src/components/products/ProductItem.vue`文件为商品信息组件，用来展示商品详细信息，并且注册了上面讲的按钮组件，改变商品在购物车中的状态，除此之外我们还使用了之前创建好的`ProductButton`组件，实现对商品在购物车中的状态进行修改。
 
@@ -1781,36 +1803,56 @@ steps:
             - 然后在`components`中注册组件。
 
             - 最后在模板中使用该组件。
-          post: 将父组件传入的`product`对象展示到模板中，并将该`product`对象传到子组件`ProductButton`中。
+
+
+            代码如下：
+          post: 可以看到，我们将父组件传入的`product`对象展示到模板中，并将该`product`对象传到子组件`ProductButton`中。
       - file: src/components/products/ProductList.vue
         display: true
         explain:
           pre: >-
-            `src/components/products/ProductList.vue`是商品列表组件，用来展示本地中的所有商品。使用了`ProductItem`组件简化了该组件模板中的复杂逻辑。
+            ### 重构 ProductList 组件
+
+
+            有了 ProductButton 和 ProductItem，我们便可以来重构之前略显臃肿的 ProductList 组件了，修改
+            `src/components/products/ProductList.vue`，代码如下：
           post: >-
             这部分代码是将之前展示商品信息的逻辑代码封装到了子组件`ProductItem`中，然后导入并注册子组件`ProductItem`，再将子组件挂载到模板中。
 
 
-            通过`this.$store.state.products`从本地获取`products`数组，并返回给计算属性`products`。然后在模板中利用`v-for`遍历`products`数组，并将每个`product`对象传给每个子组件`ProductItem`，在每个子组件中展示对应的商品信息。
+            可以看到，我们通过`this.$store.state.products`从本地获取`products`数组，并返回给计算属性`products`。然后在模板中利用`v-for`遍历`products`数组，并将每个`product`对象传给每个子组件`ProductItem`，在每个子组件中展示对应的商品信息。
       - file: src/pages/Cart.vue
         display: true
         explain:
           pre: >-
-            `src/pages/Cart.vue`是购物车组件，是用来展示购物车中所有商品的信息，这里也使用了子组件`ProductItem`简化了页面逻辑。
+            ### 重构 Cart 组件
+
+
+            最后，我们重构一波购物车组件
+            `src/pages/Cart.vue`，也使用了子组件`ProductItem`简化了页面逻辑，修改代码如下：
           post: >-
             这里也是首先导入并注册子组件`ProductItem`，然后在模板中挂载子组件。通过`this.$store.state.cart`的方式从本地获取购物车数组，并返回给计算属性`cart`。在模板中通过`v-for`遍历购物车数组，并将购物车中每个商品对象传给对应的子组件`ProductItem`，通过子组件来展示对应的商品信息。
     explain:
       pre: >-
-        前面我们已经学习了如何使用`Vuex`进行状态管理，如何使用`Action`获取远程数据以及如何使用`Mutation`修改本地状态，实现了用户修改客户端数据的同时，同步更新后端数据，然后更新本地数据，最后进行重新渲染。这一节我们将使用`Vue`组件化的思想来简化复杂的页面逻辑。
+        在前面的教程中，我们已经学习了如何使用 Vuex 进行状态管理，如何使用 Action 获取远程数据以及如何使用 Mutation
+        修改本地状态，实现了用户修改客户端数据的同时，同步更新后端数据，然后更新本地数据，最后进行重新渲染。
 
 
-        所谓的`Vue`组件化思想就是将页面中某一部分的功能代码封装到一个单独的`.vue`文件中，这个单独的`.vue`文件就是一个组件。只要在该页面中导入并注册封装好的组件，我们就可以直接使用这个组件来代替这部分复杂的功能代码，从而简化了页面的复杂逻辑。
-        前面我们已经学习了如何使用 `Vuex` 进行状态管理，如何使用`Action`获取远程数据以及如何使用 `Mutation`
-        修改本地状态，实现了用户修改客户端数据的同时，同步更新后端数据，然后更新本地数据，最后进行重新渲染。这一节我们将使用`Vue`组件化的思想来简化复杂的页面逻辑。
+        这一节我们将进一步通过 Vue 组件化的思想简化复杂的页面逻辑。
       post: |-
+        把项目开起来，查看商品列表，可以看到每个商品下面都增加了“添加到购物车”按钮：
+
+        ![](tuture-assets/image-20200209224837926.png)
+
+        购物车中，也有了“移出购物车”按钮：
+
+        ![](tuture-assets/WX20200209-225009@2x.png)
+
+        尽情地买买买吧！
+
         ### 小结
 
-        这一节我们学习了如何使用Vue组件来简化页面逻辑：
+        这一节我们学习了如何使用 Vue 组件来简化页面逻辑：
 
         - 首先我们需要通过`import`的方式导入子组件。
         - 然后在`components`中注册子组件。
@@ -1818,57 +1860,18 @@ steps:
   - name: 使用 Vuex Getters 复用本地数据获取逻辑
     commit: c999bac
     diff:
-      - file: src/components/products/ProductDetail.vue
-        display: true
-        explain:
-          pre: 我们首先创建了`src/components/products/ProductDetail.vue`组件，用于展示商品详情。
-          post: 该组件将父组件传入的`product`对象展示在了模板中，并复用了`ProductButton`组件。
-      - file: src/components/products/ProductItem.vue
-        display: true
-        explain:
-          pre: >-
-            再次进入`src/components/products/ProductItem.vue`文件中，我们对其进行了修改，将模板中的商品信息用`Vue`原生组件`router-link`包裹起来，实现商品信息可点击查看详情。
-          post: 该组件经过修改之后实现了点击商品的任何一条信息，都会触发路由跳转到商品详情页，并将该商品id通过动态路由的方式传递到详情页。
-      - file: src/components/products/ProductList.vue
-        display: true
-        explain:
-          pre: >-
-            再次进入`src/components/products/ProductList.vue`文件，我们对其进行了修改，使用了Vuex
-            Getters复用了本地数据获取逻辑。
-          post: >-
-            我们在计算属性`products`中使用`this.$store.getters.allProducts`属性访问的方式调用`getters`中的`allProducts`属性，我们也知道在对应的`getter`中获取到了本地中的`products`数组。
-      - file: src/pages/Cart.vue
-        display: true
-      - file: src/pages/Detail.vue
-        display: true
-        explain:
-          pre: >-
-            `src/pages/Detail.vue`文件是商品详情组件，这里使用了子组件`ProductDetail
-            `简化了页面逻辑，并通过方法访问的形式获取到了对应的`getter`属性。
-          post: >-
-            该组件中定义了一个计算属性`product`，用于返回本地状态中指定的商品。这里我们使用了`this.$store.getters.productById(id)`方法访问的方式获取本地中指定的商品，这里的id参数通过`this.$route.params['id']`从当前处于激活状态的路由对象中获取，并传入对应的`getter`中，进而从本地中获取指定商品。
-
-
-            在该组件刚被创建时判断当前本地中是否有该商品，如果没有则通过`this.$store.dispatch`的方式将包含当前商品id的对象作为载荷分发到类型为`productById`的`action`中，在`action`中进行异步操作从后端获取指定商品，然后提交到对应的`mutation`中进行本地状态修改，这已经使我们习惯的思路了。
-      - file: src/pages/admin/Products.vue
-        display: true
-        explain:
-          pre: >-
-            `src/pages/admin/Products.vue`是本地商品组件，我们通过属性访问的方式调用对应的`getter`属性，从而获取本地商品。
-          post: >-
-            我们通过`this.$store.getters.allProducts`属性访问的方式调用对应`getter`中的`allProducts`属性，并返回本地商品数组中的第一个商品。
-      - file: src/router/index.js
-        display: true
-        explain:
-          pre: 我们打开`src/router/index.js`文件，导入了`Detail `组件，并添加了对应的路由参数。
-          post: ''
       - file: src/store/index.js
         display: true
         explain:
           pre: >-
-            再进入`src/store/index.js`文件，我们添加了一些需要用到的`action`属性和`mutation`属性以及这一节的主角`getters`。
+            ### 定义 Vuex Getters
+
+
+            光说不练假把式，我们来手撸几个 getters。打开 `src/store/index.js` 文件，我们添加了一些需要用到的
+            `action` 属性、`mutation` 属性以及这一节的主角—— `getters`。代码如下：
           post: >-
             这里主要添加了三部分内容：
+
 
             -
             在`actions`中添加了`productById`属性，当视图层通过指定id分发到类型为`PRODUCT_BY_ID`的`action`中，这里会进行异步操作从后端获取指定商品，并将该商品提交到对应类型的`mutation`中，就来到了下一步。
@@ -1878,9 +1881,78 @@ steps:
 
             -
             添加了`getters`并在`getters`中添加了`allProducts`属性和`productById`方法，用于获取本地数据。在`allProducts`中获取本地中所有的商品；在`productById`通过传入的id查找本地商品中是否存在该商品，如果存在则返回该商品，如果不存在则返回空对象。
+      - file: src/pages/admin/Products.vue
+        display: true
+        explain:
+          pre: >-
+            ### 在后台 Products 组件中使用 Getters
+
+
+            我们先通过一个简单的例子演示如果使用 Vuex
+            Getters。打开后台商品组件，`src/pages/admin/Products.vue`，我们通过属性访问的方式调用对应的
+            `getter` 属性，从而获取本地商品，代码如下：
+          post: >-
+            我们通过`this.$store.getters.allProducts`属性访问的方式调用对应`getter`中的`allProducts`属性，并返回本地商品数组中的第一个商品。
+      - file: src/components/products/ProductDetail.vue
+        display: true
+        explain:
+          pre: |-
+            ### 创建 ProductDetail 组件
+
+            接着开始实现商品详情组件 `src/components/products/ProductDetail.vue`，代码如下：
+          post: 该组件将父组件传入的`product`对象展示在了模板中，并复用了`ProductButton`组件。
+      - file: src/components/products/ProductItem.vue
+        display: true
+        explain:
+          pre: >-
+            ### 在 ProductItem 组件中添加链接
+
+
+            有了商品详情，我们还需要进入详情的链接。再次进入 `src/components/products/ProductItem.vue`
+            文件中，我们对其进行了修改，将模板中的商品信息用 Vue 原生组件 `router-link`
+            包裹起来，实现商品信息可点击查看详情。代码如下：
+          post: 该组件经过修改之后实现了点击商品的任何一条信息，都会触发路由跳转到商品详情页，并将该商品id通过动态路由的方式传递到详情页。
+      - file: src/components/products/ProductList.vue
+        display: true
+        explain:
+          pre: >-
+            ### 在 ProductList 中使用 Getters
+
+
+            修改商品列表组件 `src/components/products/ProductList.vue` 文件，使用了 Vuex
+            Getters 复用了本地数据获取逻辑，代码如下：
+          post: >-
+            我们在计算属性`products`中使用`this.$store.getters.allProducts`属性访问的方式调用`getters`中的`allProducts`属性，我们也知道在对应的`getter`中获取到了本地中的`products`数组。
+      - file: src/pages/Cart.vue
+        display: false
+      - file: src/pages/Detail.vue
+        display: true
+        explain:
+          pre: >-
+            ### 创建 Detail 页面组件
+
+
+            实现了 ProductDetail 子组件之后，我们便可以搭建商品详情我页面组件
+            `src/pages/Detail.vue`，代码如下：
+          post: >-
+            该组件中定义了一个计算属性`product`，用于返回本地状态中指定的商品。这里我们使用了`this.$store.getters.productById(id)`方法访问的方式获取本地中指定的商品，这里的id参数通过`this.$route.params['id']`从当前处于激活状态的路由对象中获取，并传入对应的`getter`中，进而从本地中获取指定商品。
+
+
+            在该组件刚被创建时判断当前本地中是否有该商品，如果没有则通过`this.$store.dispatch`的方式将包含当前商品id的对象作为载荷分发到类型为`productById`的`action`中，在`action`中进行异步操作从后端获取指定商品，然后提交到对应的`mutation`中进行本地状态修改，这已经使我们习惯的思路了。
+      - file: src/router/index.js
+        display: true
+        explain:
+          pre: >-
+            ### 配置 Detail 页面的路由
+
+
+            最后我们打开路由配置 `src/router/index.js` 文件，导入了 `Detail`
+            组件，并添加了对应的路由参数，代码如下：
+          post: ''
     explain:
       pre: >+
-        在前面我们使用`Vuex`进行状态管理是通过`this.$store.state`的方式获取本地数据，而在这一节我们使用`Vuex
+        在这一节中，我们将实现这个电商应用的商品详情页面。商品详情和之前商品列表在数据获取上的逻辑是非常一致的，能不能不写重复的代码呢？答案是肯定的。之前我们使用
+        Vuex 进行状态管理是通过 `this.$store.state` 的方式获取本地数据，而在这一节我们使用 `Vuex
         Getters`来复用本地数据的获取逻辑。
 
 
@@ -1888,21 +1960,25 @@ steps:
         的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算。
 
 
-        `Getter`也是定义在 Vuex Store 的 `getter`
-        属性中的一系列方法，用于获取本地状态中的数据。我们可以通过两种方式访问`getter`，一个是通过属性访问，另一个是通过方法访问。
+        `Getter`也是定义在 Vuex Store 的 `getter` 属性中的一系列方法，用于获取本地状态中的数据。我们可以通过两种方式访问
+        `getter`，一个是通过属性访问，另一个是通过方法访问：
 
-        - 属性访问的方式为`this.$store.getter.allProducts`，对应的`getter`如下：
+
+        - **属性访问**的方式为`this.$store.getter.allProducts`，对应的`getter`如下：
+
 
         ```JavaScript
 
         allProducts(state) {
-            //返回本地中的数据
+            // 返回本地中的数据
             return state.products;
         }
 
         ```
 
-        - 方法访问的方式为`this.$store.getter.productById(id)`，对应的`getter`如下：
+
+        - **方法访问**的方式为`this.$store.getter.productById(id)`，对应的`getter`如下：
+
 
         ```JavaScript
 
@@ -1912,10 +1988,15 @@ steps:
           }
         ```
 
+
         我们可以看到`Getter`可以接受两个参数：`state`和`getters`，`state`就表示本地数据源；我们可以通过第二个参数`getters`获取到不同的`getter`属性。
 
 
       post: |-
+        又到了验收的环节，运行项目，点击单个商品，可以进入到商品详情页面，并且数据是完全一致的：
+
+        ![](tuture-assets/detail.png)
+
         ### 小结
 
         这一节中我们学会了如何使用`Vuex Getters`来复用本地数据的获取逻辑：
@@ -1927,6 +2008,8 @@ steps:
     diff:
       - file: src/pages/admin/Index.vue
         display: true
+        explain:
+          pre: 首先我们做一点本土化，把之前的 `src/pages/admin/Index.vue` 中的英文导航改成中文版，方便查看：
       - file: src/pages/admin/Manufacturers.vue
         display: true
         explain:
@@ -2168,6 +2251,14 @@ steps:
         display: true
       - file: tuture-assets/142621576840065_.pic.jpg
         display: false
+      - file: tuture.yml
+  - name: 合并冲突
+    commit: 82b303e
+    diff:
+      - file: tuture.yml
+  - name: 解决冲突2
+    commit: 37f901e
+    diff:
       - file: tuture.yml
 description: >-
   Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
