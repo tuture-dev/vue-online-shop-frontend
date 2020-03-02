@@ -52743,6 +52743,17 @@
           "fixed": true,
           "children": [
             {
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading-two",
+          "commit": "f0b5684",
+          "id": "Wd3IlBp2",
+          "fixed": true,
+          "children": [
+            {
               "text": "抽出 Getters 和 Mutations 逻辑"
             }
           ]
@@ -57027,20 +57038,6 @@
           "children": [
             {
               "text": "大量改进最后一步内容"
-            }
-          ]
-        },
-        {
-          "type": "explain",
-          "fixed": true,
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
             }
           ]
         },
