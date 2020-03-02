@@ -1,0 +1,2611 @@
+name: 从零到部署：用 Vue 和 Express 实现一个迷你全栈电商应用
+topics:
+  - Vue
+id: 092faf468f0108b393159a8456de3e15
+created: '2019-10-17T00:00:00.509Z'
+updated: '2020-02-10T01:26:46.165Z'
+categories:
+  - 前端
+  - Vue
+  - 入门
+github: 'https://github.com/pftom/vue-online-shop-frontend'
+splits:
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（一）
+    description: >-
+      Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
+      有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
+
+      目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像
+      Element 、mpvue、iView 这样优秀的基于 Vue 开源项目存在，所以学习 Vue 是一个不错的投资，当你学会
+      Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。
+
+      看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life
+      （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！
+    start: 6f2924b
+    end: aca2bb6
+    id: 0b662ce
+    created: '2019-10-17T00:00:00.509Z'
+    updated: '2019-12-11T06:07:48.161Z'
+    cover: tuture-assets/cover-1.jpg
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）
+    description: >-
+      在这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着讲解最常见的 Vue
+      模板语法，并通过实例的方式将这些模板语法都实践一番，最后将讲解 Vue 组件的组合，并完成了我们的发表商品页面。
+    start: b3771b6
+    end: b3771b6
+    id: 5e10a4665188253a800423a5
+    created: '2019-12-18T00:00:00.509Z'
+    updated: '2020-01-04T06:07:48.161Z'
+    cover: tuture-assets/cover-3.jpg
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）
+    description: >-
+      随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库
+      Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。
+    start: 4bc407e
+    end: b14d923
+    topics:
+      - Vue
+      - Vuex
+    id: ae8a389b0b6f1fb121a6881d2ec2544f
+    created: '2020-01-10T00:00:00.509Z'
+    updated: '2020-01-11T06:07:48.161Z'
+    cover: tuture-assets/cover-4.jpg
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（五）
+    description: >-
+      组件化和逻辑复用能帮助写出简洁易懂的代码，随着应用越写越复杂，我们有必要把视图层中重复的逻辑抽成组件，以求在多个页面中复用；同时对于 Vuex
+      端，Store 中的逻辑也会越来越臃肿，我们有必要使用 Vuex 提供的 Getters 来复用本地数据获取逻辑。在这篇教程中，我们将带领你抽出
+      Vue 组件简化页面逻辑，使用 Vuex Getters 复用本地数据获取逻辑。
+    start: 6f96d15
+    end: c999bac
+    topics:
+      - Vue
+      - Vuex
+    id: 6f96d15
+    created: '2020-01-10T00:00:00.509Z'
+    updated: '2020-01-11T06:07:48.161Z'
+    cover: tuture-assets/cover-5.jpg
+  - name: 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（六）
+    description: >-
+      随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库
+      Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。
+    start: 4cc00dd
+    end: 1cf95ac
+    topics:
+      - Vue
+      - Vuex
+    id: 1a54d5e
+    created: '2020-01-10T00:00:00.509Z'
+    updated: '2020-01-11T06:07:48.161Z'
+    cover: tuture-assets/cover-4.jpg
+steps:
+  - name: 快速入门
+    commit: 6f2924b
+    diff:
+      - file: .babelrc
+        display: false
+      - file: .editorconfig
+        display: false
+      - file: .eslintignore
+        display: false
+      - file: .eslintrc.js
+        display: false
+      - file: .gitignore
+      - file: .postcssrc.js
+        display: false
+      - file: README.md
+        display: false
+      - file: build/build.js
+        display: false
+      - file: build/check-versions.js
+        display: false
+      - file: build/logo.png
+        display: false
+      - file: build/utils.js
+        display: false
+      - file: build/vue-loader.conf.js
+        display: false
+      - file: build/webpack.base.conf.js
+        display: false
+      - file: build/webpack.dev.conf.js
+        display: false
+      - file: build/webpack.prod.conf.js
+        display: false
+      - file: config/dev.env.js
+        display: false
+      - file: config/index.js
+        display: false
+      - file: config/prod.env.js
+        display: false
+      - file: src/main.js
+        display: true
+        explain:
+          pre: >-
+            ### 初探脚手架代码
+
+
+            通过 vue-cli 初始化的脚手架代码中，我们在整个教程中需要了解的就是以下五个文件：
+
+
+            - `src/main.js`
+
+            - `index.html`
+
+            - `src/App.vue`
+
+            - `src/router/index.js`
+
+            - `src/components/HelloWorld.vue`
+
+
+            #### src/main.js
+
+
+            首先我们来看一下 `src/main.js`，这个是 Vue 应用的入口。我们通过导入 `Vue` 类、`App`
+            组件、`router` 路由，再加上 `el` ，将这些参数传给 `Vue` 类，生成一个 Vue 实例。
+      - file: index.html
+        display: true
+        explain:
+          pre: |-
+            #### index.html
+
+            接着我们来看一下 `index.html` 文件，它的代码是这样的：
+          post: >-
+            当我们开启项目之后，Vue 所使用的构建工具 [Webpack](https://webpack.docschina.org/) 将会：
+
+
+            - 根据入口文件 `src/main.js` 里面声明的 `el` 属性（`#app`），找到 `index.html` 中 id
+            为`app` 的 DOM 节点
+
+            - 把编译好的视图模板代码挂载到这个 DOM 节点下面
+
+            - 将项目涉及的 JavaScript 和 CSS 代码以 `script` 和 `link` 的方式插入到 `index.html`
+            中
+
+            - 开启开发服务器，打开浏览器，进而浏览器将 `index.html` 渲染，我们就可以看到写好的 Vue 页面效果。
+      - file: package-lock.json
+      - file: package.json
+        display: false
+      - file: src/App.vue
+        display: true
+        explain:
+          pre: >-
+            #### src/App.vue
+
+
+            `src/App.vue` 就是 Vue
+            为我们提供的组件文件，使得我们可以以组件的形式来组织代码，并通过组件的组合来构建任意规模的项目，代码如下：
+          post: >-
+            可以看到， `App` 组件包含了三个部分的代码：
+
+
+            - `template`
+
+            - `script`
+
+            - `style`
+
+
+            其实就是对应了传统 Web "三剑客"，`HTML`、`JavaScript`、`CSS`。
+
+
+            这里在 `template` 部分展示了一张 Vue 的 logo 图片，然后显示此刻渲染的路由组件：`<router-view
+            />`。我们将在后面继续讲解路由，这里不懂也没有关系哦。`script` 部分，主要是导出了一个名为 `App` 的组件。`style`
+            部分就是我们熟悉的 CSS 代码了。
+
+
+            ::: info
+
+            上面所讲的是比较小的组件的写法，当组件中涉及的代码较多时，我们需要把 `script` 和 `style` 抽成独立的 `.js` 和
+            `.css` 文件。就像下面这样：
+
+
+            ```JavaScript
+
+            <!-- ./src/App.vue -->
+
+            <template>
+              <div id="app">
+                <img src="./assets/hello.png">
+                <router-view/>
+              </div>
+            </template>
+
+            <script src="./app.js"></script>
+
+            <style src="./app.css"></style>
+
+            ```
+
+            :::
+
+
+            Vue 组件和模板语法是 Vue 的核心概念，我们在后面会以实战的形式重点讲解这些内容。
+      - file: src/router/index.js
+        display: true
+        explain:
+          pre: |-
+            #### src/router/index.js
+
+            `src/router/index.js` 文件是 Vue 为我们提供的路由文件，代码如下：
+          post: >
+            首先我们导入了 Vue 类，以及 Router 类，以及我们的 `HelloWorld` 组件。
+
+
+            接着我们使用 `Vue.use(Router)` 告诉 Vue，我们应用接入了路由。
+
+
+            在导出的路由实例中，我们通过 `routes` 数组定义了项目所有的页面，每个页面是一个类似 `{ path, name,
+            component }` 的对象。
+
+
+            比如初始化时生成的 `HelloWorld.vue` 就是我们的网站首页 --
+            也就是打开浏览器访问到的第一个页面，因为它的路径（`path`）定义为 `/` 。此外一个页面定义还需要 `name`，它代表此页面在
+            `vue-router` 中的标识符，`component` 则代表此页面渲染时的所用到的组件。
+
+
+
+            ::: info
+
+            **提示**
+
+
+            这里我们可以看到导出 `HelloWorld` 组件时，我们在路径最前面加上了 `"@"`，那是因为我们在 `webpack`
+            配置中将会 `"@"`
+
+            映射成 `resolve('src')`，也就是我们项目目录下 `src` 文件夹的路径，最后我们的
+            `'@/components/HelloWorld'` 的实际上的效果相当于取到了项目目录 `src` 文件夹里面的
+            `components/HelloWorld` 组件。
+
+            :::
+      - file: src/assets/logo.png
+        display: false
+      - file: src/components/HelloWorld.vue
+        display: true
+        explain:
+          pre: |-
+            #### src/components/HelloWorld.vue
+
+            最后是 `src/components/HelloWorld.vue` 文件，是脚手架代码为我们提供的一个实例组件，代码如下：
+          post: >-
+            可以看到，其结构大致与 `App.vue` 类似。其中也有一些不同，比如 `script` 里面的 `data` 字段，还有
+            `template` 中的 `{{ }}` 语法。这个我们会在下一节进行讲解。
+
+
+            当我们打开浏览器时，地址为：`http://localhost:8080/` 此时路径为 `/`，激活 `HelloWorld.vue`
+            组件，所以最后我们整个项目渲染 `App.vue` 的内容，显示的结构即为：
+
+
+            - 一张 Vue logo 图
+
+            - 我们的 `HelloWorld.vue` 组件的内容
+
+
+            ![App](./tuture-assets/fd30e4f820c680abbd7d34b554704551)
+      - file: static/.gitkeep
+        display: false
+    explain:
+      pre: >-
+        Vue 是[尤雨溪](https://evanyou.me/)在 2014 年创建的一个前端框架，目前
+        [Github](https://github.com/vuejs/vue) Star 数高达150K，是 Star 数最高的前端项目，并且
+        Vue 有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久地发展。
+
+
+        目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像
+        [Element](https://element.eleme.cn/#/zh-CN)
+        、[mpvue](http://mpvue.com/)、[iView](http://iview.talkingdata.com/#/)
+        这样优秀的基于 Vue 开源项目存在，所以学习 Vue 是一个不错的投资，当你学会
+        Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。
+
+
+        看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个迷你全栈电商网站。并在实战的过程中，了解 Vue
+        的全貌，现在就打开电脑，跟随我的脚步，彻底掌握 Vue 开发！本系列教程的规划如下：
+
+
+        1. **第一部分**（也就是这篇教程）：用 Vue 搭建前端项目的骨架，实现基于嵌套、动态路由的多页面跳转。
+
+        2. **第二部分**（写作中）：用 Express 实现后端 REST API，并使用 MongoDB 进行数据存储。
+
+        3. **第三部分**（写作中）：通过 Vue 的双向数据绑定和模板语法实现数据添加，并用 Vuex 实现前端的状态管理。
+
+        4. **第四部分**（写作中）：用 Element UI 组件库让界面更加专业美观，并且用 Docker 和 Docker Compose
+        部署我们的全栈项目。
+
+
+
+        ::: primary
+
+        ***记得点个赞，鼓励我们更快更好地写完剩下的教程！你也可以在评论区留言，告诉我们想要实现什么功能，我们一定会仔细考虑的哦！***
+
+        :::
+
+
+
+        ### 代码
+
+
+        你可以在 Github
+        查看完整的源码：[源码地址](https://github.com/pftom/vue-online-shop-frontend/tree/aca2bb64cbdaebb7e4a62e252bc00a439eede9a5)。
+
+
+        ### 项目准备
+
+
+        #### 安装依赖
+
+
+        安装 Node.js，你可以去 [Node.js](https://nodejs.org/en/) 官网下载安装包，通过安装包安装会同时安装
+        Node.js 包管理工具 Npm，用于便捷的管理项目依赖和下载第三方包。
+
+
+        打开终端，输入如下命令测试是否安装成功：
+
+
+        ```Bash
+
+        node -v # v10.16.0
+
+        npm -v # 6.9.0
+
+        ```
+
+
+        如果在你的终端有如上输出，那么代表你安装成功。
+
+
+
+        ::: info
+
+        **提示**
+
+
+        通过上面安装包安装，你会安装最新的 Node 稳定版本，这可能和我的机器上的 Node
+        版本不一致，但是不用担心，本教程使用到的代码语法适用于绝大多数新的或更老的 Node。
+
+        :::
+
+
+        安装 vue-cli，在绝大多数场景下，我们使用 vue-cli 来初始化我们的 vue 项目，本教程也不例外，在终端运行如下命令来安装：
+
+
+        ```bash
+
+        npm install -g vue-cli
+
+        ```
+
+
+        打开终端，输入如下命令测试是否安装成功：
+
+
+
+        ```Bash
+
+        vue --version # 2.9.6
+
+        ```
+
+
+        ::: info
+
+        **提示**
+
+
+        虽然 Vue 3.x 已经正式推出，但是这篇教程用的是主流、稳定的 Vue 2.x 版本。由于 Vue
+        的整体思想基本没有改变，所以不影响我们的学习。在接下来的教程中，我们会迁移到 Vue 3.x，并通过讲解新老 Vue 版本的差异让你更好地理解
+        Vue 的演变。
+
+        :::
+
+
+        上面两个安装步骤已经足够完成我们的教程的学习，但是我想额外推荐你一款编辑器，VSCode，你可以通过访问
+        [VSCode](https://code.visualstudio.com/) 官网安装。
+
+
+        在 VSCode 里面找到 Vue
+        插件，可以获得[代码语法高亮以及自动格式化](https://marketplace.visualstudio.com/items?itemName=octref.vetur)非常便捷的功能，并且
+        VSCode 天然对 JavaScript 的支持，会大大提高我们的开发效率，本教程所涉及项目的开发都是使用 VSCode 完成的。
+
+
+        #### 初始化项目
+
+
+        打开终端输入如下命令初始化我们的 Vue 项目：
+
+
+        ```Bash
+
+        vue init webpack vue-online-shop-frontend
+
+        ```
+
+        命令行接着会显示一些列选项让你选择，具体我们的选择如下图：
+
+
+        ![](tuture-assets/142621576840065_.pic.jpg)
+
+
+        ::: info
+
+        **提示**
+
+
+        其中 `Author` 字段你可以填自己的昵称，然后我们在选择了安装 `vue-router` 之后，其他的都选择了
+        `no`，因为本篇教程是面向初学者的实战教程，如果引入了过多和 Vue 核心无关的概念，就会引起很多困惑，所以这里我们不配置它们
+
+        :::
+
+
+        当项目初始化成功之后，接下来通过如下命令开启项目：
+
+
+        ```Bash
+
+        # code vue-online-shop-frontend # 如果你使用了 VSCode 编辑器，可以用这行命令打开项目
+
+        cd vue-online-shop-frontend && npm start
+
+        ```
+
+
+        接着打开浏览器，访问 `http://localhost:8080/` 查看我们初始好的项目效果。
+
+
+
+        ::: warning
+
+        **注意**
+
+
+        如果你使用 VSCode 编辑器打开项目进行开发，在运行 `code project-name` 之前需要安装 `code`
+        脚本，具体我找了一篇教程：[戳我访问](https://www.cnblogs.com/Zhangcsc/p/11362987.html)。
+
+        :::
+
+
+        ![初始化项目效果](./tuture-assets/c5019a89d14f9f9118f22b61136c02c3)
+      post: |-
+        ### 小结
+
+        通过一窥 `vue-cli` 为我们初始化的项目代码，我们可以学到如下的知识：
+
+        - Vue 通过组件来组织项目，单个组件就是我们传统的 Web "三剑客"：HTML、JavaScript、CSS。
+        - Vue 通过路由来定义多个页面，并且进行页面之间的跳转。
+        - 一个页面是一个组件，一个组件可以由很多组件组成，通过这种组合式的思想，我们可以编写任意复杂的项目。
+  - name: 编写你的第一个 Vue 页面
+    commit: 13f202a
+    diff:
+      - file: src/components/HelloWorld.vue
+        display: false
+      - file: src/components/Home.vue
+        display: true
+        explain:
+          pre: |-
+            ### 编写页面组件
+
+            在 `src/components` 下面创建 `Home.vue` 文件，然后编写如下代码：
+          post: >-
+            在上面，我们创建了一个名为 `Home.vue` 的 Vue 组件，可以看到它和我们之前的 `HelloWorld.vue`
+            的内容大致相仿，但是也有一些不同的地方：
+
+
+            - 首先，我们暂时没有写样式（没有 `style` 部分），而是先专注于基础知识的讲解。在后续教程中，我们会使用 [Element
+            UI](https://element.eleme.cn/) 组件库让我们的界面变得专业美观。
+
+            - 其次，我们在 `script` 中引入了 `data` ，在 `template` 引入了插值语法 `{{var}}`。其中
+            `data` 是声明此组件的初始化数据，而 `{{var}}` 插值语法是方便将数据渲染到视图模板中；这里我们将在 `script`
+            中定义的 `data` 中的 `msg` 插值到视图模板中，最终会渲染一个 `h1` 标签，标签内容就为 `msg` 的内容。
+      - file: src/router/index.js
+        display: true
+        explain:
+          pre: >-
+            ### 接入路由
+
+
+            接着，我们在 `src/router/index.js` 路由中将主页路由 `/` 所绑定的组件从默认的 `HelloWorld`
+            修改为刚才写好的 `Home` 组件：
+          post: |-
+            现在我们保存代码，打开浏览器，就会显示刚才在 `Home.vue` 里面填写的那个标题：
+
+            ![Home.vue](./tuture-assets/edd8a53811e78bacd91ace31c3691c70)
+    explain:
+      pre: 下面我们来编写电商应用的首页。
+  - name: 使用路由进行多页面跳转
+    commit: f0206c2
+    diff:
+      - file: src/App.vue
+        display: true
+        explain:
+          pre: |-
+            ### 添加首页导航
+
+            首先修改 `App.vue` ，加入三个导航链接 `router-link`，方便让用户跳转到到自己想看的页面，代码如下：
+          post: |
+            这里我们在头部添加了三个 `router-link` 代表我们的头部导航。
+
+            `router-link` 和 `a` 标签类似，只不过 Vue 为它添加一些额外的优化逻辑。
+      - file: src/components/HelloWorld.vue
+        display: false
+      - file: src/pages/Admin.vue
+        display: true
+        explain:
+          pre: >-
+            ### 创建后台管理页面
+
+
+            接着我们编写 `Admin.vue` 组件，但这里稍微有点不同，即我们在 `src/pages` 下创建 `Admin.vue`
+            组件，因为对于页面级组件，我们倾向于将其放到一个特殊 `pages` 文件夹，这样方便组织项目。其代码如下：
+          post: 可以看到这个页面内容和我们之前的 `Home.vue` 内容相似。
+      - file: src/pages/Cart.vue
+        display: true
+        explain:
+          pre: |-
+            ### 创建购物车页面
+
+            然后是我们的购物车页面 `Cart.vue`，代码如下：
+          post: 可以看到这个页面内容和我们之前的 `Home.vue` 内容相似。
+      - file: src/pages/Home.vue
+        display: false
+        explain:
+          pre: >-
+            最后是我们的商品详情列表 `Home.vue`，只不过这一次我们需要将它从 `src/components/Home.vue` 移动到
+            `src/pages/Home.vue` 下。
+      - file: src/router/index.js
+        display: true
+        explain:
+          pre: >-
+            ### 将新页面导入路由
+
+
+            最后，我们把上一步中创建的 `Home.vue` 移到 `src/pages` 目录中，并在路由文件
+            `src/routes/index.js` 中导入这三个页面，代码如下：
+          post: ''
+    explain:
+      pre: |-
+        一个经典的电商应用通常包括如下部分：
+
+        - 商品展示列表 （`Home.vue`）
+        - 商品详情（`Detail.vue`）
+        - 购物车（`Cart.vue`）
+
+        这里因为我们追求简单，也将商品的后台管理页面 （`Admin.vue`）放入了项目中。
+
+        现在我们先来实现商品展示列表、购物车和后台管理页面的模板内容。因为商品详情页后面将会使用组件进行复用，所以这里我们暂时先不创建。
+      post: |-
+        保存代码，然后打开浏览器，我们可以看到下面的效果：
+
+        ![](tuture-assets/router-demo.gif)
+
+        你可以点击头部的三个导航链接，下面的标题内容会随着点击的链接变化。恭喜你，你已经成功地实现了一个基于 Vue 的多页面网站了！
+  - name: 使用嵌套路由和动态路由合理组织页面
+    commit: aca2bb6
+    diff:
+      - file: src/router/index.js
+        display: true
+        explain:
+          pre: >-
+            ### 升级路由
+
+
+            在我们的商城项目中，后台管理页 `Admin` 涉及到很多操作页面，比如：
+
+
+            - `/create` 创建新的商品
+
+            - `/edit` 编辑商品信息
+
+
+            让我们通过**嵌套路由**的方式将它们组织在一起。首先在路由文件 `src/router/index.js`
+            中声明后台管理所有用到的页面组件（我们马上就会去实现它们）：
+          post: >-
+            嵌套路由的用法就是给需要归为一类的页面设置一个入口页面，然后把这一类页面都放到这个路由页面路由定义的 `children` 字段数组中。
+
+
+            通过上面的代码我们可以看到，`Admin` 类别下有四个组件，`Index` 是我们 `Admin` 类别的入口组件，也是作为
+            `path = /admin` 的渲染组件，然后其他组件就放到 `path = /admin` 这个路由定义的 `children`
+            数组里，其定义和其他父级一致。
+
+
+            这样的嵌套写法带来了两个好处：
+
+
+            - 很清晰的组织了一类页面，方便阅读。
+
+            - 在定义路由的 `path` 的时候，复用了父级的 `path`，即现在我们的 `New`
+            这个路由，它在浏览器中访问的路径为：`'/admin' +  'new'`，如果我们统一放到 `routes`
+            数组的第一级定义，那么后面的 `Products` 和 `Edit` 的 `path` 都要带上诸如 `/admin` 和
+            `/admin/edit/:id` 这样长长的路径，显得特别复杂。
+
+
+            这里还有一个改变就是，我们发现 `Edit` 这个路由的 `path` 有点不太一样，它有个特殊的标志
+            `edit/:id`，这种写法被称为**动态路由**，即 `:id` 会匹配任意字符串，所以用户访问
+            `/admin/edit/<any-string>` 都会激活 `Edit` 路由，从而渲染 `Edit.vue` 组件。
+      - file: src/pages/admin/Index.vue
+        display: true
+        explain:
+          pre: |-
+            ### 创建 Admin 的子页面
+
+            首先创建 `Index.vue` 入口组件，代码如下：
+          post: >-
+            可以看到，它作为嵌套路由的入口级组件，和我们之前在 `App.vue` 里面看到的样子类似，在其中会有 `router-link`
+            导向更深层级的路由.
+
+
+            `router-view` 用于渲染子路由组件，比如我们此时访问 `/admin/new` 页面，那么 `router-view`
+            部分会被替换成 `New.vue` 组件的内容，因为我们在之前的嵌套路由定义中  `path` 为 `new` 的渲染组件为
+            `New.vue`。
+      - file: src/pages/admin/Edit.vue
+        display: true
+        explain:
+          pre: 创建 `src/pages/admin/Edit.vue` 组件，代码如下：
+          post: >-
+            可以看到，当用户访问 `/admin/edit/:id`，会激活渲染 `Edit.vue` 组件，我们可以通过
+            `$route.params.id` 的方式获取用户输入的路径 `:id` 部分。比如我们在浏览器中输入
+            `/admin/edit/52tuture`，那么浏览器将会以 `h1` 的形式打出 `"This is
+            Admin/Edit/52tuture"`。
+
+
+
+            ::: info
+
+            **提示**
+
+
+            `$route` 这个变量是 Vue 在运行时为我们自动插入到所有组件属性中的，所有我们不用手动去管理它。
+
+            :::
+      - file: src/pages/admin/New.vue
+        display: true
+        explain:
+          pre: 创建 `src/pages/admin/New.vue`，代码如下：
+          post: ''
+      - file: src/pages/admin/Products.vue
+        display: true
+        explain:
+          pre: 创建 `src/pages/admin/Products.vue` ，代码如下：
+      - file: src/pages/Admin.vue
+        display: false
+    explain:
+      pre: >-
+        随着页面的增多，如果我们把所有的页面都塞到一个 `routes` 数组里面会显得很乱，你无法确定哪些页面存在关系。还好 `vue-router`
+        提供了嵌套路由的功能，让我们能把相关联的页面组织在一起。
+      post: >-
+        保存我们编写的内容，打开浏览器，我们可以看到如下内容：
+
+
+        ![](tuture-assets/router-demo2.gif)
+
+
+        至此，我们的迷你全栈电商应用的第一部分就完成了，在接下来的教程中，我们将用 Express 和 MongoDB 搭建这个电商应用的后端
+        API，不见不散哦~
+  - name: 用模板语法和双向绑定实现数据的添加
+    commit: b3771b6
+    diff:
+      - file: package-lock.json
+      - file: package.json
+        display: false
+      - file: src/components/products/ProductForm.vue
+        display: true
+        explain:
+          pre: >-
+            ### 动手实现
+
+
+            讲解完 Vue 的基础知识之后，我们马上将所有的知识运用起来，来编写我们的 `ProductForm.vue`
+            组件，它用来添加或者更新商品的信息。
+
+
+            我们在 `src/components` 中创建 `ProductForm.vue` 表单组件，代码如下：
+          post: >-
+            这段代码看起来很长，你可能被吓到了，让我们一段一段来拆解它。
+
+
+            #### script 部分
+
+
+            这里我们的 `props` 接收来自父组件的三个参数：`model`、`manufacturers`、`isEditing`。
+
+
+            然后我们定义了一个 `saveProduct` 方法，就是当用户填写完商品信息的表单之后，点击提交按钮会触发的方法，在
+            `saveProduct` 内部，我们调用了父组件的 `save-product` 方法，并把修改后的 `this.model`
+            变量内容传给父组件。所以这里我们还可以看到，`methods`
+            不仅可以使得数据可以双向流动，而且还可以在子组件反向操作父组件的内容，使得数据还可以上下流动。
+
+
+            #### template 部分
+
+
+            接下来我们再来谈一谈 `template` 里面发生的事情。
+
+
+            可以看到 `template` 里面就是一个表单，这个表单定义了一个 `submit` 事件，并且使用了禁用默认事件的简洁写法
+            `@submit.prevent`。 这个事件触发会调用我们上面提到的 `saveProduct` 方法。
+
+
+            接着我们定义了好几个 `class` 为 `form-group`
+            的元素块，每个块代表我们创建商品所需要填写的相关信息，我们注意到，前两个 `form-group` 使用 `v-model`
+            双向绑定语法分别绑定了 `model` 的 `name` 和 `price` 属性。
+
+
+            第三个 `form-group` 我们首先在 `select` 标签中使用 `v-model` 双向绑定了
+            `model.manufacturer`，表示我们在视图里面进行选择时，会修改对应的 `model.manufacturer` 属性。
+
+
+            接着我们对 `manufacturers` 进行循环遍历，构造多个 `option` 标签选项，然后使用了属性绑定语法的简洁写法绑定了
+            `option` 的 `value` 和 `selected` 属性，`value` 属性赋值为
+            `manufacturer._id`，`selected` 属性会进行判断，`model.manufacturer &&
+            model.manufacturer._id` 表示首先检验 `model` 的 `manufacturer`
+            属性是否存在，正常情况下它应该是一个对象，如果 `model.manufacturer` 属性存在，那么获取
+            `model.manufacturer._id`，然后用获取到的这个  `model.manufacturer._id` 和
+            `manufacturer._id` 进行比较，如果一致，那么 `selected` 属性为 `true`，不一致就为 `false`。
+
+
+            然后我们来看一下第二段 `form-group`，也就是第 4-6 个 `form-group`。
+
+
+            可以看到前两个 `form-group` 使用 `v-model` 双向绑定了 `model.image` 和
+            `model.description ` ，表示当用户上传了商品图片和描述之后，对应的 `model.image`
+            就会变成用户上传的商品图片，`model.description` 就会变成用户撰写的商品描述。
+
+
+            最后一个 `form-group` 我们使用了条件选择语法，判断 `isEditing`，来渲染不同的按钮文案。
+      - file: src/main.js
+        display: false
+      - file: src/pages/admin/New.vue
+        display: true
+        explain:
+          pre: |-
+            ### Vue 组件组合
+
+            编写完上面的表单之后，我们在 `New.vue` 中引入我们创建的表单组件：
+          post: >-
+            当一个组件要在模板语法中使用另外一个组件时，需要申明此组件，即在组件的 `components`
+            属性中申明要使用的组件，比如我们上面使用名为 `'product-form'` 的名称来申明使用 `ProductForm`
+            组件，这样在 `template` 中我们就可以以 `<product-form />` 形式使用导入的表单组件。
+
+
+            同时我们在组件的 `data` 中定义了 `model` 和 `manufacturers` 以及在 `methods` 中定义了
+            `addProduct` 方法，并将它们以属性绑定
+            `:model="model"`、`:manufacturers="manufacturers"` 和事件绑定
+            `@save-product="saveProduct"` 的方式传递给表单组件。
+    explain:
+      pre: >+
+        这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着我们又讲解了最常见的 Vue
+        模板语法，并通过实例的方式将这些模板语法都实践了一番，最后我们讲解了 Vue 组件的组合，并完成了我们的发表商品页面。
+
+
+        欢迎阅读《从零到部署：用 Vue 和 Express 实现迷你全栈电商应用》系列：
+
+
+        - [从零到部署：用 Vue 和 Express
+        实现迷你全栈电商应用（一）](https://tuture.co/2019/10/17/0b662ce/)
+
+        - [从零到部署：用 Vue 和 Express
+        实现迷你全栈电商应用（二）](https://tuture.co/2019/10/21/cb08dc8/)
+
+        - 从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）（也就是这篇）
+
+
+        当我们完成了商城应用的基本页面框架之后，我们就可以开始考虑具体页面的内容了。首先我们要考虑的就是数据的来源，即添加商品页面。有了添加商品的入口，我们就可以展示商品列表，获取商品详情，甚至是修改商品信息。
+
+
+        不过在此之前，我们打算先复习一下 Vue 的一些重要知识点。如果你已经很熟悉了，可以直接跳到下面实现 ProductForm.vue
+        的代码部分。
+
+
+        ### Vue 实例：Props 和 Methods
+
+
+        #### Props
+
+
+        `props` 是 Vue 进行组件之间传参的形式。比如我们有如两个组件 `New.vue` 和 `ProductForm.vue`，在
+        `New.vue` 组件中需要使用到 `ProductForm.vue` 组件。其中 `New.vue`
+        组件是用来创建商品的，它的代码大致是这样的：
+
+
+        ```JavaScript
+
+        import ProductForm from '@/components/ProductForm.vue';
+
+
+        <ProductForm :manufacturers="manufacturers" />
+
+        ```
+
+
+        它需要给 `ProductForm.vue` 组件传递一个 `manufacturers`
+        属性，以确保我们在创建商品时，可以选择这个商品所属的制造商，接着我们就可以在 `ProductForm.vue` 中的 `props`
+        中取到这个 `manufacturers` 属性。`ProductForm.vue` 的代码大致是这样的：
+
+
+        ```JavaScript
+
+        <template>
+
+        <!-- 模板部分 -->
+
+        </template>
+
+
+        <script>
+
+        export default {
+          props: ['manufacturers'],
+        }
+
+        </script>
+
+        ```
+
+
+        可以看到，我们在 `ProductForm.vue` 的 `script` 部分导出的对象里面找到 `props` 属性，然后取到
+        `manufacturers` 属性。
+
+
+        #### Methods
+
+
+        然后是 `methods` ，`methods` 是用来定义在组件中会用到的一些方法，如果说我们前面提到的 `data`
+        ，是从数据从逻辑层（JS）向视图层（Html）流动的话，那么这里的 `methods` 就是视图层触发事件，如
+        click、submit等，反过来修改逻辑层的数据的方法，`methods` 使得数据可以双向流动。
+
+
+        让我们在完善一下我们的 `ProductForm.vue` ，看一下 Methods 在 Vue 中是如何运作的：
+
+
+        ```JavaScript
+
+        <template>
+
+        <form @submit.prevent="saveProduct">
+
+        <!-- 其他表单，如 input 等 -->
+
+
+        <div class="form-group new-button">
+          <button class="button">Add Product</button>
+        </div>
+
+        </form>
+
+        </template>
+
+
+        <script>
+
+        export default {
+          data: { isSaved: false },
+          props: ['manufacturers'],
+          methods: {
+            saveProduct() {
+               this.isSaved = true;
+
+              // 完成一些保存创建商品的逻辑 ...
+            }
+          }
+        }
+
+        </script>
+
+        ```
+
+
+        可以看到，我们可以通过在 `template` （视图层）通过点击提交按钮，发起表单提交事件，进而调用在 `script` 中定义在
+        `methods` 属性中的 `saveProduct` 方法，这个方法可以进一步修改定义在定义在 `data` 属性中的数据；甚至如果父组件
+        `New.vue` 传递了方法（以 `props` 的形式）给 `ProductForm.vue` 组件，我们可在 `saveProduct`
+        调用这个传递下来的方法，进而可以影响到父组件 `New.vue` 中的数据。我们将在后面的正式实现 `ProductForm` 组件时讲解到它。
+
+
+        ### 模板语法：v-on
+
+
+        接下来我们再来谈一谈 v-bind 和 v-on 。
+
+
+        在 Vue 中，我们通过 `v-on` 的方式接管了之前在 HTML 中 `onEvent` ：
+
+
+        比如之前我们在 HTML 中的写法是这样的：
+
+
+        ```HTML
+
+        <div onclick="alert('I love tuture')">
+
+        Hello Tuture
+
+        </div>
+
+        ```
+
+
+        现在在 Vue 的模板语法中我们需要写出这样：
+
+
+        ```HTML
+
+        <div v-on:click="alert('I love tuture')">
+
+        Hello Tuture
+
+        </div>
+
+        ```
+
+
+        类似的 `onEvent` 都要改成 `v-on:Event`。然后这样写显得比较冗余，所以 Vue 支持简化写法，用 `@` 替换
+        `v-on:` 部分，我们就可以写出这样：
+
+
+        ```HTML
+
+        <div @click="alert('I love tuture')">
+
+        Hello Tuture
+
+        </div>
+
+        ```
+
+
+        调用事件之后我们一般有一些这样的操作，比如禁用浏览器默认行为，然后自己去处理事件，获取后端数据，以前我们会这样写：
+
+
+        ```HTML
+
+        <div onclick="saveProduct()">
+
+        Hello Tuture
+
+
+        <script>
+
+        var saveProduct = function (e) {
+          e.preventDefault();
+
+          // do something you like
+        }
+
+        </script>
+
+        ```
+
+
+        但是这样写又显得特别繁琐了，Vue 也觉得这样可以简化，于是我们直接将这些禁止默认行为的调用作为绑定事件的属性来进行处理，于是乎在 Vue
+        中我们可以写出这样：
+
+
+        ```JavaScript
+
+        <template>
+          <div @click.prevent="saveProduct">
+          Hello Tuture
+          </div>
+        </template>
+
+
+        <script>
+
+        export default {
+          methods: {
+            saveProduct() {
+              // do something you like
+            }
+          }
+        }
+
+        </script>
+
+        ```
+
+
+        不知道看了上面的长文，你有没有一点晕，不管你晕不晕，我是得喝口水缓一下。 - v -
+
+
+        ### 模板语法：v-bind
+
+
+        我们已经看到在 Vue 模板中我们可以使用如下的功能：
+
+
+        - `{{}}` 插值语法将 `data` 渲染到 HTML 元素内容中
+
+        - `v-on` 或者简化写法 `@` ，等用来取代 HTML 的事件绑定
+
+
+        有了上面的功能，我们可以让 HTML 动起来了，但是还缺点什么，比如我们的 HTML 属性，如 `id`、`class`
+        等，是不是也能动态的获取变化值，你还别说，还真的可以，Vue 模板语法为我们提供了 `v-bind` 用于动态绑定属性值，我们来看个例子：
+
+
+        ```JavaScript
+
+        <template>
+
+        <option v-bind:id="_id"  v-bind:value="value" />
+
+        </template>
+
+
+        <script>
+
+        export default {
+          data: { _id: '1', value: "Xiaomi" },
+        }
+
+        </script>
+
+        ```
+
+        可以看到，我们在 `script` 中导出的对象属性 `data` 中，定义了 `_id` 和 `value` 值，然后我们通过在
+        `<template>` 模板中使用 `v-bind` 语法动态的给 `option` 标签的 `id` 和 `value`
+        属性赋值，最后的结果看起来是这样的：
+
+
+        ```JavaScript
+
+        <option id="1" value="Xiaomi" />
+
+        ```
+
+
+        当然，当需要绑定的属性多了，每次都写 `v-bind` 显得相当繁琐，所以 Vue 为我们提供了 `v-bind` 的简洁语法
+        `:`，即我们之前的绑定语法从 `v-bind:id="_id"` 变成了 `:id="_id"`。
+
+
+        上面的代码用简洁语法改写如下：
+
+
+        ```JavaScript
+
+        <template>
+
+        <option :id="_id"  :value="value" />
+
+        </template>
+
+
+        <script>
+
+        export default {
+          data: { _id: '1', value: "Xiaomi" },
+        }
+
+        </script>
+
+        ```
+
+
+        ### 模板语法：v-model 双向绑定
+
+
+        前面我们提到通过 `{{}}` 插值语法渲染来自 `data` 的数据实现了逻辑层向视图层的数据流动，通过 `methods`
+        在视图层操作逻辑层的数据，实现了视图层的数据向逻辑层的数据流动，从而达到了双向绑定，当我们的应用越来越复杂，我们会发现这样的数据双向流动会越来越频繁，而且粒度也会大小不一，有很多单纯修改某个值的方法调用就会显得特别繁杂，因此
+        Vue 通过提供 `v-model` 进行了视图层和逻辑层的双向绑定，让我们来看个例子：
+
+
+        ```HTML
+
+        <template>
+
+        <!-- 其他代码 ... -->
+
+        <input
+          type="text"
+          placeholder="Name"
+          v-model="name"
+        />
+
+        <!-- 其他代码 ... -->
+
+        </template>
+
+
+        <script>
+
+        export default {
+          data: { name: 'ProductForm' },
+        }
+
+        </script>
+
+        ```
+
+
+        这里我们通过申明 `v-mode` 将此 input 的值和我们在 Vue 实例中的 `model` 的 `name` 属性进行了双向绑定，即当
+        data 中的 `name` 发生变化，input 的值也会跟着变化，当 input 的值发生变化，我们 data 中的 `name`
+        的值也会被修改，这一切都是自动发生的，不需要我们额外的添加 `methods` 里面的方法调用来手动修改。
+
+
+        ### 模板语法：循环
+
+
+        好了，Vue 替我们接管了 HTML 元素属性值、事件处理、元素内容，这些都还只属于原来 HTML 的部分，它更强大的一点就是将 JS
+        的功能引入了模板语法中，使得我们可以实现类似循环，条件选择操作等功能。
+
+
+        接下来我们先来看一下 Vue 为我们提供的 “循环” 模板语法， 它使得我们可以快速渲染大量具有相似结构的数据，比如渲染一个数组的数据，生成一个
+        HTML 元素列表，这在我们平时看到的新闻 App
+        里面很常见，我们浏览新闻时，发现其实每条新闻的结构都很相似，并且有很多条新闻（可能多大几百上千条），如果每一条我们都手动写 HTML
+        代码的话，无疑显得相当繁琐，并且数据一多，我们手动就显得无能为力了，而 Vue 为我们提供的 “循环”
+        模板语法，使得我们可以通过非常简单的写法就可以渲染大量数据，我们来看个例子：
+
+
+        ```HTML
+
+        <!--
+
+        manufacturers = [
+          { _id: 1, name: 'Apple' },
+          { _id: 2, name: 'Xiaomi' }
+        ]
+
+
+        model = { _id: 1, name: 'Apple' }
+
+         -->
+        <template v-for="manufacturer in manufacturers">
+          <option :value="manufacturer._id" :selected="manufacturer._id == model._id">{{manufacturer.name}}</option>
+        </template>
+
+        ```
+
+
+        最后渲染的结果为：
+
+
+        ```HTML
+
+        <option value="1" selected="true">Apple</option>
+
+        <option value="2" selected="false">Xiaomi</option>
+
+        ```
+
+
+        注意到，如果我们在写 “循环” 语法时，使用了一个额外的标签 `template` 来包裹我们需要渲染的 HTML 元素，这也是 Vue
+        推荐的写法；我们在 `template` 标签的属性上添加 `v-for` 然后给它赋值 `"manufacturer in
+        manufacturers"`，通过这样的形式进行列表数据的遍历，每次从 `manufacturers` 中取一个元素，并赋值给
+        `manufacturer` ，然后我们就可以在 `option`  标签中使用 `manufacturer` 和我们定义的 `model`
+        进行比较。
+
+
+        因为我们的 `model._id` 为 `1`，它和 `manufacturers` 数组的第一项元素的 `_id` 一致，所以我们返回的两个
+        `option` 标签，第一个 `selected` 属性为 `true`，第二个为 `false`。
+
+
+        ### 模板语法：条件选择
+
+
+        上面的讲述了循环是如何在 Vue 中使用的，下面我们来看一看条件语法是如何在 Vue 中使用的：
+
+
+        ```JavaScript
+
+        <span v-if="isEditing">Update Product</span>
+
+        <span v-else>Add Product</span>
+
+
+        <script>
+
+        export default {
+          data: { isEditing: false },
+        }
+
+        </script>
+
+        ```
+
+
+        我们可以看到，通过在标签上加 `v-if` 并后面紧跟加 `v-else` 的标签我们可以判断最终渲染的标签，比如我们这里
+        `isEditing` 为 `false`，那么我们最终渲染的结果为：
+
+
+        ```JavaScript
+
+        <span>Add Product</span>
+
+        ```
+
+
+        当然你可以添加诸如 `v-else-if` 的标签来做多重判断。
+
+
+
+        ::: info
+
+        **提示**
+
+
+        这里的带 `v-if`、`v-else-if` 或 `v-else`
+        的标签需要依次紧跟着前面的标签，不能在这些带条件属性的标签中插入其他不带条件的标签，比如下面这段代码就是错误的：
+
+
+        ```html
+
+        <span v-if="isEditing">Update Product</span>
+
+        <span>我是错误插入的标签</span>
+
+        <span v-else>Add Product</span>
+
+
+        <script>
+
+        export default {
+          data: { isEditing: false },
+        }
+
+        </script>
+
+        ```
+
+
+        :::
+
+
+
+
+      post: >-
+        当保存上面编写的代码之后，我们打开浏览器，点击导航链接 `Admin`，然后点击子导航链接 `New Products`，切换到我们的
+        `New.vue` 添加商品页面，我们可以看到如下的效果：
+
+
+        ![](./tuture-assets/2a340eeb04a07c1aae2bcd0387931c52)
+
+
+        ### 小结
+
+
+        到现在为止，我们已经了解了 Vue 的基础部分，包括：
+
+
+        - 用路由进行多页面的跳转和导航
+
+        - 用嵌套路由和动态路由合理组织页面
+
+        - Vue 组件和 Vue 实例
+
+        - Vue 模板语法
+
+
+        掌握了这些知识后，我们已经可以实现很多前端的功能，完成一些简单的 Vue
+        应用了。但是如果要完成数据逻辑复杂的大型应用，目前学到的知识就力不从心了。但是没关系，我们将在后面学习 Vuex 这一前端状态管理工具，有了
+        Vuex 的加持，我们就能用 Vuex 写出任意复杂的应用了。
+  - name: 使用 Vuex 进行状态管理
+    commit: 4bc407e
+    diff:
+      - file: package-lock.json
+      - file: package.json
+        display: false
+        explain:
+          pre: ''
+      - file: src/store/index.js
+        display: true
+        explain:
+          pre: >-
+            ### 创建 Vuex Store
+
+
+            Vuex 是一个前端状态管理工具，它致力于接管 Vue 的状态，使得 Vue 专心做好渲染页面的事情；它类似在前端建立了一个
+            “数据库”，然后将所有的前端状态都保存在这个 “数据库” 里面。这个 “数据库” 其实就是一个普通的 JavaScript 对象。
+
+
+            好了，讲述了 Vuex 是干什么之后，我们来看一下如何在 Vue 中运用 Vuex。Vuex 建立的这个 “数据库” 一般用术语
+            `store` 来表示，通常我们建立一个单独的 `store` 文件夹，用于保存和 `store` 有关的内容。我们在 `src`
+            文件夹下建立 `store` 文件夹，然后在里面创建 `index.js` 文件，代码如下：
+          post: >-
+            上面的代码可以分为三部分。
+
+
+            - 首先我们导入 `Vue` 和 `Vuex`
+
+            - 然后我们调用 `Vue.use` 方法，告诉 Vue 我们将使用 `Vuex`，这和我们之前使用 `Vue.use(router)`
+            的原理一样
+
+            - 最后我们导出 `Vuex.Store` 实例，并且传入了 `strict` 和 `state` 参数。这里 `strict`
+            参数表示，我们必须使用 Vuex 的 Mutation 函数来改变 `state`，否则就会报错（关于 Mutation 我们将在
+            “使用 Vuex 进行状态管理” 一节讲解）。而 `state` 参数用来存放我们全局的状态，比如我们这里定义了 `cart`、
+            `showLoader` 等属性都是后面我们完善应用的内容需要的数据。
+      - file: src/main.js
+        display: true
+        explain:
+          pre: >-
+            ### 将 Vuex 和 Vue 整合
+
+
+            当我们创建并导出了 Vuex 的 `store` 实例之后，我们就可以使用它了。打开 `src/main.js`
+            文件，在开头导入之前创建的 `store` ，并将 `store` 添加到 Vue 初始化的参数列表里，代码如下：
+          post: >-
+            可以看到，在上面的文件中，我们一开头导入了我们之前在 `src/store/index.js` 里定义的 `store` 实例，接着，在
+            Vue 实例初始化时，我们将这个 `store` 实例使用对象属性简洁写法添加到了参数列表里。
+
+
+            当我们将 `store` 当做参数传给 Vue 进行初始化之后，Vue 就会将 Store 里面的 `state` 注入到所有的 Vue
+            组件中，这样所有的 Vue 组件共享同一个全局的 `state` ，它其实就是一个 JS 对象，应用中所有状态的变化都是对
+            `state` 进行操作，然后响应式的触发组件的重新渲染，所以这里的 `state` 也有 “数据的唯一真相来源” 的称谓。
+
+
+            这种将状态保存到一个全局的 JavaScript 对象 -- state 中，然后所有的增、删、改、查操作都是对这个
+            JavaScript
+            对象进行，使得我们可以避免组件嵌套层级过深时，组件之间传递属性的复杂性，让属性的定义，获取，修改非常直观，方便开发大型应用和团队协作。
+      - file: src/pages/admin/Products.vue
+        display: true
+        explain:
+          pre: >-
+            ### 查看 Vuex 整合后的效果
+
+
+            在将 Vuex 和 Vue 整合好之后，我们马上来看一下 Vuex
+            带来的效果，不过在此之前我们先来讲一讲什么是计算属性（`computed`）。
+
+
+            #### 计算属性（Computed）
+
+
+            首先我们新增了 `script` 部分，然后在导出的对象里面增加了一个 `computed`
+            属性，这个属性里面的内容用于申明一些可能要在 `template` 里面使用的复杂表达式。我们来看一个例子来讲解一下
+            `computed` 属性：
+
+
+            我们在模板中可能要获取一个多级嵌套对象里面的某个数据，或者要渲染的数据需要经过复杂的表达式来计算，比如我们要渲染这样一个数据
+            `obj1.obj2.obj3.a + obj1.obj4.b`，写在模板里就是这样的：
+
+
+            ```HTML
+
+            <template>
+
+            <div>
+              {{ obj1.obj2.obj3.a + obj1.obj4.b }}
+            </div>
+
+            </template>
+
+            <script>
+
+            export default {
+              data: {
+                obj1: {
+                  obj2: {
+                    obj3: {
+                      a
+                    }
+                  },
+                  obj4: {
+                    b
+                  }
+                }
+              }
+            }
+
+            </script>
+
+            ```
+
+
+            可以看到，我们一眼看上去，这个模板里面有这样一个复杂的表达式，很不容易反应出来它到底要渲染什么，这样代码的可读性就很差，所以 Vue
+            为我们提供了计算属性（ `computed`
+            ），用于用简单的变量来代表复杂的表达式结果，进而简化模板中插值的内容，让我们的模板看起来可读性更好，上面的代码使用计算属性来改进会变成下面这样：
+
+
+
+            ```JavaScript
+
+            <template>
+
+            <div>
+              {{ addResult }}
+            </div>
+
+            </template>
+
+
+            <script>
+
+            export default {
+              data: {
+                obj1: {
+                  obj2: {
+                    obj3: {
+                      a
+                    }
+                  },
+                  obj4: {
+                    b
+                  }
+                }
+              },
+              computed: {
+                addResult() {
+                  return this.obj1.obj2.obj3.a + this.obj1.obj4.b
+                }
+              }
+            }
+
+            </script>
+
+            ```
+
+
+            可以看到，当我们使用了计算属性 `addResult` 之后，我们在模板里面的写法就简化了很多，而且一目了然我们是渲染了什么。
+
+
+            了解了计算属性之后，我们打开 `src/pages/admin/Products.vue`，对内容作出如下改进以查看 Vuex 和
+            Vue 整合之后的效果：
+          post: >+
+            可以看到，上面的内容改进主要分为两个部分：
+
+
+            - 首先我们定义了一个 `product` 计算属性，它里面返回一个从 `store` 中保存的 `state` 取到的
+            `products` 数组的第一个元素，注意到当我们在 “将 Vuex 和 Vue 整合” 这一小节中将 `store` 作为 Vue
+            初始化实例参数，所以我们在所有的 Vue 组件中可以通过 `this.$store.state` 的形式取到 Vuex Store
+            中保存的 `state`。
+
+            - 接着我们使用了计算属性 `product`，取到了它的 `name` 属性进行渲染。
+
+
+
+    explain:
+      pre: >-
+        我们在[第一篇](https://tuture.co/2019/10/17/0b662ce/)和[第三篇](https://tuture.co/2019/10/17/5e10a46/)中讲解了
+        Vue
+        的基础部分，利用这些知识你已经可以实现一些比较简单的应用了。但是针对复杂的应用，比如组件嵌套超过三级，我们前面讲解的知识处理起来就很费力了，还好
+        Vue 社区为我们打造了状态管理容器 [Vuex](https://vuex.vuejs.org/zh/)，用来处理大型应用的数据和状态管理。
+
+
+        ### 安装 Vuex 依赖
+
+
+        首先我们打开命令行，进入项目目录，执行如下命令安装 Vuex:
+
+
+        ```shell
+
+        npm install vuex
+
+        ```
+      post: >-
+        ### 小结
+
+
+        在这一小节中，我们学习了如何将 Vuex 整合进 Vue 中：
+
+
+        - 首先我们安装了 `vuex` 依赖
+
+        - 接着我们在 `src` 下面创建了 `store` 文件夹，用于保存 Vuex 相关的内容，在 `store` 文件下之下，我们创建了
+        `index.js` 文件，在里面实例化了 `Vuex.Store` 类，我们在实例化的过程中传递了两个参数：`strict` 和
+        `state`，`strict` 表示我们告诉 Vue，只允许 `Mutation` 方法才能修改
+        `state`，确保修改状态的唯一性；`state` 是我们整个应用的状态，整个应用的状态都是从它获取，整个应用状态的改变都是修改它，所以这个
+        `state` 也有 “数据的唯一真相来源” 的称谓。
+
+        - 然后我们通过在 `main.js` 里面导入实例化的 `store`，将它加入到初始化 Vue 实例的参数列表中，实现了 Vuex 和
+        Vue 的整合。
+
+        - 最后我们讲解了计算属性，然后通过在计算属性中获取 `this.$store.state` 的方式展示了 Vuex 整合之后的效果。
+
+
+        好了，我们已经整合了 Vuex，并在 Vue 组件中获取了保存在 Vuex Store
+        中的状态（state），接下来我们来看一下如何修改这个状态。
+  - name: 使用 Mutation 修改本地状态
+    commit: 3b00854
+    diff:
+      - file: src/store/index.js
+        display: true
+        explain:
+          post: >-
+            可以看到上面的代码改进分为两个部分：
+
+
+            - 首先我们扩充了 `state` 中的 `products`
+            属性，在里面保存一开始我们的迷你电商平台的初始数据，这里我们是硬编码到代码中的，在下一节 “使用 Action
+            获取远程数据”中，我们将动态获取后端服务器的数据。
+
+            - 接着我们在 `Vuex.Store` 实例化的参数中添加了一个 `mutations` 属性，在里面定义了两个函数
+            `ADD_TO_CART` 和
+            `REMOVE_FROM_CART`，分别代表响应从视图层发起的对应将商品添加至购物车和从购物车移除商品的动作。
+          pre: |-
+            ### 初始化状态（硬编码）
+
+            我们打开 `src/store/index.js` 文件，修改其中的 `state` 并加上 `mutations` 如下：
+      - file: src/components/products/ProductList.vue
+        display: true
+        explain:
+          pre: >-
+            ### 创建 ProductList 组件
+
+
+            接着创建 `src/components/products/ProductList.vue`
+            文件，它是商品列表组件，用来展示商品的详细信息，代码如下：
+          post: >-
+            我们首先来看该组件的 `script` 部分：
+
+
+            - 先定义了一个计算属性 `products`，通过 `this.$store.state.products` 从本地状态中获取到了
+            `products` 数组，并作为计算属性 `products` 的返回值
+
+            - 然后定义了一个点击事件 `addToCart`，并且传入了当前处于激活状态的 `product`
+            参数。当用户点击“添加购物车”时，触发 `addToCart` 事件，也就是上面所说的视图层发出的事件。这里是通过 `this
+            .$store.commit` 将携带当前商品的对象 `{product}` 作为载荷提交到类型为`ADD_TO_CART`的
+            `mutation` 中，在 `mutation` 中进行本地状态修改，我们会在后面抽离出的 `mutations`
+            文件中看到具体的操作。
+
+
+            再看该组件的 `template` 部分，使用 `v-for` 将从本地获取到的 `products` 数组进行遍历，每个
+            `product` 对象的详细信息都会显示在模板中。此外，我们还在每个 `product`
+            对象信息的最后添加了一个“加入购物车”的按钮，允许我们将指定商品添加到购物车。
+      - file: src/pages/Home.vue
+        display: true
+        explain:
+          pre: |-
+            ### 在页面中接入数据
+
+            Store 和组件都搞定之后，我们就可以在之前的页面中接入数据了。修改主页 `src/pages/Home.vue`，代码如下：
+          post: 可以看到，我们在导入 `ProductList` 组件后，将其注册到 `components` 中，然后在模板中使用这个组件。
+      - file: src/pages/Cart.vue
+        display: true
+        explain:
+          pre: 接着修改购物车页面 `src/pages/Cart.vue` 文件，将购物车中的商品信息展示出来，添加代码如下：
+          post: >-
+            我们在该组件中主要增加了两部分代码：
+
+
+
+            - 首先是 `script` 部分，我们增加了一个计算属性和一个点击事件。同样是通过 `this.$store.state.cart`
+            的方式从本地状态中获取购物车数组，并作为计算属性 `cart` 的返回值；当用户点击购物车中的某个商品将其移除购物车时就会触发
+            `removeFromCart` 事件，并且将要移除的商品 id 作为参数传入，然后也是通过 `this.$store.commit`
+            的方式将包含 `productId` 的对象作为载荷提交到类型为 `REMOVE_FROM_CART` 的 `mutation` 中，在
+            `mutation` 中进行本地状态修改，具体修改操作我们可以在后面抽离出的 `mutations` 文件中看到。
+
+
+            - 然后是 `template` 部分，我们通过 `v-for`
+            遍历了购物车数组，将购物车中的所有商品信息展示在模板中。并在每个商品信息的最后添加了一个移除购物车的按钮，当用户希望移除购物车中指定商品时，会触发
+            `removeFromCart` 事件。
+      - file: src/pages/admin/New.vue
+        display: false
+    explain:
+      pre: >
+        我们在上一节中定义了 Vuex Store，并在里面保存了全局的状态 `state`，这一节我们来学习如何修改这一状态。
+
+
+        ### 理解 Mutation：修改状态的唯一手段
+
+
+        Vuex 为我们提供了 `Mutation`，它是修改 Vuex Store 中保存状态的唯一手段。
+
+
+        Mutation 是定义在 Vuex Store 的 `mutation` 属性中的一系列形如 `(state, payload) =>
+        newState` 的函数，用于响应从 Vue 视图层发出来的事件或动作，例如：
+
+
+        ```JavaScript
+
+        ACTION_NAME(state, payload) {
+          // 对 `state` 进行操作以返回新的 `state`
+          return newState;
+        }
+
+        ```
+
+
+        其中方法名 `ACTION_NAME` 用于对应从视图层里面发出的事件或动作的名称，这个函数接收两个参数 `state` 和
+        `payload`，`state` 就是我们 Vuex Store 中保存的 `state`，`payload`
+        是被响应的那个事件或动作携带的参数，然后我们通过 `payload` 的参数来操作现有的 `state`，返回新的
+        `state`，通过这样的方式，我们就可以响应修改 Vuex Store 中保存的全局状态。
+
+
+        了解了 Mutation 的概念之后，我们马上来看一下如何运用它。
+      post: >
+        ### 查看效果
+
+
+        在项目根目录下运行 `npm start`，进入开发服务器查看效果：
+
+
+        ![](tuture-assets/mutation-demo.gif)
+
+
+        可以看到，一开始我们的购物车是空的，然后随便选了两款手机，点击“加入购物车”，然后就可以在购物车页面看到了！我们还可以将购物车中的商品移除。
+
+
+        ### 小结
+
+
+        在这一部分中我们学习了如何发起修改本地状态的“通知”：
+
+        - 首先我们需要在 `Vuex.Store` 实例化的参数中添加一个 `mutations` 属性，在该属性中添加对应的方法，比如
+        `ADD_TO_CART` 和 `REMOVE_FROM_CART`。
+
+        - 然后我们需要通过用户不同的操作（比如点击添加购物车或者移除购物车）来发起“通知”，进而通过 `this.$store.commit`
+        的方式将需要操作的对象作为载荷提交到对应类型（也就是 `ADD_TO_CART` 和 `REMOVE_FROM_CART`）的
+        `mutation` 中，在 `mutation` 中进行本地状态修改。
+  - name: 使用 Action 获取远程数据
+    commit: b14d923
+    diff:
+      - file: package-lock.json
+      - file: package.json
+        display: false
+      - file: src/store/index.js
+        display: true
+        explain:
+          pre: |-
+            ### 实现第一个 Action
+
+            让我们趁热打铁，实现第一个 Action。再次来到 `src/store/index.js` 文件，修改代码如下：
+          post: >+
+            可以看到，我们做了以下几件事：
+
+
+            1. 导入了 `axios`，并定义了 `API_BASE` 后端接口根路由；
+
+            2. 我们在 `store` 中去掉了之前硬编码的假数据，使 `products` 默认值为空数组；
+
+            3. 然后在 `mutations` 属性中添加了 `ALL_PRODUCTS` 和 `ALL_PRODUCTS_SUCCESS`
+            方法，用来响应 `action` 中提交的对应类型事件；`ALL_PRODUCTS` 将 `state.showLoader` 设为
+            `true`，显示加载状态；`ALL_PRODUCTS_SUCCESS` 将 `action` 中提交的数据保存到 `state`
+            中，并取消加载状态；
+
+            4. 最后添加了 `actions` 属性，在 `actions` 属性中定义了 `allProducts`
+            函数用于响应视图层分发的对应类型的事件；我们首先提交了类型为 `ALL_PRODUCTS` 的 `mutation` ，接着在
+            `axios` 请求成功后提交 `ALL_PRODUCTS_SUCCESS`，并附带 `products` 数据体（`payload`）
+
+
+
+            ::: info
+
+            **提示**
+
+
+            我们可以看到 `allProducts` 方法中传入了 `{ commit }` 参数，这是采用了解构赋值的方式 `const {
+              commit } = context`，避免后面使用 `context.commit` 过于繁琐。
+            :::
+
+      - file: src/components/products/ProductList.vue
+        display: true
+        explain:
+          pre: >-
+            ### 更新 ProductList 组件
+
+
+            再来看 `src/components/products/ProductList.vue`
+            文件，我们对其做了修改，主要添加了生命周期函数 `created`，在该组件刚被创建时首先判断本地 `products`
+            中是否有商品，如果没有就向后端发起网络请求获取数据。代码如下：
+          post: >-
+            注意到我们修改了两个地方：
+
+
+            - 调整模板中“生产厂商”字段，把 `{{product.manufacturer}}` 修改为
+            `{{product.manufacturer.name}}`
+
+            - 添加 `created` 生命周期方法，在该组件刚被创建时判断 `this.products.length === 0` 是
+            `true` 还是 `false`，如果是 `true` 则证明本地中还没有任何商品，需要向后端获取商品数据，于是通过
+            `this.$store.dispatch` 的方式触发类型为 `allProducts` 的 `action` 中，在
+            `action` 中进行异步操作，发起网络请求向后端请求商品数据并返回；如果是 `false`
+            则证明本地中存在商品，所以可以直接从本地获取然后进行渲染。
+      - file: src/pages/Cart.vue
+        display: true
+        explain:
+          pre: 最后我们也同样需要调整一下 `src/pages/Cart.vue` 中的“生产厂商”字段，修改其模板代码如下：
+          post: '同样把 `{{product.manufacturer}}` 修改为 `{{product.manufacturer.name}}`。'
+    explain:
+      pre: >-
+        我们在上一节中学习了如何在视图层发起本地状态修改的“通知”，这一节我们来学习如何从后端获取远程数据。请求库我们采用的是
+        [axios](https://www.npmjs.com/package/axios)，通过以下命令安装依赖：
+
+
+        ```bash
+
+        npm install axios
+
+        ```
+
+
+        ### 理解 Action：异步操作
+
+
+        Vuex 为我们提供了 `Action`，它是用来进行异步操作，我们可以在这里向后端发起网络数据请求，并将请求到的数据提交到对应的
+        `mutation` 中。
+
+
+        Action 是定义在 Vuex Store 的 `action` 属性中的一系列方法，用于响应从 Vue 视图层分发出来的事件或动作，一个
+        Action 是形如 `(context, payload) => response.data` 的函数：
+
+
+        ```JavaScript
+
+        productById(context, payload) {
+          // 进行异步操作，从后端获取远程数据并返回
+          return response.data;
+        }
+
+        ```
+
+
+        其中：
+
+
+        - 函数名 `productById` 用于对应从视图层里面分发出的事件或动作的名称
+
+        - 函数接收两个参数 `context` 和 `payload`
+
+        - `context` 指的是 `action` 的上下文，与 `store` 实例具有相同的方法和属性，因此我们可以调用
+        `context.commit` 提交一个 `mutation`，或者通过
+         `context.state` 和 `context.getters` 来获取 `state` 和 `getters`，但是 `context` 对象又不是 `store` 实例本身
+        - `payload` 是分发时携带的参数，然后我们通过 `payload`
+        中的参数来进行异步操作，从而获取后端响应数据并返回。这样我们就可以根据用户的操作同步更新后端数据，并将后端响应的数据提交给
+        `mutation`，然后利用
+         `mutation` 进行本地数据更新。
+      post: >-
+        ### 查看效果
+
+
+        在测试这一步效果之前，首先确保 MongoDB 和后端 API
+        服务器已经开启。同时，如果你之前没有在[第二篇教程](https://tuture.co/2019/10/21/cb08dc8/)中测试过，很有可能你的数据库是空的，那么可以下载我们提供的
+        MongoDB JSON 数据文件
+        [manufacturers.json](https://raw.githubusercontent.com/tuture-dev/vue-online-shop-backend/master/data/manufacturers.json)
+        和
+        [products.json](https://raw.githubusercontent.com/tuture-dev/vue-online-shop-backend/master/data/products.json)，然后运行以下命令：
+
+
+        ```bash
+
+        mongoimport -d test -c manufacturers manufacturers.json
+
+        mongoimport -d test -c products products.json
+
+        ```
+
+
+        然后再进入前端测试，你应该就可以看到从后台获取到的数据，然后同样可以添加到购物车哦！
+
+
+        ### 小结
+
+
+        在这一部分中我们学习了如何使用 `Action` 获取远程数据，并将获取的数据提交到对应的 `Mutation` 中：
+
+
+        - 首先我们需要导入相关依赖：`axios` 和 `API_BASE`，由于发起网络请求。
+
+        - 其次我们需要在 `store` 实例中添加 `actions` 属性，并在 `actions`
+        属性定义对应的方法，用于响应视图层分发的对应类型的事件。
+
+        - 在不同的方法中发起不同的网络请求，你是需要从后端获取数据，还是修改后端数据等等。然后将后端响应的数据结果提交到对应类型的
+        `mutation` 中。
+  - name: 使用 Vue 组件简化页面逻辑
+    commit: 6f96d15
+    diff:
+      - file: src/components/products/ProductButton.vue
+        display: true
+        explain:
+          pre: >-
+            ### 实现 ProductButton 组件
+
+
+            我们打开 `src/components/products/ProductButton.vue`
+            文件，它是用于操作商品在购物车中状态的按钮组件，代码如下：
+          post: >-
+            该组件通过 `v-if` 判断 `isAdding` 是否为 `true` 来决定创建加入购物车按钮还是从购物车移除按钮。`cart`
+            数组是通过 `this.$store.state.cart` 从本地获取的。在 `isAdding` 中我们先令其为
+            `true`，然后通过 `cart` 数组的 `map` 方法遍历数组，判断当前商品是否在购物车中，如果不在则 `isAdding` 为
+            `true`，创建加入购物车按钮；如果在则 `isAdding` 为 `false`，创建从购物车移除按钮。
+
+
+            对应的两个按钮添加了两个点击事件：`addToCart` 和`removeFromCart`
+
+            - 当点击加入购物车按钮时触发 `addToCart`，我们通过 `this.$store.commit`
+            的方式将包含当前商品的对象作为载荷直接提交到类型为 `ADD_TO_CART` 的 `mutation`
+            中，将该商品添加到本地购物车中。
+
+            -
+            当点击从购物车移除按钮时触发`removeFromCart`，我们也是通过`this.$store.commit`的方式将包含当前商品id的对象作为载荷直接提交到类型为`REMOVE_FROM_CART`的`mutation`中，将该商品从本地购物车中移除。
+      - file: src/components/products/ProductItem.vue
+        display: true
+        explain:
+          pre: >-
+            ### 实现 ProductItem 组件
+
+
+            `src/components/products/ProductItem.vue`文件为商品信息组件，用来展示商品详细信息，并且注册了上面讲的按钮组件，改变商品在购物车中的状态，除此之外我们还使用了之前创建好的`ProductButton`组件，实现对商品在购物车中的状态进行修改。
+
+            - 首先通过`import ProductButton from
+            './ProductButton'`导入创建好的`ProductButton`组件。
+
+            - 然后在`components`中注册组件。
+
+            - 最后在模板中使用该组件。
+
+
+            代码如下：
+          post: 可以看到，我们将父组件传入的`product`对象展示到模板中，并将该`product`对象传到子组件`ProductButton`中。
+      - file: src/components/products/ProductList.vue
+        display: true
+        explain:
+          pre: >-
+            ### 重构 ProductList 组件
+
+
+            有了 ProductButton 和 ProductItem，我们便可以来重构之前略显臃肿的 ProductList 组件了，修改
+            `src/components/products/ProductList.vue`，代码如下：
+          post: >-
+            这部分代码是将之前展示商品信息的逻辑代码封装到了子组件`ProductItem`中，然后导入并注册子组件`ProductItem`，再将子组件挂载到模板中。
+
+
+            可以看到，我们通过`this.$store.state.products`从本地获取`products`数组，并返回给计算属性`products`。然后在模板中利用`v-for`遍历`products`数组，并将每个`product`对象传给每个子组件`ProductItem`，在每个子组件中展示对应的商品信息。
+      - file: src/pages/Cart.vue
+        display: true
+        explain:
+          pre: >-
+            ### 重构 Cart 组件
+
+
+            最后，我们重构一波购物车组件
+            `src/pages/Cart.vue`，也使用了子组件`ProductItem`简化了页面逻辑，修改代码如下：
+          post: >-
+            这里也是首先导入并注册子组件`ProductItem`，然后在模板中挂载子组件。通过`this.$store.state.cart`的方式从本地获取购物车数组，并返回给计算属性`cart`。在模板中通过`v-for`遍历购物车数组，并将购物车中每个商品对象传给对应的子组件`ProductItem`，通过子组件来展示对应的商品信息。
+    explain:
+      pre: >-
+        在前面的教程中，我们已经学习了如何使用 Vuex 进行状态管理，如何使用 Action 获取远程数据以及如何使用 Mutation
+        修改本地状态，实现了用户修改客户端数据的同时，同步更新后端数据，然后更新本地数据，最后进行重新渲染。
+
+
+        这一节我们将进一步通过 Vue 组件化的思想简化复杂的页面逻辑。
+      post: |-
+        把项目开起来，查看商品列表，可以看到每个商品下面都增加了“添加到购物车”按钮：
+
+        ![](tuture-assets/image-20200209224837926.png)
+
+        购物车中，也有了“移出购物车”按钮：
+
+        ![](tuture-assets/WX20200209-225009@2x.png)
+
+        尽情地买买买吧！
+
+        ### 小结
+
+        这一节我们学习了如何使用 Vue 组件来简化页面逻辑：
+
+        - 首先我们需要通过`import`的方式导入子组件。
+        - 然后在`components`中注册子组件。
+        - 最后将子组件挂载到模板中，并将需要子组件展示的数据传给子组件。
+  - name: 使用 Vuex Getters 复用本地数据获取逻辑
+    commit: c999bac
+    diff:
+      - file: src/store/index.js
+        display: true
+        explain:
+          pre: >-
+            ### 定义 Vuex Getters
+
+
+            光说不练假把式，我们来手撸几个 getters。打开 `src/store/index.js` 文件，我们添加了一些需要用到的
+            `action` 属性、`mutation` 属性以及这一节的主角—— `getters`。代码如下：
+          post: >-
+            这里主要添加了三部分内容：
+
+
+            -
+            在`actions`中添加了`productById`属性，当视图层通过指定id分发到类型为`PRODUCT_BY_ID`的`action`中，这里会进行异步操作从后端获取指定商品，并将该商品提交到对应类型的`mutation`中，就来到了下一步。
+
+            -
+            在`mutations`中添加了`PRODUCT_BY_ID`和`PRODUCT_BY_ID_SUCCESS`属性，响应指定类型提交的事件，将提交过来的商品保存到本地。
+
+            -
+            添加了`getters`并在`getters`中添加了`allProducts`属性和`productById`方法，用于获取本地数据。在`allProducts`中获取本地中所有的商品；在`productById`通过传入的id查找本地商品中是否存在该商品，如果存在则返回该商品，如果不存在则返回空对象。
+      - file: src/pages/admin/Products.vue
+        display: true
+        explain:
+          pre: >-
+            ### 在后台 Products 组件中使用 Getters
+
+
+            我们先通过一个简单的例子演示如果使用 Vuex
+            Getters。打开后台商品组件，`src/pages/admin/Products.vue`，我们通过属性访问的方式调用对应的
+            `getter` 属性，从而获取本地商品，代码如下：
+          post: >-
+            我们通过`this.$store.getters.allProducts`属性访问的方式调用对应`getter`中的`allProducts`属性，并返回本地商品数组中的第一个商品。
+      - file: src/components/products/ProductDetail.vue
+        display: true
+        explain:
+          pre: |-
+            ### 创建 ProductDetail 组件
+
+            接着开始实现商品详情组件 `src/components/products/ProductDetail.vue`，代码如下：
+          post: 该组件将父组件传入的`product`对象展示在了模板中，并复用了`ProductButton`组件。
+      - file: src/components/products/ProductItem.vue
+        display: true
+        explain:
+          pre: >-
+            ### 在 ProductItem 组件中添加链接
+
+
+            有了商品详情，我们还需要进入详情的链接。再次进入 `src/components/products/ProductItem.vue`
+            文件中，我们对其进行了修改，将模板中的商品信息用 Vue 原生组件 `router-link`
+            包裹起来，实现商品信息可点击查看详情。代码如下：
+          post: 该组件经过修改之后实现了点击商品的任何一条信息，都会触发路由跳转到商品详情页，并将该商品id通过动态路由的方式传递到详情页。
+      - file: src/components/products/ProductList.vue
+        display: true
+        explain:
+          pre: >-
+            ### 在 ProductList 中使用 Getters
+
+
+            修改商品列表组件 `src/components/products/ProductList.vue` 文件，使用了 Vuex
+            Getters 复用了本地数据获取逻辑，代码如下：
+          post: >-
+            我们在计算属性`products`中使用`this.$store.getters.allProducts`属性访问的方式调用`getters`中的`allProducts`属性，我们也知道在对应的`getter`中获取到了本地中的`products`数组。
+      - file: src/pages/Cart.vue
+        display: false
+      - file: src/pages/Detail.vue
+        display: true
+        explain:
+          pre: >-
+            ### 创建 Detail 页面组件
+
+
+            实现了 ProductDetail 子组件之后，我们便可以搭建商品详情我页面组件
+            `src/pages/Detail.vue`，代码如下：
+          post: >-
+            该组件中定义了一个计算属性`product`，用于返回本地状态中指定的商品。这里我们使用了`this.$store.getters.productById(id)`方法访问的方式获取本地中指定的商品，这里的id参数通过`this.$route.params['id']`从当前处于激活状态的路由对象中获取，并传入对应的`getter`中，进而从本地中获取指定商品。
+
+
+            在该组件刚被创建时判断当前本地中是否有该商品，如果没有则通过`this.$store.dispatch`的方式将包含当前商品id的对象作为载荷分发到类型为`productById`的`action`中，在`action`中进行异步操作从后端获取指定商品，然后提交到对应的`mutation`中进行本地状态修改，这已经使我们习惯的思路了。
+      - file: src/router/index.js
+        display: true
+        explain:
+          pre: >-
+            ### 配置 Detail 页面的路由
+
+
+            最后我们打开路由配置 `src/router/index.js` 文件，导入了 `Detail`
+            组件，并添加了对应的路由参数，代码如下：
+          post: ''
+    explain:
+      pre: >+
+        在这一节中，我们将实现这个电商应用的商品详情页面。商品详情和之前商品列表在数据获取上的逻辑是非常一致的，能不能不写重复的代码呢？答案是肯定的。之前我们使用
+        Vuex 进行状态管理是通过 `this.$store.state` 的方式获取本地数据，而在这一节我们使用 `Vuex
+        Getters`来复用本地数据的获取逻辑。
+
+
+        `Vuex`允许我们在 `store` 中定义“getter”（可以认为是 `store`的计算属性）。就像计算属性一样，`getter`
+        的返回值会根据它的依赖被缓存起来，且只有当它的依赖值发生了改变才会被重新计算。
+
+
+        `Getter`也是定义在 Vuex Store 的 `getter` 属性中的一系列方法，用于获取本地状态中的数据。我们可以通过两种方式访问
+        `getter`，一个是通过属性访问，另一个是通过方法访问：
+
+
+        - **属性访问**的方式为`this.$store.getter.allProducts`，对应的`getter`如下：
+
+
+        ```JavaScript
+
+        allProducts(state) {
+            // 返回本地中的数据
+            return state.products;
+        }
+
+        ```
+
+
+        - **方法访问**的方式为`this.$store.getter.productById(id)`，对应的`getter`如下：
+
+
+        ```JavaScript
+
+        productById: (state, getters) => id => {
+              //通过传入的id参数进行一系列操作并返回本地数据
+              return state.product;
+          }
+        ```
+
+
+        我们可以看到`Getter`可以接受两个参数：`state`和`getters`，`state`就表示本地数据源；我们可以通过第二个参数`getters`获取到不同的`getter`属性。
+
+
+      post: |-
+        又到了验收的环节，运行项目，点击单个商品，可以进入到商品详情页面，并且数据是完全一致的：
+
+        ![](tuture-assets/detail.png)
+
+        ### 小结
+
+        这一节中我们学会了如何使用`Vuex Getters`来复用本地数据的获取逻辑：
+        - 我们需要先在`store`实例中添加`getters`属性，并在`getters`属性中定义不同的属性或者方法。
+        - 在这些不同类型的`getter`中，我们可以获取本地数据。
+        - 我们可以通过属性访问和方法访问的方式来调用我们的`getter`。
+  - name: 抽出 Getters 和 Mutations 逻辑
+    commit: 4cc00dd
+    diff:
+      - file: src/pages/admin/Index.vue
+        display: true
+        explain:
+          pre: 首先我们做一点本土化，把之前的 `src/pages/admin/Index.vue` 中的英文导航改成中文版，方便查看：
+      - file: src/pages/admin/Manufacturers.vue
+        display: true
+        explain:
+          pre: '`src/pages/admin/Manufacturers.vue`是本地制造商组件，展示制造商信息。'
+          post: >-
+            这里首先定义了一个计算属性`manufacturers`，通过`this.$store.getters.allManufacturers`属性访问的形式调用对应的`getter`属性`allManufacturers`从本地获取`manufacturers`，并返回给计算属性`manufacturers`。
+
+
+            然后在该组件刚被创建时判断本地中是否存在`manufacturers`，如果没有则通过`this.$store.dispatch`分发到类型为`allManufacturers`的`action`中进行异步操作获取所有制造商，并将获取的制造商提交到对应的`mutation`中，在`mutation`中修改本地状态，将获取的所有制造商保存到本地。
+
+
+            最后利用`v-for`在表格中遍历`manufacturers`，每个制造商的信息在一行展示，除了信息之外还有两个功能（修改和删除制造商），点击修改则会根据`'/admin/manufacturers/edit/'
+            +
+            manufacturer._id`路由到指定页面；点击删除则会触发`removeManufacturer`事件，首先询问用户是否同意删除，若用户同意则将选中制造商的id作为载荷分发到类型为`removeManufacturer`的`action`中，在`action`中进行异步操作删除后端对应商品，并将对应商品id提交到对应的`mutation`中，在`mutation`中进行本地状态修改，删除本地对应的商品。
+      - file: src/pages/admin/Index.vue
+        display: true
+      - file: src/router/index.js
+        display: true
+        explain:
+          pre: 再次进入`src/router/index.js`文件，这里我们导入了制造商组件并增加了制造商相关路由参数。
+      - file: src/pages/admin/Products.vue
+        display: true
+        explain:
+          pre: 我们又来到`src/pages/admin/Products.vue`文件，这里我们做了一些修改，将商品的详细信息放在表格中展示。
+          post: >-
+            这部分代码逻辑与`src/pages/admin/Manufacturers.vue`组件中的代码逻辑相似，如果您理解了上面的代码逻辑，那么我们相信您肯定也理解这部分代码，所以这里就不再赘述了。
+      - file: src/store/getters.js
+        display: true
+        explain:
+          pre: >-
+            `src/store/getters.js`文件就是我们放各种不同类型的`getter`属性和方法的地方，这里我们导出了两个对象分别为`productGetters`和`manufacturerGetters`，分别代表有关商品的`getter`属性与方法和有关制造商的`getter`属性与方法。
+          post: >-
+            在`productGetters`对象中定义的就是有关商品的`getter`属性和方法，如`allProducts`，`productById`等等；在`manufacturerGetters`对象中定义的就是有关制造商的`getter`属性和方法，如`allManufacturers`等等。
+      - file: src/store/mutations.js
+        display: true
+        explain:
+          pre: >-
+            `src/store/mutations.js`文件就是我们从`store`实例中的`mutations`属性中抽取出来的各种`mutation`属性，这里我们定义了三个对象分别为`productMutations`，`cartMutations`以及`manufacturerMutations
+            `。
+          post: >-
+            在`productMutations`对象中定义了有关商品响应Vue视图层以及`avtion`中提交的事件，比如`ALL_PRODUCTS`，`ALL_PRODUCTS_SUCCESS`，`PRODUCT_BY_ID`以及`PRODUCT_BY_ID_SUCCESS`等等。
+
+
+            在`cartMutations`对象中定义了有关购物车响应Vue视图层提交的事件，比如`ADD_TO_CART`，`REMOVE_FROM_CART`等等。
+
+
+            在`manufacturerMutations
+            `对象中定义了有关制造商响应Vue视图层以及`avtion`中提交的事件，比如`ALL_MANUFACTURERS`，`ALL_MANUFACTURERS_SUCCESS`，`REMOVE_MANUFACTURER`以及`REMOVE_MANUFACTURER_SUCCESS`等等。
+      - file: src/store/index.js
+        display: true
+        explain:
+          pre: >-
+            我们再回到`src/store/index.js`文件，这里就是抽离`getters`和`mutations`逻辑之后的`store`实例，看起来是不是轻盈了很多，也增强了代码的可读性。
+          post: >-
+            这里首先导入了`getters'`和`mutations`文件中导出的所有对象，然后在`store`实例的`getters'`和`mutations`属性中通过对象展开运算符的方式将对应的属性和方法抽离出去。
+
+
+            除此之外又向`actions`中添加了一些`action`属性，因为此时`actions`还未被抽离，所有显得有些臃肿，不过在后面我们马上也会将它抽离出来。
+    explain:
+      pre: >-
+        您一定发现了之前我们直接把所有的`getter`属性和方法都定义在了`store`实例中的`getters`属性中，所有的`mutation`属性也都定义在了`store`实例中的`mutations`属性中，但是这样的确显得`store`实例及其臃肿，因此我们可以采用对象展开运算符将这些复杂的逻辑抽取到对应的
+        `Getters` 和 `Mutations`文件中。
+
+
+        这一节我们来学习如何抽出在`store`实例中定义的复杂`getters`和`mutation`逻辑。
+      post: >-
+        ### 小结
+
+
+        这一节我们学习了如何抽出`Getters`和`Mutations`逻辑，减轻`store`实例中的负载：
+
+
+        -
+        首先我们需要分别创建`getters`和`mutations`JS文件，在两个JS文件中分别定义不同类型的`getters`和`mutations`对象并导出，然后在`getters`和`mutations`对象中定义相应的一些属性和方法。
+
+        -
+        在`store`的`index`文件中导入这些`getters`和`mutations`对象，并在`store`实例的`getters`和`mutations`属性中通过对象展开运算符混入这些对象。
+
+        - 我们可以使用`this.$store.getters.属性`和`this.$store.mutations.属性`的方式调用.
+  - name: 抽出 Actions 逻辑
+    commit: 1a54d5e
+    diff:
+      - file: src/components/products/ProductForm.vue
+        display: true
+      - file: src/pages/admin/Edit.vue
+        display: true
+        explain:
+          pre: >-
+            `src/pages/admin/Edit.vue`是商品编辑组件，当触发`'/admin/edit/' +
+            product._id`就会路由到指定商品信息编辑页面，然后对商品信息进行修改。
+          post: >-
+            我们先来看该组件的`script`部分，首先定义了两个计算属性`model`和`manufacturers`返回本地商品和制造商。通过方法访问的方式调用指定的`getter`属性`productById`，参数为当前处于激活状态的路由对象的id，这里返回`product`的拷贝，是为了在修改
+            `product`的拷贝之后，在保存之前不修改本地 Vuex store
+            的`product`属性。计算属性`manufacturers`通过相同的方式获取本地数据。
+
+
+            当该组件刚被创建时判断计算属性`model`中是否有值，如果没有则表示本地中没有该商品，将包含该商品id的对象作为载荷分发到类型为`productById`的`action`中，在`action`中进行异步操作从后端获取对应商品，并提交到对应类型的`mutation`中，在`mutation`中将获取到的商品保存到本地。除此之外判断计算属性`manufacturers`中是否有值，如果没有则通过相同的方式从后端获取并保存到本地。
+
+
+            在`template`中使用了子组件`ProductForm`用表单的形式来展示商品信息，当用户提交表单则会向父组件发射`save-product`事件，父组件监听到之后触发`updateProduct`事件，并将传入的商品参数作为载荷分发到类型为`updateProduct`的`action`中，通知后端进行同步更新数据并提交到对应的`mutation`中进行本地数据更新。
+      - file: src/pages/admin/New.vue
+        display: true
+        explain:
+          pre: >-
+            `src/pages/admin/New.vue`是添加商品组件，与`Edit.vue`组件功能相似，只是一个是修改商品信息，一个是添加商品信息。
+          post: >-
+            该组件代码逻辑和`Edit.vue`组件相似，只是在这里我们定义的计算属性`model`返回一个空对象作为默认值，因为我们是添加商品，本地中还不存在该商品。
+      - file: src/store/actions.js
+        display: true
+        explain:
+          pre: >-
+            `src/store/actions.js`文件就是我们从`store`实例的`actions`属性中抽取出来的不同类型的`action`属性，这里我们定义了两个`Actions`对象：`productActions`和`manufacturerActions`，分别表示有关商品和制造商对视图层分发的事件作出的响应，并导出了这两个对象。
+          post: >-
+            在该文件中我们首先导入`axios`依赖，以及定义了`API_BASE`作为网络请求的基础接口。
+
+
+            然后我们定义并导出了两个对象：
+
+            -
+            在`productActions`对象中定义了一些有关商品在视图层分发对应的事件时，`action`作出的响应，比如`allProducts`，`productById`，`removeProduct`以及`updateProduct`等等。
+
+            -
+            在`manufacturerActions`对象中定义了一些有关制造商在视图层分发对应的事件时，`action`作出的响应，比如`allManufacturers`，`removeManufacturer`等等。
+      - file: src/store/index.js
+        display: true
+        explain:
+          pre: 我们再次来到`src/store/index.js`文件中，添加有关抽取`Actions`逻辑之后的信息。
+          post: >-
+            这里又导入了`actions`JS文件中导出的一些对象，并通过对象展开运算符在`store`实例的`actions`属性中混入了不同类型的`action`属性。
+      - file: src/store/mutations.js
+        display: true
+        explain:
+          pre: 我们在`src/store/mutations.js`文件中又添加了一些`mutation`属性。
+          post: >-
+            上述添加的都是有关商品的`mutation`属性：`UPDATE_PRODUCT`，`UPDATE_PRODUCT_SUCCESS`，`ADD_PRODUCT`以及`ADD_PRODUCT_SUCCESS`分别表示更新商品信息，更新商品信息成功，添加商品以及添加商品成功。
+    explain:
+      pre: 上一节我们学习了如何抽出`Getters`和`Mutations`逻辑，这一节我们将来学习如何抽出`Actions`逻辑。
+      post: >-
+        ### 小结
+
+
+        这一节我们学习了如何抽出`Actions`逻辑，减轻`store`实例中的负载：
+
+
+        -
+        首先我们需要创建`actions`JS文件，在文件中定义不同类型的`Actions`对象并导出，然后在`Actions`对象中定义相应的一些属性。
+
+        -
+        在`store`的`index`文件中导入这些`Actions`对象，并在`store`实例的`actions`属性中通过对象展开运算符混入这些对象。
+
+        - 我们可以使用`this.$store.actions.属性`的方式调用。
+  - name: 干掉 mutation-types 硬编码
+    commit: 1cf95ac
+    diff:
+      - file: src/components/ManufacturerForm.vue
+        display: true
+        explain:
+          pre: '`src/components/ManufacturerForm.vue`文件是展示制造商信息的表单组件。'
+          post: >-
+            该组件通过父子组件传值从父组件获取到了`model`和`isEditing`的值，并将`model`对象的信息展示在表单中。
+
+
+            表单信息中还通过`v-if`来判断`isEditing`的值是`true`还是`false`，如果是`true`则创建`Update
+            Manufacturer`，反之创建`Add Manufacturer`。
+
+
+            当用户提交表单时触发`saveManufacturer`事件，此时会向父组件发送类型为`save-manufacturer`的事件通知其保存此次的修改操作。
+      - file: src/pages/admin/EditManufacturers.vue
+        display: true
+        explain:
+          pre: '`src/pages/admin/EditManufacturers.vue`是修改制造商组件。'
+          post: >-
+            该组件刚被创建时将当前处于激活状态的路由对象的id参数作为载荷分发到类型为`manufacturerById`的`action`中，在`action`中进行异步操作从服务器获取对应制造商，然后将该制造商提交到对应`mutation`中进行本地状态修改，将获取到的制造商保存到本地。
+
+
+            我们定义了计算属性`model`返回`manufacturer`的拷贝，是为了在修改`manufacturer`的拷贝之后，在保存之前不修改本地
+            `store`中的`manufacturer`属性。这里以方法访问的形式从`getters`中通过当前激活的路由对象中的id参数获取本地状态中的对应制造商作为`manufacturer`的拷贝，并返回给计算属性`model`，然后传给子组件`ManufacturerForm`。
+
+
+            该组件在`addManufacturer`事件中将子组件传入的新制造商对象作为载荷分发到类型为`updateManufacturer`的`action`中，在`action`中进行异步操作修改后端对应的商品信息，然后将新对象提交到对应的`mutation`中进行本地状态修改，修改本地状态中的`manufacturer`对象。
+      - file: src/pages/admin/Index.vue
+        display: true
+      - file: src/pages/admin/Manufacturers.vue
+        display: true
+        explain:
+          pre: '`src/pages/admin/Manufacturers.vue`是展示本地所有制造商的组件。'
+          post: >-
+            这里直接在该组件被创建时分发到类型为`allManufacturers`的`actions`中，然后从后端获取所有制造商，最后保存到本地。
+      - file: src/pages/admin/NewManufacturers.vue
+        display: true
+        explain:
+          pre: '`src/pages/admin/NewManufacturers.vue`是添加制造商组件，和添加商品组件代码逻辑类似。'
+          post: 该组件逻辑代码与`New.vue`组件类似，一个是添加商品组件，一个是添加制造商组件，您可以对比着来看。
+      - file: src/pages/admin/Products.vue
+        display: true
+        explain:
+          pre: 我们再次来到`src/pages/admin/Products.vue`文件，对其做了一下修改。
+          post: 在该组件刚被创建时我们不再进行判，直接向后端发起请求获取商品数据，并保存到本地。
+      - file: src/router/index.js
+        display: true
+        explain:
+          pre: 再次进入`src/router/index.js`文件，导入了添加制造商和修改制造商的组件并增加相关路由参数。
+      - file: src/store/actions.js
+        display: true
+        explain:
+          pre: 我们再次来到`src/store/actions.js`文件中，对其进行进一步完善。
+          post: 这里我们导入了`mutation-types`文件中定义的一些常量对象，替换掉了对应的事件类型。
+      - file: src/store/getters.js
+        display: true
+        explain:
+          pre: >-
+            我们在`src/store/getters.js`文件的`manufacturerGetters
+            `对象中又添加了一个`manufacturerById`方法，用于获取本地中指定的制造商。
+          post: >-
+            `manufacturerById`方法中的id参数是Vue视图层通过方法调用时传入的id，通过这个id判断本地中是否存在该制造商，如果存在则返回该制造商，如果不存在则返回一个空对象。
+      - file: src/store/index.js
+        display: true
+        explain:
+          pre: 我们在`src/store/index.js`文件中又进行了完善。
+          post: 我们在`store`实例的`state`中又添加了一个`manufacturer`属性，并给了它一个默认值为空对象。
+      - file: src/store/mutation-types.js
+        display: true
+        explain:
+          pre: '`src/store/mutation-types.js`文件是定义一些常量对象来代替各种事件类型，并导出这些常量对象。'
+      - file: src/store/mutations.js
+        display: true
+        explain:
+          pre: 再次对`src/store/mutations.js`文件进行完善。
+          post: 这里我们导入了`mutation-types`文件中定义的一些常量对象，替换掉了对应的事件类型。
+    explain:
+      post: |-
+        ### 小结
+
+        这一部分我们主要是通过定义一些常量对象替换了所有的事件类型字符串。
+  - name: 大量改进最后一步内容
+    commit: 3d2a6b7
+    diff:
+      - file: build/webpack.base.conf.js
+        display: false
+      - file: src/pages/Home.vue
+        display: true
+      - file: tuture-assets/142621576840065_.pic.jpg
+        display: false
+      - file: tuture.yml
+  - name: 合并冲突
+    commit: 82b303e
+    diff:
+      - file: tuture.yml
+  - name: 解决冲突2
+    commit: 37f901e
+    diff:
+      - file: tuture.yml
+  - name: m解决无法请求后端数据
+    commit: c1b0963
+    diff:
+      - file: tuture.yml
+  - name: 代码重构
+    commit: ba5a82c
+    diff:
+      - file: package-lock.json
+        display: false
+      - file: package.json
+        display: false
+      - file: src/main.js
+        display: true
+        explain:
+          pre: |-
+            ## 导入依赖
+            组件库安装完成之后，我们需要在src/main.js项目的入口文件中导入该依赖。
+          post: >-
+            该文件中我们首先导入了ElementUI组件库以及组件库自带的样式文件，并使用Vue.use(ElementUI)注册该组件库，然后我们就可以在我们的项目中自由自在的使用ElementUI组件库给我们提供的花式组件。
+      - file: src/App.vue
+        display: true
+        explain:
+          pre: 进入src/App.vue文件对其代码进行修改，我们利用ElementUI组件库中的el-menu组件代替了原始的无序列表。
+          post: |-
+            el-menu组件是ElementUI提供的页面导航菜单，有顶栏、侧栏以及折叠等形式，该项目选择了顶栏式导航菜单。
+
+            这里我们在router-link组件中添加了tag='div'，目的是去掉内容下划线，因为router-link默认渲染为a标签。
+      - file: src/components/ManufacturerForm.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/components/ManufacturerForm.vue文件，该组件用来展示制造商的信息，我们利用el-form组件代替了原始表单。
+          post: >-
+            在el-form组件中使用:model="model"类似vue中的父子组件传值，将组件ManufacturerForm中的model数据传给el-form表单组件，然后在表单中使用。该组件中的model对象是通过父子组件传值的方式从父组件获得，该组件被添加制造商组件和修改制造商组件复用，因此从父组件中获取的model对象为空对象或者存有制造商信息的对象。
+
+
+            在el-button按钮组件中绑定了点击事件，然后在该事件被触发后向父组件发送相应事件，并将表单中双向绑定的model对象作为参数一并发送给父组件。
+
+
+            但是当我们按照这种方式将项目跑起来之后就会发现，我们的表单无法进行编辑。不要方，跟我们继续往下走就能发现问题所在。
+      - file: src/components/products/ProductForm.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/components/products/ProductForm.vue进行修改，该组件为商品信息表单组件，我们也使用了el-form组件代替了原始表单。
+          post: >-
+            同ManufacturerForm.vue组件一样，该组件也是通过:model="model"将model对象传给了el-form表单组件，然后在表单中展示商品信息。该组件中的model对象也是通过父子组件传值的方式从父组件获得，该组件被添加商品组件和修改商品组件复用，因此从父组件中获取的model对象为空对象或者存有商品信息的对象。
+
+
+            在el-select下拉菜单组件中，我们双向绑定了model.manufacturer.name属性，该属性表示对应的商品对象所属的制造商的名称。
+
+
+            在el-button组件中添加了点击事件，该事件被触发之后会向父组件发送相应事件，并将表单中修改完成的model对象作为参数一并发送到父组件。
+
+
+            同ManufacturerForm.vue组件一样，当我们跑起来之后也会发现商品信息表单无法编辑，继续跟着我们往下探索。
+      - file: src/components/products/ProductButton.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/components/products/ProductButton.vue文件进行修改，使用el-button按钮组件代替原始按钮。
+          post: >-
+            该组件为按钮组件，这里我们将从父组件获取的商品对象改为了商品id，然后从本地获取对应id的商品对象，存储到product计算属性中，根据遍历购物车中的商品数组判断是否有对应的商品，决定创建**加入购物车**按钮还是**从购物车移除**按钮。
+      - file: src/components/products/ProductItem.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/components/products/ProductItem.vue文件进行修改，该组件是本地商品展示组件，我们使用el-table表格组件代替了原始盒子，让我们的本地商品在el-table表格中规则的展示出来。
+          post: >-
+            原本该组件是展示单个商品的组件，然后在商品列表组件中被遍历，从父组件发送中获取到的是单个商品对象，然后展示单个商品信息。
+
+
+            这里我们使用 el-table 表格组件来重构该页面，但是该表单组件通过 :data="products"
+            的方式获取一个数组数据，并通过prop属性将数组中的元素按照对应的lable属性分别展示在表格中，因此我们不能单单获取商品对象，而是获取商品列表。
+
+
+            该表单组件还可以通过 slot-scope 获取到 row, column, $index 和 store（table
+            内部的状态管理）的数据，因此这里我们使用scope.row._id 获取到对应行的对象id，然后传递给Button按钮组件。
+      - file: src/components/products/ProductList.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/components/products/ProductList.vue文件进行修改，原本我们需要遍历ProductItem组件，但是由于使用了el-table表格组件展示了商品列表，因此我们只需要使用ProductItem组件。
+          post: 我们直接使用ProductItem组件，并将products商品数组传给该子组件。
+      - file: src/pages/admin/Index.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/pages/admin/Index.vue文件进行修改，该文件为后台管理页面，我们删除了管理菜单，因为这部分我们已经放在了导航菜单中，我们只保留了路由展示组件。
+      - file: src/pages/admin/Products.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/pages/admin/Products.vue文件进行修改，该组件为后台管理页面默认跳转页面，展示了本地所有商品，这里我们也使用了el-table表格组件代替了原始表格。
+          post: >-
+            在el-table表格组件中也是通过:data="products"从该组件中获取商品数组，然后展示在表格中。
+
+
+            这里我们使用scope.row._id获取对应行中的对象id，作为**修改**按钮的路由跳转路径参数。
+
+
+            除此之外我们还在el-button删除按钮组件中定义了删除事件，并将scope.row._id作为参数传递给该事件，然后在后端删除对应id的商品，并同步到本地；然后在删除本地商品的同时，我们还需要删除表格中对应的行对象，因此我们使用了el-table组件自带的deleteRow方法以及传入了scope.$index,和products作为参数，删除对应的行对象。
+      - file: src/pages/admin/New.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/pages/admin/New.vue文件进行修改，该组件为添加商品组件，这里我们把定义的model计算属性使用model数据属性来代替。
+          post: >-
+            该组件为添加商品组件，因此我们在这里定义了一个空的商品对象。但是我们不能直接将其定义为空对象，需要定义为{manufacturer:{name:
+            ''}}的形式，因为该组件中定义的model对象会传递给ProductForm
+            表单组件，该子组件需要绑定model对象中制造商的name属性，如果从父组件中传递过来的是一个空对象，子组件则无法读取name属性而报错，因此我们需要定义一个特定形式的model对象。
+
+
+            除此之外我们将model计算属性改成了数据属性，其实这就是我们之前在商品表单组件中无法进行编辑的问题。这是由于在el-form组件中数据的双向绑定不能来源于计算属性，而是需要来自数据属性，否则表单组件无法编辑。
+      - file: src/pages/admin/Edit.vue
+        display: true
+        explain:
+          pre: 进入src/pages/admin/Edit.vue文件进行修改，该组件为修改商品组件，这里也是将model计算属性改成了数据属性。
+          post: >-
+            该组件中的model是根据指定的路由id参数从本地商品中返回的指定对象，还是和之前一样，如果我们将其返回值定义在了计算属性中，则其子组件也就是ProductForm
+            表单组件将无法进行编辑，因此我们将其返回值重新定义到了data属性中。
+      - file: src/pages/admin/NewManufacturers.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/pages/admin/NewManufacturers.vue文件，该文件是添加制造商组件，像前面一样我们需要将计算属性model改成data属性。
+      - file: src/pages/admin/Manufacturers.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/pages/admin/Manufacturers.vue文件进行修改，该文件是制造商展示组件，我们也使用了el-table表格组件代替了原始表格。
+          post: 该组件的重构与Products组件的重构完全一致，因此这里就不再赘述。
+      - file: src/pages/Cart.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/pages/Cart.vue文件，该文件为购物车组件，购物车组件也是使用了productItem组件，因此我们需要进行和productList组件相同的修改。
+          post: 该组件也是删除了对productItem组件的遍历，而是直接使用productItem组件，并将购物车商品数组传递给该组件。
+      - file: tuture.yml
+    explain:
+      pre: >+
+        本篇文章利用[Element-UI](https://element.eleme.cn/#/zh-CN/component/installation)组件库重构我们的vue-online-shop项目，使得其在功能完善的基础上升级界面的美观性，使设计质量得以保障的同时提升产品整体的用户体验。
+
+
+        >
+        组件库是设计系统的一部分，是在我们常规界面设计过程中可以直接用来制作交互图例和搭建页面的组件集合，它可以作为单个组件独立存在，也可以通过多个组件组合而成的结构或模式来解决类似场景的设计问题。
+
+
+        在重构之前我们最好再回顾一下前面几篇教程，前面几篇教程我们带着大家以项目实战的方式，学习了利用 Vue
+        搭建前端项目的骨架，实现基于嵌套、动态路由的多页面跳转，然后通过 Vue 的双向数据绑定和模板语法实现数据添加，并用 Vuex
+        实现了前端的状态管理。
+
+
+        假设我们已经回顾了前面几篇教程，又熟悉了vue-online-shop项目的整个代码逻辑，那么我们就可以愉快地利用Element-UI对项目进行重构，实现界面的升级。
+
+
+        ## 安装依赖
+
+        ### npm安装
+
+
+        > 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用
+
+
+
+        ```
+
+        npm install element-ui -S
+
+        ```
+
+        ### CDN
+
+
+        ```
+
+        <!-- 引入样式 -->
+
+        <link rel="stylesheet"
+        href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+        <!-- 引入组件库 -->
+
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+        ```
+
+
+
+
+      post: >-
+        ## 这部分内容主要做了以下工作：
+
+        - 利用ElementUI组件库中的一部分组件重构了项目；
+
+        - 解决了点击添加商品时报错，也就是id属性未定义问题；
+
+        -
+        将添加商品、修改商品、添加制造商以及修改制造商组件中原本被定义为计算属性的商品和制造商对象修改为数据属性，计划是为了解决商品表单和制造商表单无法编辑问题；
+
+
+        但是项目跑起来之后还是存在表单信息无法编辑问题，说明我们的修改还存在问题，不要担心我们一起探索并解决这个问题。
+  - name: 修复 ElementUI 表单的双向绑定问题
+    commit: '4125181'
+    diff:
+      - file: src/components/products/ProductForm.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/components/products/ProductForm.vue文件进行修改，此次修改是进一步解决商品表单组件无法编辑的问题。
+          post: >-
+            该组件首先定义了一个modelData商品对象，并给其设置了指定形式。然后在该组件刚被创建时，将从父组件获取的商品对象先拷贝到一个临时变量中，然后将该变量通过解构赋值到modelData。在el-form中我们暂时在下拉菜单中使用modelData，并在watch方法中监听表单数据的改变，将下拉菜单改变后的新数据保存到modelData中。最后将这个modelData对象作为参数发送到父组件中，把项目跑起来之后可以发现我们的下拉菜单可以进行选择了。
+
+
+            恭喜你，我们一起探索并成功解决了表单组件无法编辑的问题，接下来我们就可以按照这种思路对其他表单组件进行修改了。
+      - file: src/pages/admin/Edit.vue
+        display: true
+        explain:
+          pre: >-
+            进入src/pages/admin/Edit.vue文件进行修改，该文件是修改商品组件，由于我们在表单子组件中新定义了商品对象，所以我们在该组件中可以把商品对象定义在计算属性中了。
+          post: 该组件其实就是恢复之前定义在计算属性中的商品对象。
+      - file: yarn.lock
+        display: false
+    explain:
+      pre: >-
+        现在我们就一起来探索el-form表单组件为何依然无法编辑，我们怀疑商品表单和制造商表单组件从父组件获取的商品对象和制造商对象还是存在问题。于是我们就尝试了另外一种方法，就是在表单组件中重新定义一个商品对象和制造商对象，然后将从父组件获取的对象进行解构赋值给新定义的对象，表单组件中双向绑定的是我们新定义的对象数据，并且我们使用了watch方法监听了表单数据的变化，将改变后的新数据保存到新对象中，然后将新对象作为参数发送给父组件。
+      post: >
+        ## 这部分内容主要做了以下工作：
+
+        - 在表单子组件 ProductForm 中定义一个新对象modelData
+        ，将该对象双向绑定到el-form表单组件中，然后父组件传递过来的商品对象model拷贝到一个临时变量中，将临时变量解构赋值到
+        modelData 中。并且在watch方法中监听了表单组件数据变化，将新数据保存到modelData中；
+
+        - 其次就是将原本定义到data属性中的商品对象恢复到计算属性中。
+  - name: 讨论重构项目之后后端请求问题
+    commit: 543633f
+    diff:
+      - file: src/components/products/ProductForm.vue
+        display: true
+        explain:
+          pre: >-
+            再次进入src/components/products/ProductForm.vue文件进行修改，由于之前仅仅绑定了modelData到下拉菜单中，因此我们需要将其绑定到其他表单组件中。
+          post: 这里我们将之前用model对象绑定的表单组件统一修改为modelData对象绑定，解决表单组件无法编辑的问题。
+      - file: src/components/products/ProductItem.vue
+        display: false
+      - file: src/components/products/ProductList.vue
+        display: false
+      - file: src/pages/admin/Index.vue
+        display: false
+      - file: src/pages/admin/Manufacturers.vue
+        display: true
+        explain:
+          pre: 再次进入src/pages/admin/Manufacturers.vue文件，这里我们解决文字自带下划线问题。
+          post: >-
+            由于在el-button按钮组件中，我们使用了router-link来包裹按钮内容，使得内容渲染出来之后带有下划线，这是由于router-link组件会默认渲染为a标签，所以才出现了下划线，这里我们使用tag="div"将其渲染为div标签，这样就避免了出现下划线。
+      - file: src/pages/admin/New.vue
+        display: true
+      - file: src/pages/admin/Products.vue
+        display: true
+      - file: src/store/actions.js
+        display: true
+    explain:
+      pre: 这部分内容主要是根据之前解决表单无法编辑的方法同步修改其他表单组件。
+  - name: 项目重构预提交
+    commit: ad9c3c6
+    diff:
+      - file: src/components/products/ProductForm.vue
+        display: true
+      - file: src/components/products/ProductItem.vue
+        display: true
+      - file: src/pages/admin/New.vue
+        display: true
+  - name: 修改商品信息无法显示最新
+    commit: 880a802
+    diff:
+      - file: src/components/ManufacturerForm.vue
+        display: true
+      - file: src/components/products/ProductForm.vue
+        display: true
+      - file: src/pages/admin/New.vue
+        display: true
+      - file: src/store/actions.js
+        display: true
+      - file: src/store/mutations.js
+        display: true
+  - name: 重构完成预提交
+    commit: 764157c
+    diff:
+      - file: src/pages/admin/Edit.vue
+        display: true
+      - file: src/pages/admin/EditManufacturers.vue
+        display: true
+      - file: src/store/actions.js
+        display: true
+      - file: src/store/mutations.js
+        display: true
+  - name: elementui重构最终提交
+    commit: 000dfe0
+    diff:
+      - file: src/store/mutations.js
+        display: true
+      - file: tuture.yml
+  - name: 打开教程
+    commit: 273a93b
+    diff:
+      - file: tuture.yml
+  - name: 打开教程
+    commit: 00ecd41
+    diff:
+      - file: tuture.yml
+  - name: 打开教程
+    commit: cbb6357
+    diff:
+      - file: tuture.yml
+  - name: 完善第六篇教程以及利用Element-UI重构项目完成教程(根据开发思路)
+    commit: 8bc5eca
+    diff:
+      - file: tuture.yml
+  - name: 打开教程
+    commit: 94aabbe
+    diff:
+      - file: tuture.yml
+description: >-
+  Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue
+  有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。
+
+
+  目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像 Element
+  、mpvue、iView 这样优秀的基于 Vue 的开源项目存在，所以学习 Vue 是一个不错的投资，当你学会
+  Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。
+
+
+  看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life
+  （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！
