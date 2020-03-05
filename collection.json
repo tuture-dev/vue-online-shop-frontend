@@ -1894,6 +1894,7 @@
           "type": "file",
           "file": "package-lock.json",
           "id": "rC8dp8iIX_",
+          "display": false,
           "children": [
             {
               "type": "explain",
