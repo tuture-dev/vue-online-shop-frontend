@@ -57,7 +57,13 @@
     },
     {
       "id": "00clq3UQ",
-      "name": "电商第七篇",
+      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（七）",
+      "topics": [],
+      "cover": ""
+    },
+    {
+      "id": "bj53MTrU",
+      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（八）",
       "topics": [],
       "cover": ""
     }
@@ -73170,7 +73176,7 @@
     {
       "type": "step",
       "id": "tiYE1d8sxm",
-      "articleId": "-OixkkqI",
+      "articleId": "bj53MTrU",
       "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
       "children": [
         {
@@ -73610,7 +73616,7 @@
     {
       "type": "step",
       "id": "iayohYgboA",
-      "articleId": "-OixkkqI",
+      "articleId": "bj53MTrU",
       "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
       "children": [
         {
@@ -74290,7 +74296,7 @@
     {
       "type": "step",
       "id": "pEE3Bc87R0",
-      "articleId": "-OixkkqI",
+      "articleId": "bj53MTrU",
       "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
       "children": [
         {
