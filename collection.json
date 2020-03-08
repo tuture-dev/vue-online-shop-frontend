@@ -61,12 +61,6 @@
       "topics": [],
       "cover": "",
       "description": "在之前的六篇教程中我们已经基本实现了迷你全栈电商应用，相信大家对于一个全栈应用的开发已经有了一个全面的认知。但是一个追求完美的工程师是不会吝啬他的艺术创造，仅仅实现应用的功能还不能满足用户的高需求，应用的界面效果也是提高用户体验的关键因素。因此本篇教程将基于element-ui组件库重构项目的前端代码，改善迷你电商应用的界面效果，提高用户的体验感。虽然我们可以轻松地引入现成的组件库，但是与之对应的数据处理也值得我们注意，那我会在引入组件库的同时带大家一起踩一踩element-ui给我们挖的坑，毕竟踩坑才能成长嘛。"
-    },
-    {
-      "id": "X08mwEUS",
-      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（八）",
-      "topics": [],
-      "cover": ""
     }
   ],
   "steps": [
@@ -73614,12 +73608,12 @@
           ]
         }
       ],
-      "articleId": "X08mwEUS"
+      "articleId": "oY-lZZNj"
     },
     {
       "type": "step",
       "id": "rmz1DfbjGY",
-      "articleId": "X08mwEUS",
+      "articleId": "oY-lZZNj",
       "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
       "children": [
         {
@@ -74299,7 +74293,7 @@
     {
       "type": "step",
       "id": "pUMFTja1Sn",
-      "articleId": "X08mwEUS",
+      "articleId": "oY-lZZNj",
       "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
       "children": [
         {
