@@ -3,6 +3,7 @@
   "description": "Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue 有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。\n\n目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像 Element 、mpvue、iView 这样优秀的基于 Vue 的开源项目存在，所以学习 Vue 是一个不错的投资，当你学会 Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。\n\n看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！",
   "id": "092faf468f0108b393159a8456de3e15",
   "created": "2019-10-17T00:00:00.509Z",
+  "github": "https://github.com/tuture-dev/vue-online-shop-frontend",
   "topics": [
     "Vue"
   ],
@@ -51,15 +52,23 @@
     {
       "id": "-OixkkqI",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（六）",
-      "topics": [],
-      "cover": "",
-      "description": "前面五篇教程我们已经基本实现了迷你全栈电商应用的界面展示以及功能逻辑，相信大家在这个过程中都收获颇丰，并且迈向了全栈工程师的第一步。但是我们却并不满足于此，我们还需要对我们的项目代码进行优化，使得我们的代码可读性更高，也更好维护。相信细心的你们已经感觉到了项目中的store实例实在是过于臃肿，因此，本篇教程就是带大家一起学习如何抽出 Getters 、 Mutations 和Actions 逻辑实现store的“减重”以及如何干掉 mutation-types 硬编码。"
+      "topics": [
+        "Vue.js",
+        "Vuex"
+      ],
+      "cover": ".tuture/assets/cover-6.jpg",
+      "description": "前面五篇教程我们已经基本实现了迷你全栈电商应用的界面展示以及功能逻辑，相信大家在这个过程中都收获颇丰，并且迈向了全栈工程师的第一步。但是我们却并不满足于此，我们还需要对我们的项目代码进行优化，使得我们的代码可读性更高，也更好维护。相信细心的你们已经感觉到了项目中的store实例实在是过于臃肿，因此，本篇教程就是带大家一起学习如何抽出 Getters 、 Mutations 和Actions 逻辑实现store的“减重”以及如何干掉 mutation-types 硬编码。",
+      "created": "2020-03-03T00:00:00.509Z"
     },
     {
-      "id": "oY-lZZNj",
+      "id": "tc1c9oDB",
+      "created": "2020-03-13T02:00:37.658Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（七）",
-      "topics": [],
-      "cover": "",
+      "topics": [
+        "Vue",
+        "Element UI"
+      ],
+      "cover": ".tuture/assets/vue-cover-7-squashed.jpg",
       "description": "在之前的六篇教程中我们已经基本实现了迷你全栈电商应用，相信大家对于一个全栈应用的开发已经有了一个全面的认知。但是一个追求完美的工程师是不会吝啬他的艺术创造，仅仅实现应用的功能还不能满足用户的高需求，应用的界面效果也是提高用户体验的关键因素。因此本篇教程将基于element-ui组件库重构项目的前端代码，改善迷你电商应用的界面效果，提高用户的体验感。虽然我们可以轻松地引入现成的组件库，但是与之对应的数据处理也值得我们注意，那我会在引入组件库的同时带大家一起踩一踩element-ui给我们挖的坑，毕竟踩坑才能成长嘛。"
     }
   ],
@@ -589,7 +598,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "./.tuture/assets/c5019a89d14f9f9118f22b61136c02c3",
+                  "url": ".tuture/assets/c5019a89d14f9f9118f22b61136c02c3.png",
                   "children": [
                     {
                       "text": ""
@@ -2767,7 +2776,7 @@
                   "children": [
                     {
                       "type": "image",
-                      "url": "./.tuture/assets/fd30e4f820c680abbd7d34b554704551",
+                      "url": ".tuture/assets/fd30e4f820c680abbd7d34b554704551.png",
                       "children": [
                         {
                           "text": ""
@@ -3307,7 +3316,7 @@
                   "children": [
                     {
                       "type": "image",
-                      "url": "./.tuture/assets/edd8a53811e78bacd91ace31c3691c70",
+                      "url": ".tuture/assets/edd8a53811e78bacd91ace31c3691c70.png",
                       "children": [
                         {
                           "text": ""
@@ -4896,7 +4905,7 @@
                   "children": [
                     {
                       "link": true,
-                      "url": "https://tuture.co/2019/10/17/0b662ce/",
+                      "url": "https.tuture.co/2019/10/17/0b662ce/",
                       "text": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（一）"
                     }
                   ],
@@ -4908,7 +4917,7 @@
                   "children": [
                     {
                       "link": true,
-                      "url": "https://tuture.co/2019/10/21/cb08dc8/",
+                      "url": "https.tuture.co/2019/10/21/cb08dc8/",
                       "text": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（二）"
                     }
                   ],
@@ -7130,7 +7139,6 @@
           "type": "file",
           "file": "package-lock.json",
           "id": "UJifQWsvz4",
-          "display": false,
           "children": [
             {
               "type": "explain",
@@ -20883,7 +20891,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "./.tuture/assets/2a340eeb04a07c1aae2bcd0387931c52",
+                  "url": ".tuture/assets/2a340eeb04a07c1aae2bcd0387931c52.png",
                   "children": [
                     {
                       "text": ""
@@ -20995,7 +21003,7 @@
                 },
                 {
                   "link": true,
-                  "url": "https://tuture.co/2019/10/17/0b662ce/",
+                  "url": "https.tuture.co/2019/10/17/0b662ce/",
                   "text": "第一篇"
                 },
                 {
@@ -21003,7 +21011,7 @@
                 },
                 {
                   "link": true,
-                  "url": "https://tuture.co/2019/10/17/5e10a46/",
+                  "url": "https.tuture.co/2019/10/17/5e10a46/",
                   "text": "第三篇"
                 },
                 {
@@ -50282,7 +50290,7 @@
                 },
                 {
                   "link": true,
-                  "url": "https://tuture.co/2019/10/21/cb08dc8/",
+                  "url": "https.tuture.co/2019/10/21/cb08dc8/",
                   "text": "第二篇教程"
                 },
                 {
@@ -52748,17 +52756,6 @@
           "type": "heading-two",
           "commit": "f0b5684",
           "id": "14i9W4NaYq",
-          "fixed": true,
-          "children": [
-            {
-              "text": ""
-            }
-          ]
-        },
-        {
-          "type": "heading-two",
-          "commit": "f0b5684",
-          "id": "Wd3IlBp2",
           "fixed": true,
           "children": [
             {
@@ -57050,6 +57047,20 @@
           ]
         },
         {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "file",
           "file": "build/webpack.base.conf.js",
           "display": false,
@@ -57167,7 +57178,7 @@
         },
         {
           "type": "file",
-          "file": "tuture-assets/142621576840065_.pic.jpg",
+          "file": ".tuture/assets/142621576840065_.pic.jpg",
           "display": false,
           "id": "Ys_vrd8Wes",
           "children": [
@@ -57187,7 +57198,7 @@
             },
             {
               "type": "diff-block",
-              "file": "tuture-assets/142621576840065_.pic.jpg",
+              "file": ".tuture/assets/142621576840065_.pic.jpg",
               "commit": "19b49e9",
               "hiddenLines": [],
               "children": [
@@ -58013,13 +58024,14 @@
     },
     {
       "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-      "id": "5Xwpu7pz9n",
+      "id": "5CJeMaUMK3",
+      "articleId": "tc1c9oDB",
       "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-          "id": "gQocw5EqYF",
+          "id": "2akI8uQMIk",
           "fixed": true,
           "children": [
             {
@@ -58035,7 +58047,170 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "这一部分我们主要利用"
+                },
+                {
+                  "text": "element-ui",
+                  "code": true
+                },
+                {
+                  "text": "组件库重构之前的项目代码，实现极具美感的迷你电商应用。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "这里我们简单介绍一下"
+                },
+                {
+                  "text": "element-ui",
+                  "code": true
+                },
+                {
+                  "text": "组件库(如果您了解，您可以跳过这部分)："
+                }
+              ]
+            },
+            {
+              "type": "block-quote",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Element UI 是一套采用 Vue 2.0 作为基础框架实现的组件库，一套为开发者、设计师和产品经理准备的基于 Vue 2.0的组件库，提供了配套设计资源，帮助网站快速成型。"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Element UI文档提供了很多实例代码，一般情况下我们直接拷下示例代码稍微看看改改数据之类的就OK了。但是在某些场景下，我们可能又需要使用到一些特殊的功能和属性，而这些功能属性一般在官方提供的组件中都已经内置了，所以我们可以直接先从文档中寻找查看是否有属性或者方法等能够满足我们的需求，从而避免重复造轮子。"
+                }
+              ]
+            },
+            {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "安装element-ui依赖"
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "parent": "bulleted-list",
+                  "children": [
+                    {
+                      "text": "npm 安装推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。"
+                    }
+                  ],
+                  "level": 0,
+                  "number": 1
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "npm i element-ui -S"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "parent": "bulleted-list",
+                  "children": [
+                    {
+                      "text": "CDN引入目前可以通过 "
+                    },
+                    {
+                      "text": "unpkg.com/element-ui",
+                      "link": true,
+                      "url": "https://unpkg.com/browse/element-ui@2.13.0/"
+                    },
+                    {
+                      "text": " 获取到最新版本的资源，在页面上引入 js 和 css 文件即可开始使用。"
+                    }
+                  ],
+                  "level": 0,
+                  "number": 1
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "<!-- 引入样式 -->"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "<link rel=\"stylesheet\" href=\"https://unpkg.com/element-ui/lib/theme-chalk/index.css\">"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "<!-- 引入组件库 -->"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "<script src=\"https://unpkg.com/element-ui/lib/index.js\"></script>"
+                    }
+                  ]
+                }
+              ],
+              "lang": "html"
+            },
+            {
+              "type": "block-quote",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们建议使用 CDN 引入 Element 的用户在链接地址上锁定版本，以免将来 Element升级时受到非兼容性更新的影响。锁定版本的方法请查看 "
+                    },
+                    {
+                      "text": "unpkg.com",
+                      "link": true,
+                      "url": "https://unpkg.com/"
+                    },
+                    {
+                      "text": "。"
+                    }
+                  ]
                 }
               ]
             }
@@ -58044,7 +58219,6 @@
         {
           "type": "file",
           "file": "package-lock.json",
-          "display": false,
           "children": [
             {
               "type": "explain",
@@ -70819,9 +70993,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "package.json",
           "display": false,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -70935,6 +71110,7 @@
         {
           "file": "src/main.js",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -70942,10 +71118,38 @@
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "导入依赖"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "依赖安装完成之后，我们需要在项目的"
+                    },
+                    {
+                      "text": "main.js",
+                      "code": true
+                    },
+                    {
+                      "text": "文件中导入并注册依赖。"
+                    }
+                  ]
+                },
+                {
+                  "type": "block-quote",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "你可以引入整个 Element，或是根据需要仅引入部分组件，这里我们引入了完整的 Element。"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -70961,6 +71165,8 @@
                 2,
                 3,
                 4,
+                15,
+                16,
                 17,
                 18,
                 19,
@@ -70987,7 +71193,36 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "在"
+                    },
+                    {
+                      "text": "main.js",
+                      "code": true
+                    },
+                    {
+                      "text": "文件中我们首先导入了"
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": "组件库，需要注意的是我们要单独引入样式文件；除此之外还要使用"
+                    },
+                    {
+                      "text": "Vue.use()",
+                      "code": true
+                    },
+                    {
+                      "text": "注册组件库。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "至此，一个基于 Vue 和 Element 的开发环境已经搭建完毕，现在就可以愉快地使用组件库进行代码重构了。"
                     }
                   ]
                 }
@@ -70998,6 +71233,7 @@
         {
           "file": "src/App.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71005,10 +71241,46 @@
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "重构导航栏"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "我们首先来到"
+                    },
+                    {
+                      "text": "App",
+                      "code": true
+                    },
+                    {
+                      "text": "组件，这里之前是采用普通的"
+                    },
+                    {
+                      "text": "nav",
+                      "code": true
+                    },
+                    {
+                      "text": "标签展示首页导航，显得甚是简陋，现在我们可以使用"
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": "组件库提供的"
+                    },
+                    {
+                      "text": "el-menu",
+                      "code": true
+                    },
+                    {
+                      "text": "导航菜单组件重构导航栏，绝对酷炫。"
                     }
                   ]
                 }
@@ -71019,19 +71291,7 @@
               "file": "src/App.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                58,
-                59,
-                60,
-                61,
-                62,
-                63,
-                64,
-                65,
-                66,
-                67,
-                68,
-                69,
-                70
+                39
               ],
               "children": [
                 {
@@ -71052,7 +71312,42 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "这里导航栏组件的使用相信大家都能看懂，这里我们只讲一下比较特殊的地方。我们不需要在意 "
+                    },
+                    {
+                      "text": "data",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性以及 "
+                    },
+                    {
+                      "text": "handleSelect ",
+                      "code": true
+                    },
+                    {
+                      "text": "方法，我们暂时用不到。这里一个特殊的地方就是 "
+                    },
+                    {
+                      "text": "el-menu-item ",
+                      "code": true
+                    },
+                    {
+                      "text": "标签中的 "
+                    },
+                    {
+                      "text": "tag",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性，我们将其值设置为 \"div\" 表示将该标签渲染为 \"div\" 盒子，如果不设置该属性则该标签默认渲染为 \"a\" 标签，导致标签包裹的内容带有下划线，因此这里 "
+                    },
+                    {
+                      "text": "tag",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性的设置是为了去除下划线。"
                     }
                   ]
                 }
@@ -71063,6 +71358,7 @@
         {
           "file": "src/components/products/ProductList.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71070,10 +71366,39 @@
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "重构商品列表"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "重新修改 "
+                    },
+                    {
+                      "text": "ProductList",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件，由于该组件中的子组件 "
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": " 进行了重构，因此这里也需要做一定的修改，看到后面 "
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件的重构您就会明白我们这里修改的用意。"
                     }
                   ]
                 }
@@ -71084,9 +71409,6 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                0,
-                1,
-                2,
                 15,
                 16,
                 17,
@@ -71128,7 +71450,63 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "这里之前是将从本地获取的 "
+                    },
+                    {
+                      "text": "products",
+                      "code": true
+                    },
+                    {
+                      "text": " 数组利用 "
+                    },
+                    {
+                      "text": "v-for",
+                      "code": true
+                    },
+                    {
+                      "text": " 将 "
+                    },
+                    {
+                      "text": "product",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象遍历到每个 "
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中分别进行展示，但是我们这里取消了 "
+                    },
+                    {
+                      "text": "v-for",
+                      "code": true
+                    },
+                    {
+                      "text": " 遍历 "
+                    },
+                    {
+                      "text": "products",
+                      "code": true
+                    },
+                    {
+                      "text": " 数组，选择直接将 "
+                    },
+                    {
+                      "text": "products",
+                      "code": true
+                    },
+                    {
+                      "text": " 数组传入 "
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中。请允许我先在这里卖个关子，继续往下看。"
                     }
                   ]
                 }
@@ -71139,6 +71517,7 @@
         {
           "file": "src/components/products/ProductItem.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71149,7 +71528,28 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "重新进入 "
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行修改，这里我们使用了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "el-table",
+                      "code": true
+                    },
+                    {
+                      "text": " 表格组件取代了原始标签来展示商品信息列表。"
                     }
                   ]
                 }
@@ -71159,10 +71559,7 @@
               "type": "diff-block",
               "file": "src/components/products/ProductItem.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [
-                97,
-                98
-              ],
+              "hiddenLines": [],
               "children": [
                 {
                   "type": "paragraph",
@@ -71182,7 +71579,92 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "其实这里的修改相信大家都能看懂，我们就简单的做一下介绍。您可能还记得我们在上面卖的一个关子，为什么我们直接向该组件中传入了 "
+                    },
+                    {
+                      "text": "products",
+                      "code": true
+                    },
+                    {
+                      "text": " 数组而不是遍历的 "
+                    },
+                    {
+                      "text": "product",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象？相信大家看了该组件的重构也能豁然开朗，那就是因为我们使用的 "
+                    },
+                    {
+                      "text": "el-table",
+                      "code": true
+                    },
+                    {
+                      "text": " 表格组件需要传入一个数组作为 "
+                    },
+                    {
+                      "text": "data",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性，并将每个元素对象作为 "
+                    },
+                    {
+                      "text": "prop",
+                      "code": true
+                    },
+                    {
+                      "text": " 传入表格，按照对应的列名展示出来。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "除此之外，相信大家也发现了最后一个 "
+                    },
+                    {
+                      "text": "el-table-column",
+                      "code": true
+                    },
+                    {
+                      "text": " 标签中并没有定义 "
+                    },
+                    {
+                      "text": "prop",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性，这是因为最后一列单元格中放置的是按钮而不是商品信息，该按钮是用于对指定行对象进行指定操作，这里我们使用 "
+                    },
+                    {
+                      "text": "scope.row",
+                      "code": true
+                    },
+                    {
+                      "text": " 获取指定行对象并将其id传递给了 "
+                    },
+                    {
+                      "text": "ProductButton",
+                      "code": true
+                    },
+                    {
+                      "text": " 按钮组件。"
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "info",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "通过 slot-scope 可以获取到 row, column, $index 和 store（table 内部的状态管理）的数据。"
+                        }
+                      ]
                     }
                   ]
                 }
@@ -71193,6 +71675,7 @@
         {
           "file": "src/components/products/ProductButton.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71203,7 +71686,35 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "再次进入 "
+                    },
+                    {
+                      "text": "ProductButton",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行修改，这里我们使用了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "el-button",
+                      "code": true
+                    },
+                    {
+                      "text": " 按钮组件替代之前普通的 "
+                    },
+                    {
+                      "text": "button",
+                      "code": true
+                    },
+                    {
+                      "text": " 标签并修改了对应的数据处理。"
                     }
                   ]
                 }
@@ -71214,6 +71725,9 @@
               "file": "src/components/products/ProductButton.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
+                30,
+                31,
+                32,
                 33,
                 34,
                 35,
@@ -71224,8 +71738,6 @@
                 40,
                 41,
                 42,
-                43,
-                44,
                 45,
                 46,
                 47,
@@ -71235,10 +71747,7 @@
                 51,
                 52,
                 53,
-                54,
-                55,
-                56,
-                57
+                54
               ],
               "children": [
                 {
@@ -71259,59 +71768,84 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "这里我们首先简单地使用了 "
+                    },
+                    {
+                      "text": "el-button",
+                      "code": true
+                    },
+                    {
+                      "text": " 按钮组件，然后将从父组件获取的 "
+                    },
+                    {
+                      "text": "product",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象修改为了 "
+                    },
+                    {
+                      "text": "id",
+                      "code": true
+                    },
+                    {
+                      "text": "，因为我们在 "
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中传入的是指定对象的 "
+                    },
+                    {
+                      "text": "id",
+                      "code": true
+                    },
+                    {
+                      "text": "，因此我们在按钮组件中定义了计算属性 "
+                    },
+                    {
+                      "text": "product",
+                      "code": true
+                    },
+                    {
+                      "text": "，从本地获取指定 "
+                    },
+                    {
+                      "text": "id",
+                      "code": true
+                    },
+                    {
+                      "text": " 的 "
+                    },
+                    {
+                      "text": "product",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象。"
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "src/pages/admin/Index.vue",
-          "display": false,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
+                },
                 {
                   "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们已经迫不及待把项目跑起来了，看看我们的首页导航以及商品信息列表发生了怎样不可思议的改变："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/170bd7f1d39bb647.png",
                   "children": [
                     {
                       "text": ""
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "src/pages/admin/Index.vue",
-              "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [
-                0,
-                23,
-                24
-              ],
-              "children": [
+                },
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
                   "children": [
                     {
                       "text": ""
@@ -71325,6 +71859,7 @@
         {
           "file": "src/pages/admin/Products.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71332,10 +71867,54 @@
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "重构商品信息功能"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "这部分内容主要是有关商品信息功能的重构，包括商品信息列表的展示、修改指定商品信息以及添加新商品，我们都使用了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的组件进行重构，提高用户操作商品信息时的交互体验。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先我们进入 "
+                    },
+                    {
+                      "text": "Products",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件，同样使用了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "el-table",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件替换了之前普通表格来展示商品信息列表。"
                     }
                   ]
                 }
@@ -71404,6 +71983,44 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "细心的大家肯定已经发现了这里的表格有点似曾相识，没错，这里的表格与 "
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中的表格非常相似，都是用来展示本地商品信息，但是两者的区别是对商品对象的操作，"
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中的按钮组件是用于将商品添加或移出购物车，而该组件中的按钮组件是用于修改或删除商品对象。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "这是我们重构之后的商品信息列表："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/170bd7fc2f9b7080.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
                       "text": ""
                     }
                   ]
@@ -71415,6 +72032,7 @@
         {
           "file": "src/pages/admin/Edit.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71425,7 +72043,14 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "然后我们先对修改功能进行重构，再次进入 "
+                    },
+                    {
+                      "text": "Edit",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件，我们在这里做了数据处理修改，目的是尝试解决商品信息表单无法编辑问题。"
                     }
                   ]
                 }
@@ -71490,7 +72115,63 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "这里我们把定义的计算属性 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 修改为 "
+                    },
+                    {
+                      "text": "data",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性，因为我们发现如果商品对象 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 作为计算属性传给子组件 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 进行信息展示时，无法进行表单编辑，大家可以运行起来尝试一下是否可以进行编辑。我们初始猜想是 "
+                    },
+                    {
+                      "text": "el-form",
+                      "code": true
+                    },
+                    {
+                      "text": " 表单组件中的表单数据对象 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 不能来自计算属性，否则无法进行编辑，因此我们首度尝试将该组件中的计算属性 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 放到 "
+                    },
+                    {
+                      "text": "data",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性中。"
                     }
                   ]
                 }
@@ -71501,6 +72182,7 @@
         {
           "file": "src/components/products/ProductForm.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71511,7 +72193,28 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "再次进入 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行重构，这里我们使用了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "el-form",
+                      "code": true
+                    },
+                    {
+                      "text": " 表单组件替换之前的普通表单展示商品信息。"
                     }
                   ]
                 }
@@ -71522,6 +72225,10 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
+                32,
+                33,
+                34,
+                35,
                 36,
                 37,
                 38,
@@ -71547,6 +72254,17 @@
                 58,
                 59,
                 60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
                 72,
                 73,
                 74,
@@ -71562,7 +72280,20 @@
                 84,
                 85,
                 86,
-                87
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                101
               ],
               "children": [
                 {
@@ -71583,7 +72314,56 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "相信大家也能轻松的看懂 "
+                    },
+                    {
+                      "text": "el-form",
+                      "code": true
+                    },
+                    {
+                      "text": " 表单组件的使用，这里的 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性表示表单数据对象，我们可以使用 "
+                    },
+                    {
+                      "text": "v-model",
+                      "code": true
+                    },
+                    {
+                      "text": " 将表单数据对象中的信息双向绑定到相应的表单内组件上。特别提醒一下商品对象 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 中的 "
+                    },
+                    {
+                      "text": "manufacturer",
+                      "code": true
+                    },
+                    {
+                      "text": " 是一个制造商对象，包含制造商 "
+                    },
+                    {
+                      "text": "id",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "name",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性。"
                     }
                   ]
                 }
@@ -71594,6 +72374,7 @@
         {
           "file": "src/pages/admin/New.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71604,7 +72385,35 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "现在我们再进入 "
+                    },
+                    {
+                      "text": "New",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行重构，当我们发现 "
+                    },
+                    {
+                      "text": "Edit",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中的问题之后，我们同样尝试将该组件中的计算属性 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 定义到 "
+                    },
+                    {
+                      "text": "data",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性中。"
                     }
                   ]
                 }
@@ -71624,8 +72433,12 @@
                 6,
                 7,
                 8,
+                17,
+                18,
+                19,
                 20,
                 21,
+                30,
                 31,
                 32,
                 33,
@@ -71634,9 +72447,7 @@
                 36,
                 37,
                 38,
-                39,
-                40,
-                41
+                39
               ],
               "children": [
                 {
@@ -71657,6 +72468,51 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "因为该组件是新建商品组件，因此我们定义的是一个空对象 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": "，但是我们需要给其一个默认初始形式 "
+                    },
+                    {
+                      "text": "model: {manufacturer: {name: ' '}}",
+                      "code": true
+                    },
+                    {
+                      "text": "，防止在子组件表单中无法访问 "
+                    },
+                    {
+                      "text": "name",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性导致报错。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "现在我们添加或者修改商品信息的表单界面变成了这样："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/170bd807ce1da156.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
                       "text": ""
                     }
                   ]
@@ -71668,6 +72524,7 @@
         {
           "file": "src/pages/admin/Manufacturers.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71675,10 +72532,61 @@
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "重构制造商信息功能"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "制造商信息功能包括制造商信息展示，添加制造商以及修改制造商信息，同重构商品信息功能一样，我们也使用了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的组件进行重构，提高用户操作制造商信息时的交互体验。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先我们进入 "
+                    },
+                    {
+                      "text": "Manufacturers",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行重构，同 "
+                    },
+                    {
+                      "text": "Products",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件类似，我们使用了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "el-table",
+                      "code": true
+                    },
+                    {
+                      "text": " 表格组件替换了之前普通的表格展示制造商信息列表。"
                     }
                   ]
                 }
@@ -71689,6 +72597,10 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
+                21,
+                22,
+                23,
+                24,
                 25,
                 26,
                 27,
@@ -71697,11 +72609,17 @@
                 30,
                 31,
                 32,
+                33,
+                34,
+                35,
+                37,
+                58,
+                59,
+                60,
                 61,
                 62,
                 63,
                 64,
-                65,
                 66,
                 67,
                 68,
@@ -71748,6 +72666,22 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "这是我们重构后的制造商信息列表："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/170bd8133a39a38f.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
                       "text": ""
                     }
                   ]
@@ -71759,6 +72693,7 @@
         {
           "file": "src/pages/admin/NewManufacturers.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71769,7 +72704,28 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "再次进入 "
+                    },
+                    {
+                      "text": "NewManufacturers",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行重构，同样的将定义的计算属性 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 放到 "
+                    },
+                    {
+                      "text": "data",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性中："
                     }
                   ]
                 }
@@ -71830,6 +72786,7 @@
         {
           "file": "src/components/ManufacturerForm.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71840,7 +72797,35 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "然后进入子组件 "
+                    },
+                    {
+                      "text": "ManufacturerForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 中进行重构，同 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件类似，使用 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "el-form",
+                      "code": true
+                    },
+                    {
+                      "text": " 表单组件替换了之前普通的表单展示制造商信息："
                     }
                   ]
                 }
@@ -71877,6 +72862,22 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "这是我们重构后用户添加或者修改制造商信息时的表单界面："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/170bd81d39c3eb45.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
                       "text": ""
                     }
                   ]
@@ -71888,6 +72889,7 @@
         {
           "file": "src/pages/Cart.vue",
           "display": true,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
           "type": "file",
           "children": [
             {
@@ -71898,7 +72900,28 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "最后我们进入 "
+                    },
+                    {
+                      "text": "Cart",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行重构，我们会发现该组件与 "
+                    },
+                    {
+                      "text": "ProductList",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件极其相似，因为两者都复用了子组件 "
+                    },
+                    {
+                      "text": "ProductItem",
+                      "code": true
+                    },
+                    {
+                      "text": "，该组件是为了展示购物车商品信息列表。"
                     }
                   ]
                 }
@@ -71950,6 +72973,78 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "这是重构后的购物车界面："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/170bd82508c14642.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/pages/admin/Index.vue",
+          "display": false,
+          "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "src/pages/admin/Index.vue",
+              "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
+              "hiddenLines": [
+                0,
+                23,
+                24
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
                       "text": ""
                     }
                   ]
@@ -71963,27 +73058,42 @@
           "fixed": true,
           "children": [
             {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ]
+            },
+            {
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "这一节我们主要就是使用 "
+                },
+                {
+                  "text": "element-ui",
+                  "code": true
+                },
+                {
+                  "text": " 组件库进行项目代码的重构，实现了首页导航栏、商品信息功能、制造商信息功能以及购物车的页面升级，提高了用户的交互体验。但是这也造成了部分功能逻辑的瘫痪，我们在下一节会带大家一起去解决问题。"
                 }
               ]
             }
           ]
         }
-      ],
-      "articleId": "oY-lZZNj"
+      ]
     },
     {
       "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
-      "id": "OCt_uZLbCH",
+      "id": "dQE9pBlFOk",
+      "articleId": "tc1c9oDB",
       "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
-          "id": "fYbger6gKN",
+          "id": "S0o5U92BKF",
           "fixed": true,
           "children": [
             {
@@ -71999,6 +73109,44 @@
               "type": "paragraph",
               "children": [
                 {
+                  "text": "上一节我们使用了 "
+                },
+                {
+                  "text": "element-ui",
+                  "code": true
+                },
+                {
+                  "text": " 组件库完成项目代码重构，可是当我们把项目跑起来之后发现表单信息仍然无法编辑，说明我们之前的尝试失败。不过我们并没有灰心，而是选择继续尝试，这一节我们又尝试新方法来修复"
+                },
+                {
+                  "text": "element-ui",
+                  "code": true
+                },
+                {
+                  "text": " 表单双向绑定问题。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "大家遇到的问题应该是这样子："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": ".tuture/assets/170bd829d4626c61.png",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "children": [
+                {
                   "text": ""
                 }
               ]
@@ -72006,10 +73154,56 @@
           ]
         },
         {
-          "file": "src/components/products/ProductForm.vue",
+          "file": "src/pages/admin/Edit.vue",
           "display": true,
+          "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
           "type": "file",
           "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "重构 Edit 组件"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们首先进入 "
+                    },
+                    {
+                      "text": "Edit",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行修复，这里我们主要恢复了原先的数据定义。"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "src/pages/admin/Edit.vue",
+              "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "type": "explain",
               "fixed": true,
@@ -72018,7 +73212,72 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "我们又将替换到 "
+                    },
+                    {
+                      "text": "data",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性中的 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象恢复到了计算属性中，用于缓存 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象信息，提高性能。我们打算在下面的 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中进行修复表单无法编辑的问题。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/products/ProductForm.vue",
+          "display": true,
+          "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "重构 ProductForm 组件"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "再次进入 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中，我们尝试另一种方法来修复表单无法编辑的问题。"
                     }
                   ]
                 }
@@ -72116,7 +73375,78 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "这里我们没有直接使用从父组件获取的 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象作为表单数据对象，而是在该组件中自定义一个 "
+                    },
+                    {
+                      "text": "modelData",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象，并使用默认初始形式。然后在组件刚被创建时，先将从父组件获取的 "
+                    },
+                    {
+                      "text": "model",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象赋值给一个临时变量 "
+                    },
+                    {
+                      "text": "product",
+                      "code": true
+                    },
+                    {
+                      "text": "，然后将 "
+                    },
+                    {
+                      "text": "product",
+                      "code": true
+                    },
+                    {
+                      "text": " 浅拷贝到 "
+                    },
+                    {
+                      "text": "modelData",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象中，这样就避免了表单数据对象使用计算属性。但是这仅仅完成了一半的工作，因为我们需要实现双向绑定的效果，因此我们需要监测表单组件的变化，通过使用 "
+                    },
+                    {
+                      "text": "watch",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法监测用户的输入，然后将新数据储存到 "
+                    },
+                    {
+                      "text": "modelData",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象中，这样就成功实现了双向绑定，而且表单也能随意进行编辑。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "但是这里我们仅仅在下拉菜单中使用了 "
+                    },
+                    {
+                      "text": "modelData",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象进行尝试，因此后面我们会在整个表单内组件使用该对象。"
                     }
                   ]
                 }
@@ -72125,69 +73455,10 @@
           ]
         },
         {
-          "file": "src/pages/admin/Edit.vue",
-          "display": true,
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "src/pages/admin/Edit.vue",
-              "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
-              "hiddenLines": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                31
-              ],
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
           "file": "yarn.lock",
           "display": false,
+          "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -72240,31 +73511,60 @@
           "fixed": true,
           "children": [
             {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ]
+            },
+            {
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "这一节我们主要带大家修复了 "
+                },
+                {
+                  "text": "element-ui",
+                  "code": true
+                },
+                {
+                  "text": " 表单双向绑定问题，通过自定义 "
+                },
+                {
+                  "text": "modelData",
+                  "code": true
+                },
+                {
+                  "text": " 对象以及 "
+                },
+                {
+                  "text": "watch",
+                  "code": true
+                },
+                {
+                  "text": " 方法监测表单数据的改变实现了表单数据的双向绑定，并且解决了表单无法编辑的问题。但是仅仅在下拉菜单中进行尝试，后面我们会重构整个商品信息表单组件。"
                 }
               ]
             }
           ]
         }
-      ],
-      "articleId": "oY-lZZNj"
+      ]
     },
     {
       "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
-      "id": "DrBh79Zrsg",
+      "id": "oAU5PITO4B",
+      "articleId": "tc1c9oDB",
       "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
-          "id": "fQTJ9jOZJ0",
+          "id": "8PEfu5F1qz",
           "fixed": true,
           "children": [
             {
-              "text": "讨论重构项目之后后端请求问题"
+              "text": "完善表单双向绑定问题"
             }
           ]
         },
@@ -72285,6 +73585,7 @@
         {
           "file": "src/components/products/ProductForm.vue",
           "display": true,
+          "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
           "type": "file",
           "children": [
             {
@@ -72292,10 +73593,32 @@
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "重构 ProductForm 组件"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "再次进入 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件，我们需要完善上一节遗留的问题，也就是仅仅对商品信息表单中的下拉菜单进行了尝试，并且尝试成功，因此这一节我们需要将 "
+                    },
+                    {
+                      "text": "modelData",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象导入所有表单内组件中，解决其他表单内组件无法编辑的问题。"
                     }
                   ]
                 }
@@ -72306,7 +73629,6 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                0,
                 13,
                 14,
                 15,
@@ -72318,12 +73640,12 @@
                 21,
                 22,
                 23,
+                34,
+                35,
                 36,
                 37,
                 38,
                 39,
-                40,
-                41,
                 42,
                 43,
                 44,
@@ -72389,7 +73711,6 @@
                 104,
                 105,
                 106,
-                107,
                 108,
                 109,
                 110,
@@ -72404,6 +73725,10 @@
                 119,
                 120,
                 121,
+                122,
+                123,
+                124,
+                125,
                 126,
                 127,
                 128,
@@ -72455,6 +73780,7 @@
         {
           "file": "src/components/products/ProductItem.vue",
           "display": false,
+          "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
           "type": "file",
           "children": [
             {
@@ -72558,6 +73884,7 @@
         {
           "file": "src/components/products/ProductList.vue",
           "display": false,
+          "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
           "type": "file",
           "children": [
             {
@@ -72636,6 +73963,7 @@
         {
           "file": "src/pages/admin/Index.vue",
           "display": false,
+          "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
           "type": "file",
           "children": [
             {
@@ -72690,6 +74018,7 @@
         {
           "file": "src/pages/admin/Manufacturers.vue",
           "display": false,
+          "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
           "type": "file",
           "children": [
             {
@@ -72787,6 +74116,7 @@
         {
           "file": "src/pages/admin/New.vue",
           "display": false,
+          "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
           "type": "file",
           "children": [
             {
@@ -72872,6 +74202,7 @@
         {
           "file": "src/pages/admin/Products.vue",
           "display": false,
+          "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
           "type": "file",
           "children": [
             {
@@ -72978,7 +74309,8 @@
         },
         {
           "file": "src/store/actions.js",
-          "display": true,
+          "display": false,
+          "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
           "type": "file",
           "children": [
             {
@@ -73159,31 +74491,39 @@
           "fixed": true,
           "children": [
             {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ]
+            },
+            {
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "这一节我们带大家补充了上一节遗留的问题，也就是复制下拉菜单中的尝试到其他表单内组件中，保证整个表单组件都能够顺利地实现编辑功能。"
                 }
               ]
             }
           ]
         }
-      ],
-      "articleId": "oY-lZZNj"
+      ]
     },
     {
-      "type": "step",
-      "id": "2ejPyJqBm2",
       "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
+      "id": "y_38hbXZof",
+      "articleId": "tc1c9oDB",
+      "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
-          "id": "aABk2PfZ0T",
+          "id": "tK2TfZRajP",
           "fixed": true,
           "children": [
             {
-              "text": "项目重构预提交"
+              "text": "解决操作商品信息表单报错问题"
             }
           ]
         },
@@ -73202,19 +74542,49 @@
           ]
         },
         {
-          "type": "file",
           "file": "src/components/products/ProductForm.vue",
           "display": true,
+          "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
+          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "重构 ProductForm 组件"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "相信大家在对商品信息表单进行添加或者修改操作时，控制台会出现 "
+                    },
+                    {
+                      "text": "id",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性未定义的错误，我们首先应该进入报错的组件中进行调试，大家应该都看到了报错信息出现在 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件中，因此我们需要进入 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行调试。"
                     }
                   ]
                 }
@@ -73236,6 +74606,7 @@
                 8,
                 9,
                 10,
+                11,
                 12,
                 13,
                 14,
@@ -73329,8 +74700,6 @@
                 102,
                 103,
                 104,
-                105,
-                106,
                 107,
                 108,
                 109,
@@ -73339,8 +74708,6 @@
                 119,
                 120,
                 121,
-                130,
-                131,
                 132,
                 133,
                 134,
@@ -73373,7 +74740,92 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "首先大家应该清楚商品对象中还包含了相应的制造商对象，并且制造商对象中包含了 "
+                    },
+                    {
+                      "text": "id",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性和 "
+                    },
+                    {
+                      "text": "name",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性。但是我们应该可以发现商品信息表单中的下拉菜单双向绑定的是商品对象中的制造商对象的 "
+                    },
+                    {
+                      "text": "name",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性，因此在 "
+                    },
+                    {
+                      "text": "watch",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法中存储到 "
+                    },
+                    {
+                      "text": "modelData",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象中的制造商对象也只有 "
+                    },
+                    {
+                      "text": "name",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性，但是后端数据库要求制造商对象必须也要有 "
+                    },
+                    {
+                      "text": "id",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性，这就是我们点击更新商品信息出现报错的原因。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "这里我们使用了本地制造商数组的 "
+                    },
+                    {
+                      "text": "find",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法，检索到了对应 "
+                    },
+                    {
+                      "text": "name",
+                      "code": true
+                    },
+                    {
+                      "text": " 的制造商对象并将其覆盖掉 "
+                    },
+                    {
+                      "text": "modelData",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象中的制造商对象，这样我们的 "
+                    },
+                    {
+                      "text": "modelData",
+                      "code": true
+                    },
+                    {
+                      "text": " 对象中的制造商对象就是一个符合后端数据库要求的对象了。"
                     }
                   ]
                 }
@@ -73382,9 +74834,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "src/components/products/ProductItem.vue",
           "display": false,
+          "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -73509,9 +74962,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "src/pages/admin/New.vue",
           "display": false,
+          "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -73598,32 +75052,46 @@
           "fixed": true,
           "children": [
             {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ]
+            },
+            {
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "这一节我们带大家分析并尝试解决了操作商品信息表单出现 "
+                },
+                {
+                  "text": "id",
+                  "code": true
+                },
+                {
+                  "text": " 属性未定义的问题。"
                 }
               ]
             }
           ]
         }
-      ],
-      "articleId": "oY-lZZNj"
+      ]
     },
     {
-      "type": "step",
-      "id": "rmz1DfbjGY",
-      "articleId": "oY-lZZNj",
       "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
+      "id": "5-zFgvRqX3",
+      "articleId": "tc1c9oDB",
+      "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
-          "id": "J3xqry8ImC",
+          "id": "XmO_x8VB4v",
           "fixed": true,
           "children": [
             {
-              "text": "修改商品信息无法显示最新"
+              "text": "添加动态效果及消息提示"
             }
           ]
         },
@@ -73635,26 +75103,49 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "我们注意到了当用户进行添加或修改商品或者制造商信息时，难免会遇到更新延迟的问题，这个时候如果页面毫无反馈会显得些许尴尬，因此我们认为只要用户进行添加或者修改操作，在后端数据同步完成之前我们为页面添加一个动态加载的效果，给用户一个反馈表示数据正在处理中，请耐心等待；并且在后端同步完成之后为页面添加一个消息提示，给用户一个反馈表示数据处理成功，这样就避免了尴尬的场面，提高了用户的交互体验。"
                 }
               ]
             }
           ]
         },
         {
-          "type": "file",
           "file": "src/components/ManufacturerForm.vue",
           "display": true,
+          "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
+          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现 loading 动态加载效果"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "再次进入 "
+                    },
+                    {
+                      "text": "ManufactureForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件，实现用户在添加或者修改制造商信息时且当后端数据同步完成之前，页面出现 "
+                    },
+                    {
+                      "text": "loading",
+                      "code": true
+                    },
+                    {
+                      "text": "动态加载效果。"
                     }
                   ]
                 }
@@ -73665,7 +75156,6 @@
               "file": "src/components/ManufacturerForm.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                21,
                 22,
                 23,
                 24,
@@ -73686,9 +75176,6 @@
                 39,
                 40,
                 41,
-                42,
-                43,
-                72,
                 73,
                 74,
                 75,
@@ -73721,7 +75208,63 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "首先我们在该组件中使用了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的自定义指令 "
+                    },
+                    {
+                      "text": "v-loading",
+                      "code": true
+                    },
+                    {
+                      "text": "，通过判断 "
+                    },
+                    {
+                      "text": "loading",
+                      "code": true
+                    },
+                    {
+                      "text": " 为true还是false来决定是否实现动态加载效果。这里我们通过获取本地状态中的 "
+                    },
+                    {
+                      "text": "showLoader",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性作为 "
+                    },
+                    {
+                      "text": "loading",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性值，因为在用户刚进行添加或修改操作时，向后端发起数据请求，此时本地状态中的 "
+                    },
+                    {
+                      "text": "showLoader",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性值为true，当成功获取到了数据响应之后，也就是后端数据同步完成，此时 "
+                    },
+                    {
+                      "text": "showLoader",
+                      "code": true
+                    },
+                    {
+                      "text": " 属性值为false，这样就实现了在指定时间显示动态加载效果；除此之外，我们还按照 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件补充修改了数据处理，解决制造商表单组件编辑问题。"
                     }
                   ]
                 }
@@ -73730,9 +75273,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "src/components/products/ProductForm.vue",
           "display": true,
+          "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -73742,7 +75286,21 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "同样进入 "
+                    },
+                    {
+                      "text": "ProductForm",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件进行修改，实现用户在添加或修改商品信息时，且当后端数据同步完成之前，页面出现 "
+                    },
+                    {
+                      "text": "loading",
+                      "code": true
+                    },
+                    {
+                      "text": " 动态加载效果。"
                     }
                   ]
                 }
@@ -73902,104 +75460,35 @@
           ]
         },
         {
-          "type": "file",
-          "file": "src/pages/admin/New.vue",
-          "display": false,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "src/pages/admin/New.vue",
-              "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
-              "hiddenLines": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11,
-                12,
-                13,
-                14,
-                15,
-                16,
-                17,
-                18,
-                19,
-                20,
-                21,
-                22,
-                23,
-                24,
-                25,
-                33,
-                34,
-                35,
-                36,
-                37,
-                38,
-                39
-              ],
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
           "file": "src/store/actions.js",
           "display": true,
+          "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
+          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现消息提示功能"
+                    }
+                  ]
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "首先进入 "
+                    },
+                    {
+                      "text": "actions.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件进行修改，由于发送网络请求数据的操作在该文件中执行，因此我们可以将消息提示功能添加到这里。"
                     }
                   ]
                 }
@@ -74031,8 +75520,11 @@
                 18,
                 19,
                 20,
-                28,
-                29,
+                21,
+                22,
+                23,
+                26,
+                27,
                 30,
                 31,
                 32,
@@ -74040,8 +75532,6 @@
                 34,
                 35,
                 36,
-                37,
-                38,
                 39,
                 40,
                 41,
@@ -74050,11 +75540,7 @@
                 44,
                 45,
                 46,
-                47,
-                48,
                 109,
-                110,
-                111,
                 112,
                 113,
                 114,
@@ -74062,8 +75548,6 @@
                 116,
                 117,
                 118,
-                119,
-                120,
                 121,
                 122,
                 123,
@@ -74071,9 +75555,7 @@
                 125,
                 126,
                 127,
-                128,
-                129,
-                130
+                128
               ],
               "children": [
                 {
@@ -74094,7 +75576,21 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "这里我们首先导入了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "Message",
+                      "code": true
+                    },
+                    {
+                      "text": " 消息提示组件，并在网络请求成功之后添加成功消息提醒，在请求失败之后添加失败消息提醒。"
                     }
                   ]
                 }
@@ -74103,9 +75599,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "src/store/mutations.js",
           "display": true,
+          "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -74115,7 +75612,14 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "然后进入 "
+                    },
+                    {
+                      "text": "mutations.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件进行修改，这里的修改是为本地购物车数据处理添加消息提示。"
                     }
                   ]
                 }
@@ -74147,6 +75651,12 @@
                 18,
                 19,
                 20,
+                21,
+                22,
+                23,
+                24,
+                27,
+                28,
                 29,
                 30,
                 31,
@@ -74238,6 +75748,14 @@
                 137,
                 138,
                 139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
                 148,
                 149,
                 150,
@@ -74246,6 +75764,130 @@
                 153,
                 154,
                 155
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "同样的我们首先需要导入 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "Message",
+                      "code": true
+                    },
+                    {
+                      "text": " 消息提示组件，当用户进行添加或者移除购物车操作时，执行操作成功消息提醒。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们在进行添加、删除、修改以及加入或移除购物车操作时都会得到这样的反馈："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/170bd8414598aa64.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/pages/admin/New.vue",
+          "display": false,
+          "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "src/pages/admin/New.vue",
+              "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39
               ],
               "children": [
                 {
@@ -74279,10 +75921,71 @@
           "fixed": true,
           "children": [
             {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ]
+            },
+            {
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "这一节我们主要做的几点工作："
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "parent": "bulleted-list",
+                  "children": [
+                    {
+                      "text": "为表单组件添加 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "v-loading",
+                      "code": true
+                    },
+                    {
+                      "text": " 指令，实现动态加载效果；"
+                    }
+                  ],
+                  "level": 0
+                },
+                {
+                  "type": "list-item",
+                  "parent": "bulleted-list",
+                  "children": [
+                    {
+                      "text": "添加了 "
+                    },
+                    {
+                      "text": "element-ui",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件库提供的 "
+                    },
+                    {
+                      "text": "Message",
+                      "code": true
+                    },
+                    {
+                      "text": " 消息提示组件，实现用户操作表单信息后得到的反馈消息提示。"
+                    }
+                  ],
+                  "level": 0
                 }
               ]
             }
@@ -74291,19 +75994,19 @@
       ]
     },
     {
-      "type": "step",
-      "id": "pUMFTja1Sn",
-      "articleId": "oY-lZZNj",
       "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
+      "id": "jproB4oTdJ",
+      "articleId": "tc1c9oDB",
+      "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
-          "id": "gjRR-zZyGK",
+          "id": "WuirC5Iw0N",
           "fixed": true,
           "children": [
             {
-              "text": "重构完成预提交"
+              "text": "解决表单信息修改后无法显示最新"
             }
           ]
         },
@@ -74315,16 +76018,472 @@
               "type": "paragraph",
               "children": [
                 {
+                  "text": "重构到这里相信有些朋友已经迫不及待地将项目跑起来了，但是总是事与愿违，但是大家丝毫不用方，只要您跟着我们一步一步脚踏实地地去分析问题，那么什么问题都会迎刃而解了。现在的问题就是当用户对商品或者制造商进行信息修改时，点击更新之后表单却又显示了旧信息。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "大家遇到的状况应该是这样："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": ".tuture/assets/170bd845ae228eb9.png",
+              "children": [
+                {
                   "text": ""
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": ".tuture/assets/170bd848f59fad3b.png",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "children": [
+                {
+                  "text": "数据出现问题我们应该根据 "
+                },
+                {
+                  "text": "vue",
+                  "code": true
+                },
+                {
+                  "text": " 的单向数据流原则进行调试，当用户对表单信息进行更新时，应该首先向后端发起网络请求，然后将最新数据同步到本地状态中进行展示，因此我们来到 "
+                },
+                {
+                  "text": "actions.js",
+                  "code": true
+                },
+                {
+                  "text": " 文件中进行调试。"
                 }
               ]
             }
           ]
         },
         {
+          "file": "src/store/actions.js",
+          "display": true,
+          "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
           "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "提交最新数据"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "再次进入 "
+                    },
+                    {
+                      "text": "actions.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件进行调试，我们可以大胆的猜测网络请求成功之后提交到 "
+                    },
+                    {
+                      "text": "mutations.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件中的数据对象不是用户修改的最新数据。"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "src/store/actions.js",
+              "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                105,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179,
+                180
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们在这里将网络请求成功时提交的载荷修改为了最新数据对象，然后提交到对应类型的 "
+                    },
+                    {
+                      "text": "mutation",
+                      "code": true
+                    },
+                    {
+                      "text": " 中进行本地数据的更新。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/store/mutations.js",
+          "display": true,
+          "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "将最新数据同步到本地"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "紧接着我们需要进入 "
+                    },
+                    {
+                      "text": "mutations.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件，将其获取到的最新数据同步到本地状态中。"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "src/store/mutations.js",
+              "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                105,
+                106,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "file": "src/pages/admin/Edit.vue",
           "display": false,
+          "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -74418,9 +76577,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "src/pages/admin/EditManufacturers.vue",
           "display": false,
+          "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -74498,414 +76658,30 @@
           ]
         },
         {
-          "type": "file",
-          "file": "src/store/actions.js",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "src/store/actions.js",
-              "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
-              "hiddenLines": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11,
-                12,
-                13,
-                14,
-                15,
-                16,
-                17,
-                18,
-                19,
-                20,
-                21,
-                22,
-                23,
-                24,
-                25,
-                26,
-                27,
-                28,
-                29,
-                30,
-                31,
-                32,
-                33,
-                34,
-                35,
-                36,
-                37,
-                38,
-                39,
-                40,
-                41,
-                42,
-                43,
-                44,
-                45,
-                46,
-                47,
-                48,
-                49,
-                50,
-                51,
-                52,
-                53,
-                54,
-                55,
-                56,
-                57,
-                58,
-                59,
-                60,
-                61,
-                62,
-                63,
-                64,
-                65,
-                66,
-                67,
-                68,
-                69,
-                79,
-                80,
-                81,
-                82,
-                83,
-                84,
-                85,
-                86,
-                87,
-                88,
-                89,
-                90,
-                91,
-                92,
-                93,
-                94,
-                95,
-                96,
-                97,
-                98,
-                99,
-                100,
-                101,
-                102,
-                103,
-                104,
-                105,
-                106,
-                107,
-                108,
-                109,
-                110,
-                111,
-                112,
-                113,
-                114,
-                115,
-                116,
-                117,
-                118,
-                119,
-                120,
-                121,
-                122,
-                123,
-                124,
-                125,
-                126,
-                127,
-                128,
-                129,
-                130,
-                131,
-                132,
-                133,
-                134,
-                135,
-                136,
-                137,
-                138,
-                139,
-                140,
-                141,
-                142,
-                143,
-                144,
-                145,
-                146,
-                147,
-                148,
-                157,
-                158,
-                159,
-                160,
-                161,
-                162,
-                163,
-                164,
-                165,
-                166,
-                167,
-                168,
-                169,
-                170,
-                171,
-                172,
-                173,
-                174,
-                175,
-                176,
-                177,
-                178,
-                179,
-                180,
-                181
-              ],
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "src/store/mutations.js",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "src/store/mutations.js",
-              "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
-              "hiddenLines": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11,
-                12,
-                13,
-                14,
-                15,
-                16,
-                17,
-                18,
-                19,
-                20,
-                21,
-                22,
-                23,
-                24,
-                25,
-                26,
-                27,
-                28,
-                29,
-                30,
-                31,
-                32,
-                33,
-                34,
-                35,
-                36,
-                37,
-                38,
-                39,
-                40,
-                41,
-                42,
-                43,
-                44,
-                45,
-                46,
-                47,
-                48,
-                49,
-                50,
-                51,
-                52,
-                53,
-                54,
-                55,
-                56,
-                57,
-                58,
-                76,
-                77,
-                78,
-                79,
-                80,
-                81,
-                82,
-                83,
-                84,
-                85,
-                86,
-                87,
-                88,
-                89,
-                90,
-                91,
-                92,
-                93,
-                94,
-                95,
-                96,
-                97,
-                98,
-                99,
-                100,
-                101,
-                102,
-                103,
-                104,
-                105,
-                106,
-                107,
-                108,
-                109,
-                110,
-                111,
-                112,
-                113,
-                114,
-                115,
-                116,
-                117,
-                118,
-                119,
-                120,
-                121,
-                122,
-                123,
-                124,
-                125,
-                126,
-                127,
-                128,
-                129,
-                130,
-                131,
-                132,
-                133,
-                134,
-                135,
-                136,
-                137,
-                138,
-                139,
-                151,
-                152,
-                153,
-                154,
-                155,
-                156,
-                157,
-                158
-              ],
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "type": "explain",
           "fixed": true,
           "children": [
             {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ]
+            },
+            {
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "这一节我们主要带大家分析并尝试解决了表单信息修改后无法显示最新信息的问题。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "本篇教程为大家呈现了在实际开发过程中，使用element-ui组件库对电商应用前端代码进行重构所遇到的一些问题，并且我们一步一步地带大家去分析及尝试解决问题。希望这篇教程让大家对element-ui组件库的使用需要注意的问题有一个大致的了解，重要的是分析和尝试解决问题的能力。好了，到这里我们的项目基本上可以愉快地跑起来了，用户的交互体验感明显得到了改善。"
                 }
               ]
             }
