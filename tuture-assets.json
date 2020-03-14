@@ -110,5 +110,17 @@
   {
     "localPath": ".tuture/assets/vue-cover-7-squashed.jpg",
     "hostingUri": "https://imgkr.cn-bj.ufileos.com/50009d9a-e157-43d9-803f-d3e7459a492d.jpg"
+  },
+  {
+    "localPath": ".tuture/assets/arch.png",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/7d1ea84e-9338-4b4b-b9f9-e0ea2dfaf338.png"
+  },
+  {
+    "localPath": ".tuture/assets/image.png",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/88f665bc-3c10-4698-907c-99391de64c61.png"
+  },
+  {
+    "localPath": ".tuture/assets/image-40615e9c02e63e20.png",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/3ed0cf34-00ec-4338-ae7b-cf02980674d6.png"
   }
 ]

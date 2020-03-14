@@ -70,6 +70,17 @@
       ],
       "cover": ".tuture/assets/vue-cover-7-squashed.jpg",
       "description": "在之前的六篇教程中我们已经基本实现了迷你全栈电商应用，相信大家对于一个全栈应用的开发已经有了一个全面的认知。但是一个追求完美的工程师是不会吝啬他的艺术创造，仅仅实现应用的功能还不能满足用户的高需求，应用的界面效果也是提高用户体验的关键因素。因此本篇教程将基于element-ui组件库重构项目的前端代码，改善迷你电商应用的界面效果，提高用户的体验感。虽然我们可以轻松地引入现成的组件库，但是与之对应的数据处理也值得我们注意，那我会在引入组件库的同时带大家一起踩一踩element-ui给我们挖的坑，毕竟踩坑才能成长嘛。"
+    },
+    {
+      "id": "-td0ssrw",
+      "created": "2020-03-14T03:10:55.150Z",
+      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（八）",
+      "topics": [
+        "Docker",
+        "Docker Compose"
+      ],
+      "cover": "",
+      "description": "在整整七篇教程后，我们迷你全栈电商系列也将进入尾声了。如系列标题所属，我们将实现应用的部署。这篇教程将带你。"
     }
   ],
   "steps": [
@@ -76682,6 +76693,1506 @@
               "children": [
                 {
                   "text": "本篇教程为大家呈现了在实际开发过程中，使用element-ui组件库对电商应用前端代码进行重构所遇到的一些问题，并且我们一步一步地带大家去分析及尝试解决问题。希望这篇教程让大家对element-ui组件库的使用需要注意的问题有一个大致的了解，重要的是分析和尝试解决问题的能力。好了，到这里我们的项目基本上可以愉快地跑起来了，用户的交互体验感明显得到了改善。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+      "id": "EOFTHG1NuR",
+      "articleId": "-td0ssrw",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "id": "7kd4-cgTwh",
+          "fixed": true,
+          "children": [
+            {
+              "text": "应用容器化和 Docker Compose 配置"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在正式开始整个全栈应用的容器化之前，让我们通过一张图来梳理一下思路："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": ".tuture/assets/arch.png",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "可以看到，我们将使用三个容器："
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "nginx",
+                      "code": true
+                    },
+                    {
+                      "text": " 容器包括了 Nginx 服务器（存放了 Vue 框架实现的前端静态页面）"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "api",
+                      "code": true
+                    },
+                    {
+                      "text": " 容器则包括了我们用 Express 框架实现的 API 服务器"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "db",
+                      "code": true
+                    },
+                    {
+                      "text": " 容器则是 MongoDB 数据库"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "我们将整个应用通过 Nginx 实现反向代理。也就是说，用户想要访问我们的应用，必须得先经过 Nginx。并且，所有获取前端资源的请求（例如 HTML、CSS、JS 等静态文件资源），Nginx 可以直接返回；所有获取 API 端点的请求（例如 "
+                },
+                {
+                  "text": "/api/v1/products",
+                  "code": true
+                },
+                {
+                  "text": " ），则将请求转交给给 API 服务器，然后再将 API 服务器返回的 JSON 数据返回给用户。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "这种经典的架构有以下优势："
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "通过 Nginx 可以实现访问控制，过滤掉不合法的请求"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "解决了前后端跨域的问题，因为前端页面和后端 API 都通过同一个端点访问"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "整个应用架构对用户透明，可以轻松进行配置扩容，并且 Nginx 搭配了负载均衡"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": ".gitignore",
+          "display": false,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": ".gitignore",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/config/nginx.conf",
+          "display": true,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "前端应用的容器化"
+                    }
+                  ],
+                  "id": "pkcqBGX5"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，让我们来容器化之前用 Vue 完成的前端应用。进入 "
+                    },
+                    {
+                      "text": "client",
+                      "code": true
+                    },
+                    {
+                      "text": " 目录，然后把 Vue 前端项目构建成静态页面："
+                    }
+                  ]
+                },
+                {
+                  "type": "code-block",
+                  "lang": "bash",
+                  "children": [
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "npm run build"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "# 或者 yarn build"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后添加 "
+                    },
+                    {
+                      "text": "client/config/nginx.conf",
+                      "code": true
+                    },
+                    {
+                      "text": " 配置文件，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/config/nginx.conf",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "其中需要关注的就是两条 "
+                    },
+                    {
+                      "text": "location",
+                      "code": true
+                    },
+                    {
+                      "text": " 规则："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "如果访问 "
+                        },
+                        {
+                          "text": "/api/v1",
+                          "code": true
+                        },
+                        {
+                          "text": " ，那么一律把请求传递给 "
+                        },
+                        {
+                          "text": "api",
+                          "code": true
+                        },
+                        {
+                          "text": " 容器"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "如果访问 "
+                        },
+                        {
+                          "text": "/",
+                          "code": true
+                        },
+                        {
+                          "text": " ，则直接返回前端静态页面（index.html）"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/store/actions.js",
+          "display": true,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后在前端访问后端的代码中，我们需要做一点改变。打开 "
+                    },
+                    {
+                      "text": "client/src/store/actions.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件，修改 "
+                    },
+                    {
+                      "text": "API_BASE",
+                      "code": true
+                    },
+                    {
+                      "text": " 常量如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/actions.js",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89,
+                90,
+                91,
+                92,
+                93,
+                94,
+                95,
+                96,
+                97,
+                98,
+                99,
+                100,
+                101,
+                102,
+                103,
+                107,
+                108,
+                109,
+                110,
+                111,
+                112,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                121,
+                122,
+                123,
+                124,
+                125,
+                126,
+                127,
+                128,
+                129,
+                130,
+                131,
+                132,
+                133,
+                134,
+                135,
+                136,
+                137,
+                138,
+                139,
+                140,
+                141,
+                142,
+                143,
+                144,
+                145,
+                146,
+                147,
+                148,
+                149,
+                150,
+                151,
+                152,
+                153,
+                154,
+                155,
+                156,
+                157,
+                158,
+                159,
+                160,
+                161,
+                162,
+                163,
+                164,
+                165,
+                166,
+                167,
+                168,
+                169,
+                170,
+                171,
+                172,
+                173,
+                174,
+                175,
+                176,
+                177,
+                178,
+                179
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "这样修改后，前端实际访问的 API 就取决于当前该页面的 URL，而不是硬编码的 "
+                    },
+                    {
+                      "text": "localhost:3000",
+                      "code": true
+                    },
+                    {
+                      "text": " 。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/Dockerfile",
+          "display": true,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "在做好准备工作后，我们就要正式开始容器化了。"
+                    }
+                  ],
+                  "id": "MLZS4AAj"
+                },
+                {
+                  "type": "note",
+                  "level": "info",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "如果你对 Docker 的核心概念不太熟悉，推荐学习一波我们图雀社区的"
+                        },
+                        {
+                          "text": "《一杯茶的时间，上手 Docker》",
+                          "link": true,
+                          "url": "https://tuture.co/2020/01/01/442cc8d/"
+                        },
+                        {
+                          "text": "，帮助你快速掌握"
+                        },
+                        {
+                          "text": "镜像",
+                          "bold": true
+                        },
+                        {
+                          "text": "和"
+                        },
+                        {
+                          "text": "容器",
+                          "bold": true
+                        },
+                        {
+                          "text": "这两个重要概念，并手把手带你容器化第一个应用。"
+                        }
+                      ],
+                      "id": "MLZS4AAj"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "在 "
+                    },
+                    {
+                      "text": "client",
+                      "code": true
+                    },
+                    {
+                      "text": " 目录下创建 "
+                    },
+                    {
+                      "text": "Dockerfile",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件，代码如下："
+                    }
+                  ],
+                  "id": "MLZS4AAj"
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/Dockerfile",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/.dockerignore",
+          "display": true,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "创建 "
+                    },
+                    {
+                      "text": "client/.dockerignore",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件，确保在构建镜像时忽略掉 "
+                    },
+                    {
+                      "text": "node_modules",
+                      "code": true
+                    },
+                    {
+                      "text": " ："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/.dockerignore",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "server/app.js",
+          "display": true,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "后端应用的容器化"
+                    }
+                  ],
+                  "id": "KTXThaEl"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "容器化前端应用之后，接下来就开始准备后端应用的容器化。首先我们要把硬编码的 MongoDB 连接字符串改成通过环境变量注入。修改 "
+                    },
+                    {
+                      "text": "server/app.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件，代码如下："
+                    }
+                  ],
+                  "id": "2IP56SvO"
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "server/app.js",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "server/Dockerfile",
+          "display": true,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着创建 "
+                    },
+                    {
+                      "text": "server/Dockerfile",
+                      "code": true
+                    },
+                    {
+                      "text": " ，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "server/Dockerfile",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "server/.dockerignore",
+          "display": true,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "和前端一样，创建 "
+                    },
+                    {
+                      "text": "server/.dockerignore",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件，确保 "
+                    },
+                    {
+                      "text": "node_modules",
+                      "code": true
+                    },
+                    {
+                      "text": " 不会被打包到镜像中去："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "server/.dockerignore",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "docker-compose.yml",
+          "display": true,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "Docker Compose 配置"
+                    }
+                  ],
+                  "id": "x4NKNz2G"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Docker Compose",
+                      "link": true,
+                      "url": "https://docs.docker.com/compose/"
+                    },
+                    {
+                      "text": " 是一个强大的多容器管理工具，通过一个 YAML 文件配置完成后，只需要一个命令就可以启动全部容器（服务）。在项目根目录创建 "
+                    },
+                    {
+                      "text": "docker-compose.yml",
+                      "code": true
+                    },
+                    {
+                      "text": " ，代码如下："
+                    }
+                  ],
+                  "id": "aNDiLt21"
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "docker-compose.yml",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们创建了三个 "
+                    },
+                    {
+                      "text": "service",
+                      "code": true
+                    },
+                    {
+                      "text": " ，对应我们的三个容器（"
+                    },
+                    {
+                      "text": "db",
+                      "code": true
+                    },
+                    {
+                      "text": " ，"
+                    },
+                    {
+                      "text": "api",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "nginx",
+                      "code": true
+                    },
+                    {
+                      "text": " ）："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "db",
+                          "code": true
+                        },
+                        {
+                          "text": " 服务指定镜像为 "
+                        },
+                        {
+                          "text": "mongo",
+                          "code": true
+                        },
+                        {
+                          "text": " ，然后设置 "
+                        },
+                        {
+                          "text": "restart: always",
+                          "code": true
+                        },
+                        {
+                          "text": " ，确保因某种原因停止后自动重启"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "api",
+                          "code": true
+                        },
+                        {
+                          "text": " 服务指定镜像通过 "
+                        },
+                        {
+                          "text": "server",
+                          "code": true
+                        },
+                        {
+                          "text": " 目录构建，端口映射规则为 "
+                        },
+                        {
+                          "text": "3000:3000",
+                          "code": true
+                        },
+                        {
+                          "text": " "
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "nginx",
+                          "code": true
+                        },
+                        {
+                          "text": " 服务指定镜像通过 "
+                        },
+                        {
+                          "text": "client",
+                          "code": true
+                        },
+                        {
+                          "text": " 目录构建，端口映射规则为 "
+                        },
+                        {
+                          "text": "8080:80",
+                          "code": true
+                        },
+                        {
+                          "text": " "
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "info",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "Docker Compose 默认为所有服务创建了一个 Docker 网络，使得容器之间可以通过服务发现的机制进行相互通信（而不是通过固定 IP），这也就是为什么在 Nginx 配置中可以直接指定 "
+                        },
+                        {
+                          "text": "http://api:3000",
+                          "code": true
+                        },
+                        {
+                          "text": " ，以及将 MongoDB 连接字符串设置为 "
+                        },
+                        {
+                          "text": "mongodb://db:27017/test",
+                          "code": true
+                        },
+                        {
+                          "text": " 。如果想要透彻理解 Docker 网络，可浏览之前发布的"
+                        },
+                        {
+                          "text": "《Docker 筑梦师系列（一）：实现容器互联》",
+                          "link": true,
+                          "url": "https://tuture.co/2020/01/12/cd44c84/"
+                        },
+                        {
+                          "text": "。"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "一切就绪，我们把通过一个命令实现整个应用的构建 + 运行："
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "code-block",
+                  "lang": "bash",
+                  "children": [
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "docker-compose up --build"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "初次构建可能需要相当久的时间（拉取基础镜像），这时候不妨给自己点一杯咖啡☕️，静静等待结果的到来~ 如果你在控制台看到了如下输出，就代表镜像已经构建完毕了："
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/image.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "接着每个镜像会输出各自的日志信息。我们通过 "
+                    },
+                    {
+                      "text": "docker ps",
+                      "code": true
+                    },
+                    {
+                      "text": " 命令进一步确认三个容器的状态："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/image-40615e9c02e63e20.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "OK，我们可以通过 "
+                    },
+                    {
+                      "text": "localhost:8080",
+                      "code": true
+                    },
+                    {
+                      "text": " 访问我们的站点了！"
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "并且，我们还通过内网（例如同一 WiFi 下的其他设备）访问我们的站点，通过查询本机的内网 IP（例如 "
+                    },
+                    {
+                      "text": "192.168.1.1",
+                      "code": true
+                    },
+                    {
+                      "text": " ），就可以通过 "
+                    },
+                    {
+                      "text": "192.168.1.1:8080",
+                      "code": true
+                    },
+                    {
+                      "text": " 访问。查询本机内网 IP 可以自行去搜索引擎找答案哦。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/.gitignore",
+          "display": false,
+          "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/.gitignore",
+              "commit": "40e98722ac395db0546ac896d7497313e46081a1",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ],
+              "id": "GzLSDJbN"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在这一小节中，我们学习了："
+                }
+              ],
+              "id": "731bSfky"
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "通过 Nginx 容器提供前端静态页面，并将后端请求转发给 API 容器"
+                    }
+                  ],
+                  "id": "731bSfky",
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "容器化后端应用，建立与数据库的连接"
+                    }
+                  ],
+                  "id": "731bSfky",
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "通过 Docker Compose 一键构建和启动应用"
+                    }
+                  ],
+                  "id": "731bSfky",
+                  "level": 0,
+                  "parent": "bulleted-list"
                 }
               ]
             }
