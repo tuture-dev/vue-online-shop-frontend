@@ -14,7 +14,9 @@ COPY . .
 
 # 设置环境变量
 ENV NODE_ENV=production
-ENV MONGO_URI=mongodb://db:27017/test
+ENV MONGO_URI=mongodb://db:27017/admin
+ENV MONGO_USER=mongoadmin
+ENV MONGO_PASSWORD=secret
 ENV HOST=0.0.0.0
 ENV PORT=3000
 
