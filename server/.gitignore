@@ -1,0 +1,7 @@
+/node_modules
+# Tuture-related files
+
+.tuture
+tuture-error.log
+tuture-build/**
+.DS_Store
