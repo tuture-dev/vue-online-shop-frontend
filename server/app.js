@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // Datbase connection here
-mongoose.connect(`mongodb://localhost:27017/test`);
+mongoose.connect(process.env.MONGO_URI || `mongodb://localhost:27017/test`);
 
 // CORS config here
 app.all('/*', function(req, res, next) {

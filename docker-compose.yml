@@ -1,0 +1,14 @@
+version: '3'
+
+services: 
+  db:
+    image: mongo
+    restart: always
+  api:
+    build: server
+    restart: always
+  nginx:
+    build: client
+    restart: always
+    ports:
+      - 8080:80
