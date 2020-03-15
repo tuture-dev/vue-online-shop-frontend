@@ -8,10 +8,10 @@ services:
       MONGO_INITDB_ROOT_USERNAME: mongoadmin
       MONGO_INITDB_ROOT_PASSWORD: secret
   api:
-    build: server
+    image: registry.cn-shanghai.aliyuncs.com/vue-online-shop/api
     restart: always
   nginx:
-    build: client
+    image: registry.cn-shanghai.aliyuncs.com/vue-online-shop/nginx
     restart: always
     ports:
       - 8080:80
