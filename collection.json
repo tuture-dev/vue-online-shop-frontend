@@ -78199,6 +78199,552 @@
           ]
         }
       ]
+    },
+    {
+      "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
+      "id": "X_78VTqdhO",
+      "articleId": "-td0ssrw",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
+          "id": "UyMOnZLxXl",
+          "fixed": true,
+          "children": [
+            {
+              "text": "配置 MongoDB 的身份验证"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在之前的部署配置中，有一个重大的安全隐患：我们的 MongoDB 数据库没有配置任何的身份验证措施，这意味着所有能够访问数据库的请求都可以对数据库作出任何修改！接下来，我们就来搞定 MongoDB 的身份验证，为我们的数据安全保驾护航。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "server/app.js",
+          "display": true,
+          "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，我们修改 "
+                    },
+                    {
+                      "text": "server/app.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 中的 MongoDB 连接设置，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "server/app.js",
+              "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "四个选项的含义分别如下："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "useNewUrlParser",
+                          "code": true
+                        },
+                        {
+                          "text": " ：使用新的 MongoDB 驱动 URL 解析器"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "useUnifiedTopology",
+                          "code": true
+                        },
+                        {
+                          "text": " ：使用新的连接管理引擎，能够大大提高连接的稳定性，支持重连"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "user",
+                          "code": true
+                        },
+                        {
+                          "text": " ：连接用户名，通过环境变量注入"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "pass",
+                          "code": true
+                        },
+                        {
+                          "text": " ：连接密码，通过环境变量注入"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "server/Dockerfile",
+          "display": true,
+          "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后在 "
+                    },
+                    {
+                      "text": "server/Dockerfile",
+                      "code": true
+                    },
+                    {
+                      "text": " 中加入这些环境变量："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "server/Dockerfile",
+              "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                23,
+                24,
+                25,
+                26,
+                27
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "注意到我们调整了 "
+                    },
+                    {
+                      "text": "MONGO_URI",
+                      "code": true
+                    },
+                    {
+                      "text": " ，把数据库从 "
+                    },
+                    {
+                      "text": "test",
+                      "code": true
+                    },
+                    {
+                      "text": " 设置为默认生成的 "
+                    },
+                    {
+                      "text": "admin",
+                      "code": true
+                    },
+                    {
+                      "text": " ，这是为了使用 "
+                    },
+                    {
+                      "text": "admin",
+                      "code": true
+                    },
+                    {
+                      "text": " 作为"
+                    },
+                    {
+                      "text": "鉴权数据库",
+                      "link": true,
+                      "url": "https://docs.mongodb.com/manual/core/security-users/#user-authentication-database"
+                    },
+                    {
+                      "text": "（Authentication Database）。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "docker-compose.yml",
+          "display": true,
+          "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后在 "
+                    },
+                    {
+                      "text": "docker-compose.yml",
+                      "code": true
+                    },
+                    {
+                      "text": " 里面为 "
+                    },
+                    {
+                      "text": "db",
+                      "code": true
+                    },
+                    {
+                      "text": " 服务添加初始密码环境变量："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "docker-compose.yml",
+              "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                12,
+                13,
+                14,
+                15,
+                16
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "OK，一切就绪，首先把之前创建的容器群彻底删除："
+                    }
+                  ]
+                },
+                {
+                  "type": "code-block",
+                  "lang": "bash",
+                  "children": [
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "docker-compose down --volumes"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "down",
+                      "code": true
+                    },
+                    {
+                      "text": " 命令的含义就和之前的 "
+                    },
+                    {
+                      "text": "up",
+                      "code": true
+                    },
+                    {
+                      "text": " 刚好相反，把 "
+                    },
+                    {
+                      "text": "up",
+                      "code": true
+                    },
+                    {
+                      "text": " 创建的所有镜像、容器、网络、数据卷全部删除，并且我们通过 "
+                    },
+                    {
+                      "text": "--volumes",
+                      "code": true
+                    },
+                    {
+                      "text": " 参数删除 MongoDB 容器创建的数据卷。"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "note",
+                  "level": "warning",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "如果不把之前 MongoDB 容器的数据卷删干净，接下来创建带有身份验证的 MongoDB 容器就会复用之前的数据卷，直接跳过初始化用户的过程（笔者在这个地方踩了接近两个小时的坑）。如果你担心数据卷还没删干净，可以运行 "
+                        },
+                        {
+                          "text": "docker volume prune",
+                          "code": true
+                        },
+                        {
+                          "text": " 。"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后重新构建并开启容器群："
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "code-block",
+                  "lang": "bash",
+                  "children": [
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "docker-compose up --build"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "这时候再检查我们的应用（访问 "
+                    },
+                    {
+                      "text": "localhost:8080",
+                      "code": true
+                    },
+                    {
+                      "text": " ），应该看到一切正常。不过一颗悬着的心终于放下了——这次我们的数据库不再处于“裸奔”状态了！"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ],
+              "id": "jZdCG8GZ"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "这一节中，我们完整地实践了一波如何为 MongoDB 容器配备身份验证。不过平心而论，我们采用的方法还是比较原始的，把机密信息明文写在代码文件中。在大型的容器编排系统中（例如 Kubernetes 和 Docker Swarm），都集成了最完善的、企业级的机密信息管理方案。由于这一系列的入门性质，我们就点到为止啦。"
+                }
+              ],
+              "id": "ENWQ4uxJ"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
