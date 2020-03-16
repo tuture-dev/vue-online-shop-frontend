@@ -122,5 +122,29 @@
   {
     "localPath": ".tuture/assets/image-40615e9c02e63e20.png",
     "hostingUri": "https://imgkr.cn-bj.ufileos.com/3ed0cf34-00ec-4338-ae7b-cf02980674d6.png"
+  },
+  {
+    "localPath": ".tuture/assets/cr-namespace.png",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/4b79b282-a56b-4856-8454-27ae24199b1d.png"
+  },
+  {
+    "localPath": ".tuture/assets/cr-namespace-created.png",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/d3d8a032-438f-430b-9956-332042068786.png"
+  },
+  {
+    "localPath": ".tuture/assets/cr-repos-squashed.jpg",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/65fa64bc-6500-4cfa-901d-cbda29367c8a.jpg"
+  },
+  {
+    "localPath": ".tuture/assets/cr-create-repo-1-squashed.jpg",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/22d637d4-028a-48ae-baa9-88ea145641b5.jpg"
+  },
+  {
+    "localPath": ".tuture/assets/cr-create-repo-2-squashed.jpg",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/8efdc549-daca-4b0f-a262-c22df37b2db5.jpg"
+  },
+  {
+    "localPath": ".tuture/assets/cr-repos-list-squashed.jpg",
+    "hostingUri": "https://imgkr.cn-bj.ufileos.com/e7040054-6f17-43f7-8a99-63a47bd5081d.jpg"
   }
 ]

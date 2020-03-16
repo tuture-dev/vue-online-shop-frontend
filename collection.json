@@ -78242,6 +78242,15 @@
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "修改 MongoDB 连接设置"
+                    }
+                  ],
+                  "id": "HAjn2Tc2"
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
@@ -78425,6 +78434,15 @@
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "Dockerfile 中注入环境变量"
+                    }
+                  ],
+                  "id": "zmHO9UXb"
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
@@ -78538,6 +78556,15 @@
               "type": "explain",
               "fixed": true,
               "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "Docker Compose 中配置初始密码"
+                    }
+                  ],
+                  "id": "GbZereuf"
+                },
                 {
                   "type": "paragraph",
                   "children": [
@@ -78737,10 +78764,868 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "这一节中，我们完整地实践了一波如何为 MongoDB 容器配备身份验证。不过平心而论，我们采用的方法还是比较原始的，把机密信息明文写在代码文件中。在大型的容器编排系统中（例如 Kubernetes 和 Docker Swarm），都集成了最完善的、企业级的机密信息管理方案。由于这一系列的入门性质，我们就点到为止啦。"
+                  "text": "这一节中，我们完整地实践了一波如何为 MongoDB 容器配备身份验证。不过平心而论，我们采用的方法还是相当原始的，把机密信息明文写在代码文件中。在大型的容器编排系统中（例如 Kubernetes 和 Docker Swarm），都集成了完善的、企业级的机密信息管理方案。由于这一系列教程的入门性质，我们就点到为止啦。"
                 }
               ],
               "id": "ENWQ4uxJ"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "此外，我们也没有讲 MongoDB 数据库备份和恢复的细节，如果想要了解和学习，可以阅读我们之前的"
+                },
+                {
+                  "text": "《Docker 筑梦师系列（二）：上手容器数据管理》",
+                  "link": true,
+                  "url": "https://tuture.co/2020/03/06/0X8ssR3/"
+                },
+                {
+                  "text": "。"
+                }
+              ],
+              "id": "ENWQ4uxJ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commit": "b8afe6837849e25e1386f78c89786cce23159272",
+      "id": "CVMmYydEvx",
+      "articleId": "-td0ssrw",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "b8afe6837849e25e1386f78c89786cce23159272",
+          "id": "j_rgZFGFpX",
+          "fixed": true,
+          "children": [
+            {
+              "text": "使用阿里云镜像仓库服务"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "到了这一步，实际上我们已经可以轻松地进行应用部署了。通过 SSH（或其他方式）连接到远程主机后，然后运行以下命令："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "# 把仓库抓下来"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "git clone https://github.com/tuture-dev/vue-online-shop-frontend.git"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "cd vue-online-shop-frontend"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "# 构建前端代码"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "cd client && npm install && npm run build && cd .."
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "# 通过 Docker Compose 启动所有容器，并进入守护态运行"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "docker-compose up -d --build"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "这个时候，通过远程主机的 IP（或域名）加上端口号（这里是 "
+                },
+                {
+                  "text": "8080",
+                  "code": true
+                },
+                {
+                  "text": " ，当然你可以在 "
+                },
+                {
+                  "text": "docker-compose.yml",
+                  "code": true
+                },
+                {
+                  "text": " 中自行修改 "
+                },
+                {
+                  "text": "nginx",
+                  "code": true
+                },
+                {
+                  "text": " 服务的端口配置）。例如我们远程主机的 IP 是 "
+                },
+                {
+                  "text": "1.2.3.4",
+                  "code": true
+                },
+                {
+                  "text": " ，那么就可以通过 "
+                },
+                {
+                  "text": "1.2.3.4:8080",
+                  "code": true
+                },
+                {
+                  "text": " 访问我们的网站啦！"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "实际上，我们还可以通过一种更高效的方式进行镜像的分发与部署——"
+                },
+                {
+                  "text": "云端的镜像仓库服务",
+                  "bold": true
+                },
+                {
+                  "text": "。"
+                }
+              ]
+            },
+            {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "Docker Hub 和镜像命名规则"
+                }
+              ],
+              "id": "idw6XNY5"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "实际上，Docker 公司已经做了一个叫 "
+                },
+                {
+                  "text": "Docker Hub",
+                  "link": true,
+                  "url": "https://hub.docker.com/"
+                },
+                {
+                  "text": " 的镜像仓库，提供了丰富的官方维护镜像，以及自定义镜像的存储和分发。我们在平时用的镜像（例如 "
+                },
+                {
+                  "text": "mongo",
+                  "code": true
+                },
+                {
+                  "text": " 、"
+                },
+                {
+                  "text": "nginx",
+                  "code": true
+                },
+                {
+                  "text": " 、"
+                },
+                {
+                  "text": "node",
+                  "code": true
+                },
+                {
+                  "text": " 等）都是 Docker Hub 上的官方镜像（或者是其他代理加速器）。"
+                }
+              ],
+              "id": "v28eOZeV"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "镜像的命名规则如下："
+                }
+              ],
+              "id": "v28eOZeV"
+            },
+            {
+              "type": "code-block",
+              "lang": "",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "<registry_name>/<username>/<image_name>"
+                    }
+                  ],
+                  "id": "v28eOZeV"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "其中："
+                }
+              ],
+              "id": "v28eOZeV"
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "registry_name",
+                      "code": true
+                    },
+                    {
+                      "text": " 代表镜像仓库的名称，如果省略的话就是 Docker Hub"
+                    }
+                  ],
+                  "id": "v28eOZeV",
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "username",
+                      "code": true
+                    },
+                    {
+                      "text": " 代表镜像仓库的用户名，如果和 "
+                    },
+                    {
+                      "text": "registry_name",
+                      "code": true
+                    },
+                    {
+                      "text": " 一起省略的话就是 Docker 官方镜像"
+                    }
+                  ],
+                  "id": "v28eOZeV",
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "image_name",
+                      "code": true
+                    },
+                    {
+                      "text": " 就是镜像名称"
+                    }
+                  ],
+                  "id": "v28eOZeV",
+                  "level": 0,
+                  "parent": "bulleted-list"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "Docker Hub 虽说是官方出品，但实际上存在以下问题："
+                }
+              ],
+              "id": "v28eOZeV",
+              "level": 0,
+              "parent": "bulleted-list"
+            },
+            {
+              "type": "numbered-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "免费用户支持 1 个私有镜像"
+                    }
+                  ],
+                  "id": "v28eOZeV",
+                  "level": 0,
+                  "parent": "numbered-list",
+                  "number": 1
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "上传和拉取的速度在国内不稳定"
+                    }
+                  ],
+                  "id": "v28eOZeV",
+                  "level": 0,
+                  "parent": "numbered-list",
+                  "number": 2
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "没有镜像安全扫描功能"
+                    }
+                  ],
+                  "id": "v28eOZeV",
+                  "level": 0,
+                  "parent": "numbered-list",
+                  "number": 3
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "而我们接下来要体验的阿里云镜像仓库服务则能很好地解决以上问题。"
+                }
+              ],
+              "id": "v28eOZeV",
+              "level": 0,
+              "parent": "numbered-list",
+              "number": 3
+            }
+          ]
+        },
+        {
+          "file": "docker-compose.yml",
+          "display": true,
+          "commit": "b8afe6837849e25e1386f78c89786cce23159272",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "体验阿里云镜像仓库服务"
+                    }
+                  ],
+                  "id": "NbU-dxfG"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先让我们访问"
+                    },
+                    {
+                      "text": "阿里云",
+                      "link": true,
+                      "url": "https://www.aliyun.com/"
+                    },
+                    {
+                      "text": "的官方网站，然后在产品列表中找到“镜像仓库服务”，点击开通。开通后进入控制台，创建镜像命名空间，如下图所示："
+                    }
+                  ],
+                  "id": "Gp6H6_mh"
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/cr-namespace.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "名称随意填写，这里我们填的是 "
+                    },
+                    {
+                      "text": "vue-online-shop",
+                      "code": true
+                    },
+                    {
+                      "text": " 。创建后如下图所示："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/cr-namespace-created.png",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "创建好命名空间后，就可以为我们应用的每个镜像（除了 MongoDB 数据库镜像）创建相应的镜像仓库。点击“创建镜像仓库”按钮，如下图所示："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/cr-repos-squashed.jpg",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "第一步，填写镜像仓库相关信息："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/cr-create-repo-1-squashed.jpg",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "第二步，选择代码源，这里我们选择“本地仓库”："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/cr-create-repo-2-squashed.jpg",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "创建好两个镜像仓库（"
+                    },
+                    {
+                      "text": "api",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "nginx",
+                      "code": true
+                    },
+                    {
+                      "text": " ）后，可以看到镜像列表如下："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": ".tuture/assets/cr-repos-list-squashed.jpg",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "OK，然后点击单个仓库的“管理”按钮，按照指示进行镜像的上传。在这里我们贴一下示例代码（"
+                    },
+                    {
+                      "text": "实际操作时按自己控制台的指示说明为准",
+                      "bold": true
+                    },
+                    {
+                      "text": "）："
+                    }
+                  ]
+                },
+                {
+                  "type": "code-block",
+                  "lang": "bash",
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "text": "# 登录阿里云镜像仓库，aliyunUser 改成自己的账户名"
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "docker login --username=aliyunUser registry.cn-shanghai.aliyuncs.com"
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "# 构建和推送 api 镜像"
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "docker build -t registry.cn-shanghai.aliyuncs.com/vue-online-shop/api server"
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "docker push registry.cn-shanghai.aliyuncs.com/vue-online-shop/api"
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "# 构建和推送 nginx 镜像"
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "docker build -t registry.cn-shanghai.aliyuncs.com/vue-online-shop/nginx client"
+                        }
+                      ],
+                      "type": "code-line"
+                    },
+                    {
+                      "children": [
+                        {
+                          "text": "docker push registry.cn-shanghai.aliyuncs.com/vue-online-shop/nginx"
+                        }
+                      ],
+                      "type": "code-line"
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "info",
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "text": "实际部署时，建议给每个镜像加上一个标签，推荐是当前提交的 Hash，例如："
+                        }
+                      ],
+                      "type": "paragraph"
+                    },
+                    {
+                      "type": "code-block",
+                      "lang": "bash",
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "text": "docker build -t registry.cn-shanghai.aliyuncs.com/vue-online-shop/api:9ca500a server"
+                            }
+                          ],
+                          "type": "code-line"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "children": [
+                    {
+                      "text": "在镜像推送完成后，我们把 "
+                    },
+                    {
+                      "text": "docker-compose.yml",
+                      "code": true
+                    },
+                    {
+                      "text": " 中的 "
+                    },
+                    {
+                      "text": "api",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "nginx",
+                      "code": true
+                    },
+                    {
+                      "text": " 服务改成使用云端镜像："
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "docker-compose.yml",
+              "commit": "b8afe6837849e25e1386f78c89786cce23159272",
+              "hiddenLines": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "搞定之后，我们只需把这个 "
+                    },
+                    {
+                      "text": "docker-compose.yml",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件放到远程主机上，然后在所在的目录开启 Docker Compose 容器群即可："
+                    }
+                  ]
+                },
+                {
+                  "type": "code-block",
+                  "lang": "bash",
+                  "children": [
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "# 拉取所有镜像的最新版本"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "docker-compose pull"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": ""
+                        }
+                      ]
+                    },
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "# 启动所有容器"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "code-line",
+                      "children": [
+                        {
+                          "text": "docker-compose up -d"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "heading-three",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ],
+              "id": "Bl6vD6xe"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在这一步中，我们："
+                }
+              ],
+              "id": "W4dt_8Ru"
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "首先了解了如何通过 Git 抓取代码的方式在远程主机上进行部署"
+                    }
+                  ],
+                  "id": "W4dt_8Ru",
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "然后了解了 Docker Hub 及镜像命名的规则，并分析了一波 Docker Hub 的缺陷"
+                    }
+                  ],
+                  "id": "W4dt_8Ru",
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "接着一步步带你体验和使用阿里云镜像仓库服务，轻松实现镜像的分发与部署"
+                    }
+                  ],
+                  "id": "W4dt_8Ru",
+                  "level": 0,
+                  "parent": "bulleted-list"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "终于，我们的迷你全栈电商系列实战就到此为止啦🎉🎉，感谢一路看下来始终不离不弃、热爱学习的你😘！让我们在接下来更精彩的文章中再见👋~"
+                }
+              ],
+              "id": "W4dt_8Ru",
+              "level": 0,
+              "parent": "bulleted-list"
             }
           ]
         }
