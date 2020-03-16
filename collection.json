@@ -77965,6 +77965,76 @@
                 },
                 {
                   "type": "note",
+                  "level": "warning",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "在指定每个 service 时，如果使用 "
+                        },
+                        {
+                          "text": "image",
+                          "code": true
+                        },
+                        {
+                          "text": " 字段指定镜像，那么就会直接从镜像仓库拉取该镜像，这里我们的 "
+                        },
+                        {
+                          "text": "db",
+                          "code": true
+                        },
+                        {
+                          "text": " 服务就是如此。如果使用 "
+                        },
+                        {
+                          "text": "build",
+                          "code": true
+                        },
+                        {
+                          "text": " 字段指定镜像，则会根据指定的目录下的 "
+                        },
+                        {
+                          "text": "Dockerfile",
+                          "code": true
+                        },
+                        {
+                          "text": " 文件构建镜像，例如这里我们指定 "
+                        },
+                        {
+                          "text": "server",
+                          "code": true
+                        },
+                        {
+                          "text": " 和 "
+                        },
+                        {
+                          "text": "client",
+                          "code": true
+                        },
+                        {
+                          "text": " 目录分别构建 "
+                        },
+                        {
+                          "text": "api",
+                          "code": true
+                        },
+                        {
+                          "text": " 和 "
+                        },
+                        {
+                          "text": "nginx",
+                          "code": true
+                        },
+                        {
+                          "text": "。"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
                   "level": "info",
                   "children": [
                     {
@@ -79492,7 +79562,14 @@
                       "code": true
                     },
                     {
-                      "text": " 服务改成使用云端镜像："
+                      "text": " 服务改成使用云端镜像（"
+                    },
+                    {
+                      "text": "下面是我的镜像仓库地址，记得改成你自己的喔",
+                      "italic": true
+                    },
+                    {
+                      "text": "）："
                     }
                   ],
                   "type": "paragraph"
