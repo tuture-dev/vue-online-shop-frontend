@@ -76725,6 +76725,42 @@
               "type": "paragraph",
               "children": [
                 {
+                  "text": "首先，如果你是一路跟着前面七篇教程一路敲过来的，那么将整个 Vue 前端项目放到新创建的 "
+                },
+                {
+                  "text": "client",
+                  "code": true
+                },
+                {
+                  "text": " 目录中，把整个 Express 后端项目放到新创建的 "
+                },
+                {
+                  "text": "server",
+                  "code": true
+                },
+                {
+                  "text": " 目录。如果你打算直接从这一篇开始学习部署，可以通过直接下载我们提供的代码："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "git clone -b deploy-start https://github.com/tuture-dev/vue-online-shop-frontend.git"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
                   "text": "在正式开始整个全栈应用的容器化之前，让我们通过一张图来梳理一下思路："
                 }
               ]
