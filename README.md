@@ -63,31 +63,10 @@
 <a name="nZocL"></a>
 ### 1. 启动数据库（这里我们推荐使用MongoDB）
 
-下载安装和启动 MongoDB**：**[https://www.mongodb.com/](https://www.mongodb.com/)
-
-<a name="6rcK3"></a>
-### 2. 克隆后端仓库，开启后端服务：
-
-- 克隆仓库然后进入该仓库：
-```bash
-git clone https://github.com/tuture-dev/vue-online-shop-backend.git
-cd vue-online-shop-backend
-```
-
-- 安装依赖：
-```bash
-npm install
-# yarn
-```
-
-- 开启服务：
-```bash
-npm start
-# yarn start
-```
+下载安装和启动 MongoDB：[https://www.mongodb.com/](https://www.mongodb.com/)
 
 <a name="LASSn"></a>
-### 3. 克隆前端仓库，开启前端服务：
+### 2. 克隆仓库，开启前端和后端服务服务：
 
 - 克隆仓库然后进入该仓库：
 ```bash
@@ -95,16 +74,30 @@ git clone https://github.com/tuture-dev/vue-online-shop-frontend.git
 cd vue-online-shop-frontend
 ```
 
-- 安装依赖：
+#### 使用 Docker 一键开启服务
+
+确保安装 Docker，然后执行如下命令：
+
 ```bash
-npm install
-# yarn
+docker-compose up
 ```
 
-- 开启服务：
+#### 手动开启服务
+
+##### 前端：
+
 ```bash
-npm start
-# yarn start
+cd client
+npm install # yarn
+npm start # yarn start
+```
+
+##### 后端
+
+```bash
+cd server
+npm install # yarn
+npm start # yarn start
 ```
 
 <a name="rLy3Q"></a>
@@ -148,7 +141,7 @@ npm start
 - 也可以直接扫码下方的二维码关注微信公众号哦：<br />
 ![](https://user-gold-cdn.xitu.io/2020/3/23/1710627191d422db?w=900&h=500&f=png&s=138401)
 
-<a name="8GU2e"></a>
+<a name="8GU2e"></a>****
 ## 许可证
 
 MIT。
