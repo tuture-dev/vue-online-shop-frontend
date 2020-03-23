@@ -79,7 +79,8 @@ cd vue-online-shop-frontend
 确保安装 Docker，然后执行如下命令：
 
 ```bash
-docker-compose up
+cd client && npm install && npm run build
+docker-compose up --build
 ```
 
 #### 手动开启服务
