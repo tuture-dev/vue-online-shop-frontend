@@ -61,12 +61,8 @@
 ## 体验项目
 
 <a name="nZocL"></a>
-### 1. 启动数据库（这里我们推荐使用MongoDB）
 
-下载安装和启动 MongoDB：[https://www.mongodb.com/](https://www.mongodb.com/)
-
-<a name="LASSn"></a>
-### 2. 克隆仓库，开启前端和后端服务服务：
+### 克隆仓库，开启前端和后端服务服务：
 
 - 克隆仓库然后进入该仓库：
 ```bash
@@ -74,18 +70,23 @@ git clone https://github.com/tuture-dev/vue-online-shop-frontend.git
 cd vue-online-shop-frontend
 ```
 
-#### 使用 Docker 一键开启服务
+### 使用 Docker 一键开启服务
 
 确保安装 Docker，然后执行如下命令：
 
 ```bash
-cd client && npm install && npm run build
-docker-compose up --build
+docker-compose up
 ```
 
-#### 手动开启服务
+### 手动开启服务
+
+#### 数据库
+
+下载安装和启动 MongoDB：[https://www.mongodb.com/](https://www.mongodb.com/)
 
 ##### 前端：
+
+在项目目录下：
 
 ```bash
 cd client
@@ -94,6 +95,8 @@ npm start # yarn start
 ```
 
 ##### 后端
+
+在项目目录下：
 
 ```bash
 cd server
