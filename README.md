@@ -15,7 +15,7 @@
 
 主要有首页头部导航栏以及展示本地商品信息的列表，列表主要展示了本地商品的名称、介绍、价格、生产商以及添加购物车操作。
 
-![](https://user-gold-cdn.xitu.io/2020/3/23/17106271648f976b?w=1366&h=657&f=png&s=29900)
+![](https://tva1.sinaimg.cn/large/00831rSTgy1gd5502geyij311y0i974t.jpg)
 
 
 
@@ -29,7 +29,7 @@
 
 主要展示了后台商品的名称、价格、制造商以及修改和删除操作。
 
-![](https://user-gold-cdn.xitu.io/2020/3/23/171062716518d604?w=1366&h=657&f=png&s=21452)
+![](https://tva1.sinaimg.cn/large/00831rSTgy1gd54zzphloj311y0i9wes.jpg)
 
 
 
@@ -38,24 +38,24 @@
 
 展示一个表单页面，主要用于添加一个新商品或者对指定商品信息进行修改。
 
-![](https://user-gold-cdn.xitu.io/2020/3/23/17106271655e25c7?w=1366&h=629&f=png&s=8720)
+![](https://tva1.sinaimg.cn/large/00831rSTgy1gd54zytgmqj311y0hhglk.jpg)
 
 <a name="Dz97A"></a>
 #### 查看制造商页面
 
 主要展示了后台制造商的名称以及修改和删除操作。
 
-![](https://user-gold-cdn.xitu.io/2020/3/23/171062716b1ad386?w=1361&h=614&f=png&s=14257)
+![](https://tva1.sinaimg.cn/large/00831rSTgy1gd54zwl8yej311t0h2wel.jpg)
 
 <a name="A9Daz"></a>
 #### 添加/修改制造商页面
 
-展示一个表单页面，主要用于添加一个新制造商或者对指定制造商信息进行修改。<br />![](https://user-gold-cdn.xitu.io/2020/3/23/171062716d722d88?w=1361&h=613&f=png&s=9246)
+展示一个表单页面，主要用于添加一个新制造商或者对指定制造商信息进行修改。<br />![](https://tva1.sinaimg.cn/large/00831rSTgy1gd54zv65x4j311t0h10sp.jpg)
 
 <a name="9vO3e"></a>
 #### 购物车页面
 
-主要用于展示添加到本地购物车的商品信息列表，列表主要展示了购物车商品的名称、介绍、价格、生产商以及移出购物车操作。<br />![](https://user-gold-cdn.xitu.io/2020/3/23/1710627191776104?w=1362&h=613&f=png&s=26487)
+主要用于展示添加到本地购物车的商品信息列表，列表主要展示了购物车商品的名称、介绍、价格、生产商以及移出购物车操作。<br />![](https://tva1.sinaimg.cn/large/00831rSTgy1gd54zu7k4uj311u0h1t95.jpg)
 
 <a name="Su5Ud"></a>
 ## 体验项目
@@ -143,7 +143,7 @@ npm start # yarn start
 - [知乎专栏](https://zhuanlan.zhihu.com/tuture)
 - 知乎圈子：搜索 图雀社区
 - 也可以直接扫码下方的二维码关注微信公众号哦：<br />
-![](https://user-gold-cdn.xitu.io/2020/3/23/1710627191d422db?w=900&h=500&f=png&s=138401)
+![](https://tva1.sinaimg.cn/large/00831rSTgy1gd54zrfl26j30p00dw41z.jpg)
 
 <a name="8GU2e"></a>****
 ## 许可证
