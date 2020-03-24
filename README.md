@@ -5,7 +5,7 @@
 <a name="F4RB6"></a>
 ## 项目预览
 
-![Lark20200323-131207.gif](https://user-gold-cdn.xitu.io/2020/3/23/171062716071e852?w=700&h=371&f=gif&s=957764)
+![Lark20200323-131207.gif](https://tva1.sinaimg.cn/large/00831rSTgy1gd54z2ym70g30jg0abazr.gif)
 
 <a name="t5Wg4"></a>
 ## 项目界面说明
