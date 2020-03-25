@@ -24074,7 +24074,8 @@
                     {
                       "text": " 命令进一步确认三个容器的状态："
                     }
-                  ]
+                  ],
+                  "type": "paragraph"
                 },
                 {
                   "type": "image",
@@ -24097,7 +24098,8 @@
                     {
                       "text": " 访问我们的站点了！"
                     }
-                  ]
+                  ],
+                  "type": "paragraph"
                 },
                 {
                   "children": [
@@ -24118,7 +24120,8 @@
                     {
                       "text": " 访问。查询本机内网 IP 可以自行去搜索引擎找答案哦。"
                     }
-                  ]
+                  ],
+                  "type": "paragraph"
                 }
               ],
               "flag": "file_end"
@@ -25207,7 +25210,8 @@
                     {
                       "text": " 。创建后如下图所示："
                     }
-                  ]
+                  ],
+                  "type": "paragraph"
                 },
                 {
                   "type": "image",
@@ -25285,7 +25289,8 @@
                     {
                       "text": " ）后，可以看到镜像列表如下："
                     }
-                  ]
+                  ],
+                  "type": "paragraph"
                 },
                 {
                   "type": "image",
@@ -25308,7 +25313,8 @@
                     {
                       "text": "）："
                     }
-                  ]
+                  ],
+                  "type": "paragraph"
                 },
                 {
                   "type": "code-block",
