@@ -166,72 +166,7 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个迷你全栈电商网站。并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随我的脚步，彻底掌握 Vue 开发！本系列教程的规划如下："
-                }
-              ]
-            },
-            {
-              "type": "numbered-list",
-              "children": [
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "bold": true,
-                      "text": "第一部分"
-                    },
-                    {
-                      "text": "（也就是这篇教程）：用 Vue 搭建前端项目的骨架，实现基于嵌套、动态路由的多页面跳转。"
-                    }
-                  ],
-                  "parent": "numbered-list",
-                  "level": 0,
-                  "number": 1
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "bold": true,
-                      "text": "第二部分"
-                    },
-                    {
-                      "text": "（写作中）：用 Express 实现后端 REST API，并使用 MongoDB 进行数据存储。"
-                    }
-                  ],
-                  "parent": "numbered-list",
-                  "level": 0,
-                  "number": 2
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "bold": true,
-                      "text": "第三部分"
-                    },
-                    {
-                      "text": "（写作中）：通过 Vue 的双向数据绑定和模板语法实现数据添加，并用 Vuex 实现前端的状态管理。"
-                    }
-                  ],
-                  "parent": "numbered-list",
-                  "level": 0,
-                  "number": 3
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "bold": true,
-                      "text": "第四部分"
-                    },
-                    {
-                      "text": "（写作中）：用 Element UI 组件库让界面更加专业美观，并且用 Docker 和 Docker Compose 部署我们的全栈项目。"
-                    }
-                  ],
-                  "parent": "numbered-list",
-                  "level": 0,
-                  "number": 4
+                  "text": "看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个迷你全栈电商网站。并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随我的脚步，彻底掌握 Vue 开发！"
                 }
               ]
             },
@@ -4903,10 +4838,10 @@
       ]
     },
     {
-      "type": "step",
       "commit": "f2fa516",
       "id": "DFpxITAESe",
       "articleId": "5e10a4665188253a800423a5",
+      "type": "step",
       "children": [
         {
           "type": "heading-two",
@@ -4927,57 +4862,17 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着我们又讲解了最常见的 Vue 模板语法，并通过实例的方式将这些模板语法都实践了一番，最后我们讲解了 Vue 组件的组合，并完成了我们的发表商品页面。"
+                  "text": "这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着讲解最常见的 Vue 模板语法，并通过实例的方式将这些模板语法都实践了一番，最后我们讲解了 Vue 组件的组合，并完成了我们的发表商品页面。"
                 }
               ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "欢迎阅读《从零到部署：用 Vue 和 Express 实现迷你全栈电商应用》系列："
-                }
-              ]
-            },
-            {
-              "type": "bulleted-list",
-              "children": [
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "link": true,
-                      "url": "https.tuture.co/2019/10/17/0b662ce/",
-                      "text": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（一）"
-                    }
-                  ],
-                  "parent": "bulleted-list",
-                  "level": 0
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "link": true,
-                      "url": "https.tuture.co/2019/10/21/cb08dc8/",
-                      "text": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（二）"
-                    }
-                  ],
-                  "parent": "bulleted-list",
-                  "level": 0
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "text": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）（也就是这篇）"
-                    }
-                  ],
-                  "parent": "bulleted-list",
-                  "level": 0
-                }
-              ]
-            },
+            }
+          ],
+          "flag": "step_start"
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
             {
               "type": "paragraph",
               "children": [
@@ -7175,7 +7070,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "flag": "step_start"
         },
         {
           "type": "file",
@@ -7299,10 +7195,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "src/components/products/ProductForm.vue",
           "display": true,
-          "id": "Quaph3MKiJ",
+          "commit": "f2fa516",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -7354,7 +7250,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "flag": "file_start"
             },
             {
               "type": "diff-block",
@@ -7860,7 +7757,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "flag": "file_end"
             }
           ]
         },
@@ -7922,10 +7820,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "src/pages/admin/New.vue",
           "display": true,
-          "id": "0CfKqTyXCl",
+          "commit": "f2fa516",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -7955,7 +7853,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "flag": "file_start"
             },
             {
               "type": "diff-block",
@@ -8084,7 +7983,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "flag": "file_end"
             }
           ]
         },
@@ -8205,7 +8105,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "flag": "step_end"
         }
       ]
     },
@@ -25728,6 +25629,15 @@
           "flag": "step_end"
         }
       ]
+    }
+  ],
+  "remotes": [
+    {
+      "name": "origin",
+      "refs": {
+        "fetch": "https://github.com/tuture-dev/vue-online-shop-frontend.git",
+        "push": "https://github.com/tuture-dev/vue-online-shop-frontend.git"
+      }
     }
   ]
 }
