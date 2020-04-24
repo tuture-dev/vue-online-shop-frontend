@@ -25,6 +25,15 @@ export default {
   components: {
     "product-list": ProductList,
     "app-header": Header
+  },
+  beforeRouteEnter(to, from, next) {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      next("/user/login");
+    } else {
+      next();
+    }
   }
 };
 </script>

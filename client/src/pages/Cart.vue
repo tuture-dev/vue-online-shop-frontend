@@ -2,7 +2,7 @@
   <div>
     <app-header :activeIndex="activeIndex"></app-header>
     <div class="container">
-      <h1>{{msg}}</h1>
+      <h1>{{ msg }}</h1>
     </div>
     <product-item :products="cart"></product-item>
   </div>
@@ -28,6 +28,15 @@ export default {
   components: {
     "product-item": ProductItem,
     "app-header": Header
+  },
+  beforeRouteEnter(to, from, next) {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      next("/user/login");
+    } else {
+      next();
+    }
   }
 };
 </script>
