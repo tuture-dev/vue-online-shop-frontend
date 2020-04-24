@@ -85,12 +85,17 @@ export const productActions = {
         Message.error("不好意思，商品更新失败！");
       });
   },
-  addProduct({ commit }, payload) {
+  addProduct({ commit, state }, payload) {
     commit(ADD_PRODUCT);
 
     const { product } = payload;
+    const _id = state.user._id;
     axios
-      .post(`${API_BASE}/products`, product)
+      .post(`${API_BASE}/products`, {
+        ...product,
+        user: _id,
+        manufacturer: product.manufacturer._id
+      })
       .then(response => {
         commit(ADD_PRODUCT_SUCCESS, {
           product: response.data
@@ -165,11 +170,13 @@ export const manufacturerActions = {
         Message.error("不好意思，制造商更新失败！");
       });
   },
-  addManufacturer({ commit }, payload) {
+  addManufacturer({ commit, state }, payload) {
     commit(ADD_MANUFACTURER);
     const { manufacturer } = payload;
+    const _id = state.user._id;
+
     axios
-      .post(`${API_BASE}/manufacturers`, manufacturer)
+      .post(`${API_BASE}/manufacturers`, { ...manufacturer, user: _id })
       .then(response => {
         commit(ADD_MANUFACTURER_SUCCESS, {
           manufacturer: response.data
