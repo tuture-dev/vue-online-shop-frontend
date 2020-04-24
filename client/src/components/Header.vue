@@ -94,12 +94,26 @@ export default {
   props: ["activeIndex"],
   data() {
     return {
-      isLogged: false
+      model: { manufacturer: { name: "", _id: "" } }
     };
+  },
+  computed: {
+    isLogged() {
+      let token = this.$store.state.user.token;
+
+      return !!token;
+    },
+    avatar() {
+      let photo = this.$store.state.user.photo;
+
+      return photo;
+    }
   },
   methods: {
     handleLogout() {
-      // 处理登出逻辑
+      localStorage.removeItem("token");
+      localStorage.removeItem("userInfo");
+      this.$store.commit("LOGOUT");
     }
   }
 };

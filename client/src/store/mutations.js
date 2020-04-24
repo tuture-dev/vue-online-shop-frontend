@@ -21,8 +21,20 @@ import {
   UPDATE_MANUFACTURER_SUCCESS,
   REMOVE_MANUFACTURER,
   REMOVE_MANUFACTURER_SUCCESS,
-} from './mutation-types';
-import { Message } from 'element-ui';
+  SET_USER,
+  UPDATE_USER,
+  LOGOUT
+} from "./mutation-types";
+import { Message } from "element-ui";
+
+export const userMutations = {
+  [SET_USER](state, payload) {
+    state.user = payload;
+  },
+  [LOGOUT](state) {
+    state.user = {};
+  }
+};
 
 export const productMutations = {
   [ALL_PRODUCTS](state) {
@@ -50,7 +62,9 @@ export const productMutations = {
     state.showLoader = false;
 
     const { productId } = payload;
-    state.products = state.products.filter(product => product._id !== productId);
+    state.products = state.products.filter(
+      product => product._id !== productId
+    );
   },
   [UPDATE_PRODUCT](state) {
     state.showLoader = true;
@@ -60,7 +74,7 @@ export const productMutations = {
 
     const { product: newProduct } = payload;
     state.product = newProduct;
-    state.products = state.products.map( product => {
+    state.products = state.products.map(product => {
       if (product._id === newProduct._id) {
         return newProduct;
       }
@@ -85,18 +99,18 @@ export const cartMutations = {
     const { product } = payload;
     state.cart.push(product);
     Message({
-      message: '恭喜你，成功加入购物车！',
-      type: 'success'
-    })
+      message: "恭喜你，成功加入购物车！",
+      type: "success"
+    });
   },
   [REMOVE_FROM_CART](state, payload) {
-    const { productId } = payload
-    state.cart = state.cart.filter(product => product._id !== productId)
+    const { productId } = payload;
+    state.cart = state.cart.filter(product => product._id !== productId);
     Message({
-      message: '恭喜你，成功移除购物车！',
-      type: 'success'
-    })
-  },
+      message: "恭喜你，成功移除购物车！",
+      type: "success"
+    });
+  }
 };
 
 export const manufacturerMutations = {
@@ -125,7 +139,9 @@ export const manufacturerMutations = {
     state.showLoader = false;
 
     const { manufacturerId } = payload;
-    state.manufacturers = state.manufacturers.filter(manufacturer => manufacturer._id !== manufacturerId);
+    state.manufacturers = state.manufacturers.filter(
+      manufacturer => manufacturer._id !== manufacturerId
+    );
   },
   [UPDATE_MANUFACTURER](state) {
     state.showLoader = true;
@@ -152,4 +168,4 @@ export const manufacturerMutations = {
     const { manufacturer } = payload;
     state.manufacturers = state.manufacturers.concat(manufacturer);
   }
-}
+};

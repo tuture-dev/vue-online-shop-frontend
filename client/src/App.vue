@@ -6,7 +6,14 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  mounted() {
+    const userInfo = localStorage.getItem("userInfo");
+
+    if (userInfo) {
+      this.$store.commit("SET_USER", JSON.parse(userInfo));
+    }
+  }
 };
 </script>
 
