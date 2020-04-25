@@ -5,13 +5,37 @@
 </template>
 
 <script>
+import Authing from "authing-js-sdk";
+
 export default {
   name: "App",
   mounted() {
-    const userInfo = localStorage.getItem("userInfo");
+    this.checkLogin();
+  },
+  methods: {
+    async checkLogin() {
+      const token = localStorage.getItem("token");
 
-    if (userInfo) {
-      this.$store.commit("SET_USER", JSON.parse(userInfo));
+      if (token) {
+        const userPoolId = "";
+
+        const authing = new Authing({
+          userPoolId
+        });
+
+        const result = await authing.checkLoginStatus(JSON.parse(token));
+
+        if (result.status) {
+          const userInfo = localStorage.getItem("userInfo");
+
+          if (userInfo) {
+            this.$store.commit("SET_USER", JSON.parse(userInfo));
+          }
+        } else {
+          localStorage.removeItem("token");
+          localStorage.removeItem("userInfo");
+        }
+      }
     }
   }
 };

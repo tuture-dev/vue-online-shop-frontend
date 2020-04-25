@@ -1,6 +1,17 @@
 <template>
-  <div id="login-form"></div>
+  <div>
+    <h1 class="user-title">
+      <router-link to="/" tag="div">用户界面</router-link>
+    </h1>
+    <div id="login-form"></div>
+  </div>
 </template>
+
+<style>
+.user-title:hover {
+  cursor: pointer;
+}
+</style>
 
 <script>
 export default {
@@ -10,7 +21,6 @@ export default {
     };
   },
   mounted() {
-    const appId = "";
     const userPoolId = "";
     const domain = "https://tuture-first.authing.co";
 

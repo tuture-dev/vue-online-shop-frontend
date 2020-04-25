@@ -39,7 +39,7 @@
         <el-avatar class="el-dropdown-link" :src="avatar"></el-avatar>
         <el-dropdown-menu slot="dropdown">
           <el-dropdown-item>
-            <a href="https://tuture-first.authing.co/login/profile">账户设置</a>
+            <router-link to="/user/settings" tag="div">账户设置</router-link>
           </el-dropdown-item>
           <el-dropdown-item>
             <div @click="handleLogout">退出登录</div>
@@ -90,6 +90,8 @@
 </style>
 
 <script>
+import Authing from "authing-js-sdk";
+
 export default {
   props: ["activeIndex"],
   data() {
@@ -110,7 +112,29 @@ export default {
     }
   },
   methods: {
-    handleLogout() {
+    async handleLogout() {
+      const userPoolId = "";
+
+      const token = JSON.parse(localStorage.getItem("token"));
+      const userId = JSON.parse(localStorage.getItem("userInfo"))._id;
+      const authing = new Authing({
+        userPoolId
+      });
+
+      try {
+        const res = await authing.checkLoginStatus(token);
+        console.log("res", res);
+
+        await authing.logout(userId);
+
+        this.$message({
+          message: "成功登出",
+          type: "success"
+        });
+      } catch (err) {
+        console.log("err", err);
+      }
+
       localStorage.removeItem("token");
       localStorage.removeItem("userInfo");
       this.$store.commit("LOGOUT");

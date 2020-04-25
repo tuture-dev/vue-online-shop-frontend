@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "authing-js-sdk": "^3.18.7",
     "axios": "^0.19.0",
     "element-ui": "^2.13.0",
     "vee-validate": "^3.0.11",
