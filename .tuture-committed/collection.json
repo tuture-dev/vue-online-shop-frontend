@@ -19,14 +19,14 @@
       "description": "Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue 有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。\n目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像 Element 、mpvue、iView 这样优秀的基于 Vue 开源项目存在，所以学习 Vue 是一个不错的投资，当你学会 Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。\n看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！",
       "id": "0b662ce",
       "created": "2019-10-17T00:00:00.509Z",
-      "cover": ".tuture/assets/cover-1.jpg"
+      "cover": "https://imgkr.cn-bj.ufileos.com/3e119a16-f74d-4bab-922e-80504879485a.jpg"
     },
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）",
       "description": "在这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着讲解最常见的 Vue 模板语法，并通过实例的方式将这些模板语法都实践一番，最后将讲解 Vue 组件的组合，并完成了我们的发表商品页面。",
       "id": "5e10a4665188253a800423a5",
       "created": "2019-12-18T00:00:00.509Z",
-      "cover": ".tuture/assets/cover-3.jpg"
+      "cover": "https://imgkr.cn-bj.ufileos.com/09a5ff8d-b2c7-4699-bed6-cd331e54d8a1.jpg"
     },
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）",
@@ -37,7 +37,7 @@
       ],
       "id": "ae8a389b0b6f1fb121a6881d2ec2544f",
       "created": "2020-01-10T00:00:00.509Z",
-      "cover": ".tuture/assets/cover-4.jpg"
+      "cover": "https://imgkr.cn-bj.ufileos.com/49ed15a4-31b9-416d-8a74-124e24029ed3.jpg"
     },
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（五）",
@@ -48,7 +48,7 @@
       ],
       "id": "6f96d15",
       "created": "2020-02-11T00:00:00.509Z",
-      "cover": ".tuture/assets/cover-5.jpg"
+      "cover": "https://imgkr.cn-bj.ufileos.com/d7c72ec8-d28d-4f52-b0da-b212f2e69950.jpg"
     },
     {
       "id": "-OixkkqI",
@@ -57,7 +57,7 @@
         "Vue.js",
         "Vuex"
       ],
-      "cover": ".tuture/assets/cover-6.jpg",
+      "cover": "https://imgkr.cn-bj.ufileos.com/d357716a-929b-48b2-acdb-75f1f9840ae3.jpg",
       "description": "前面五篇教程我们已经基本实现了迷你全栈电商应用的界面展示以及功能逻辑，相信大家在这个过程中都收获颇丰，并且迈向了全栈工程师的第一步。但是我们却并不满足于此，我们还需要对我们的项目代码进行优化，使得我们的代码可读性更高，也更好维护。相信细心的你们已经感觉到了项目中的store实例实在是过于臃肿，因此，本篇教程就是带大家一起学习如何抽出 Getters 、 Mutations 和Actions 逻辑实现store的“减重”以及如何干掉 mutation-types 硬编码。",
       "created": "2020-03-03T00:00:00.509Z"
     },
@@ -69,7 +69,7 @@
         "Vue",
         "Element UI"
       ],
-      "cover": ".tuture/assets/vue-cover-7-squashed.jpg",
+      "cover": "https://imgkr.cn-bj.ufileos.com/50009d9a-e157-43d9-803f-d3e7459a492d.jpg",
       "description": "在之前的六篇教程中我们已经基本实现了迷你全栈电商应用，相信大家对于一个全栈应用的开发已经有了一个全面的认知。但是一个追求完美的工程师是不会吝啬他的艺术创造，仅仅实现应用的功能还不能满足用户的高需求，应用的界面效果也是提高用户体验的关键因素。因此本篇教程将基于element-ui组件库重构项目的前端代码，改善迷你电商应用的界面效果，提高用户的体验感。虽然我们可以轻松地引入现成的组件库，但是与之对应的数据处理也值得我们注意，那我会在引入组件库的同时带大家一起踩一踩element-ui给我们挖的坑，毕竟踩坑才能成长嘛。"
     },
     {
@@ -80,8 +80,19 @@
         "Docker",
         "Docker Compose"
       ],
-      "cover": ".tuture/assets/vue-cover-8-squashed.jpg",
+      "cover": "https://imgkr.cn-bj.ufileos.com/4cde7f12-c425-4e35-9f63-a3582d05b38e.jpg",
       "description": "本篇是系列文章终篇，我们将实现应用的部署，这篇教程将首先 Docker 来容器化你的应用，接着教你配置 MongoDB 的身份验证机制，给你的数据库添加一份安全守护，最后我们会带你使用阿里云的容器镜像服务将整个全栈应用部署到云端，使得你互联网上的用户可以访问你的网站，希望这篇教程能解决长期困扰你的部署上云的问题！"
+    },
+    {
+      "id": "141fb9d2",
+      "created": "2020-04-26T02:36:28.573Z",
+      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（番外篇）",
+      "topics": [
+        "Vue",
+        "Authing"
+      ],
+      "cover": "",
+      "description": "在之前的迷你电商应用中，我们的网站缺少了一个关键组成部分：用户鉴权系统，包括登录、注册、以及权限管理等相应的配置。徒手实现这些功能固然可行，但是对于一支崇尚精益的团队来说，选择可靠的身份认证服务（IDaaS）是更加明智的选择，不仅能够提供完善且丰富的身份认证和用户鉴权功能，还确保遵循最佳安全实践和优秀的可扩展性。在这篇教程中，我们将手把手带你在本系列之前完成的迷你电商应用中快速集成 Authing 用户认证模块，提供一致、流畅、安全的身份认证体验。"
     }
   ],
   "steps": [
@@ -415,7 +426,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/142621576840065_.pic.jpg",
+                  "url": "https://imgkr.cn-bj.ufileos.com/32719f10-4d3f-4fbe-b9e6-df123d10e1f7.jpg",
                   "children": [
                     {
                       "text": ""
@@ -545,7 +556,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/c5019a89d14f9f9118f22b61136c02c3.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/46ea4d04-75bb-4f1d-8dd2-5bee8e4b7a4c.png",
                   "children": [
                     {
                       "text": ""
@@ -554,8 +565,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_start"
+          ]
         },
         {
           "type": "file",
@@ -584,12 +594,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -636,12 +641,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -688,12 +688,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -740,12 +735,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -791,12 +781,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -843,12 +828,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -895,12 +875,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -947,12 +922,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -999,12 +969,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1051,12 +1016,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1103,12 +1063,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1155,12 +1110,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1207,12 +1157,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1259,12 +1204,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1311,12 +1251,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1363,12 +1298,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1415,12 +1345,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1467,12 +1392,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1638,8 +1558,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -1648,12 +1567,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1669,8 +1583,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -1708,8 +1621,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -1718,12 +1630,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1855,8 +1762,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -1886,12 +1792,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1938,12 +1839,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -1994,8 +1890,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -2004,12 +1899,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -2270,8 +2160,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -2306,8 +2195,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -2316,12 +2204,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -2508,8 +2391,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -2540,12 +2422,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -2599,8 +2476,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -2609,12 +2485,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -2738,7 +2609,7 @@
                   "children": [
                     {
                       "type": "image",
-                      "url": ".tuture/assets/fd30e4f820c680abbd7d34b554704551.png",
+                      "url": "https://imgkr.cn-bj.ufileos.com/2a82a28b-d624-48aa-beea-67e09ec75d0c.png",
                       "children": [
                         {
                           "text": ""
@@ -2747,8 +2618,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -2779,12 +2649,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -2867,8 +2732,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_end"
+          ]
         }
       ]
     },
@@ -2901,8 +2765,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_start"
+          ]
         },
         {
           "type": "file",
@@ -2940,12 +2803,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3006,8 +2864,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -3016,12 +2873,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3168,8 +3020,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -3228,8 +3079,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -3243,12 +3093,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3276,7 +3121,7 @@
                   "children": [
                     {
                       "type": "image",
-                      "url": ".tuture/assets/edd8a53811e78bacd91ace31c3691c70.png",
+                      "url": "https://imgkr.cn-bj.ufileos.com/8b2064cf-2d4a-4348-bdd7-4861620834f2.png",
                       "children": [
                         {
                           "text": ""
@@ -3285,8 +3130,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -3302,8 +3146,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_end"
+          ]
         }
       ]
     },
@@ -3415,8 +3258,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_start"
+          ]
         },
         {
           "file": "src/App.vue",
@@ -3459,8 +3301,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -3474,12 +3315,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3521,8 +3357,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -3553,12 +3388,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3633,8 +3463,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -3643,12 +3472,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3671,8 +3495,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -3710,8 +3533,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -3720,12 +3542,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3748,8 +3565,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -3801,12 +3617,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3874,8 +3685,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -3889,12 +3699,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -3910,8 +3715,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -3932,7 +3736,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/router-demo.gif",
+                  "url": "https://imgkr.cn-bj.ufileos.com/bd984d0d-382c-403f-bc61-0bc55b007266.gif",
                   "children": [
                     {
                       "text": ""
@@ -3949,8 +3753,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_end"
+          ]
         }
       ]
     },
@@ -3997,8 +3800,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_start"
+          ]
         },
         {
           "file": "src/router/index.js",
@@ -4089,8 +3891,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -4108,12 +3909,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -4353,8 +4149,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -4392,8 +4187,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -4402,12 +4196,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -4491,8 +4280,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -4521,8 +4309,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -4531,12 +4318,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -4619,8 +4401,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -4649,8 +4430,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -4659,12 +4439,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -4680,8 +4455,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -4710,8 +4484,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_start"
+              ]
             },
             {
               "type": "diff-block",
@@ -4720,12 +4493,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -4741,8 +4509,7 @@
                     }
                   ]
                 }
-              ],
-              "flag": "file_end"
+              ]
             }
           ]
         },
@@ -4773,12 +4540,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -4815,7 +4577,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/router-demo2.gif",
+                  "url": "https://imgkr.cn-bj.ufileos.com/f5ef0f82-bf4f-4a13-b882-d5c455638b11.gif",
                   "children": [
                     {
                       "text": ""
@@ -4832,8 +4594,7 @@
                 }
               ]
             }
-          ],
-          "flag": "step_end"
+          ]
         }
       ]
     },
@@ -7108,12 +6869,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -7169,12 +6925,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -7260,12 +7011,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -7794,12 +7540,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -7863,12 +7604,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -8026,7 +7762,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/2a340eeb04a07c1aae2bcd0387931c52.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/eb851b81-fa87-477f-a7f0-0b0adb824ff5.png",
                   "children": [
                     {
                       "text": ""
@@ -8231,12 +7967,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -8292,12 +8023,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -8403,12 +8129,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -8624,12 +8345,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -9270,12 +8986,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -9836,12 +9547,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -9971,12 +9677,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -10210,12 +9911,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -10292,12 +9988,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -10465,12 +10156,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -10523,7 +10209,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/mutation-demo.gif",
+                  "url": "https://imgkr.cn-bj.ufileos.com/9892fc16-797c-49d7-8f32-4ed9dbe47b01.gif",
                   "children": [
                     {
                       "text": ""
@@ -11002,12 +10688,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -11063,12 +10744,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -11140,12 +10816,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -11487,12 +11158,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -11661,12 +11327,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -11969,12 +11630,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -12296,12 +11952,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -12398,12 +12049,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -12557,12 +12203,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -12634,7 +12275,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/image-20200209224837926.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/9a07854c-c8a4-41ea-8d8e-4effaa532713.png",
                   "children": [
                     {
                       "text": ""
@@ -12656,7 +12297,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/WX20200209-225009@2x.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/7667b550-51f5-45ce-82af-793b0f0b6cf5.png",
                   "children": [
                     {
                       "text": ""
@@ -13112,12 +12753,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -13329,12 +12965,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -13418,12 +13049,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -13512,12 +13138,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -13593,12 +13214,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -13696,12 +13312,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -13764,12 +13375,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -13919,12 +13525,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -13961,7 +13562,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": ".tuture/assets/detail.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/bee9a8d2-9afa-4286-b31f-69ace1a0d97f.png",
                   "children": [
                     {
                       "text": ""
@@ -14233,12 +13834,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -14307,12 +13903,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -14563,12 +14154,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -14650,12 +14236,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -14752,12 +14333,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -14923,12 +14499,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -15166,12 +14737,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -15630,12 +15196,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -15724,12 +15285,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -15984,12 +15540,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -16107,12 +15658,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -16303,12 +15849,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -16414,12 +15955,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -16699,12 +16235,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -16893,12 +16424,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -16971,12 +16497,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17187,12 +16708,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17278,12 +16794,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17342,12 +16853,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17423,12 +16929,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17513,12 +17014,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17677,12 +17173,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17749,12 +17240,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17823,12 +17309,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -17920,12 +17401,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18068,12 +17544,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18124,12 +17595,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18151,7 +17617,7 @@
         },
         {
           "type": "file",
-          "file": ".tuture/assets/142621576840065_.pic.jpg",
+          "file": "https://imgkr.cn-bj.ufileos.com/32719f10-4d3f-4fbe-b9e6-df123d10e1f7.jpg",
           "display": false,
           "id": "Ys_vrd8Wes",
           "children": [
@@ -18171,17 +17637,12 @@
             },
             {
               "type": "diff-block",
-              "file": ".tuture/assets/142621576840065_.pic.jpg",
+              "file": "https://imgkr.cn-bj.ufileos.com/32719f10-4d3f-4fbe-b9e6-df123d10e1f7.jpg",
               "commit": "19b49e9",
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18260,12 +17721,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18573,12 +18029,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18638,12 +18089,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18727,12 +18173,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18849,12 +18290,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -18970,12 +18406,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -19099,12 +18530,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -19273,12 +18699,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -19360,7 +18781,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/170bd7f1d39bb647.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/59b95d7c-ce20-4bf0-881c-3df5d3eab6bb.png",
                   "children": [
                     {
                       "text": ""
@@ -19458,12 +18879,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -19503,7 +18919,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/170bd7fc2f9b7080.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/3a7a9f34-f5c1-4a15-b48d-559dd6677e55.png",
                   "children": [
                     {
                       "text": ""
@@ -19568,12 +18984,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -19706,12 +19117,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -19848,12 +19254,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -19900,7 +19301,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/170bd807ce1da156.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/46658098-acba-4a4f-ba7a-3e8ba5118eb2.png",
                   "children": [
                     {
                       "text": ""
@@ -20013,12 +19414,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -20036,7 +19432,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/170bd8133a39a38f.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/ea4f1264-352f-4b59-bd77-372d82c61e6a.png",
                   "children": [
                     {
                       "text": ""
@@ -20111,12 +19507,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -20196,12 +19587,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -20219,7 +19605,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/170bd81d39c3eb45.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/1117ccfa-77cd-4d33-84bf-fab45019a1ac.png",
                   "children": [
                     {
                       "text": ""
@@ -20294,12 +19680,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -20317,7 +19698,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/170bd82508c14642.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/fdf7e580-2d32-4b7d-bebb-cd3e9830378b.png",
                   "children": [
                     {
                       "text": ""
@@ -20371,12 +19752,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -20480,7 +19856,7 @@
             },
             {
               "type": "image",
-              "url": ".tuture/assets/170bd829d4626c61.png",
+              "url": "https://imgkr.cn-bj.ufileos.com/063d8169-2f45-4515-8d8b-2ee248cc4af5.png",
               "children": [
                 {
                   "text": ""
@@ -20538,12 +19914,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -20658,12 +20029,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -20781,12 +20147,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -20948,12 +20309,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21013,12 +20369,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21074,12 +20425,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21135,12 +20481,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21200,12 +20541,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21261,12 +20597,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21326,12 +20657,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21387,12 +20713,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21540,12 +20861,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21686,12 +21002,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21747,12 +21058,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -21892,12 +21198,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22027,12 +21328,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22123,12 +21419,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22209,12 +21500,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22254,7 +21540,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/170bd8414598aa64.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/bf1581ca-1ea2-4583-abed-946cf482d8aa.png",
                   "children": [
                     {
                       "text": ""
@@ -22308,12 +21594,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22449,7 +21730,7 @@
             },
             {
               "type": "image",
-              "url": ".tuture/assets/170bd845ae228eb9.png",
+              "url": "https://imgkr.cn-bj.ufileos.com/655aef8c-71ff-40a1-8c61-d5626c2cb899.png",
               "children": [
                 {
                   "text": ""
@@ -22458,7 +21739,7 @@
             },
             {
               "type": "image",
-              "url": ".tuture/assets/170bd848f59fad3b.png",
+              "url": "https://imgkr.cn-bj.ufileos.com/efca8186-5645-4389-9117-5d6e19a8cf68.png",
               "children": [
                 {
                   "text": ""
@@ -22562,12 +21843,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22661,12 +21937,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22722,12 +21993,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22783,12 +22049,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -22907,7 +22168,7 @@
             },
             {
               "type": "image",
-              "url": ".tuture/assets/arch.png",
+              "url": "https://imgkr.cn-bj.ufileos.com/7d1ea84e-9338-4b4b-b9f9-e0ea2dfaf338.png",
               "children": [
                 {
                   "text": ""
@@ -23056,12 +22317,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -23162,12 +22418,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -23296,12 +22547,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -23418,12 +22664,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -23486,12 +22727,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -23566,12 +22802,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -23627,12 +22858,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -23695,12 +22921,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -23771,12 +22992,7 @@
               "hiddenLines": [],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -24055,7 +23271,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/image.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/88f665bc-3c10-4698-907c-99391de64c61.png",
                   "children": [
                     {
                       "text": ""
@@ -24079,7 +23295,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/image-40615e9c02e63e20.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/3ed0cf34-00ec-4338-ae7b-cf02980674d6.png",
                   "children": [
                     {
                       "text": ""
@@ -24160,12 +23376,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -24335,12 +23546,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -24475,12 +23681,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -24597,12 +23798,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -25191,7 +24387,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/cr-namespace.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/4b79b282-a56b-4856-8454-27ae24199b1d.png",
                   "children": [
                     {
                       "text": ""
@@ -25215,7 +24411,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/cr-namespace-created.png",
+                  "url": "https://imgkr.cn-bj.ufileos.com/d3d8a032-438f-430b-9956-332042068786.png",
                   "children": [
                     {
                       "text": ""
@@ -25231,7 +24427,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/cr-repos-squashed.jpg",
+                  "url": "https://imgkr.cn-bj.ufileos.com/65fa64bc-6500-4cfa-901d-cbda29367c8a.jpg",
                   "children": [
                     {
                       "text": ""
@@ -25247,7 +24443,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/cr-create-repo-1-squashed.jpg",
+                  "url": "https://imgkr.cn-bj.ufileos.com/22d637d4-028a-48ae-baa9-88ea145641b5.jpg",
                   "children": [
                     {
                       "text": ""
@@ -25263,7 +24459,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/cr-create-repo-2-squashed.jpg",
+                  "url": "https://imgkr.cn-bj.ufileos.com/8efdc549-daca-4b0f-a262-c22df37b2db5.jpg",
                   "children": [
                     {
                       "text": ""
@@ -25294,7 +24490,7 @@
                 },
                 {
                   "type": "image",
-                  "url": ".tuture/assets/cr-repos-list-squashed.jpg",
+                  "url": "https://imgkr.cn-bj.ufileos.com/e7040054-6f17-43f7-8a99-63a47bd5081d.jpg",
                   "children": [
                     {
                       "text": ""
@@ -25481,12 +24677,7 @@
               ],
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             },
@@ -25635,9 +24826,3455 @@
           "flag": "step_end"
         }
       ]
+    },
+    {
+      "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+      "id": "a778459a",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+          "id": "0f75e33b",
+          "fixed": true,
+          "children": [
+            {
+              "text": "重构页面"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/App.vue",
+          "display": true,
+          "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/App.vue",
+              "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/components/Header.vue",
+          "display": true,
+          "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/components/Header.vue",
+              "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/components/products/ProductButton.vue",
+          "display": true,
+          "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/components/products/ProductButton.vue",
+              "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+              "hiddenLines": [
+                [
+                  34,
+                  45
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/Cart.vue",
+          "display": true,
+          "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/Cart.vue",
+              "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+              "hiddenLines": [
+                [
+                  8,
+                  8
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/Home.vue",
+          "display": true,
+          "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/Home.vue",
+              "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+              "hiddenLines": [
+                [
+                  8,
+                  9
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/admin/Index.vue",
+          "display": true,
+          "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/admin/Index.vue",
+              "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/store/actions.js",
+          "display": true,
+          "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/actions.js",
+              "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
+              "hiddenLines": [
+                [
+                  5,
+                  19
+                ],
+                [
+                  48,
+                  48
+                ],
+                [
+                  155,
+                  157
+                ],
+                [
+                  169,
+                  169
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "articleId": null
+    },
+    {
+      "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+      "id": "3eb3632d",
+      "articleId": "141fb9d2",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "id": "b685530e",
+          "fixed": true,
+          "children": [
+            {
+              "text": "添加用户界面及路由"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "首先，我们为你准备好了重构之后的迷你电商代码："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "git clone -b auth-start https://github.com/tuture-dev/vue-online-shop-frontend.git"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "# 或者下载 Gitee 上的仓库"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "git clone -b auth-start https://gitee.com/tuture/vue-online-shop-frontend.git"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "代码下载后，在 "
+                },
+                {
+                  "text": "client/src/pages",
+                  "code": true
+                },
+                {
+                  "text": " 目录中创建 "
+                },
+                {
+                  "text": "user",
+                  "code": true
+                },
+                {
+                  "text": " 目录，在接下来时间我们会在其中实现所有与用户系统相关的页面。"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "level": "info",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "本篇教程采用的是 Vue 2.x 版本，但这篇教程的核心是通过 Authing 集成用户系我们并没有使用太多关于 Vue 的知识。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/main.js",
+          "display": false,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/main.js",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Index.vue",
+          "display": true,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现用户系统相关页面"
+                    }
+                  ],
+                  "id": "co9uU1bTi"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，我们在 "
+                    },
+                    {
+                      "text": "user",
+                      "code": true
+                    },
+                    {
+                      "text": " 页面目录下创建 "
+                    },
+                    {
+                      "text": "Index.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " 用户首页组件，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Index.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Login.vue",
+          "display": true,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着创建 "
+                    },
+                    {
+                      "text": "Login.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " 登录组件，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Login.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Setting.vue",
+          "display": true,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后创建 "
+                    },
+                    {
+                      "text": "Setting.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " 设置组件，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Setting.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/router/index.js",
+          "display": true,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "配置中心路由"
+                    }
+                  ],
+                  "id": "ZDRojGGyR"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后是在路由中集成上面定义的用户系统相关页面，修改 "
+                    },
+                    {
+                      "text": "client/src/router/index.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/router/index.js",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [
+                [
+                  0,
+                  26
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "把项目跑起来，点击右上角的登录或注册应该可以成功地跳转到登录页面（虽然现在还很简陋哈）："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://imgkr.cn-bj.ufileos.com/608ec9f7-dcc1-4ccf-8b0e-5a94e3b1fcc3.jpg"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "OK，接下来让我们具体地实现各个页面吧~"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+      "id": "20a3c151",
+      "articleId": "141fb9d2",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "id": "e46e0ee4",
+          "fixed": true,
+          "children": [
+            {
+              "text": "使用 Authing 接入用户系统"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在这一步骤中，我们将正式使用 "
+                },
+                {
+                  "text": "Authing",
+                  "link": true,
+                  "url": "https://authing.cn/"
+                },
+                {
+                  "text": " 接入用户系统。Authing 是国内出色的身份认证云，能让我们轻松集成身份认证相关的逻辑，对于个人开发者来说，其"
+                },
+                {
+                  "text": "免费使用额度",
+                  "link": true,
+                  "url": "https://authing.cn/pricing"
+                },
+                {
+                  "text": "也是相当充足的。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "首先，让我们访问 Authing 官方网站，点击右上角的登录按钮，如下图所示："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://imgkr.cn-bj.ufileos.com/8f8462c8-2ee7-41e7-9b88-8d877db8c295.png"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "进入到登录页面后，我们输入帐户名和密码，会直接为我们创建帐号："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://imgkr.cn-bj.ufileos.com/941f9c0d-933a-4d4a-a103-09d5af864a54.png"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "进入到控制台后，让我们创建一个新的"
+                },
+                {
+                  "text": "用户池",
+                  "bold": true,
+                  "link": true,
+                  "url": "https://docs.authing.cn/authing/quickstart/basic#yong-hu-chi"
+                },
+                {
+                  "text": "（顾名思义，就是用来管理和存储一系列用户的数据和信息），如下图所示："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://imgkr.cn-bj.ufileos.com/f947b966-4f2f-41c7-84f4-d34c879a2238.jpg"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在创建用户池的时候，输入我们想要的用户池名称和专属域名后，选择类型为 Web，最后点击，我们的第一个用户池边创建好了。点击“基础配置”书签，可以查看到刚才创建用户池的一些关键信息，特别是用户池 ID，如下图所示："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://imgkr.cn-bj.ufileos.com/9e61b095-916e-4ae3-9186-5267dff2a5a0.jpg"
+            },
+            {
+              "type": "note",
+              "level": "warning",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "后续应用开发时，所有的用户池 ID（"
+                    },
+                    {
+                      "text": "userPoolId",
+                      "code": true
+                    },
+                    {
+                      "text": "）请替换成自己帐户的真实 ID。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/store/mutation-types.js",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "配置 Vuex Mutations 和 Store"
+                    }
+                  ],
+                  "id": "ocYxgr-Ys"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "由于我们的应用使用了 "
+                    },
+                    {
+                      "text": "Vuex",
+                      "link": true,
+                      "url": "https://vuex.vuejs.org/"
+                    },
+                    {
+                      "text": " 来解决状态管理问题，因此我们首先需要定义身份验证相关的 Mutation。这里我们定义两个新的 Mutation："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "SET_USER",
+                          "code": true
+                        },
+                        {
+                          "text": "  ：设置用户身份数据"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "LOGOUT",
+                          "code": true
+                        },
+                        {
+                          "text": " ：退出登录"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "在 "
+                    },
+                    {
+                      "text": "client/src/store/mutation-types.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 中添加上面三个 Mutation 常量，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/mutation-types.js",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/store/mutations.js",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后我们在 "
+                    },
+                    {
+                      "text": "client/src/store/mutations.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 中实现上面定义用户相关 Mutation，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/mutations.js",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [
+                  0,
+                  19
+                ],
+                [
+                  42,
+                  62
+                ],
+                [
+                  73,
+                  75
+                ],
+                [
+                  84,
+                  101
+                ],
+                [
+                  129,
+                  150
+                ],
+                [
+                  161,
+                  180
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/store/index.js",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后我们在 Vuex Store 中集成相应的状态与 Mutation，修改 "
+                    },
+                    {
+                      "text": "client/src/store/index.js",
+                      "code": true
+                    },
+                    {
+                      "text": " ，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/index.js",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [
+                  0,
+                  7
+                ],
+                [
+                  22,
+                  33
+                ],
+                [
+                  43,
+                  52
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/App.vue",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "在根组件 App 中集成用户逻辑"
+                    }
+                  ],
+                  "id": "iBks_R1S2"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "让我们打开根组件 "
+                    },
+                    {
+                      "text": "client/src/App.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，在其中添加一个 "
+                    },
+                    {
+                      "text": "mounted",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法，使得在整个应用刚启动时获取并检查用户身份数据。修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/App.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  20,
+                  28
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们从 "
+                    },
+                    {
+                      "text": "localStorage",
+                      "code": true
+                    },
+                    {
+                      "text": " 中检查是否有 "
+                    },
+                    {
+                      "text": "userInfo",
+                      "code": true
+                    },
+                    {
+                      "text": " 数据，如果有的话通过 "
+                    },
+                    {
+                      "text": "SET_USER",
+                      "code": true
+                    },
+                    {
+                      "text": " Mutation 将用户身份数据存入状态中。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/components/Header.vue",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "在头部组件 Header 中集成用户逻辑"
+                    }
+                  ],
+                  "id": "5kE3XCGXb"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "打开头部组件 "
+                    },
+                    {
+                      "text": "client/src/components/Header.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " ，我们在其中添加用户系统相关的逻辑，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/components/Header.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [
+                  0,
+                  89
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们主要做了以下改变："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "把 "
+                        },
+                        {
+                          "text": "isLogged",
+                          "code": true
+                        },
+                        {
+                          "text": " 从原先的 "
+                        },
+                        {
+                          "text": "data",
+                          "code": true
+                        },
+                        {
+                          "text": " 变成了一个计算属性，通过从 Vuex Store 中获取 "
+                        },
+                        {
+                          "text": "token",
+                          "code": true
+                        },
+                        {
+                          "text": " 是否存在来判断是否登录"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "添加了 "
+                        },
+                        {
+                          "text": "avatar",
+                          "code": true
+                        },
+                        {
+                          "text": " 计算属性，用于从 Store 中获取用户头像"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "实现了 "
+                        },
+                        {
+                          "text": "handleLogout",
+                          "code": true
+                        },
+                        {
+                          "text": " 方法，用于处理登出逻辑，包括从 "
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 中去除 "
+                        },
+                        {
+                          "text": "token",
+                          "code": true
+                        },
+                        {
+                          "text": " 和 "
+                        },
+                        {
+                          "text": "userInfo",
+                          "code": true
+                        },
+                        {
+                          "text": " 数据，并发起一个 "
+                        },
+                        {
+                          "text": "LOGOUT",
+                          "code": true
+                        },
+                        {
+                          "text": " Mutation 用于更新 Store 的状态"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/index.html",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "通过 Authing Guard 实现登录页面"
+                    }
+                  ],
+                  "id": "2lGzEyhxm"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Guard",
+                      "link": true,
+                      "url": "https://docs.authing.cn/authing/sdk/guard"
+                    },
+                    {
+                      "text": " 是 Authing 推出的可嵌入登录表单，能够让我们用几行代码为整个应用集成登录和注册功能，集成后的效果如下："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/8459ef19-e1b7-48d8-9620-55054752a1e8.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "整体效果还是很 OK 的，而且我们可以通过一些配置项轻松实现定制，下面我们就来看看怎么实现吧。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，我们通过引入 Authing UMD 构建文件来集成 "
+                    },
+                    {
+                      "text": "Authing Guard",
+                      "link": true,
+                      "url": "https://docs.authing.cn/authing/sdk/guard"
+                    },
+                    {
+                      "text": "。在 "
+                    },
+                    {
+                      "text": "client/index.html",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件中通过 "
+                    },
+                    {
+                      "text": "script",
+                      "code": true
+                    },
+                    {
+                      "text": " 标签引入："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/index.html",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Login.vue",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着打开登录页面组件 "
+                    },
+                    {
+                      "text": "client/src/pages/user/Login.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Login.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们在 "
+                    },
+                    {
+                      "text": "mounted",
+                      "code": true
+                    },
+                    {
+                      "text": " 生命周期方法中初始化 "
+                    },
+                    {
+                      "text": "Guard",
+                      "code": true
+                    },
+                    {
+                      "text": " 实例。在初始化 "
+                    },
+                    {
+                      "text": "Guard",
+                      "code": true
+                    },
+                    {
+                      "text": " 实例时，第一个参数是用户池 ID（"
+                    },
+                    {
+                      "text": "记得换成自己的用户池 ID！",
+                      "bold": true,
+                      "italic": true
+                    },
+                    {
+                      "text": "），可以通过 Authing 控制台获取，第二个参数则是 Guard 组件的一些选项参数："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "logo",
+                          "code": true
+                        },
+                        {
+                          "text": " 是我们整个网站的 Logo 图片链接"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "title",
+                          "code": true
+                        },
+                        {
+                          "text": " 是整个登录表单的标题"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "mountId",
+                          "code": true
+                        },
+                        {
+                          "text": " 是用于挂载登录表单的 DOM ID，这里就是模板中唯一的 "
+                        },
+                        {
+                          "text": "div",
+                          "code": true
+                        },
+                        {
+                          "text": " 元素 "
+                        },
+                        {
+                          "text": "login-form",
+                          "code": true
+                        },
+                        {
+                          "text": " "
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "hideClose",
+                          "code": true
+                        },
+                        {
+                          "text": " 用于隐藏关闭按钮，因为我们把登录做成了一个独立的页面，不希望用户把登录表单关掉（这样整个页面就一片空白啦）"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "info",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "关于 "
+                        },
+                        {
+                          "text": "Guard",
+                          "code": true
+                        },
+                        {
+                          "text": " 完整的构造函数 API，请参考"
+                        },
+                        {
+                          "text": "官方文档",
+                          "link": true,
+                          "url": "https://docs.authing.cn/authing/sdk/guard#gou-zao-han-shu-new-guarduserpoolid-options"
+                        },
+                        {
+                          "text": "。"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "在初始化 "
+                    },
+                    {
+                      "text": "Guard",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件后，我们还需要添加身份验证成功后的监听事件函数，即 "
+                    },
+                    {
+                      "text": "form.on(\"authenticated\", handler)",
+                      "code": true
+                    },
+                    {
+                      "text": " 。可以看到，在回调函数中，我们做了三件事："
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "发出 "
+                        },
+                        {
+                          "text": "SET_USER",
+                          "code": true
+                        },
+                        {
+                          "text": " Mutation，修改 Store 状态"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 1
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "在 "
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 中存储登录后获取的用户信息"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 2
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "通过 "
+                        },
+                        {
+                          "text": "$router",
+                          "code": true
+                        },
+                        {
+                          "text": " 路由重定向到首页"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "info",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "更多回调事件，可参考"
+                        },
+                        {
+                          "text": "完整事件列表",
+                          "link": true,
+                          "url": "https://docs.authing.cn/authing/sdk/guard#hui-tiao-shi-jian-onevent-callback"
+                        },
+                        {
+                          "text": "。"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "配置完成后，开启应用，点击登录按钮，就可以看到我们炫酷的登录页面了："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://imgkr.cn-bj.ufileos.com/4a8bce59-cc9f-431c-865e-18745428d00f.jpg"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "看上去很不错！"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+      "id": "e350f44f",
+      "articleId": "141fb9d2",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+          "id": "47226a80",
+          "fixed": true,
+          "children": [
+            {
+              "text": "添加权限管理和路由守卫"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在这一步中，我们将配置权限管理和路由守卫。权限管理很容易理解，就是当用户进行某些需要登录的操作（例如添加到购物车）时判断是否已经登录，如果未登录则重定向到登录页面。所谓"
+                },
+                {
+                  "text": "路由守卫",
+                  "bold": true,
+                  "link": true,
+                  "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html"
+                },
+                {
+                  "text": "（或称"
+                },
+                {
+                  "text": "导航守卫",
+                  "bold": true
+                },
+                {
+                  "text": "），就是在进入一个具体的路由（页面）"
+                },
+                {
+                  "text": "之前",
+                  "bold": true
+                },
+                {
+                  "text": "，判断用户是否具备足够的权限，如果权限不够，则直接重定向到登录页面，否则允许进入该页面。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在我们的应用中，主要有三个地方需要配置权限："
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "商品添加按钮（ProductionButton）"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "购物车（Cart）"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "后台管理（Admin）"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "让我们逐个击破吧。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/components/products/ProductButton.vue",
+          "display": true,
+          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "添加商品添加按钮的权限管理"
+                    }
+                  ],
+                  "id": "VDqy8fpIb"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，我们需要为商品添加按钮配置权限管理。打开 "
+                    },
+                    {
+                      "text": "client/src/components/products/ProductButton.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件，修改 "
+                    },
+                    {
+                      "text": "methods",
+                      "code": true
+                    },
+                    {
+                      "text": " 中的 "
+                    },
+                    {
+                      "text": "addToCart",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "removeFromCart",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/components/products/ProductButton.vue",
+              "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+              "hiddenLines": [
+                [
+                  0,
+                  12
+                ],
+                [
+                  15,
+                  36
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，实现权限管理的思路很简单：先从 "
+                    },
+                    {
+                      "text": "localStorage",
+                      "code": true
+                    },
+                    {
+                      "text": " 中判断用于鉴权的 "
+                    },
+                    {
+                      "text": "token",
+                      "code": true
+                    },
+                    {
+                      "text": " 是否存在，如果存在则表明已登录，执行相应的 Mutation；如果不存在 "
+                    },
+                    {
+                      "text": "token",
+                      "code": true
+                    },
+                    {
+                      "text": "，则弹出 Alert 提示框询问用户是否需要跳转到登录页面进行登录。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/Cart.vue",
+          "display": true,
+          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现购物车的路由守卫"
+                    }
+                  ],
+                  "id": "0YBRNop9P"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后我们来实现购物车的路由守卫。幸运的是，Vue Router 已经为我们提供了"
+                    },
+                    {
+                      "text": "组件级别的路由守卫的方法",
+                      "link": true,
+                      "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%9A%84%E5%AE%88%E5%8D%AB"
+                    },
+                    {
+                      "text": " "
+                    },
+                    {
+                      "text": "beforeRouteEnter",
+                      "code": true
+                    },
+                    {
+                      "text": " 。打开 "
+                    },
+                    {
+                      "text": "client/src/pages/Cart.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/Cart.vue",
+              "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+              "hiddenLines": [
+                [
+                  0,
+                  10
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  17,
+                  31
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "依然是通过 "
+                    },
+                    {
+                      "text": "localStorage",
+                      "code": true
+                    },
+                    {
+                      "text": " 中尝试获取 "
+                    },
+                    {
+                      "text": "token",
+                      "code": true
+                    },
+                    {
+                      "text": " 来判断登录状态，然后通过 "
+                    },
+                    {
+                      "text": "next",
+                      "code": true
+                    },
+                    {
+                      "text": " 函数进入合适的路由。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/admin/Index.vue",
+          "display": true,
+          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现后台管理的路由守卫"
+                    }
+                  ],
+                  "id": "y6zZmzn20"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "类似地，我们实现后台管理页面的路由守卫。打开 "
+                    },
+                    {
+                      "text": "client/src/pages/admin.Index.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，添加路由守卫方法，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/admin/Index.vue",
+              "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+              "hiddenLines": [
+                [
+                  0,
+                  11
+                ],
+                [
+                  13,
+                  14
+                ],
+                [
+                  17,
+                  27
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "完成这一步后，打开应用……"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+      "id": "9eb3b275",
+      "articleId": "141fb9d2",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+          "id": "2502e9f9",
+          "fixed": true,
+          "children": [
+            {
+              "text": "将用户系统与现有的数据库集成"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "仅仅实现登录和注册功能是远远不够的，我们还需要将用户系统集成到现有的数据库中。例如我们在添加商品时，希望能够和具体的用户绑定。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "所幸我们使用的是 MongoDB 数据库，因此不像传统的关系型数据库那样需要繁杂的表结构更新，只需修改数据模型定义即可。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "server/model/index.js",
+          "display": true,
+          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "更新 Mongoose 数据定义"
+                    }
+                  ],
+                  "id": "DqsbMcXRR"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先让我们来更新一波 Mongoose 数据定义。打开 "
+                    },
+                    {
+                      "text": "server/model/index.js",
+                      "code": true
+                    },
+                    {
+                      "text": " ，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "server/model/index.js",
+              "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+              "hiddenLines": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  24,
+                  30
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们主要是在两个数据模型 "
+                    },
+                    {
+                      "text": "productSchema",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "manufacturerSchema",
+                      "code": true
+                    },
+                    {
+                      "text": " 中加入了 "
+                    },
+                    {
+                      "text": "user",
+                      "code": true
+                    },
+                    {
+                      "text": " 字段，其他均无需改变。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/store/actions.js",
+          "display": true,
+          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "配置 Vuex Action"
+                    }
+                  ],
+                  "id": "8ON51qZBT"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着我们修改项目的 Action，主要是在两个新增数据的 Action（"
+                    },
+                    {
+                      "text": "addProduct",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "addManufacturer",
+                      "code": true
+                    },
+                    {
+                      "text": "）创建模型时记录用户数据。打开 "
+                    },
+                    {
+                      "text": "client/src/store/actions.js",
+                      "code": true
+                    },
+                    {
+                      "text": "，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/actions.js",
+              "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+              "hiddenLines": [
+                [
+                  0,
+                  27
+                ],
+                [
+                  29,
+                  86
+                ],
+                [
+                  101,
+                  107
+                ],
+                [
+                  110,
+                  110
+                ],
+                [
+                  116,
+                  173
+                ],
+                [
+                  184,
+                  190
+                ],
+                [
+                  193,
+                  193
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "这里我们在前端发起请求创建新数据时，把 "
+                    },
+                    {
+                      "text": "user",
+                      "code": true
+                    },
+                    {
+                      "text": " 的 "
+                    },
+                    {
+                      "text": "_id",
+                      "code": true
+                    },
+                    {
+                      "text": " 也传了进去，这样数据库里面对应的商品和制造商就会记录相应的用户 ID 啦。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "server/controllers/product.js",
+          "display": false,
+          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "server/controllers/product.js",
+              "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+              "hiddenLines": [
+                [
+                  23,
+                  23
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+      "id": "1e88ef4a",
+      "articleId": "141fb9d2",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "id": "32f2ee12",
+          "fixed": true,
+          "children": [
+            {
+              "text": "添加账户设置并修改信息"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在最后一步中，我们将借助 "
+                },
+                {
+                  "text": "Authing SDK",
+                  "link": true,
+                  "url": "https://docs.authing.cn/authing/sdk/sdk-for-javascript"
+                },
+                {
+                  "text": " 实现更细粒度的用户身份管理，以及个人信息设置页面。首先用 npm 安装 Authing 的 JavaScript SDK："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "npm install authing-js-sdk"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/package.json",
+          "display": false,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/package.json",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [
+                [
+                  0,
+                  9
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/components/Header.vue",
+          "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "修改 Header 的帐户设置链接"
+                    }
+                  ],
+                  "id": "43xkckrmq"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，让我们修改 Header 头部中的帐户设置链接。打开 "
+                    },
+                    {
+                      "text": "client/src/components/Header.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/components/Header.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [
+                [
+                  2,
+                  35
+                ],
+                [
+                  49,
+                  56
+                ],
+                [
+                  60,
+                  90
+                ],
+                [
+                  96,
+                  113
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们主要做了两点变动："
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "在模板中调整“账户设置”的链接，从原先 Authing 的链接替换成了本应用的 "
+                        },
+                        {
+                          "text": "/user/settings",
+                          "code": true
+                        },
+                        {
+                          "text": " 路由，这个我们后面马上会实现"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 1
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "在 "
+                        },
+                        {
+                          "text": "handleLogout",
+                          "code": true
+                        },
+                        {
+                          "text": " 方法中，我们在 "
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 抹去用户信息之前，通过 "
+                        },
+                        {
+                          "text": "authing.checkLoginStatus",
+                          "code": true
+                        },
+                        {
+                          "text": " 检查登录状态，然后通过 "
+                        },
+                        {
+                          "text": "authing.logout",
+                          "code": true
+                        },
+                        {
+                          "text": " 执行登出操作"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 2
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Setting.vue",
+          "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现 Setting 帐户设置页面"
+                    }
+                  ],
+                  "id": "39FYBnbFx"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "打开之前已经创建好的设置页面 "
+                    },
+                    {
+                      "text": "client/src/pages/user/Setting.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，实现用户个人信息设置页面，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Setting.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们主要看一下 "
+                    },
+                    {
+                      "text": "script",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "template",
+                      "code": true
+                    },
+                    {
+                      "text": " 部分。首先在 "
+                    },
+                    {
+                      "text": "script",
+                      "code": true
+                    },
+                    {
+                      "text": " 部分中，我们的组件包括："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "data",
+                          "code": true
+                        },
+                        {
+                          "text": " 字段定义了模板中所需要的数据，包括 "
+                        },
+                        {
+                          "text": "user",
+                          "code": true
+                        },
+                        {
+                          "text": " 、"
+                        },
+                        {
+                          "text": "imageUrl",
+                          "code": true
+                        },
+                        {
+                          "text": "（头像链接）以及 "
+                        },
+                        {
+                          "text": "rules",
+                          "code": true
+                        },
+                        {
+                          "text": "（表单校验规则）"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "created",
+                          "code": true
+                        },
+                        {
+                          "text": " 生命周期方法用于从 Vuex Store 以及 "
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 中获取用户数据（"
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 的优先级更高一些），然后初始化上面的 "
+                        },
+                        {
+                          "text": "data",
+                          "code": true
+                        },
+                        {
+                          "text": " 字段"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "components",
+                          "code": true
+                        },
+                        {
+                          "text": " 用于指定 "
+                        },
+                        {
+                          "text": "app-header",
+                          "code": true
+                        },
+                        {
+                          "text": " 组件为我们刚才修改好的 "
+                        },
+                        {
+                          "text": "Header",
+                          "code": true
+                        },
+                        {
+                          "text": " 组件"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "methods",
+                          "code": true
+                        },
+                        {
+                          "text": " 中定义了 "
+                        },
+                        {
+                          "text": "handleAvatarSuccess",
+                          "code": true
+                        },
+                        {
+                          "text": " 和 "
+                        },
+                        {
+                          "text": "submitForm",
+                          "code": true
+                        },
+                        {
+                          "text": " 两个 Handler，分别用于处理头像上传成功以及提交表单的逻辑。在 "
+                        },
+                        {
+                          "text": "submitForm",
+                          "code": true
+                        },
+                        {
+                          "text": " 方法中，我们先从表单中获取到相应的数据，然后通过 "
+                        },
+                        {
+                          "text": "authing.update",
+                          "code": true
+                        },
+                        {
+                          "text": " 更新用户数据，成功后再修改 Vuex Store 中的状态"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/App.vue",
+          "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "调整 App 根组件"
+                    }
+                  ],
+                  "id": "6fUJbzXeI"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "让我们调整一下 App 根组件。打开 "
+                    },
+                    {
+                      "text": "client/src/App.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " ，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/App.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [
+                [
+                  0,
+                  4
+                ],
+                [
+                  46,
+                  54
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们主要实现了一个 "
+                    },
+                    {
+                      "text": "checkLogin",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法，用于在整个应用刚挂载时检查登录状态，整体流程"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Index.vue",
+          "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "调整其他页面"
+                    }
+                  ],
+                  "id": "_zPLrzOO6"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后我们调整一下其他页面的一些细节。修改 "
+                    },
+                    {
+                      "text": "client/src/pages/user/Index.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Index.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Login.vue",
+          "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "继续修改 "
+                    },
+                    {
+                      "text": "client/src/pages/user/Login.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Login.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [
+                [
+                  16,
+                  46
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/yarn.lock",
+          "display": false,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/yarn.lock",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [
+                [
+                  0,
+                  360
+                ],
+                [
+                  378,
+                  1864
+                ],
+                [
+                  1876,
+                  4139
+                ],
+                [
+                  4151,
+                  5994
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "至此，本篇教程也就结束了，相信你已经感受到了 Authing 身份认证机制的强大与便捷。在当今 Serverless 时代，越来越多标准化的流程（例如身份验证、人工智能应用等等）正在逐渐迈向云端，成为一种可直接消费的资源，而我们作为应用终端的开发者则可以将更多的时间和精力放在打磨和完善自身的产品上，在一定程度上解放了生产力。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "图雀社区秉承“加速技术传播”的理念，致力于推广能够真正让开发者和用户的生活变得更美好的技术。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "remotes": [
+    {
+      "name": "gitee",
+      "refs": {
+        "fetch": "https://gitee.com/tuture/vue-online-shop.git",
+        "push": "https://gitee.com/tuture/vue-online-shop.git"
+      }
+    },
     {
       "name": "origin",
       "refs": {
