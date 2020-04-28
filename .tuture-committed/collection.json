@@ -27173,7 +27173,24 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "完成这一步后，打开应用……"
+                  "text": "完成这一步后，打开应用，我们来看一下添加了权限管理和路由守卫的之后的应用会是怎么样的："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://imgkr.cn-bj.ufileos.com/d9d9ac16-c6df-42a6-bcfb-6765edbe9789.gif"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
                 }
               ]
             }
@@ -28048,7 +28065,21 @@
                       "code": true
                     },
                     {
-                      "text": " 方法，用于在整个应用刚挂载时检查登录状态，整体流程"
+                      "text": " 方法，用于在整个应用刚挂载时检查登录状态，如果登录成功，则从 "
+                    },
+                    {
+                      "text": "storage",
+                      "code": true
+                    },
+                    {
+                      "text": " 里面取出数据并设置进 Redux Store ，如果登录失效，则清空本地的 "
+                    },
+                    {
+                      "text": "storage",
+                      "code": true
+                    },
+                    {
+                      "text": " 信息。"
                     }
                   ]
                 }
@@ -28166,6 +28197,32 @@
               "type": "explain",
               "fixed": true,
               "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "当保存上面的修改的代码，我们可以看到如下的效果："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/32bd0abf-dbcc-4364-8d01-47affc0f9a89.gif"
+                },
+                {
+                  "type": "heading-two",
+                  "children": [
+                    {
+                      "text": "集成微信与 QQ 登录"
+                    }
+                  ],
+                  "id": "ATn1k27w-"
+                },
                 {
                   "type": "paragraph",
                   "children": [
