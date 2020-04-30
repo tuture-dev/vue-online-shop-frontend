@@ -82,17 +82,6 @@
       ],
       "cover": "https://imgkr.cn-bj.ufileos.com/4cde7f12-c425-4e35-9f63-a3582d05b38e.jpg",
       "description": "本篇是系列文章终篇，我们将实现应用的部署，这篇教程将首先 Docker 来容器化你的应用，接着教你配置 MongoDB 的身份验证机制，给你的数据库添加一份安全守护，最后我们会带你使用阿里云的容器镜像服务将整个全栈应用部署到云端，使得你互联网上的用户可以访问你的网站，希望这篇教程能解决长期困扰你的部署上云的问题！"
-    },
-    {
-      "id": "141fb9d2",
-      "created": "2020-04-26T02:36:28.573Z",
-      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（番外篇）",
-      "topics": [
-        "Vue",
-        "Authing"
-      ],
-      "cover": "",
-      "description": "在之前的迷你电商应用中，我们的网站缺少了一个关键组成部分：用户鉴权系统，包括登录、注册、以及权限管理等相应的配置。徒手实现这些功能固然可行，但是对于一支崇尚精益的团队来说，选择可靠的身份认证服务（IDaaS）是更加明智的选择，不仅能够提供完善且丰富的身份认证和用户鉴权功能，还确保遵循最佳安全实践和优秀的可扩展性。在这篇教程中，我们将手把手带你在本系列之前完成的迷你电商应用中快速集成 Authing 用户认证模块，提供一致、流畅、安全的身份认证体验。"
     }
   ],
   "steps": [
@@ -25238,7 +25227,6 @@
     {
       "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
       "id": "3eb3632d",
-      "articleId": "141fb9d2",
       "type": "step",
       "children": [
         {
@@ -25661,7 +25649,6 @@
     {
       "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
       "id": "20a3c151",
-      "articleId": "141fb9d2",
       "type": "step",
       "children": [
         {
@@ -26761,7 +26748,6 @@
     {
       "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
       "id": "e350f44f",
-      "articleId": "141fb9d2",
       "type": "step",
       "children": [
         {
@@ -27201,7 +27187,6 @@
     {
       "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
       "id": "9eb3b275",
-      "articleId": "141fb9d2",
       "type": "step",
       "children": [
         {
@@ -27521,7 +27506,6 @@
     {
       "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
       "id": "1e88ef4a",
-      "articleId": "141fb9d2",
       "type": "step",
       "children": [
         {
