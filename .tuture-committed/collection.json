@@ -82,6 +82,25 @@
       ],
       "cover": "https://imgkr.cn-bj.ufileos.com/4cde7f12-c425-4e35-9f63-a3582d05b38e.jpg",
       "description": "本篇是系列文章终篇，我们将实现应用的部署，这篇教程将首先 Docker 来容器化你的应用，接着教你配置 MongoDB 的身份验证机制，给你的数据库添加一份安全守护，最后我们会带你使用阿里云的容器镜像服务将整个全栈应用部署到云端，使得你互联网上的用户可以访问你的网站，希望这篇教程能解决长期困扰你的部署上云的问题！"
+    },
+    {
+      "id": "nO-RmUbzz",
+      "created": "2020-04-30T02:25:27.336Z",
+      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（九）：集成完整的用户系统",
+      "topics": [
+        "Vue",
+        "Express",
+        "Authing",
+        "OAuth",
+        "第三方登录"
+      ],
+      "cover": "https://imgkr.cn-bj.ufileos.com/329b0aa0-5db5-449c-a71b-20f6c078ad63.jpg",
+      "description": "在之前的迷你电商应用中，我们的网站缺少了一个关键组成部分：用户鉴权系统，包括登录、注册、以及权限管理等相应的配置。徒手实现这些功能固然可行，但是对于一支崇尚精益的团队来说，选择可靠的身份认证服务（IDaaS）是更加明智的选择，不仅能够提供完善且丰富的身份认证和用户鉴权功能，还确保遵循最佳安全实践和优秀的可扩展性。在这篇教程中，我们将手把手带你在本系列之前完成的迷你电商应用中快速集成 Authing 用户认证模块，提供一致、流畅、安全的身份认证体验。",
+      "categories": [
+        "前端",
+        "Vue",
+        "进阶"
+      ]
     }
   ],
   "steps": [
@@ -24819,6 +24838,7 @@
     {
       "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
       "id": "a778459a",
+      "articleId": null,
       "type": "step",
       "children": [
         {
@@ -25221,12 +25241,12 @@
             }
           ]
         }
-      ],
-      "articleId": null
+      ]
     },
     {
       "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
       "id": "3eb3632d",
+      "articleId": "nO-RmUbzz",
       "type": "step",
       "children": [
         {
@@ -25248,7 +25268,32 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "首先，我们为你准备好了重构之后的迷你电商代码："
+                  "text": "首先我们先来看一下整体用户系统接入后的效果："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://imgkr.cn-bj.ufileos.com/e1f9dd49-024b-42f5-9f25-b7ec05a3d2a4.gif"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "了解了效果之后，我们为你准备好了重构之后的迷你电商代码，你可以 Clone 这份代码，然后跟着教程，补充集成用户系统需要的："
                 }
               ]
             },
@@ -25649,6 +25694,7 @@
     {
       "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
       "id": "20a3c151",
+      "articleId": "nO-RmUbzz",
       "type": "step",
       "children": [
         {
@@ -25675,7 +25721,7 @@
                 {
                   "text": "Authing",
                   "link": true,
-                  "url": "https://authing.cn/"
+                  "url": "https://authing.cn/?utm_source=tuture"
                 },
                 {
                   "text": " 接入用户系统。Authing 是国内出色的身份认证云，能让我们轻松集成身份认证相关的逻辑，对于个人开发者来说，其"
@@ -25683,7 +25729,7 @@
                 {
                   "text": "免费使用额度",
                   "link": true,
-                  "url": "https://authing.cn/pricing"
+                  "url": "https://authing.cn/pricing?utm_source=tuture"
                 },
                 {
                   "text": "也是相当充足的。"
@@ -25705,7 +25751,15 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/8f8462c8-2ee7-41e7-9b88-8d877db8c295.png"
+              "url": "https://imgkr.cn-bj.ufileos.com/b911fb44-5bb4-477c-9a7f-6613e8af3bd9.png"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
             },
             {
               "type": "paragraph",
@@ -25732,9 +25786,8 @@
                 },
                 {
                   "text": "用户池",
-                  "bold": true,
                   "link": true,
-                  "url": "https://docs.authing.cn/authing/quickstart/basic#yong-hu-chi"
+                  "url": "https://docs.authing.cn/authing/quickstart/basic#yong-hu-chi?utm_source=tuture"
                 },
                 {
                   "text": "（顾名思义，就是用来管理和存储一系列用户的数据和信息），如下图所示："
@@ -26337,12 +26390,12 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "Guard",
+                      "text": "Guard ",
                       "link": true,
-                      "url": "https://docs.authing.cn/authing/sdk/guard"
+                      "url": "https://docs.authing.cn/authing/sdk/guard?utm_source=tuture"
                     },
                     {
-                      "text": " 是 Authing 推出的可嵌入登录表单，能够让我们用几行代码为整个应用集成登录和注册功能，集成后的效果如下："
+                      "text": "是 Authing 推出的可嵌入登录表单，能够让我们用几行代码为整个应用集成登录和注册功能，集成后的效果如下："
                     }
                   ]
                 },
@@ -26372,7 +26425,7 @@
                     {
                       "text": "Authing Guard",
                       "link": true,
-                      "url": "https://docs.authing.cn/authing/sdk/guard"
+                      "url": "https://docs.authing.cn/authing/sdk/guard?utm_source=tuture"
                     },
                     {
                       "text": "。在 "
@@ -26596,7 +26649,7 @@
                         {
                           "text": "官方文档",
                           "link": true,
-                          "url": "https://docs.authing.cn/authing/sdk/guard#gou-zao-han-shu-new-guarduserpoolid-options"
+                          "url": "https://docs.authing.cn/authing/sdk/guard#gou-zao-han-shu-new-guarduserpoolid-options?utm_source=tuture"
                         },
                         {
                           "text": "。"
@@ -26699,7 +26752,7 @@
                         {
                           "text": "完整事件列表",
                           "link": true,
-                          "url": "https://docs.authing.cn/authing/sdk/guard#hui-tiao-shi-jian-onevent-callback"
+                          "url": "https://docs.authing.cn/authing/sdk/guard#hui-tiao-shi-jian-onevent-callback?utm_source=tuture"
                         },
                         {
                           "text": "。"
@@ -26748,6 +26801,7 @@
     {
       "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
       "id": "e350f44f",
+      "articleId": "nO-RmUbzz",
       "type": "step",
       "children": [
         {
@@ -26773,9 +26827,8 @@
                 },
                 {
                   "text": "路由守卫",
-                  "bold": true,
                   "link": true,
-                  "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html"
+                  "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html?utm_source=tuture"
                 },
                 {
                   "text": "（或称"
@@ -26991,7 +27044,7 @@
                     {
                       "text": "组件级别的路由守卫的方法",
                       "link": true,
-                      "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%9A%84%E5%AE%88%E5%8D%AB"
+                      "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%9A%84%E5%AE%88%E5%8D%AB?utm_source=tuture"
                     },
                     {
                       "text": " "
@@ -27187,6 +27240,7 @@
     {
       "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
       "id": "9eb3b275",
+      "articleId": "nO-RmUbzz",
       "type": "step",
       "children": [
         {
@@ -27506,6 +27560,7 @@
     {
       "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
       "id": "1e88ef4a",
+      "articleId": "nO-RmUbzz",
       "type": "step",
       "children": [
         {
@@ -27532,7 +27587,7 @@
                 {
                   "text": "Authing SDK",
                   "link": true,
-                  "url": "https://docs.authing.cn/authing/sdk/sdk-for-javascript"
+                  "url": "https://docs.authing.cn/authing/sdk/sdk-for-javascript?utm_source=tuture"
                 },
                 {
                   "text": " 实现更细粒度的用户身份管理，以及个人信息设置页面。首先用 npm 安装 Authing 的 JavaScript SDK："
@@ -28202,10 +28257,376 @@
                   "type": "heading-two",
                   "children": [
                     {
-                      "text": "集成微信与 QQ 登录"
+                      "text": "集成微信、QQ 登录或 Github 登录"
                     }
                   ],
                   "id": "ATn1k27w-"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "通过上述流程，我们就完成了一个完整的用户系统及其与现有系统的整合，但是有同学发现了，我们在平时生活或工作中，除了常规的手机号+验证码、邮箱密码等，还会有一些更方便的登录方式，如微信登录、QQ登录等，那么我们如何集成这些方便的登录呢？实际上可能看起来很复杂，但是在我们现有的基础上，用 Authing 可以很方便的集成微信、QQ登录等。"
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "warning",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "只有企业才能集成微信或 QQ 登录，如果你是个人开发者，那么这一节你可以跳过哦🤓"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "集成微信扫码登录"
+                    }
+                  ],
+                  "id": "nB787Uvc2"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先去微信官方文档完成注册，然后申请一个"
+                    },
+                    {
+                      "text": "微信网页应用",
+                      "link": true,
+                      "url": "https://open.weixin.qq.com/cgi-bin/frame?t=home/web_tmpl&lang=zh_CN"
+                    },
+                    {
+                      "text": "，然后获取到微信网页应用的 AppID 和 AppSecret："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/735e6f6c-d56f-42ea-9fda-d92dcaa64d39.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着滑动到底部，将授权回调域改为 "
+                    },
+                    {
+                      "text": "oauth.authing.cn",
+                      "code": true
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/600497e6-a149-4c36-bc18-5032c1453cff.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后我们开始去 Authing 控制台，在相应微信登录里面，填入刚刚获取的 "
+                    },
+                    {
+                      "text": "AppID",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "AppSecret",
+                      "code": true
+                    },
+                    {
+                      "text": " ："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/432e971d-cb3a-4dff-b967-d5011807852a.png"
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/abf56159-142c-4e9c-b08a-e2f8359048b4.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "注意到上面我们第三个参数 “重定向地址” 填写了我们现在 Vue 全栈电商应用的开发服务器地址，读者应该根据自己当前的需要地址进行对应的填写。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "大功告成，通过上面的步骤我们就配置好了微信网页登录，现在你应该可以看到如下的效果："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/ea6c5f67-40ee-4afe-8f54-3eff447cfce1.gif"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我的天！好神奇！就是上面几下手工点按配置，我们就集成好了微信登录！😅"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "集成 QQ 登录"
+                    }
+                  ],
+                  "id": "zcascN_xA"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "按照和接入微信网页登录类似的方式，我们前往"
+                    },
+                    {
+                      "text": " QQ 互联中心",
+                      "link": true,
+                      "url": "https://connect.qq.com/manage.html#/"
+                    },
+                    {
+                      "text": "，注册一个账号，并创建一个网页应用。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后进入网页应用，将授权回调地址填写为："
+                    },
+                    {
+                      "text": "https://oauth.authing.cn/oauth/qq/redirect  ",
+                      "code": true
+                    },
+                    {
+                      "text": " ，接着回到 Authing 控制台，我们配置 QQ 登录："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/062db59f-41fd-44c6-9d51-2b2830b64541.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/089087d0-b597-4cae-afc3-c539ea795ea4.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "保存之后，大功告成！我们的应用里面就有了 QQ 登录，和微信登录同样简单！"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "集成 Github 登录"
+                    }
+                  ],
+                  "id": "ddjounxzC"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后我们再来尝试集成一下开发者比较喜爱的 Github 登录，看看 Authing 是如何简化这一劳动的呢？"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先根据 Github 指引，创建一个 "
+                    },
+                    {
+                      "text": "OAuth 应用",
+                      "link": true,
+                      "url": "https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/"
+                    },
+                    {
+                      "text": "。"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/6cd8539f-997a-4583-a5c4-a36fd166a9e0.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后填入如下内容："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/9987a2dc-20cd-4f65-9704-ef368b622d1e.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "其中红框框出来的内容需要填入 Authing 相关的 "
+                    },
+                    {
+                      "text": "https://oauth.authing.cn/oauth/github/redirect",
+                      "code": true
+                    },
+                    {
+                      "text": "，然后创建好应用之后，取出 "
+                    },
+                    {
+                      "text": "Client ID",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "Client Secret",
+                      "code": true
+                    },
+                    {
+                      "text": " ："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/419c6cce-551c-4a0f-a528-b7c8276c8287.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "之后就是类似之前的操作，进入 Authing 控制台，配置 Github 相关的内容："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/ccfb4947-5ddf-4c10-8509-24e0c5da5681.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后可以看到如下效果："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://imgkr.cn-bj.ufileos.com/7fcd879d-03d2-4dd6-b4d5-ea936fdf6ddd.gif"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
                 },
                 {
                   "type": "paragraph",
@@ -28287,6 +28708,15 @@
           "type": "explain",
           "fixed": true,
           "children": [
+            {
+              "type": "heading-two",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ],
+              "id": "xw7CJJ3K5"
+            },
             {
               "type": "paragraph",
               "children": [
