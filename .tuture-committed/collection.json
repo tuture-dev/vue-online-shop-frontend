@@ -5,8 +5,14 @@
   "id": "092faf468f0108b393159a8456de3e15",
   "created": "2019-10-17T00:00:00.509Z",
   "github": "https://github.com/tuture-dev/vue-online-shop-frontend",
-  "topics": ["Vue"],
-  "categories": ["前端", "Vue", "入门"],
+  "topics": [
+    "Vue"
+  ],
+  "categories": [
+    "前端",
+    "Vue",
+    "入门"
+  ],
   "articles": [
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（一）",
@@ -25,7 +31,10 @@
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）",
       "description": "随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库 Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。",
-      "topics": ["Vue", "Vuex"],
+      "topics": [
+        "Vue",
+        "Vuex"
+      ],
       "id": "ae8a389b0b6f1fb121a6881d2ec2544f",
       "created": "2020-01-10T00:00:00.509Z",
       "cover": "https://imgkr.cn-bj.ufileos.com/49ed15a4-31b9-416d-8a74-124e24029ed3.jpg"
@@ -33,7 +42,10 @@
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（五）",
       "description": "组件化和逻辑复用能帮助写出简洁易懂的代码，随着应用越写越复杂，我们有必要把视图层中重复的逻辑抽成组件，以求在多个页面中复用；同时对于 Vuex 端，Store 中的逻辑也会越来越臃肿，我们有必要使用 Vuex 提供的 Getters 来复用本地数据获取逻辑。在这篇教程中，我们将带领你抽出 Vue 组件简化页面逻辑，使用 Vuex Getters 复用本地数据获取逻辑。",
-      "topics": ["Vue", "Vuex"],
+      "topics": [
+        "Vue",
+        "Vuex"
+      ],
       "id": "6f96d15",
       "created": "2020-02-11T00:00:00.509Z",
       "cover": "https://imgkr.cn-bj.ufileos.com/d7c72ec8-d28d-4f52-b0da-b212f2e69950.jpg"
@@ -41,7 +53,10 @@
     {
       "id": "-OixkkqI",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（六）",
-      "topics": ["Vue.js", "Vuex"],
+      "topics": [
+        "Vue.js",
+        "Vuex"
+      ],
       "cover": "https://imgkr.cn-bj.ufileos.com/d357716a-929b-48b2-acdb-75f1f9840ae3.jpg",
       "description": "前面五篇教程我们已经基本实现了迷你全栈电商应用的界面展示以及功能逻辑，相信大家在这个过程中都收获颇丰，并且迈向了全栈工程师的第一步。但是我们却并不满足于此，我们还需要对我们的项目代码进行优化，使得我们的代码可读性更高，也更好维护。相信细心的你们已经感觉到了项目中的store实例实在是过于臃肿，因此，本篇教程就是带大家一起学习如何抽出 Getters 、 Mutations 和Actions 逻辑实现store的“减重”以及如何干掉 mutation-types 硬编码。",
       "created": "2020-03-03T00:00:00.509Z"
@@ -50,7 +65,10 @@
       "id": "tc1c9oDB",
       "created": "2020-03-13T02:00:37.658Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（七）",
-      "topics": ["Vue", "Element UI"],
+      "topics": [
+        "Vue",
+        "Element UI"
+      ],
       "cover": "https://imgkr.cn-bj.ufileos.com/50009d9a-e157-43d9-803f-d3e7459a492d.jpg",
       "description": "在之前的六篇教程中我们已经基本实现了迷你全栈电商应用，相信大家对于一个全栈应用的开发已经有了一个全面的认知。但是一个追求完美的工程师是不会吝啬他的艺术创造，仅仅实现应用的功能还不能满足用户的高需求，应用的界面效果也是提高用户体验的关键因素。因此本篇教程将基于element-ui组件库重构项目的前端代码，改善迷你电商应用的界面效果，提高用户的体验感。虽然我们可以轻松地引入现成的组件库，但是与之对应的数据处理也值得我们注意，那我会在引入组件库的同时带大家一起踩一踩element-ui给我们挖的坑，毕竟踩坑才能成长嘛。"
     },
@@ -58,18 +76,31 @@
       "id": "-td0ssrw",
       "created": "2020-03-14T03:10:55.150Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（八）",
-      "topics": ["Docker", "Docker Compose"],
+      "topics": [
+        "Docker",
+        "Docker Compose"
+      ],
       "cover": "https://imgkr.cn-bj.ufileos.com/4cde7f12-c425-4e35-9f63-a3582d05b38e.jpg",
       "description": "本篇是系列文章终篇，我们将实现应用的部署，这篇教程将首先 Docker 来容器化你的应用，接着教你配置 MongoDB 的身份验证机制，给你的数据库添加一份安全守护，最后我们会带你使用阿里云的容器镜像服务将整个全栈应用部署到云端，使得你互联网上的用户可以访问你的网站，希望这篇教程能解决长期困扰你的部署上云的问题！"
     },
     {
       "id": "nO-RmUbzz",
       "created": "2020-05-17T02:25:27.336Z",
-      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（九）：集成完整的用户系统",
-      "topics": ["Vue", "Express", "Authing", "OAuth", "第三方登录"],
+      "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（九）：使用 Authing 集成完整的用户系统",
+      "topics": [
+        "Vue",
+        "Express",
+        "Authing",
+        "OAuth",
+        "第三方登录"
+      ],
       "cover": "https://imgkr.cn-bj.ufileos.com/329b0aa0-5db5-449c-a71b-20f6c078ad63.jpg",
       "description": "在之前的迷你电商应用中，我们的网站缺少了一个关键组成部分：用户鉴权系统，包括登录、注册、以及权限管理等相应的配置。徒手实现这些功能固然可行，但是对于一支崇尚精益的团队来说，选择可靠的身份认证服务（IDaaS）是更加明智的选择，不仅能够提供完善且丰富的身份认证和用户鉴权功能，还确保遵循最佳安全实践和优秀的可扩展性。在这篇教程中，我们将手把手带你在本系列之前完成的迷你电商应用中快速集成 Authing 用户认证模块，提供一致、流畅、安全的身份认证体验。",
-      "categories": ["前端", "Vue", "进阶"]
+      "categories": [
+        "前端",
+        "Vue",
+        "进阶"
+      ]
     }
   ],
   "steps": [
@@ -2769,8 +2800,14 @@
               "file": "src/components/HelloWorld.vue",
               "commit": "056d555",
               "hiddenLines": [
-                [88, 89],
-                [101, 119]
+                [
+                  88,
+                  89
+                ],
+                [
+                  101,
+                  119
+                ]
               ],
               "children": [
                 {
@@ -3056,7 +3093,12 @@
               "type": "diff-block",
               "file": "src/router/index.js",
               "commit": "056d555",
-              "hiddenLines": [[7, 7]],
+              "hiddenLines": [
+                [
+                  7,
+                  7
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -3273,7 +3315,12 @@
               "type": "diff-block",
               "file": "src/App.vue",
               "commit": "19a30e7",
-              "hiddenLines": [[22, 38]],
+              "hiddenLines": [
+                [
+                  22,
+                  38
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -3652,7 +3699,12 @@
               "type": "diff-block",
               "file": "src/router/index.js",
               "commit": "19a30e7",
-              "hiddenLines": [[9, 12]],
+              "hiddenLines": [
+                [
+                  9,
+                  12
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -3854,8 +3906,14 @@
               "file": "src/router/index.js",
               "commit": "4bad80e",
               "hiddenLines": [
-                [16, 21],
-                [47, 51]
+                [
+                  16,
+                  21
+                ],
+                [
+                  47,
+                  51
+                ]
               ],
               "children": [
                 {
@@ -6808,8 +6866,14 @@
               "file": "package-lock.json",
               "commit": "f2fa516",
               "hiddenLines": [
-                [0, 11938],
-                [11950, 12767]
+                [
+                  0,
+                  11938
+                ],
+                [
+                  11950,
+                  12767
+                ]
               ],
               "children": [
                 {
@@ -6858,8 +6922,14 @@
               "file": "package.json",
               "commit": "f2fa516",
               "hiddenLines": [
-                [0, 9],
-                [17, 71]
+                [
+                  0,
+                  9
+                ],
+                [
+                  17,
+                  71
+                ]
               ],
               "children": [
                 {
@@ -7470,7 +7540,12 @@
               "type": "diff-block",
               "file": "src/main.js",
               "commit": "f2fa516",
-              "hiddenLines": [[13, 17]],
+              "hiddenLines": [
+                [
+                  13,
+                  17
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -7889,8 +7964,14 @@
               "file": "package-lock.json",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [0, 12084],
-                [12096, 12772]
+                [
+                  0,
+                  12084
+                ],
+                [
+                  12096,
+                  12772
+                ]
               ],
               "children": [
                 {
@@ -7939,8 +8020,14 @@
               "file": "package.json",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [0, 11],
-                [21, 73]
+                [
+                  0,
+                  11
+                ],
+                [
+                  21,
+                  73
+                ]
               ],
               "children": [
                 {
@@ -8255,8 +8342,14 @@
               "file": "src/main.js",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [0, 3],
-                [11, 12]
+                [
+                  0,
+                  3
+                ],
+                [
+                  11,
+                  12
+                ]
               ],
               "children": [
                 {
@@ -8893,7 +8986,12 @@
               "type": "diff-block",
               "file": "src/pages/admin/Products.vue",
               "commit": "0dfeb91",
-              "hiddenLines": [[0, 1]],
+              "hiddenLines": [
+                [
+                  0,
+                  1
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -9449,7 +9547,12 @@
               "type": "diff-block",
               "file": "src/store/index.js",
               "commit": "7b7d864",
-              "hiddenLines": [[0, 13]],
+              "hiddenLines": [
+                [
+                  0,
+                  13
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -9808,7 +9911,12 @@
               "type": "diff-block",
               "file": "src/pages/Home.vue",
               "commit": "7b7d864",
-              "hiddenLines": [[15, 15]],
+              "hiddenLines": [
+                [
+                  15,
+                  15
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -9877,8 +9985,14 @@
               "file": "src/pages/Cart.vue",
               "commit": "7b7d864",
               "hiddenLines": [
-                [0, 1],
-                [32, 32]
+                [
+                  0,
+                  1
+                ],
+                [
+                  32,
+                  32
+                ]
               ],
               "children": [
                 {
@@ -10042,7 +10156,12 @@
               "type": "diff-block",
               "file": "src/pages/admin/New.vue",
               "commit": "7b7d864",
-              "hiddenLines": [[0, 29]],
+              "hiddenLines": [
+                [
+                  0,
+                  29
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -10562,9 +10681,18 @@
               "file": "package-lock.json",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [0, 470],
-                [509, 6961],
-                [6971, 12805]
+                [
+                  0,
+                  470
+                ],
+                [
+                  509,
+                  6961
+                ],
+                [
+                  6971,
+                  12805
+                ]
               ],
               "children": [
                 {
@@ -10613,8 +10741,14 @@
               "file": "package.json",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [0, 9],
-                [17, 73]
+                [
+                  0,
+                  9
+                ],
+                [
+                  17,
+                  73
+                ]
               ],
               "children": [
                 {
@@ -10679,8 +10813,14 @@
               "file": "src/store/index.js",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [8, 14],
-                [64, 68]
+                [
+                  8,
+                  14
+                ],
+                [
+                  64,
+                  68
+                ]
               ],
               "children": [
                 {
@@ -11011,9 +11151,18 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [0, 7],
-                [16, 31],
-                [43, 54]
+                [
+                  0,
+                  7
+                ],
+                [
+                  16,
+                  31
+                ],
+                [
+                  43,
+                  54
+                ]
               ],
               "children": [
                 {
@@ -11175,8 +11324,14 @@
               "file": "src/pages/Cart.vue",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [0, 6],
-                [15, 51]
+                [
+                  0,
+                  6
+                ],
+                [
+                  15,
+                  51
+                ]
               ],
               "children": [
                 {
@@ -11887,9 +12042,18 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "9ed8f6a",
               "hiddenLines": [
-                [0, 3],
-                [19, 29],
-                [37, 43]
+                [
+                  0,
+                  3
+                ],
+                [
+                  19,
+                  29
+                ],
+                [
+                  37,
+                  43
+                ]
               ],
               "children": [
                 {
@@ -12032,9 +12196,18 @@
               "file": "src/pages/Cart.vue",
               "commit": "9ed8f6a",
               "hiddenLines": [
-                [0, 2],
-                [18, 27],
-                [35, 40]
+                [
+                  0,
+                  2
+                ],
+                [
+                  18,
+                  27
+                ],
+                [
+                  35,
+                  40
+                ]
               ],
               "children": [
                 {
@@ -12577,8 +12750,14 @@
               "file": "src/store/index.js",
               "commit": "ff121fa",
               "hiddenLines": [
-                [0, 35],
-                [63, 63]
+                [
+                  0,
+                  35
+                ],
+                [
+                  63,
+                  63
+                ]
               ],
               "children": [
                 {
@@ -12783,8 +12962,14 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [0, 11],
-                [20, 20]
+                [
+                  0,
+                  11
+                ],
+                [
+                  20,
+                  20
+                ]
               ],
               "children": [
                 {
@@ -12953,7 +13138,12 @@
               "type": "diff-block",
               "file": "src/components/products/ProductItem.vue",
               "commit": "ff121fa",
-              "hiddenLines": [[34, 40]],
+              "hiddenLines": [
+                [
+                  34,
+                  40
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -13017,9 +13207,18 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [0, 9],
-                [27, 32],
-                [41, 44]
+                [
+                  0,
+                  9
+                ],
+                [
+                  27,
+                  32
+                ],
+                [
+                  41,
+                  44
+                ]
               ],
               "children": [
                 {
@@ -13110,8 +13309,14 @@
               "file": "src/pages/Cart.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [0, 7],
-                [25, 40]
+                [
+                  0,
+                  7
+                ],
+                [
+                  25,
+                  40
+                ]
               ],
               "children": [
                 {
@@ -13317,8 +13522,14 @@
               "file": "src/router/index.js",
               "commit": "ff121fa",
               "hiddenLines": [
-                [0, 1],
-                [9, 45]
+                [
+                  0,
+                  1
+                ],
+                [
+                  9,
+                  45
+                ]
               ],
               "children": [
                 {
@@ -13943,7 +14154,12 @@
               "type": "diff-block",
               "file": "src/pages/admin/Products.vue",
               "commit": "f0b5684",
-              "hiddenLines": [[73, 73]],
+              "hiddenLines": [
+                [
+                  73,
+                  73
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -14013,9 +14229,18 @@
               "file": "src/router/index.js",
               "commit": "f0b5684",
               "hiddenLines": [
-                [0, 8],
-                [16, 39],
-                [51, 61]
+                [
+                  0,
+                  8
+                ],
+                [
+                  16,
+                  39
+                ],
+                [
+                  51,
+                  61
+                ]
               ],
               "children": [
                 {
@@ -14505,9 +14730,18 @@
               "file": "src/store/index.js",
               "commit": "f0b5684",
               "hiddenLines": [
-                [0, 0],
-                [10, 22],
-                [72, 85]
+                [
+                  0,
+                  0
+                ],
+                [
+                  10,
+                  22
+                ],
+                [
+                  72,
+                  85
+                ]
               ],
               "children": [
                 {
@@ -14959,8 +15193,14 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "4909803",
               "hiddenLines": [
-                [0, 25],
-                [34, 78]
+                [
+                  0,
+                  25
+                ],
+                [
+                  34,
+                  78
+                ]
               ],
               "children": [
                 {
@@ -15609,7 +15849,12 @@
               "type": "diff-block",
               "file": "src/store/index.js",
               "commit": "4909803",
-              "hiddenLines": [[12, 34]],
+              "hiddenLines": [
+                [
+                  12,
+                  34
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -15707,8 +15952,14 @@
               "file": "src/store/mutations.js",
               "commit": "4909803",
               "hiddenLines": [
-                [0, 23],
-                [55, 85]
+                [
+                  0,
+                  23
+                ],
+                [
+                  55,
+                  85
+                ]
               ],
               "children": [
                 {
@@ -16173,7 +16424,12 @@
               "type": "diff-block",
               "file": "src/store/getters.js",
               "commit": "49571dc",
-              "hiddenLines": [[0, 12]],
+              "hiddenLines": [
+                [
+                  0,
+                  12
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -16535,8 +16791,14 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [0, 11],
-                [21, 24]
+                [
+                  0,
+                  11
+                ],
+                [
+                  21,
+                  24
+                ]
               ],
               "children": [
                 {
@@ -16588,8 +16850,14 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [0, 34],
-                [45, 62]
+                [
+                  0,
+                  34
+                ],
+                [
+                  45,
+                  62
+                ]
               ],
               "children": [
                 {
@@ -16658,8 +16926,14 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [0, 38],
-                [49, 66]
+                [
+                  0,
+                  38
+                ],
+                [
+                  49,
+                  66
+                ]
               ],
               "children": [
                 {
@@ -16733,9 +17007,18 @@
               "file": "src/router/index.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [0, 9],
-                [18, 46],
-                [63, 73]
+                [
+                  0,
+                  9
+                ],
+                [
+                  18,
+                  46
+                ],
+                [
+                  63,
+                  73
+                ]
               ],
               "children": [
                 {
@@ -16957,7 +17240,12 @@
               "type": "diff-block",
               "file": "src/store/actions.js",
               "commit": "49571dc",
-              "hiddenLines": [[87, 88]],
+              "hiddenLines": [
+                [
+                  87,
+                  88
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -17018,8 +17306,14 @@
               "file": "src/store/index.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [0, 18],
-                [25, 38]
+                [
+                  0,
+                  18
+                ],
+                [
+                  25,
+                  38
+                ]
               ],
               "children": [
                 {
@@ -17104,8 +17398,14 @@
               "file": "src/store/mutations.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [69, 74],
-                [87, 88]
+                [
+                  69,
+                  74
+                ],
+                [
+                  87,
+                  88
+                ]
               ],
               "children": [
                 {
@@ -17244,7 +17544,12 @@
               "type": "diff-block",
               "file": "build/webpack.base.conf.js",
               "commit": "19b49e9",
-              "hiddenLines": [[113, 116]],
+              "hiddenLines": [
+                [
+                  113,
+                  116
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -17290,7 +17595,12 @@
               "type": "diff-block",
               "file": "src/pages/Home.vue",
               "commit": "19b49e9",
-              "hiddenLines": [[0, 6]],
+              "hiddenLines": [
+                [
+                  0,
+                  6
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -17384,14 +17694,38 @@
               "file": "tuture.yml",
               "commit": "19b49e9",
               "hiddenLines": [
-                [0, 1],
-                [10, 107],
-                [117, 174],
-                [202, 335],
-                [346, 346],
-                [356, 595],
-                [1288, 1478],
-                [1487, 1488]
+                [
+                  0,
+                  1
+                ],
+                [
+                  10,
+                  107
+                ],
+                [
+                  117,
+                  174
+                ],
+                [
+                  202,
+                  335
+                ],
+                [
+                  346,
+                  346
+                ],
+                [
+                  356,
+                  595
+                ],
+                [
+                  1288,
+                  1478
+                ],
+                [
+                  1487,
+                  1488
+                ]
               ],
               "children": [
                 {
@@ -17648,19 +17982,58 @@
               "file": "package-lock.json",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [0, 58],
-                [94, 479],
-                [494, 811],
-                [821, 854],
-                [870, 1350],
-                [1358, 2328],
-                [2338, 3410],
-                [3422, 3708],
-                [3728, 7227],
-                [7239, 10370],
-                [10380, 10524],
-                [10536, 11531],
-                [11543, 12885]
+                [
+                  0,
+                  58
+                ],
+                [
+                  94,
+                  479
+                ],
+                [
+                  494,
+                  811
+                ],
+                [
+                  821,
+                  854
+                ],
+                [
+                  870,
+                  1350
+                ],
+                [
+                  1358,
+                  2328
+                ],
+                [
+                  2338,
+                  3410
+                ],
+                [
+                  3422,
+                  3708
+                ],
+                [
+                  3728,
+                  7227
+                ],
+                [
+                  7239,
+                  10370
+                ],
+                [
+                  10380,
+                  10524
+                ],
+                [
+                  10536,
+                  11531
+                ],
+                [
+                  11543,
+                  12885
+                ]
               ],
               "children": [
                 {
@@ -17709,9 +18082,18 @@
               "file": "package.json",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [0, 10],
-                [18, 22],
-                [30, 75]
+                [
+                  0,
+                  10
+                ],
+                [
+                  18,
+                  22
+                ],
+                [
+                  30,
+                  75
+                ]
               ],
               "children": [
                 {
@@ -17788,8 +18170,14 @@
               "file": "src/main.js",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [0, 4],
-                [15, 22]
+                [
+                  0,
+                  4
+                ],
+                [
+                  15,
+                  22
+                ]
               ],
               "children": [
                 {
@@ -17902,7 +18290,12 @@
               "type": "diff-block",
               "file": "src/App.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [[39, 39]],
+              "hiddenLines": [
+                [
+                  39,
+                  39
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -18013,7 +18406,12 @@
               "type": "diff-block",
               "file": "src/components/products/ProductList.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [[15, 35]],
+              "hiddenLines": [
+                [
+                  15,
+                  35
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -18298,8 +18696,14 @@
               "file": "src/components/products/ProductButton.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [30, 42],
-                [45, 54]
+                [
+                  30,
+                  42
+                ],
+                [
+                  45,
+                  54
+                ]
               ],
               "children": [
                 {
@@ -18472,8 +18876,14 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [35, 46],
-                [81, 106]
+                [
+                  35,
+                  46
+                ],
+                [
+                  81,
+                  106
+                ]
               ],
               "children": [
                 {
@@ -18567,9 +18977,18 @@
               "file": "src/pages/admin/Edit.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [0, 13],
-                [27, 35],
-                [48, 58]
+                [
+                  0,
+                  13
+                ],
+                [
+                  27,
+                  35
+                ],
+                [
+                  48,
+                  58
+                ]
               ],
               "children": [
                 {
@@ -18695,8 +19114,14 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [32, 99],
-                [101, 101]
+                [
+                  32,
+                  99
+                ],
+                [
+                  101,
+                  101
+                ]
               ],
               "children": [
                 {
@@ -18822,9 +19247,18 @@
               "file": "src/pages/admin/New.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [0, 8],
-                [17, 21],
-                [30, 39]
+                [
+                  0,
+                  8
+                ],
+                [
+                  17,
+                  21
+                ],
+                [
+                  30,
+                  39
+                ]
               ],
               "children": [
                 {
@@ -18969,10 +19403,22 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [21, 35],
-                [37, 37],
-                [58, 64],
-                [66, 91]
+                [
+                  21,
+                  35
+                ],
+                [
+                  37,
+                  37
+                ],
+                [
+                  58,
+                  64
+                ],
+                [
+                  66,
+                  91
+                ]
               ],
               "children": [
                 {
@@ -19058,8 +19504,14 @@
               "file": "src/pages/admin/NewManufacturers.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [0, 7],
-                [20, 30]
+                [
+                  0,
+                  7
+                ],
+                [
+                  20,
+                  30
+                ]
               ],
               "children": [
                 {
@@ -19135,7 +19587,12 @@
               "type": "diff-block",
               "file": "src/components/ManufacturerForm.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [[17, 22]],
+              "hiddenLines": [
+                [
+                  17,
+                  22
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -19220,8 +19677,14 @@
               "file": "src/pages/Cart.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [0, 1],
-                [12, 30]
+                [
+                  0,
+                  1
+                ],
+                [
+                  12,
+                  30
+                ]
               ],
               "children": [
                 {
@@ -19286,8 +19749,14 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [0, 0],
-                [23, 24]
+                [
+                  0,
+                  0
+                ],
+                [
+                  23,
+                  24
+                ]
               ],
               "children": [
                 {
@@ -19541,12 +20010,30 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
               "hiddenLines": [
-                [7, 7],
-                [27, 30],
-                [41, 72],
-                [81, 97],
-                [108, 110],
-                [143, 152]
+                [
+                  7,
+                  7
+                ],
+                [
+                  27,
+                  30
+                ],
+                [
+                  41,
+                  72
+                ],
+                [
+                  81,
+                  97
+                ],
+                [
+                  108,
+                  110
+                ],
+                [
+                  143,
+                  152
+                ]
               ],
               "children": [
                 {
@@ -19811,10 +20298,22 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [13, 23],
-                [34, 39],
-                [42, 106],
-                [108, 145]
+                [
+                  13,
+                  23
+                ],
+                [
+                  34,
+                  39
+                ],
+                [
+                  42,
+                  106
+                ],
+                [
+                  108,
+                  145
+                ]
               ],
               "children": [
                 {
@@ -19863,9 +20362,18 @@
               "file": "src/components/products/ProductItem.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [0, 0],
-                [10, 48],
-                [75, 85]
+                [
+                  0,
+                  0
+                ],
+                [
+                  10,
+                  48
+                ],
+                [
+                  75,
+                  85
+                ]
               ],
               "children": [
                 {
@@ -19914,8 +20422,14 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [0, 3],
-                [12, 33]
+                [
+                  0,
+                  3
+                ],
+                [
+                  12,
+                  33
+                ]
               ],
               "children": [
                 {
@@ -19964,8 +20478,14 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [0, 0],
-                [10, 10]
+                [
+                  0,
+                  0
+                ],
+                [
+                  10,
+                  10
+                ]
               ],
               "children": [
                 {
@@ -20014,9 +20534,18 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [0, 10],
-                [21, 35],
-                [66, 84]
+                [
+                  0,
+                  10
+                ],
+                [
+                  21,
+                  35
+                ],
+                [
+                  66,
+                  84
+                ]
               ],
               "children": [
                 {
@@ -20065,8 +20594,14 @@
               "file": "src/pages/admin/New.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [0, 25],
-                [33, 39]
+                [
+                  0,
+                  25
+                ],
+                [
+                  33,
+                  39
+                ]
               ],
               "children": [
                 {
@@ -20115,9 +20650,18 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [0, 20],
-                [29, 48],
-                [87, 100]
+                [
+                  0,
+                  20
+                ],
+                [
+                  29,
+                  48
+                ],
+                [
+                  87,
+                  100
+                ]
               ],
               "children": [
                 {
@@ -20166,8 +20710,14 @@
               "file": "src/store/actions.js",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [0, 72],
-                [80, 132]
+                [
+                  0,
+                  72
+                ],
+                [
+                  80,
+                  132
+                ]
               ],
               "children": [
                 {
@@ -20300,10 +20850,22 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [0, 104],
-                [107, 111],
-                [119, 121],
-                [132, 143]
+                [
+                  0,
+                  104
+                ],
+                [
+                  107,
+                  111
+                ],
+                [
+                  119,
+                  121
+                ],
+                [
+                  132,
+                  143
+                ]
               ],
               "children": [
                 {
@@ -20437,8 +20999,14 @@
               "file": "src/components/products/ProductItem.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [0, 54],
-                [67, 86]
+                [
+                  0,
+                  54
+                ],
+                [
+                  67,
+                  86
+                ]
               ],
               "children": [
                 {
@@ -20487,8 +21055,14 @@
               "file": "src/pages/admin/New.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [0, 10],
-                [19, 40]
+                [
+                  0,
+                  10
+                ],
+                [
+                  19,
+                  40
+                ]
               ],
               "children": [
                 {
@@ -20621,8 +21195,14 @@
               "file": "src/components/ManufacturerForm.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [22, 41],
-                [73, 84]
+                [
+                  22,
+                  41
+                ],
+                [
+                  73,
+                  84
+                ]
               ],
               "children": [
                 {
@@ -20741,9 +21321,18 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [14, 35],
-                [44, 127],
-                [155, 168]
+                [
+                  14,
+                  35
+                ],
+                [
+                  44,
+                  127
+                ],
+                [
+                  155,
+                  168
+                ]
               ],
               "children": [
                 {
@@ -20807,13 +21396,34 @@
               "file": "src/store/actions.js",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [0, 23],
-                [26, 27],
-                [30, 36],
-                [39, 46],
-                [109, 109],
-                [112, 118],
-                [121, 128]
+                [
+                  0,
+                  23
+                ],
+                [
+                  26,
+                  27
+                ],
+                [
+                  30,
+                  36
+                ],
+                [
+                  39,
+                  46
+                ],
+                [
+                  109,
+                  109
+                ],
+                [
+                  112,
+                  118
+                ],
+                [
+                  121,
+                  128
+                ]
               ],
               "children": [
                 {
@@ -20883,9 +21493,18 @@
               "file": "src/store/mutations.js",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [0, 24],
-                [27, 81],
-                [102, 155]
+                [
+                  0,
+                  24
+                ],
+                [
+                  27,
+                  81
+                ],
+                [
+                  102,
+                  155
+                ]
               ],
               "children": [
                 {
@@ -20972,8 +21591,14 @@
               "file": "src/pages/admin/New.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [0, 25],
-                [33, 39]
+                [
+                  0,
+                  25
+                ],
+                [
+                  33,
+                  39
+                ]
               ],
               "children": [
                 {
@@ -21199,12 +21824,30 @@
               "file": "src/store/actions.js",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [0, 27],
-                [29, 66],
-                [86, 103],
-                [105, 105],
-                [107, 144],
-                [164, 180]
+                [
+                  0,
+                  27
+                ],
+                [
+                  29,
+                  66
+                ],
+                [
+                  86,
+                  103
+                ],
+                [
+                  105,
+                  105
+                ],
+                [
+                  107,
+                  144
+                ],
+                [
+                  164,
+                  180
+                ]
               ],
               "children": [
                 {
@@ -21275,12 +21918,30 @@
               "file": "src/store/mutations.js",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [0, 25],
-                [27, 56],
-                [77, 82],
-                [84, 103],
-                [105, 134],
-                [152, 157]
+                [
+                  0,
+                  25
+                ],
+                [
+                  27,
+                  56
+                ],
+                [
+                  77,
+                  82
+                ],
+                [
+                  84,
+                  103
+                ],
+                [
+                  105,
+                  134
+                ],
+                [
+                  152,
+                  157
+                ]
               ],
               "children": [
                 {
@@ -21329,8 +21990,14 @@
               "file": "src/pages/admin/Edit.vue",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [0, 38],
-                [50, 54]
+                [
+                  0,
+                  38
+                ],
+                [
+                  50,
+                  54
+                ]
               ],
               "children": [
                 {
@@ -21379,8 +22046,14 @@
               "file": "src/pages/admin/EditManufacturers.vue",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [0, 22],
-                [34, 38]
+                [
+                  0,
+                  22
+                ],
+                [
+                  34,
+                  38
+                ]
               ],
               "children": [
                 {
@@ -21867,9 +22540,18 @@
               "file": "client/src/store/actions.js",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
               "hiddenLines": [
-                [0, 23],
-                [30, 103],
-                [107, 179]
+                [
+                  0,
+                  23
+                ],
+                [
+                  30,
+                  103
+                ],
+                [
+                  107,
+                  179
+                ]
               ],
               "children": [
                 {
@@ -22117,8 +22799,14 @@
               "file": "server/app.js",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
               "hiddenLines": [
-                [0, 12],
-                [21, 66]
+                [
+                  0,
+                  12
+                ],
+                [
+                  21,
+                  66
+                ]
               ],
               "children": [
                 {
@@ -22688,7 +23376,12 @@
               "type": "diff-block",
               "file": "client/.gitignore",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
-              "hiddenLines": [[0, 10]],
+              "hiddenLines": [
+                [
+                  0,
+                  10
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -22850,8 +23543,14 @@
               "file": "server/app.js",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [0, 15],
-                [26, 71]
+                [
+                  0,
+                  15
+                ],
+                [
+                  26,
+                  71
+                ]
               ],
               "children": [
                 {
@@ -22979,8 +23678,14 @@
               "file": "server/Dockerfile",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [0, 12],
-                [23, 27]
+                [
+                  0,
+                  12
+                ],
+                [
+                  23,
+                  27
+                ]
               ],
               "children": [
                 {
@@ -23090,8 +23795,14 @@
               "file": "docker-compose.yml",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [0, 2],
-                [12, 16]
+                [
+                  0,
+                  2
+                ],
+                [
+                  12,
+                  16
+                ]
               ],
               "children": [
                 {
@@ -23966,7 +24677,12 @@
               "type": "diff-block",
               "file": "docker-compose.yml",
               "commit": "b8afe6837849e25e1386f78c89786cce23159272",
-              "hiddenLines": [[0, 6]],
+              "hiddenLines": [
+                [
+                  0,
+                  6
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -24268,7 +24984,12 @@
               "type": "diff-block",
               "file": "client/src/components/products/ProductButton.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [[34, 45]],
+              "hiddenLines": [
+                [
+                  34,
+                  45
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -24315,7 +25036,12 @@
               "type": "diff-block",
               "file": "client/src/pages/Cart.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [[8, 8]],
+              "hiddenLines": [
+                [
+                  8,
+                  8
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -24362,7 +25088,12 @@
               "type": "diff-block",
               "file": "client/src/pages/Home.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [[8, 9]],
+              "hiddenLines": [
+                [
+                  8,
+                  9
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -24457,10 +25188,22 @@
               "file": "client/src/store/actions.js",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
               "hiddenLines": [
-                [5, 19],
-                [48, 48],
-                [155, 157],
-                [169, 169]
+                [
+                  5,
+                  19
+                ],
+                [
+                  48,
+                  48
+                ],
+                [
+                  155,
+                  157
+                ],
+                [
+                  169,
+                  169
+                ]
               ],
               "children": [
                 {
@@ -24887,7 +25630,12 @@
               "type": "diff-block",
               "file": "client/src/router/index.js",
               "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-              "hiddenLines": [[0, 26]],
+              "hiddenLines": [
+                [
+                  0,
+                  26
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -25239,12 +25987,30 @@
               "file": "client/src/store/mutations.js",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
               "hiddenLines": [
-                [0, 19],
-                [42, 62],
-                [73, 75],
-                [84, 101],
-                [129, 150],
-                [161, 180]
+                [
+                  0,
+                  19
+                ],
+                [
+                  42,
+                  62
+                ],
+                [
+                  73,
+                  75
+                ],
+                [
+                  84,
+                  101
+                ],
+                [
+                  129,
+                  150
+                ],
+                [
+                  161,
+                  180
+                ]
               ],
               "children": [
                 {
@@ -25300,9 +26066,18 @@
               "file": "client/src/store/index.js",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
               "hiddenLines": [
-                [0, 7],
-                [22, 33],
-                [43, 52]
+                [
+                  0,
+                  7
+                ],
+                [
+                  22,
+                  33
+                ],
+                [
+                  43,
+                  52
+                ]
               ],
               "children": [
                 {
@@ -25374,8 +26149,14 @@
               "file": "client/src/App.vue",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
               "hiddenLines": [
-                [0, 4],
-                [20, 28]
+                [
+                  0,
+                  4
+                ],
+                [
+                  20,
+                  28
+                ]
               ],
               "children": [
                 {
@@ -25460,7 +26241,12 @@
               "type": "diff-block",
               "file": "client/src/components/Header.vue",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [[0, 89]],
+              "hiddenLines": [
+                [
+                  0,
+                  89
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -26178,8 +26964,14 @@
               "file": "client/src/components/products/ProductButton.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [0, 12],
-                [15, 36]
+                [
+                  0,
+                  12
+                ],
+                [
+                  15,
+                  36
+                ]
               ],
               "children": [
                 {
@@ -26280,9 +27072,18 @@
               "file": "client/src/pages/Cart.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [0, 10],
-                [12, 13],
-                [17, 31]
+                [
+                  0,
+                  10
+                ],
+                [
+                  12,
+                  13
+                ],
+                [
+                  17,
+                  31
+                ]
               ],
               "children": [
                 {
@@ -26368,9 +27169,18 @@
               "file": "client/src/pages/admin/Index.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [0, 11],
-                [13, 14],
-                [17, 27]
+                [
+                  0,
+                  11
+                ],
+                [
+                  13,
+                  14
+                ],
+                [
+                  17,
+                  27
+                ]
               ],
               "children": [
                 {
@@ -26507,8 +27317,14 @@
               "file": "server/model/index.js",
               "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
               "hiddenLines": [
-                [0, 4],
-                [24, 30]
+                [
+                  0,
+                  4
+                ],
+                [
+                  24,
+                  30
+                ]
               ],
               "children": [
                 {
@@ -26608,13 +27424,34 @@
               "file": "client/src/store/actions.js",
               "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
               "hiddenLines": [
-                [0, 27],
-                [29, 86],
-                [101, 107],
-                [110, 110],
-                [116, 173],
-                [184, 190],
-                [193, 193]
+                [
+                  0,
+                  27
+                ],
+                [
+                  29,
+                  86
+                ],
+                [
+                  101,
+                  107
+                ],
+                [
+                  110,
+                  110
+                ],
+                [
+                  116,
+                  173
+                ],
+                [
+                  184,
+                  190
+                ],
+                [
+                  193,
+                  193
+                ]
               ],
               "children": [
                 {
@@ -26676,7 +27513,12 @@
               "type": "diff-block",
               "file": "server/controllers/product.js",
               "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-              "hiddenLines": [[23, 23]],
+              "hiddenLines": [
+                [
+                  23,
+                  23
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -26792,7 +27634,12 @@
               "type": "diff-block",
               "file": "client/package.json",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [[0, 9]],
+              "hiddenLines": [
+                [
+                  0,
+                  9
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -26856,10 +27703,22 @@
               "file": "client/src/components/Header.vue",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
-                [2, 35],
-                [49, 56],
-                [60, 90],
-                [96, 113]
+                [
+                  2,
+                  35
+                ],
+                [
+                  49,
+                  56
+                ],
+                [
+                  60,
+                  90
+                ],
+                [
+                  96,
+                  113
+                ]
               ],
               "children": [
                 {
@@ -27215,8 +28074,14 @@
               "file": "client/src/App.vue",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
-                [0, 4],
-                [46, 54]
+                [
+                  0,
+                  4
+                ],
+                [
+                  46,
+                  54
+                ]
               ],
               "children": [
                 {
@@ -27355,7 +28220,12 @@
               "type": "diff-block",
               "file": "client/src/pages/user/Login.vue",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [[16, 46]],
+              "hiddenLines": [
+                [
+                  16,
+                  46
+                ]
+              ],
               "children": [
                 {
                   "text": ""
@@ -27795,10 +28665,22 @@
               "file": "client/yarn.lock",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
-                [0, 360],
-                [378, 1864],
-                [1876, 4139],
-                [4151, 5994]
+                [
+                  0,
+                  360
+                ],
+                [
+                  378,
+                  1864
+                ],
+                [
+                  1876,
+                  4139
+                ],
+                [
+                  4151,
+                  5994
+                ]
               ],
               "children": [
                 {
