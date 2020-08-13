@@ -434,7 +434,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/32719f10-4d3f-4fbe-b9e6-df123d10e1f7.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/16f2652f23b7ebd0.png",
                   "children": [
                     {
                       "text": ""
@@ -554,20 +554,6 @@
                     },
                     {
                       "text": "。"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/46ea4d04-75bb-4f1d-8dd2-5bee8e4b7a4c.png",
-                  "children": [
-                    {
-                      "text": ""
                     }
                   ]
                 }
@@ -807,7 +793,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "display": false
         },
         {
           "type": "file",
@@ -2617,7 +2604,7 @@
                   "children": [
                     {
                       "type": "image",
-                      "url": "https://imgkr.cn-bj.ufileos.com/2a82a28b-d624-48aa-beea-67e09ec75d0c.png",
+                      "url": "https://static.tuture.co/c/092faf4/16f2653b19ea8fe1.png",
                       "children": [
                         {
                           "text": ""
@@ -3129,7 +3116,7 @@
                   "children": [
                     {
                       "type": "image",
-                      "url": "https://imgkr.cn-bj.ufileos.com/8b2064cf-2d4a-4348-bdd7-4861620834f2.png",
+                      "url": "https://static.tuture.co/c/092faf4/16f2657c42c648fb.png",
                       "children": [
                         {
                           "text": ""
@@ -3744,7 +3731,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/bd984d0d-382c-403f-bc61-0bc55b007266.gif",
+                  "url": "https://static.tuture.co/c/092faf4/16f265b24d1615d4.gif",
                   "children": [
                     {
                       "text": ""
@@ -4585,7 +4572,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/f5ef0f82-bf4f-4a13-b882-d5c455638b11.gif",
+                  "url": "https://static.tuture.co/c/092faf4/16f265b9cfeec55f.gif",
                   "children": [
                     {
                       "text": ""
@@ -7770,7 +7757,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/eb851b81-fa87-477f-a7f0-0b0adb824ff5.png",
+                  "url": "https://static.tuture.co/c/092faf4/16f71022a22e3093.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -10217,7 +10204,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/9892fc16-797c-49d7-8f32-4ed9dbe47b01.gif",
+                  "url": "https://static.tuture.co/c/092faf4/16f9341421d9c19f.gif",
                   "children": [
                     {
                       "text": ""
@@ -12283,7 +12270,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/9a07854c-c8a4-41ea-8d8e-4effaa532713.png",
+                  "url": "https://static.tuture.co/c/092faf4/170fc2865b17a8fa.png",
                   "children": [
                     {
                       "text": ""
@@ -12305,7 +12292,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/7667b550-51f5-45ce-82af-793b0f0b6cf5.png",
+                  "url": "https://static.tuture.co/c/092faf4/170fc2865bf857e9.png",
                   "children": [
                     {
                       "text": ""
@@ -13570,7 +13557,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/bee9a8d2-9afa-4286-b31f-69ace1a0d97f.png",
+                  "url": "https://static.tuture.co/c/092faf4/170fc2865dc88d16.png",
                   "children": [
                     {
                       "text": ""
@@ -13803,6 +13790,7 @@
         {
           "file": "src/pages/admin/Index.vue",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -13872,6 +13860,7 @@
         {
           "file": "src/pages/admin/Manufacturers.vue",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14097,6 +14086,7 @@
         {
           "file": "src/pages/admin/Products.vue",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14192,6 +14182,7 @@
         {
           "file": "src/router/index.js",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14256,6 +14247,29 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "把项目跑起来，点击"
+                    },
+                    {
+                      "text": "Admin",
+                      "code": true
+                    },
+                    {
+                      "text": "然后再点击"
+                    },
+                    {
+                      "text": "查看生产商",
+                      "bold": true
+                    },
+                    {
+                      "text": "，我们可以看到从后端获取的所有生产商：  下面展示的就是从后端获取的制造商，并且我们可以对其进行修改和删除操作。"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": "https://imgkr2.cn-bj.ufileos.com/11f291f4-daa2-4d7b-80a3-305fd8840cef.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=bUlzaK1%252BPpuYQhfzNYPVKpxfx9k%253D&Expires=1597417587",
+                  "children": [
+                    {
                       "text": ""
                     }
                   ]
@@ -14267,6 +14281,7 @@
         {
           "file": "src/store/getters.js",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14426,6 +14441,7 @@
         {
           "file": "src/store/mutations.js",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14651,6 +14667,7 @@
         {
           "file": "src/store/index.js",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -15227,6 +15244,7 @@
         {
           "file": "src/pages/admin/Edit.vue",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15493,6 +15511,7 @@
         {
           "file": "src/pages/admin/New.vue",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15585,6 +15604,7 @@
         {
           "file": "src/store/actions.js",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15806,6 +15826,7 @@
         {
           "file": "src/store/index.js",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15908,6 +15929,7 @@
         {
           "file": "src/store/mutations.js",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -16189,6 +16211,7 @@
         {
           "file": "src/components/ManufacturerForm.vue",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16366,6 +16389,7 @@
         {
           "file": "src/store/getters.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16459,6 +16483,7 @@
         {
           "file": "src/pages/admin/EditManufacturers.vue",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16677,6 +16702,7 @@
         {
           "file": "src/pages/admin/NewManufacturers.vue",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16746,6 +16772,7 @@
         {
           "file": "src/pages/admin/Index.vue",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16960,6 +16987,7 @@
         {
           "file": "src/router/index.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -17051,6 +17079,48 @@
                       "text": "方式传参。\t"
                     }
                   ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "配置好添加制造商和修改制造商的路由参数之后，我们又可以进行验收啦，运行项目，点击Admin然后再点击添加制造商，我们可以看到添加制造商的表单：  "
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": "https://imgkr2.cn-bj.ufileos.com/75d2e9a0-99e1-48b7-bd69-7e3b02c2e1d5.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=X%252FJFSTrFlTYnf7d5tuQdt%252F%252FVlhA%253D&Expires=1597417641",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "\n 然后再点击查看制造商，我们又可以看到一系列的制造商，并且每个制造商都对应的有修改和删除操作，这里我们随便选择一个制造商进行修改，就会看到该制造商的表单信息：  "
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": "https://imgkr2.cn-bj.ufileos.com/1ba7ff1c-472b-4aa2-987b-b9272906e773.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=xC1ZxIRtgoxTIFhTsb4EwxLf1P8%253D&Expires=1597417672",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
                 }
               ]
             }
@@ -17059,6 +17129,7 @@
         {
           "file": "src/store/mutation-types.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -17204,6 +17275,7 @@
         {
           "file": "src/store/actions.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -17361,6 +17433,7 @@
         {
           "file": "src/store/mutations.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -18789,7 +18862,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/59b95d7c-ce20-4bf0-881c-3df5d3eab6bb.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd7f1d39bb647.png",
                   "children": [
                     {
                       "text": ""
@@ -18927,7 +19000,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/3a7a9f34-f5c1-4a15-b48d-559dd6677e55.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd7fc2f9b7080.png",
                   "children": [
                     {
                       "text": ""
@@ -19309,7 +19382,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/46658098-acba-4a4f-ba7a-3e8ba5118eb2.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd807ce1da156.png",
                   "children": [
                     {
                       "text": ""
@@ -19440,7 +19513,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/ea4f1264-352f-4b59-bd77-372d82c61e6a.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd8133a39a38f.png",
                   "children": [
                     {
                       "text": ""
@@ -19613,7 +19686,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/1117ccfa-77cd-4d33-84bf-fab45019a1ac.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd81d39c3eb45.png",
                   "children": [
                     {
                       "text": ""
@@ -19706,7 +19779,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/fdf7e580-2d32-4b7d-bebb-cd3e9830378b.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd82508c14642.png",
                   "children": [
                     {
                       "text": ""
@@ -19864,7 +19937,7 @@
             },
             {
               "type": "image",
-              "url": "https://imgkr.cn-bj.ufileos.com/063d8169-2f45-4515-8d8b-2ee248cc4af5.png",
+              "url": "https://static.tuture.co/c/092faf4/170bd829d4626c61.png",
               "children": [
                 {
                   "text": ""
@@ -21548,7 +21621,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/bf1581ca-1ea2-4583-abed-946cf482d8aa.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd8414598aa64.png",
                   "children": [
                     {
                       "text": ""
@@ -21738,7 +21811,7 @@
             },
             {
               "type": "image",
-              "url": "https://imgkr.cn-bj.ufileos.com/655aef8c-71ff-40a1-8c61-d5626c2cb899.png",
+              "url": "https://static.tuture.co/c/092faf4/170bd845ae228eb9.png",
               "children": [
                 {
                   "text": ""
@@ -21747,7 +21820,7 @@
             },
             {
               "type": "image",
-              "url": "https://imgkr.cn-bj.ufileos.com/efca8186-5645-4389-9117-5d6e19a8cf68.png",
+              "url": "https://static.tuture.co/c/092faf4/170bd848f59fad3b.png",
               "children": [
                 {
                   "text": ""
@@ -22176,7 +22249,7 @@
             },
             {
               "type": "image",
-              "url": "https://imgkr.cn-bj.ufileos.com/7d1ea84e-9338-4b4b-b9f9-e0ea2dfaf338.png",
+              "url": "https://static.tuture.co/c/092faf4/170e3df21624b4e9.png",
               "children": [
                 {
                   "text": ""
@@ -23279,7 +23352,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/88f665bc-3c10-4698-907c-99391de64c61.png",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df21661b0dd.png",
                   "children": [
                     {
                       "text": ""
@@ -23303,7 +23376,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/3ed0cf34-00ec-4338-ae7b-cf02980674d6.png",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df219c9c305.png",
                   "children": [
                     {
                       "text": ""
@@ -24395,7 +24468,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/4b79b282-a56b-4856-8454-27ae24199b1d.png",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df21636b67e.png",
                   "children": [
                     {
                       "text": ""
@@ -24419,7 +24492,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/d3d8a032-438f-430b-9956-332042068786.png",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df21a7ca3b2.png",
                   "children": [
                     {
                       "text": ""
@@ -24435,7 +24508,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/65fa64bc-6500-4cfa-901d-cbda29367c8a.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df21cb0520a.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -24451,7 +24524,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/22d637d4-028a-48ae-baa9-88ea145641b5.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df248bd0cc9.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -24467,7 +24540,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/8efdc549-daca-4b0f-a262-c22df37b2db5.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df248d09a1e.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -24498,7 +24571,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/e7040054-6f17-43f7-8a99-63a47bd5081d.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df24a00c61c.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -25244,15 +25317,15 @@
       ]
     },
     {
-      "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-      "id": "3eb3632d",
-      "articleId": "nO-RmUbzz",
       "type": "step",
+      "id": "96038675",
+      "articleId": "nO-RmUbzz",
+      "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
       "children": [
         {
           "type": "heading-two",
           "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-          "id": "b685530e",
+          "id": "72ccf1a2",
           "fixed": true,
           "children": [
             {
@@ -25268,108 +25341,16 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "首先我们先来看一下整体用户系统接入后的效果："
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "children": [
-                {
                   "text": ""
-                }
-              ],
-              "url": "https://imgkr.cn-bj.ufileos.com/e1f9dd49-024b-42f5-9f25-b7ec05a3d2a4.gif"
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "了解了效果之后，我们为你准备好了重构之后的迷你电商代码，你可以 Clone 这份代码，然后跟着教程，补充集成用户系统需要的："
-                }
-              ]
-            },
-            {
-              "type": "code-block",
-              "lang": "bash",
-              "children": [
-                {
-                  "type": "code-line",
-                  "children": [
-                    {
-                      "text": "git clone -b auth-start https://github.com/tuture-dev/vue-online-shop-frontend.git"
-                    }
-                  ]
-                },
-                {
-                  "type": "code-line",
-                  "children": [
-                    {
-                      "text": "# 或者下载 Gitee 上的仓库"
-                    }
-                  ]
-                },
-                {
-                  "type": "code-line",
-                  "children": [
-                    {
-                      "text": "git clone -b auth-start https://gitee.com/tuture/vue-online-shop-frontend.git"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "代码下载后，在 "
-                },
-                {
-                  "text": "client/src/pages",
-                  "code": true
-                },
-                {
-                  "text": " 目录中创建 "
-                },
-                {
-                  "text": "user",
-                  "code": true
-                },
-                {
-                  "text": " 目录，在接下来时间我们会在其中实现所有与用户系统相关的页面。"
-                }
-              ]
-            },
-            {
-              "type": "note",
-              "level": "info",
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "本篇教程采用的是 Vue 2.x 版本，但这篇教程的核心是通过 Authing 集成用户系我们并没有使用太多关于 Vue 的知识。"
-                    }
-                  ]
                 }
               ]
             }
           ]
         },
         {
-          "file": "client/src/main.js",
-          "display": false,
-          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
           "type": "file",
+          "file": "client/src/main.js",
+          "display": true,
           "children": [
             {
               "type": "explain",
@@ -25413,43 +25394,19 @@
           ]
         },
         {
+          "type": "file",
           "file": "client/src/pages/user/Index.vue",
           "display": true,
-          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "实现用户系统相关页面"
-                    }
-                  ],
-                  "id": "co9uU1bTi"
-                },
-                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "首先，我们在 "
-                    },
-                    {
-                      "text": "user",
-                      "code": true
-                    },
-                    {
-                      "text": " 页面目录下创建 "
-                    },
-                    {
-                      "text": "Index.vue",
-                      "code": true
-                    },
-                    {
-                      "text": " 用户首页组件，代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -25483,10 +25440,9 @@
           ]
         },
         {
+          "type": "file",
           "file": "client/src/pages/user/Login.vue",
           "display": true,
-          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -25496,14 +25452,7 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "接着创建 "
-                    },
-                    {
-                      "text": "Login.vue",
-                      "code": true
-                    },
-                    {
-                      "text": " 登录组件，代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -25537,10 +25486,9 @@
           ]
         },
         {
+          "type": "file",
           "file": "client/src/pages/user/Setting.vue",
           "display": true,
-          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -25550,14 +25498,7 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "然后创建 "
-                    },
-                    {
-                      "text": "Setting.vue",
-                      "code": true
-                    },
-                    {
-                      "text": " 设置组件，代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -25591,36 +25532,19 @@
           ]
         },
         {
+          "type": "file",
           "file": "client/src/router/index.js",
           "display": true,
-          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "配置中心路由"
-                    }
-                  ],
-                  "id": "ZDRojGGyR"
-                },
-                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "最后是在路由中集成上面定义的用户系统相关页面，修改 "
-                    },
-                    {
-                      "text": "client/src/router/index.js",
-                      "code": true
-                    },
-                    {
-                      "text": " 代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -25630,12 +25554,7 @@
               "type": "diff-block",
               "file": "client/src/router/index.js",
               "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-              "hiddenLines": [
-                [
-                  0,
-                  26
-                ]
-              ],
+              "hiddenLines": [],
               "children": [
                 {
                   "text": ""
@@ -25666,24 +25585,7 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "把项目跑起来，点击右上角的登录或注册应该可以成功地跳转到登录页面（虽然现在还很简陋哈）："
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "children": [
-                {
                   "text": ""
-                }
-              ],
-              "url": "https://imgkr.cn-bj.ufileos.com/608ec9f7-dcc1-4ccf-8b0e-5a94e3b1fcc3.jpg"
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "OK，接下来让我们具体地实现各个页面吧~"
                 }
               ]
             }
@@ -25692,15 +25594,15 @@
       ]
     },
     {
-      "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-      "id": "20a3c151",
-      "articleId": "nO-RmUbzz",
       "type": "step",
+      "id": "8622c2c5",
+      "articleId": "nO-RmUbzz",
+      "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
       "children": [
         {
           "type": "heading-two",
           "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-          "id": "e46e0ee4",
+          "id": "14fd43c0",
           "fixed": true,
           "children": [
             {
@@ -25716,126 +25618,51 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "在这一步骤中，我们将正式使用 "
-                },
-                {
-                  "text": "Authing",
-                  "link": true,
-                  "url": "https://authing.cn/?utm_source=tuture"
-                },
-                {
-                  "text": " 接入用户系统。Authing 是国内出色的身份认证云，能让我们轻松集成身份认证相关的逻辑，对于个人开发者来说，其"
-                },
-                {
-                  "text": "免费使用额度",
-                  "link": true,
-                  "url": "https://authing.cn/pricing?utm_source=tuture"
-                },
-                {
-                  "text": "也是相当充足的。"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "首先，让我们访问 Authing 官方网站，点击右上角的登录按钮，如下图所示："
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "children": [
-                {
-                  "text": ""
-                }
-              ],
-              "url": "https://imgkr.cn-bj.ufileos.com/b911fb44-5bb4-477c-9a7f-6613e8af3bd9.png"
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
                   "text": ""
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/index.html",
+          "display": true,
+          "children": [
             {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "进入到登录页面后，我们输入帐户名和密码，会直接为我们创建帐号："
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "children": [
-                {
-                  "text": ""
-                }
-              ],
-              "url": "https://imgkr.cn-bj.ufileos.com/941f9c0d-933a-4d4a-a103-09d5af864a54.png"
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "进入到控制台后，让我们创建一个新的"
-                },
-                {
-                  "text": "用户池",
-                  "link": true,
-                  "url": "https://docs.authing.cn/authing/quickstart/basic#yong-hu-chi?utm_source=tuture"
-                },
-                {
-                  "text": "（顾名思义，就是用来管理和存储一系列用户的数据和信息），如下图所示："
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "children": [
-                {
-                  "text": ""
-                }
-              ],
-              "url": "https://imgkr.cn-bj.ufileos.com/f947b966-4f2f-41c7-84f4-d34c879a2238.jpg"
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "在创建用户池的时候，输入我们想要的用户池名称和专属域名后，选择类型为 Web，最后点击，我们的第一个用户池边创建好了。点击“基础配置”书签，可以查看到刚才创建用户池的一些关键信息，特别是用户池 ID，如下图所示："
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "children": [
-                {
-                  "text": ""
-                }
-              ],
-              "url": "https://imgkr.cn-bj.ufileos.com/9e61b095-916e-4ae3-9186-5267dff2a5a0.jpg"
-            },
-            {
-              "type": "note",
-              "level": "warning",
+              "type": "explain",
+              "fixed": true,
               "children": [
                 {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "后续应用开发时，所有的用户池 ID（"
-                    },
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/index.html",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
                     {
-                      "text": "userPoolId",
-                      "code": true
-                    },
-                    {
-                      "text": "）请替换成自己帐户的真实 ID。"
+                      "text": ""
                     }
                   ]
                 }
@@ -25844,85 +25671,218 @@
           ]
         },
         {
-          "file": "client/src/store/mutation-types.js",
-          "display": true,
-          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
           "type": "file",
+          "file": "client/src/App.vue",
+          "display": true,
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
-                  "type": "heading-three",
+                  "type": "paragraph",
                   "children": [
                     {
-                      "text": "配置 Vuex Mutations 和 Store"
+                      "text": ""
                     }
-                  ],
-                  "id": "ocYxgr-Ys"
-                },
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/App.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [
+                  0,
+                  4
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
                 {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "由于我们的应用使用了 "
-                    },
-                    {
-                      "text": "Vuex",
-                      "link": true,
-                      "url": "https://vuex.vuejs.org/"
-                    },
-                    {
-                      "text": " 来解决状态管理问题，因此我们首先需要定义身份验证相关的 Mutation。这里我们定义两个新的 Mutation："
+                      "text": ""
                     }
                   ]
-                },
-                {
-                  "type": "bulleted-list",
-                  "children": [
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "SET_USER",
-                          "code": true
-                        },
-                        {
-                          "text": "  ：设置用户身份数据"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "LOGOUT",
-                          "code": true
-                        },
-                        {
-                          "text": " ：退出登录"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    }
-                  ]
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/components/Header.vue",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
                 {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "在 "
-                    },
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/components/Header.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [
+                  0,
+                  92
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
                     {
-                      "text": "client/src/store/mutation-types.js",
-                      "code": true
-                    },
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/pages/user/Login.vue",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
                     {
-                      "text": " 中添加上面三个 Mutation 常量，代码如下："
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Login.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/store/index.js",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/index.js",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [
+                  19,
+                  30
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/store/mutation-types.js",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
                     }
                   ]
                 }
@@ -25956,10 +25916,9 @@
           ]
         },
         {
+          "type": "file",
           "file": "client/src/store/mutations.js",
           "display": true,
-          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -25969,14 +25928,7 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "然后我们在 "
-                    },
-                    {
-                      "text": "client/src/store/mutations.js",
-                      "code": true
-                    },
-                    {
-                      "text": " 中实现上面定义用户相关 Mutation，代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -26035,737 +25987,6 @@
           ]
         },
         {
-          "file": "client/src/store/index.js",
-          "display": true,
-          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "最后我们在 Vuex Store 中集成相应的状态与 Mutation，修改 "
-                    },
-                    {
-                      "text": "client/src/store/index.js",
-                      "code": true
-                    },
-                    {
-                      "text": " ，代码如下："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/store/index.js",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [
-                [
-                  0,
-                  7
-                ],
-                [
-                  22,
-                  33
-                ],
-                [
-                  43,
-                  52
-                ]
-              ],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "file": "client/src/App.vue",
-          "display": true,
-          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "在根组件 App 中集成用户逻辑"
-                    }
-                  ],
-                  "id": "iBks_R1S2"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "让我们打开根组件 "
-                    },
-                    {
-                      "text": "client/src/App.vue",
-                      "code": true
-                    },
-                    {
-                      "text": "，在其中添加一个 "
-                    },
-                    {
-                      "text": "mounted",
-                      "code": true
-                    },
-                    {
-                      "text": " 方法，使得在整个应用刚启动时获取并检查用户身份数据。修改代码如下："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/App.vue",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [
-                [
-                  0,
-                  4
-                ],
-                [
-                  20,
-                  28
-                ]
-              ],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "可以看到，我们从 "
-                    },
-                    {
-                      "text": "localStorage",
-                      "code": true
-                    },
-                    {
-                      "text": " 中检查是否有 "
-                    },
-                    {
-                      "text": "userInfo",
-                      "code": true
-                    },
-                    {
-                      "text": " 数据，如果有的话通过 "
-                    },
-                    {
-                      "text": "SET_USER",
-                      "code": true
-                    },
-                    {
-                      "text": " Mutation 将用户身份数据存入状态中。"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "file": "client/src/components/Header.vue",
-          "display": true,
-          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "在头部组件 Header 中集成用户逻辑"
-                    }
-                  ],
-                  "id": "5kE3XCGXb"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "打开头部组件 "
-                    },
-                    {
-                      "text": "client/src/components/Header.vue",
-                      "code": true
-                    },
-                    {
-                      "text": " ，我们在其中添加用户系统相关的逻辑，修改代码如下："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/components/Header.vue",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [
-                [
-                  0,
-                  89
-                ]
-              ],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "可以看到，我们主要做了以下改变："
-                    }
-                  ]
-                },
-                {
-                  "type": "bulleted-list",
-                  "children": [
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "把 "
-                        },
-                        {
-                          "text": "isLogged",
-                          "code": true
-                        },
-                        {
-                          "text": " 从原先的 "
-                        },
-                        {
-                          "text": "data",
-                          "code": true
-                        },
-                        {
-                          "text": " 变成了一个计算属性，通过从 Vuex Store 中获取 "
-                        },
-                        {
-                          "text": "token",
-                          "code": true
-                        },
-                        {
-                          "text": " 是否存在来判断是否登录"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "添加了 "
-                        },
-                        {
-                          "text": "avatar",
-                          "code": true
-                        },
-                        {
-                          "text": " 计算属性，用于从 Store 中获取用户头像"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "实现了 "
-                        },
-                        {
-                          "text": "handleLogout",
-                          "code": true
-                        },
-                        {
-                          "text": " 方法，用于处理登出逻辑，包括从 "
-                        },
-                        {
-                          "text": "localStorage",
-                          "code": true
-                        },
-                        {
-                          "text": " 中去除 "
-                        },
-                        {
-                          "text": "token",
-                          "code": true
-                        },
-                        {
-                          "text": " 和 "
-                        },
-                        {
-                          "text": "userInfo",
-                          "code": true
-                        },
-                        {
-                          "text": " 数据，并发起一个 "
-                        },
-                        {
-                          "text": "LOGOUT",
-                          "code": true
-                        },
-                        {
-                          "text": " Mutation 用于更新 Store 的状态"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "file": "client/index.html",
-          "display": true,
-          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "通过 Authing Guard 实现登录页面"
-                    }
-                  ],
-                  "id": "2lGzEyhxm"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "Guard ",
-                      "link": true,
-                      "url": "https://docs.authing.cn/authing/sdk/guard?utm_source=tuture"
-                    },
-                    {
-                      "text": "是 Authing 推出的可嵌入登录表单，能够让我们用几行代码为整个应用集成登录和注册功能，集成后的效果如下："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/8459ef19-e1b7-48d8-9620-55054752a1e8.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "整体效果还是很 OK 的，而且我们可以通过一些配置项轻松实现定制，下面我们就来看看怎么实现吧。"
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "首先，我们通过引入 Authing UMD 构建文件来集成 "
-                    },
-                    {
-                      "text": "Authing Guard",
-                      "link": true,
-                      "url": "https://docs.authing.cn/authing/sdk/guard?utm_source=tuture"
-                    },
-                    {
-                      "text": "。在 "
-                    },
-                    {
-                      "text": "client/index.html",
-                      "code": true
-                    },
-                    {
-                      "text": " 文件中通过 "
-                    },
-                    {
-                      "text": "script",
-                      "code": true
-                    },
-                    {
-                      "text": " 标签引入："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/index.html",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "file": "client/src/pages/user/Login.vue",
-          "display": true,
-          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "接着打开登录页面组件 "
-                    },
-                    {
-                      "text": "client/src/pages/user/Login.vue",
-                      "code": true
-                    },
-                    {
-                      "text": "，修改代码如下："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/pages/user/Login.vue",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "我们在 "
-                    },
-                    {
-                      "text": "mounted",
-                      "code": true
-                    },
-                    {
-                      "text": " 生命周期方法中初始化 "
-                    },
-                    {
-                      "text": "Guard",
-                      "code": true
-                    },
-                    {
-                      "text": " 实例。在初始化 "
-                    },
-                    {
-                      "text": "Guard",
-                      "code": true
-                    },
-                    {
-                      "text": " 实例时，第一个参数是用户池 ID（"
-                    },
-                    {
-                      "text": "记得换成自己的用户池 ID！",
-                      "bold": true,
-                      "italic": true
-                    },
-                    {
-                      "text": "），可以通过 Authing 控制台获取，第二个参数则是 Guard 组件的一些选项参数："
-                    }
-                  ]
-                },
-                {
-                  "type": "bulleted-list",
-                  "children": [
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "logo",
-                          "code": true
-                        },
-                        {
-                          "text": " 是我们整个网站的 Logo 图片链接"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "title",
-                          "code": true
-                        },
-                        {
-                          "text": " 是整个登录表单的标题"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "mountId",
-                          "code": true
-                        },
-                        {
-                          "text": " 是用于挂载登录表单的 DOM ID，这里就是模板中唯一的 "
-                        },
-                        {
-                          "text": "div",
-                          "code": true
-                        },
-                        {
-                          "text": " 元素 "
-                        },
-                        {
-                          "text": "login-form",
-                          "code": true
-                        },
-                        {
-                          "text": " "
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "hideClose",
-                          "code": true
-                        },
-                        {
-                          "text": " 用于隐藏关闭按钮，因为我们把登录做成了一个独立的页面，不希望用户把登录表单关掉（这样整个页面就一片空白啦）"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    }
-                  ]
-                },
-                {
-                  "type": "note",
-                  "level": "info",
-                  "children": [
-                    {
-                      "type": "paragraph",
-                      "children": [
-                        {
-                          "text": "关于 "
-                        },
-                        {
-                          "text": "Guard",
-                          "code": true
-                        },
-                        {
-                          "text": " 完整的构造函数 API，请参考"
-                        },
-                        {
-                          "text": "官方文档",
-                          "link": true,
-                          "url": "https://docs.authing.cn/authing/sdk/guard#gou-zao-han-shu-new-guarduserpoolid-options?utm_source=tuture"
-                        },
-                        {
-                          "text": "。"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "在初始化 "
-                    },
-                    {
-                      "text": "Guard",
-                      "code": true
-                    },
-                    {
-                      "text": " 组件后，我们还需要添加身份验证成功后的监听事件函数，即 "
-                    },
-                    {
-                      "text": "form.on(\"authenticated\", handler)",
-                      "code": true
-                    },
-                    {
-                      "text": " 。可以看到，在回调函数中，我们做了三件事："
-                    }
-                  ]
-                },
-                {
-                  "type": "numbered-list",
-                  "children": [
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "发出 "
-                        },
-                        {
-                          "text": "SET_USER",
-                          "code": true
-                        },
-                        {
-                          "text": " Mutation，修改 Store 状态"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "numbered-list",
-                      "number": 1
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "在 "
-                        },
-                        {
-                          "text": "localStorage",
-                          "code": true
-                        },
-                        {
-                          "text": " 中存储登录后获取的用户信息"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "numbered-list",
-                      "number": 2
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "通过 "
-                        },
-                        {
-                          "text": "$router",
-                          "code": true
-                        },
-                        {
-                          "text": " 路由重定向到首页"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "numbered-list",
-                      "number": 3
-                    }
-                  ]
-                },
-                {
-                  "type": "note",
-                  "level": "info",
-                  "children": [
-                    {
-                      "type": "paragraph",
-                      "children": [
-                        {
-                          "text": "更多回调事件，可参考"
-                        },
-                        {
-                          "text": "完整事件列表",
-                          "link": true,
-                          "url": "https://docs.authing.cn/authing/sdk/guard#hui-tiao-shi-jian-onevent-callback?utm_source=tuture"
-                        },
-                        {
-                          "text": "。"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "type": "explain",
           "fixed": true,
           "children": [
@@ -26773,24 +25994,7 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "配置完成后，开启应用，点击登录按钮，就可以看到我们炫酷的登录页面了："
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "children": [
-                {
                   "text": ""
-                }
-              ],
-              "url": "https://imgkr.cn-bj.ufileos.com/4a8bce59-cc9f-431c-865e-18745428d00f.jpg"
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "看上去很不错！"
                 }
               ]
             }
@@ -26799,19 +26003,19 @@
       ]
     },
     {
-      "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
-      "id": "e350f44f",
-      "articleId": "nO-RmUbzz",
       "type": "step",
+      "id": "b1ba7646",
+      "articleId": "nO-RmUbzz",
+      "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
       "children": [
         {
           "type": "heading-two",
           "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
-          "id": "47226a80",
+          "id": "0fd29f55",
           "fixed": true,
           "children": [
             {
-              "text": "添加权限管理和路由守卫"
+              "text": "添加路由守卫限制权限"
             }
           ]
         },
@@ -26823,137 +26027,26 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "在这一步中，我们将配置权限管理和路由守卫。权限管理很容易理解，就是当用户进行某些需要登录的操作（例如添加到购物车）时判断是否已经登录，如果未登录则重定向到登录页面。所谓"
-                },
-                {
-                  "text": "路由守卫",
-                  "link": true,
-                  "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html?utm_source=tuture"
-                },
-                {
-                  "text": "（或称"
-                },
-                {
-                  "text": "导航守卫",
-                  "bold": true
-                },
-                {
-                  "text": "），就是在进入一个具体的路由（页面）"
-                },
-                {
-                  "text": "之前",
-                  "bold": true
-                },
-                {
-                  "text": "，判断用户是否具备足够的权限，如果权限不够，则直接重定向到登录页面，否则允许进入该页面。"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "在我们的应用中，主要有三个地方需要配置权限："
-                }
-              ]
-            },
-            {
-              "type": "bulleted-list",
-              "children": [
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "text": "商品添加按钮（ProductionButton）"
-                    }
-                  ],
-                  "level": 0,
-                  "parent": "bulleted-list"
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "text": "购物车（Cart）"
-                    }
-                  ],
-                  "level": 0,
-                  "parent": "bulleted-list"
-                },
-                {
-                  "type": "list-item",
-                  "children": [
-                    {
-                      "text": "后台管理（Admin）"
-                    }
-                  ],
-                  "level": 0,
-                  "parent": "bulleted-list"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "让我们逐个击破吧。"
+                  "text": ""
                 }
               ]
             }
           ]
         },
         {
+          "type": "file",
           "file": "client/src/components/products/ProductButton.vue",
           "display": true,
-          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
-          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "添加商品添加按钮的权限管理"
-                    }
-                  ],
-                  "id": "VDqy8fpIb"
-                },
-                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "首先，我们需要为商品添加按钮配置权限管理。打开 "
-                    },
-                    {
-                      "text": "client/src/components/products/ProductButton.vue",
-                      "code": true
-                    },
-                    {
-                      "text": " 组件，修改 "
-                    },
-                    {
-                      "text": "methods",
-                      "code": true
-                    },
-                    {
-                      "text": " 中的 "
-                    },
-                    {
-                      "text": "addToCart",
-                      "code": true
-                    },
-                    {
-                      "text": " 和 "
-                    },
-                    {
-                      "text": "removeFromCart",
-                      "code": true
-                    },
-                    {
-                      "text": " 方法，代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -26965,12 +26058,8 @@
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
                 [
-                  0,
-                  12
-                ],
-                [
-                  15,
-                  36
+                  13,
+                  35
                 ]
               ],
               "children": [
@@ -26987,28 +26076,7 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "可以看到，实现权限管理的思路很简单：先从 "
-                    },
-                    {
-                      "text": "localStorage",
-                      "code": true
-                    },
-                    {
-                      "text": " 中判断用于鉴权的 "
-                    },
-                    {
-                      "text": "token",
-                      "code": true
-                    },
-                    {
-                      "text": " 是否存在，如果存在则表明已登录，执行相应的 Mutation；如果不存在 "
-                    },
-                    {
-                      "text": "token",
-                      "code": true
-                    },
-                    {
-                      "text": "，则弹出 Alert 提示框询问用户是否需要跳转到登录页面进行登录。"
+                      "text": ""
                     }
                   ]
                 }
@@ -27017,51 +26085,19 @@
           ]
         },
         {
+          "type": "file",
           "file": "client/src/pages/Cart.vue",
           "display": true,
-          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
-          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "实现购物车的路由守卫"
-                    }
-                  ],
-                  "id": "0YBRNop9P"
-                },
-                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "然后我们来实现购物车的路由守卫。幸运的是，Vue Router 已经为我们提供了"
-                    },
-                    {
-                      "text": "组件级别的路由守卫的方法",
-                      "link": true,
-                      "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%9A%84%E5%AE%88%E5%8D%AB?utm_source=tuture"
-                    },
-                    {
-                      "text": " "
-                    },
-                    {
-                      "text": "beforeRouteEnter",
-                      "code": true
-                    },
-                    {
-                      "text": " 。打开 "
-                    },
-                    {
-                      "text": "client/src/pages/Cart.vue",
-                      "code": true
-                    },
-                    {
-                      "text": "，修改代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -27074,111 +26110,10 @@
               "hiddenLines": [
                 [
                   0,
-                  10
+                  0
                 ],
                 [
-                  12,
-                  13
-                ],
-                [
-                  17,
-                  31
-                ]
-              ],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "依然是通过 "
-                    },
-                    {
-                      "text": "localStorage",
-                      "code": true
-                    },
-                    {
-                      "text": " 中尝试获取 "
-                    },
-                    {
-                      "text": "token",
-                      "code": true
-                    },
-                    {
-                      "text": " 来判断登录状态，然后通过 "
-                    },
-                    {
-                      "text": "next",
-                      "code": true
-                    },
-                    {
-                      "text": " 函数进入合适的路由。"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "file": "client/src/pages/admin/Index.vue",
-          "display": true,
-          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "实现后台管理的路由守卫"
-                    }
-                  ],
-                  "id": "y6zZmzn20"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "类似地，我们实现后台管理页面的路由守卫。打开 "
-                    },
-                    {
-                      "text": "client/src/pages/admin.Index.vue",
-                      "code": true
-                    },
-                    {
-                      "text": "，添加路由守卫方法，代码如下："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/pages/admin/Index.vue",
-              "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
-              "hiddenLines": [
-                [
-                  0,
-                  11
-                ],
-                [
-                  13,
-                  14
-                ],
-                [
-                  17,
+                  9,
                   27
                 ]
               ],
@@ -27205,26 +26140,60 @@
           ]
         },
         {
-          "type": "explain",
-          "fixed": true,
+          "type": "file",
+          "file": "client/src/pages/admin/Index.vue",
+          "display": true,
           "children": [
             {
-              "type": "paragraph",
+              "type": "explain",
+              "fixed": true,
               "children": [
                 {
-                  "text": "完成这一步后，打开应用，我们来看一下添加了权限管理和路由守卫的之后的应用会是怎么样的："
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
                 }
               ]
             },
             {
-              "type": "image",
+              "type": "diff-block",
+              "file": "client/src/pages/admin/Index.vue",
+              "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+              "hiddenLines": [
+                [
+                  0,
+                  23
+                ]
+              ],
               "children": [
                 {
                   "text": ""
                 }
-              ],
-              "url": "https://imgkr.cn-bj.ufileos.com/d9d9ac16-c6df-42a6-bcfb-6765edbe9789.gif"
+              ]
             },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
             {
               "type": "paragraph",
               "children": [
@@ -27238,15 +26207,15 @@
       ]
     },
     {
-      "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-      "id": "9eb3b275",
-      "articleId": "nO-RmUbzz",
       "type": "step",
+      "id": "ea01aaa8",
+      "articleId": "nO-RmUbzz",
+      "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
       "children": [
         {
           "type": "heading-two",
           "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-          "id": "2502e9f9",
+          "id": "6b369d1d",
           "fixed": true,
           "children": [
             {
@@ -27262,158 +26231,26 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "仅仅实现登录和注册功能是远远不够的，我们还需要将用户系统集成到现有的数据库中。例如我们在添加商品时，希望能够和具体的用户绑定。"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "所幸我们使用的是 MongoDB 数据库，因此不像传统的关系型数据库那样需要繁杂的表结构更新，只需修改数据模型定义即可。"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "file": "server/model/index.js",
-          "display": true,
-          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "更新 Mongoose 数据定义"
-                    }
-                  ],
-                  "id": "DqsbMcXRR"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "首先让我们来更新一波 Mongoose 数据定义。打开 "
-                    },
-                    {
-                      "text": "server/model/index.js",
-                      "code": true
-                    },
-                    {
-                      "text": " ，修改代码如下："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "server/model/index.js",
-              "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-              "hiddenLines": [
-                [
-                  0,
-                  4
-                ],
-                [
-                  24,
-                  30
-                ]
-              ],
-              "children": [
-                {
                   "text": ""
                 }
               ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "可以看到，我们主要是在两个数据模型 "
-                    },
-                    {
-                      "text": "productSchema",
-                      "code": true
-                    },
-                    {
-                      "text": " 和 "
-                    },
-                    {
-                      "text": "manufacturerSchema",
-                      "code": true
-                    },
-                    {
-                      "text": " 中加入了 "
-                    },
-                    {
-                      "text": "user",
-                      "code": true
-                    },
-                    {
-                      "text": " 字段，其他均无需改变。"
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
         {
+          "type": "file",
           "file": "client/src/store/actions.js",
           "display": true,
-          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "配置 Vuex Action"
-                    }
-                  ],
-                  "id": "8ON51qZBT"
-                },
-                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "接着我们修改项目的 Action，主要是在两个新增数据的 Action（"
-                    },
-                    {
-                      "text": "addProduct",
-                      "code": true
-                    },
-                    {
-                      "text": " 和 "
-                    },
-                    {
-                      "text": "addManufacturer",
-                      "code": true
-                    },
-                    {
-                      "text": "）创建模型时记录用户数据。打开 "
-                    },
-                    {
-                      "text": "client/src/store/actions.js",
-                      "code": true
-                    },
-                    {
-                      "text": "，修改代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -27426,31 +26263,11 @@
               "hiddenLines": [
                 [
                   0,
-                  27
+                  83
                 ],
                 [
-                  29,
-                  86
-                ],
-                [
-                  101,
-                  107
-                ],
-                [
-                  110,
-                  110
-                ],
-                [
-                  116,
-                  173
-                ],
-                [
-                  184,
-                  190
-                ],
-                [
-                  193,
-                  193
+                  103,
+                  170
                 ]
               ],
               "children": [
@@ -27467,21 +26284,7 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "这里我们在前端发起请求创建新数据时，把 "
-                    },
-                    {
-                      "text": "user",
-                      "code": true
-                    },
-                    {
-                      "text": " 的 "
-                    },
-                    {
-                      "text": "_id",
-                      "code": true
-                    },
-                    {
-                      "text": " 也传了进去，这样数据库里面对应的商品和制造商就会记录相应的用户 ID 啦。"
+                      "text": ""
                     }
                   ]
                 }
@@ -27490,10 +26293,9 @@
           ]
         },
         {
-          "file": "server/controllers/product.js",
-          "display": false,
-          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
           "type": "file",
+          "file": "server/controllers/product.js",
+          "display": true,
           "children": [
             {
               "type": "explain",
@@ -27542,6 +26344,57 @@
           ]
         },
         {
+          "type": "file",
+          "file": "server/model/index.js",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "server/model/index.js",
+              "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+              "hiddenLines": [
+                [
+                  5,
+                  6
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "type": "explain",
           "fixed": true,
           "children": [
@@ -27558,15 +26411,15 @@
       ]
     },
     {
-      "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-      "id": "1e88ef4a",
-      "articleId": "nO-RmUbzz",
       "type": "step",
+      "id": "18ec6f33",
+      "articleId": "nO-RmUbzz",
+      "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
       "children": [
         {
           "type": "heading-two",
           "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-          "id": "32f2ee12",
+          "id": "dc7bb55f",
           "fixed": true,
           "children": [
             {
@@ -27582,39 +26435,16 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": "在最后一步中，我们将借助 "
-                },
-                {
-                  "text": "Authing SDK",
-                  "link": true,
-                  "url": "https://docs.authing.cn/authing/sdk/sdk-for-javascript?utm_source=tuture"
-                },
-                {
-                  "text": " 实现更细粒度的用户身份管理，以及个人信息设置页面。首先用 npm 安装 Authing 的 JavaScript SDK："
-                }
-              ]
-            },
-            {
-              "type": "code-block",
-              "lang": "bash",
-              "children": [
-                {
-                  "type": "code-line",
-                  "children": [
-                    {
-                      "text": "npm install authing-js-sdk"
-                    }
-                  ]
+                  "text": ""
                 }
               ]
             }
           ]
         },
         {
-          "file": "client/package.json",
-          "display": false,
-          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
           "type": "file",
+          "file": "client/package.json",
+          "display": true,
           "children": [
             {
               "type": "explain",
@@ -27663,407 +26493,19 @@
           ]
         },
         {
-          "file": "client/src/components/Header.vue",
-          "display": true,
-          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
           "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "修改 Header 的帐户设置链接"
-                    }
-                  ],
-                  "id": "43xkckrmq"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "首先，让我们修改 Header 头部中的帐户设置链接。打开 "
-                    },
-                    {
-                      "text": "client/src/components/Header.vue",
-                      "code": true
-                    },
-                    {
-                      "text": "，修改代码如下："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/components/Header.vue",
-              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [
-                [
-                  2,
-                  35
-                ],
-                [
-                  49,
-                  56
-                ],
-                [
-                  60,
-                  90
-                ],
-                [
-                  96,
-                  113
-                ]
-              ],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "可以看到，我们主要做了两点变动："
-                    }
-                  ]
-                },
-                {
-                  "type": "numbered-list",
-                  "children": [
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "在模板中调整“账户设置”的链接，从原先 Authing 的链接替换成了本应用的 "
-                        },
-                        {
-                          "text": "/user/settings",
-                          "code": true
-                        },
-                        {
-                          "text": " 路由，这个我们后面马上会实现"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "numbered-list",
-                      "number": 1
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "在 "
-                        },
-                        {
-                          "text": "handleLogout",
-                          "code": true
-                        },
-                        {
-                          "text": " 方法中，我们在 "
-                        },
-                        {
-                          "text": "localStorage",
-                          "code": true
-                        },
-                        {
-                          "text": " 抹去用户信息之前，通过 "
-                        },
-                        {
-                          "text": "authing.checkLoginStatus",
-                          "code": true
-                        },
-                        {
-                          "text": " 检查登录状态，然后通过 "
-                        },
-                        {
-                          "text": "authing.logout",
-                          "code": true
-                        },
-                        {
-                          "text": " 执行登出操作"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "numbered-list",
-                      "number": 2
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "file": "client/src/pages/user/Setting.vue",
-          "display": true,
-          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-          "type": "file",
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "实现 Setting 帐户设置页面"
-                    }
-                  ],
-                  "id": "39FYBnbFx"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "打开之前已经创建好的设置页面 "
-                    },
-                    {
-                      "text": "client/src/pages/user/Setting.vue",
-                      "code": true
-                    },
-                    {
-                      "text": "，实现用户个人信息设置页面，代码如下："
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/pages/user/Setting.vue",
-              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "我们主要看一下 "
-                    },
-                    {
-                      "text": "script",
-                      "code": true
-                    },
-                    {
-                      "text": " 和 "
-                    },
-                    {
-                      "text": "template",
-                      "code": true
-                    },
-                    {
-                      "text": " 部分。首先在 "
-                    },
-                    {
-                      "text": "script",
-                      "code": true
-                    },
-                    {
-                      "text": " 部分中，我们的组件包括："
-                    }
-                  ]
-                },
-                {
-                  "type": "bulleted-list",
-                  "children": [
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "data",
-                          "code": true
-                        },
-                        {
-                          "text": " 字段定义了模板中所需要的数据，包括 "
-                        },
-                        {
-                          "text": "user",
-                          "code": true
-                        },
-                        {
-                          "text": " 、"
-                        },
-                        {
-                          "text": "imageUrl",
-                          "code": true
-                        },
-                        {
-                          "text": "（头像链接）以及 "
-                        },
-                        {
-                          "text": "rules",
-                          "code": true
-                        },
-                        {
-                          "text": "（表单校验规则）"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "created",
-                          "code": true
-                        },
-                        {
-                          "text": " 生命周期方法用于从 Vuex Store 以及 "
-                        },
-                        {
-                          "text": "localStorage",
-                          "code": true
-                        },
-                        {
-                          "text": " 中获取用户数据（"
-                        },
-                        {
-                          "text": "localStorage",
-                          "code": true
-                        },
-                        {
-                          "text": " 的优先级更高一些），然后初始化上面的 "
-                        },
-                        {
-                          "text": "data",
-                          "code": true
-                        },
-                        {
-                          "text": " 字段"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "components",
-                          "code": true
-                        },
-                        {
-                          "text": " 用于指定 "
-                        },
-                        {
-                          "text": "app-header",
-                          "code": true
-                        },
-                        {
-                          "text": " 组件为我们刚才修改好的 "
-                        },
-                        {
-                          "text": "Header",
-                          "code": true
-                        },
-                        {
-                          "text": " 组件"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    },
-                    {
-                      "type": "list-item",
-                      "children": [
-                        {
-                          "text": "methods",
-                          "code": true
-                        },
-                        {
-                          "text": " 中定义了 "
-                        },
-                        {
-                          "text": "handleAvatarSuccess",
-                          "code": true
-                        },
-                        {
-                          "text": " 和 "
-                        },
-                        {
-                          "text": "submitForm",
-                          "code": true
-                        },
-                        {
-                          "text": " 两个 Handler，分别用于处理头像上传成功以及提交表单的逻辑。在 "
-                        },
-                        {
-                          "text": "submitForm",
-                          "code": true
-                        },
-                        {
-                          "text": " 方法中，我们先从表单中获取到相应的数据，然后通过 "
-                        },
-                        {
-                          "text": "authing.update",
-                          "code": true
-                        },
-                        {
-                          "text": " 更新用户数据，成功后再修改 Vuex Store 中的状态"
-                        }
-                      ],
-                      "level": 0,
-                      "parent": "bulleted-list"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "file": "client/src/App.vue",
           "display": true,
-          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "调整 App 根组件"
-                    }
-                  ],
-                  "id": "6fUJbzXeI"
-                },
-                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "让我们调整一下 App 根组件。打开 "
-                    },
-                    {
-                      "text": "client/src/App.vue",
-                      "code": true
-                    },
-                    {
-                      "text": " ，修改代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -28076,11 +26518,7 @@
               "hiddenLines": [
                 [
                   0,
-                  4
-                ],
-                [
-                  46,
-                  54
+                  3
                 ]
               ],
               "children": [
@@ -28097,28 +26535,7 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "可以看到，我们主要实现了一个 "
-                    },
-                    {
-                      "text": "checkLogin",
-                      "code": true
-                    },
-                    {
-                      "text": " 方法，用于在整个应用刚挂载时检查登录状态，如果登录成功，则从 "
-                    },
-                    {
-                      "text": "storage",
-                      "code": true
-                    },
-                    {
-                      "text": " 里面取出数据并设置进 Redux Store ，如果登录失效，则清空本地的 "
-                    },
-                    {
-                      "text": "storage",
-                      "code": true
-                    },
-                    {
-                      "text": " 信息。"
+                      "text": ""
                     }
                   ]
                 }
@@ -28127,36 +26544,78 @@
           ]
         },
         {
-          "file": "client/src/pages/user/Index.vue",
-          "display": true,
-          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
           "type": "file",
+          "file": "client/src/components/Header.vue",
+          "display": true,
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
-                  "type": "heading-three",
+                  "type": "paragraph",
                   "children": [
                     {
-                      "text": "调整其他页面"
+                      "text": ""
                     }
-                  ],
-                  "id": "_zPLrzOO6"
-                },
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/components/Header.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [
+                [
+                  0,
+                  37
+                ],
+                [
+                  46,
+                  89
+                ],
+                [
+                  98,
+                  111
+                ]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
                 {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "最后我们调整一下其他页面的一些细节。修改 "
-                    },
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/pages/user/Index.vue",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
                     {
-                      "text": "client/src/pages/user/Index.vue",
-                      "code": true
-                    },
-                    {
-                      "text": "，代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -28190,10 +26649,9 @@
           ]
         },
         {
+          "type": "file",
           "file": "client/src/pages/user/Login.vue",
           "display": true,
-          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -28203,14 +26661,7 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "继续修改 "
-                    },
-                    {
-                      "text": "client/src/pages/user/Login.vue",
-                      "code": true
-                    },
-                    {
-                      "text": "，代码如下："
+                      "text": ""
                     }
                   ]
                 }
@@ -28222,8 +26673,8 @@
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
                 [
-                  16,
-                  46
+                  19,
+                  20
                 ]
               ],
               "children": [
@@ -28240,230 +26691,23 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": "当保存上面的修改的代码，我们可以看到如下的效果："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
                       "text": ""
                     }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/32bd0abf-dbcc-4364-8d01-47affc0f9a89.gif"
-                },
-                {
-                  "type": "heading-two",
-                  "children": [
-                    {
-                      "text": "集成微信、QQ 登录或 Github 登录"
-                    }
-                  ],
-                  "id": "ATn1k27w-"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "通过上述流程，我们就完成了一个完整的用户系统及其与现有系统的整合，但是有同学发现了，我们在平时生活或工作中，除了常规的手机号+验证码、邮箱密码等，还会有一些更方便的登录方式，如微信登录、QQ登录等，那么我们如何集成这些方便的登录呢？实际上可能看起来很复杂，但是在我们现有的基础上，用 Authing 可以很方便的集成微信、QQ登录等。"
-                    }
                   ]
-                },
-                {
-                  "type": "note",
-                  "level": "warning",
-                  "children": [
-                    {
-                      "type": "paragraph",
-                      "children": [
-                        {
-                          "text": "只有企业才能集成微信或 QQ 登录，如果你是个人开发者，那么这一节你可以跳过哦🤓"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "集成微信扫码登录"
-                    }
-                  ],
-                  "id": "nB787Uvc2"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "首先去微信官方文档完成注册，然后申请一个"
-                    },
-                    {
-                      "text": "微信网页应用",
-                      "link": true,
-                      "url": "https://open.weixin.qq.com/cgi-bin/frame?t=home/web_tmpl&lang=zh_CN"
-                    },
-                    {
-                      "text": "，然后获取到微信网页应用的 AppID 和 AppSecret："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/735e6f6c-d56f-42ea-9fda-d92dcaa64d39.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "接着滑动到底部，将授权回调域改为 "
-                    },
-                    {
-                      "text": "oauth.authing.cn",
-                      "code": true
-                    },
-                    {
-                      "text": " "
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/600497e6-a149-4c36-bc18-5032c1453cff.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "然后我们开始去 Authing 控制台，在相应微信登录里面，填入刚刚获取的 "
-                    },
-                    {
-                      "text": "AppID",
-                      "code": true
-                    },
-                    {
-                      "text": " 和 "
-                    },
-                    {
-                      "text": "AppSecret",
-                      "code": true
-                    },
-                    {
-                      "text": " ："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/432e971d-cb3a-4dff-b967-d5011807852a.png"
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/abf56159-142c-4e9c-b08a-e2f8359048b4.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "注意到上面我们第三个参数 “重定向地址” 填写了我们现在 Vue 全栈电商应用的开发服务器地址，读者应该根据自己当前的需要地址进行对应的填写。"
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "大功告成，通过上面的步骤我们就配置好了微信网页登录，现在你应该可以看到如下的效果："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/ea6c5f67-40ee-4afe-8f54-3eff447cfce1.gif"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "我的天！好神奇！就是上面几下手工点按配置，我们就集成好了微信登录！😅"
-                    }
-                  ]
-                },
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "集成 QQ 登录"
-                    }
-                  ],
-                  "id": "zcascN_xA"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "按照和接入微信网页登录类似的方式，我们前往"
-                    },
-                    {
-                      "text": " QQ 互联中心",
-                      "link": true,
-                      "url": "https://connect.qq.com/manage.html#/"
-                    },
-                    {
-                      "text": "，注册一个账号，并创建一个网页应用。"
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "然后进入网页应用，将授权回调地址填写为："
-                    },
-                    {
-                      "text": "https://oauth.authing.cn/oauth/qq/redirect  ",
-                      "code": true
-                    },
-                    {
-                      "text": " ，接着回到 Authing 控制台，我们配置 QQ 登录："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/062db59f-41fd-44c6-9d51-2b2830b64541.png"
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/pages/user/Setting.vue",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
                 {
                   "type": "paragraph",
                   "children": [
@@ -28471,163 +26715,24 @@
                       "text": ""
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Setting.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [],
+              "children": [
                 {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/089087d0-b597-4cae-afc3-c539ea795ea4.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "保存之后，大功告成！我们的应用里面就有了 QQ 登录，和微信登录同样简单！"
-                    }
-                  ]
-                },
-                {
-                  "type": "heading-three",
-                  "children": [
-                    {
-                      "text": "集成 Github 登录"
-                    }
-                  ],
-                  "id": "ddjounxzC"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "最后我们再来尝试集成一下开发者比较喜爱的 Github 登录，看看 Authing 是如何简化这一劳动的呢？"
-                    }
-                  ]
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "首先根据 Github 指引，创建一个 "
-                    },
-                    {
-                      "text": "OAuth 应用",
-                      "link": true,
-                      "url": "https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/"
-                    },
-                    {
-                      "text": "。"
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/6cd8539f-997a-4583-a5c4-a36fd166a9e0.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "然后填入如下内容："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/9987a2dc-20cd-4f65-9704-ef368b622d1e.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "其中红框框出来的内容需要填入 Authing 相关的 "
-                    },
-                    {
-                      "text": "https://oauth.authing.cn/oauth/github/redirect",
-                      "code": true
-                    },
-                    {
-                      "text": "，然后创建好应用之后，取出 "
-                    },
-                    {
-                      "text": "Client ID",
-                      "code": true
-                    },
-                    {
-                      "text": " 和 "
-                    },
-                    {
-                      "text": "Client Secret",
-                      "code": true
-                    },
-                    {
-                      "text": " ："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/419c6cce-551c-4a0f-a528-b7c8276c8287.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "之后就是类似之前的操作，进入 Authing 控制台，配置 Github 相关的内容："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/ccfb4947-5ddf-4c10-8509-24e0c5da5681.png"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": "最后可以看到如下效果："
-                    }
-                  ]
-                },
-                {
-                  "type": "image",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/7fcd879d-03d2-4dd6-b4d5-ea936fdf6ddd.gif"
-                },
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                },
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
                 {
                   "type": "paragraph",
                   "children": [
@@ -28641,10 +26746,9 @@
           ]
         },
         {
-          "file": "client/yarn.lock",
-          "display": false,
-          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
           "type": "file",
+          "file": "client/yarn.lock",
+          "display": true,
           "children": [
             {
               "type": "explain",
@@ -28709,27 +26813,10 @@
           "fixed": true,
           "children": [
             {
-              "type": "heading-two",
-              "children": [
-                {
-                  "text": "小结"
-                }
-              ],
-              "id": "xw7CJJ3K5"
-            },
-            {
               "type": "paragraph",
               "children": [
                 {
-                  "text": "至此，本篇教程也就结束了，相信你已经感受到了 Authing 身份认证机制的强大与便捷。在当今 Serverless 时代，越来越多标准化的流程（例如身份验证、人工智能应用等等）正在逐渐迈向云端，成为一种可直接消费的资源，而我们作为应用终端的开发者则可以将更多的时间和精力放在打磨和完善自身的产品上，在一定程度上解放了生产力。"
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": "图雀社区秉承“加速技术传播”的理念，致力于推广能够真正让开发者和用户的生活变得更美好的技术。"
+                  "text": ""
                 }
               ]
             }
@@ -28738,20 +26825,5 @@
       ]
     }
   ],
-  "remotes": [
-    {
-      "name": "gitee",
-      "refs": {
-        "fetch": "https://gitee.com/tuture/vue-online-shop.git",
-        "push": "https://gitee.com/tuture/vue-online-shop.git"
-      }
-    },
-    {
-      "name": "origin",
-      "refs": {
-        "fetch": "https://github.com/tuture-dev/vue-online-shop-frontend.git",
-        "push": "https://github.com/tuture-dev/vue-online-shop-frontend.git"
-      }
-    }
-  ]
+  "remotes": []
 }
