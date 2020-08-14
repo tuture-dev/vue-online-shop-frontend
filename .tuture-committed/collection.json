@@ -5,14 +5,8 @@
   "id": "092faf468f0108b393159a8456de3e15",
   "created": "2019-10-17T00:00:00.509Z",
   "github": "https://github.com/tuture-dev/vue-online-shop-frontend",
-  "topics": [
-    "Vue"
-  ],
-  "categories": [
-    "前端",
-    "Vue",
-    "入门"
-  ],
+  "topics": ["Vue"],
+  "categories": ["前端", "Vue", "入门"],
   "articles": [
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（一）",
@@ -31,10 +25,7 @@
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）",
       "description": "随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库 Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。",
-      "topics": [
-        "Vue",
-        "Vuex"
-      ],
+      "topics": ["Vue", "Vuex"],
       "id": "ae8a389b0b6f1fb121a6881d2ec2544f",
       "created": "2020-01-10T00:00:00.509Z",
       "cover": "https://imgkr.cn-bj.ufileos.com/49ed15a4-31b9-416d-8a74-124e24029ed3.jpg"
@@ -42,10 +33,7 @@
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（五）",
       "description": "组件化和逻辑复用能帮助写出简洁易懂的代码，随着应用越写越复杂，我们有必要把视图层中重复的逻辑抽成组件，以求在多个页面中复用；同时对于 Vuex 端，Store 中的逻辑也会越来越臃肿，我们有必要使用 Vuex 提供的 Getters 来复用本地数据获取逻辑。在这篇教程中，我们将带领你抽出 Vue 组件简化页面逻辑，使用 Vuex Getters 复用本地数据获取逻辑。",
-      "topics": [
-        "Vue",
-        "Vuex"
-      ],
+      "topics": ["Vue", "Vuex"],
       "id": "6f96d15",
       "created": "2020-02-11T00:00:00.509Z",
       "cover": "https://imgkr.cn-bj.ufileos.com/d7c72ec8-d28d-4f52-b0da-b212f2e69950.jpg"
@@ -53,10 +41,7 @@
     {
       "id": "-OixkkqI",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（六）",
-      "topics": [
-        "Vue.js",
-        "Vuex"
-      ],
+      "topics": ["Vue.js", "Vuex"],
       "cover": "https://imgkr.cn-bj.ufileos.com/d357716a-929b-48b2-acdb-75f1f9840ae3.jpg",
       "description": "前面五篇教程我们已经基本实现了迷你全栈电商应用的界面展示以及功能逻辑，相信大家在这个过程中都收获颇丰，并且迈向了全栈工程师的第一步。但是我们却并不满足于此，我们还需要对我们的项目代码进行优化，使得我们的代码可读性更高，也更好维护。相信细心的你们已经感觉到了项目中的store实例实在是过于臃肿，因此，本篇教程就是带大家一起学习如何抽出 Getters 、 Mutations 和Actions 逻辑实现store的“减重”以及如何干掉 mutation-types 硬编码。",
       "created": "2020-03-03T00:00:00.509Z"
@@ -65,10 +50,7 @@
       "id": "tc1c9oDB",
       "created": "2020-03-13T02:00:37.658Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（七）",
-      "topics": [
-        "Vue",
-        "Element UI"
-      ],
+      "topics": ["Vue", "Element UI"],
       "cover": "https://imgkr.cn-bj.ufileos.com/50009d9a-e157-43d9-803f-d3e7459a492d.jpg",
       "description": "在之前的六篇教程中我们已经基本实现了迷你全栈电商应用，相信大家对于一个全栈应用的开发已经有了一个全面的认知。但是一个追求完美的工程师是不会吝啬他的艺术创造，仅仅实现应用的功能还不能满足用户的高需求，应用的界面效果也是提高用户体验的关键因素。因此本篇教程将基于element-ui组件库重构项目的前端代码，改善迷你电商应用的界面效果，提高用户的体验感。虽然我们可以轻松地引入现成的组件库，但是与之对应的数据处理也值得我们注意，那我会在引入组件库的同时带大家一起踩一踩element-ui给我们挖的坑，毕竟踩坑才能成长嘛。"
     },
@@ -76,10 +58,7 @@
       "id": "-td0ssrw",
       "created": "2020-03-14T03:10:55.150Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（八）",
-      "topics": [
-        "Docker",
-        "Docker Compose"
-      ],
+      "topics": ["Docker", "Docker Compose"],
       "cover": "https://imgkr.cn-bj.ufileos.com/4cde7f12-c425-4e35-9f63-a3582d05b38e.jpg",
       "description": "本篇是系列文章终篇，我们将实现应用的部署，这篇教程将首先 Docker 来容器化你的应用，接着教你配置 MongoDB 的身份验证机制，给你的数据库添加一份安全守护，最后我们会带你使用阿里云的容器镜像服务将整个全栈应用部署到云端，使得你互联网上的用户可以访问你的网站，希望这篇教程能解决长期困扰你的部署上云的问题！"
     },
@@ -87,20 +66,10 @@
       "id": "nO-RmUbzz",
       "created": "2020-05-17T02:25:27.336Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（九）：使用 Authing 集成完整的用户系统",
-      "topics": [
-        "Vue",
-        "Express",
-        "Authing",
-        "OAuth",
-        "第三方登录"
-      ],
+      "topics": ["Vue", "Express", "Authing", "OAuth", "第三方登录"],
       "cover": "https://imgkr.cn-bj.ufileos.com/329b0aa0-5db5-449c-a71b-20f6c078ad63.jpg",
       "description": "在之前的迷你电商应用中，我们的网站缺少了一个关键组成部分：用户鉴权系统，包括登录、注册、以及权限管理等相应的配置。徒手实现这些功能固然可行，但是对于一支崇尚精益的团队来说，选择可靠的身份认证服务（IDaaS）是更加明智的选择，不仅能够提供完善且丰富的身份认证和用户鉴权功能，还确保遵循最佳安全实践和优秀的可扩展性。在这篇教程中，我们将手把手带你在本系列之前完成的迷你电商应用中快速集成 Authing 用户认证模块，提供一致、流畅、安全的身份认证体验。",
-      "categories": [
-        "前端",
-        "Vue",
-        "进阶"
-      ]
+      "categories": ["前端", "Vue", "进阶"]
     }
   ],
   "steps": [
@@ -2787,14 +2756,8 @@
               "file": "src/components/HelloWorld.vue",
               "commit": "056d555",
               "hiddenLines": [
-                [
-                  88,
-                  89
-                ],
-                [
-                  101,
-                  119
-                ]
+                [88, 89],
+                [101, 119]
               ],
               "children": [
                 {
@@ -3080,12 +3043,7 @@
               "type": "diff-block",
               "file": "src/router/index.js",
               "commit": "056d555",
-              "hiddenLines": [
-                [
-                  7,
-                  7
-                ]
-              ],
+              "hiddenLines": [[7, 7]],
               "children": [
                 {
                   "text": ""
@@ -3302,12 +3260,7 @@
               "type": "diff-block",
               "file": "src/App.vue",
               "commit": "19a30e7",
-              "hiddenLines": [
-                [
-                  22,
-                  38
-                ]
-              ],
+              "hiddenLines": [[22, 38]],
               "children": [
                 {
                   "text": ""
@@ -3686,12 +3639,7 @@
               "type": "diff-block",
               "file": "src/router/index.js",
               "commit": "19a30e7",
-              "hiddenLines": [
-                [
-                  9,
-                  12
-                ]
-              ],
+              "hiddenLines": [[9, 12]],
               "children": [
                 {
                   "text": ""
@@ -3893,14 +3841,8 @@
               "file": "src/router/index.js",
               "commit": "4bad80e",
               "hiddenLines": [
-                [
-                  16,
-                  21
-                ],
-                [
-                  47,
-                  51
-                ]
+                [16, 21],
+                [47, 51]
               ],
               "children": [
                 {
@@ -6853,14 +6795,8 @@
               "file": "package-lock.json",
               "commit": "f2fa516",
               "hiddenLines": [
-                [
-                  0,
-                  11938
-                ],
-                [
-                  11950,
-                  12767
-                ]
+                [0, 11938],
+                [11950, 12767]
               ],
               "children": [
                 {
@@ -6909,14 +6845,8 @@
               "file": "package.json",
               "commit": "f2fa516",
               "hiddenLines": [
-                [
-                  0,
-                  9
-                ],
-                [
-                  17,
-                  71
-                ]
+                [0, 9],
+                [17, 71]
               ],
               "children": [
                 {
@@ -7527,12 +7457,7 @@
               "type": "diff-block",
               "file": "src/main.js",
               "commit": "f2fa516",
-              "hiddenLines": [
-                [
-                  13,
-                  17
-                ]
-              ],
+              "hiddenLines": [[13, 17]],
               "children": [
                 {
                   "text": ""
@@ -7951,14 +7876,8 @@
               "file": "package-lock.json",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [
-                  0,
-                  12084
-                ],
-                [
-                  12096,
-                  12772
-                ]
+                [0, 12084],
+                [12096, 12772]
               ],
               "children": [
                 {
@@ -8007,14 +7926,8 @@
               "file": "package.json",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [
-                  0,
-                  11
-                ],
-                [
-                  21,
-                  73
-                ]
+                [0, 11],
+                [21, 73]
               ],
               "children": [
                 {
@@ -8329,14 +8242,8 @@
               "file": "src/main.js",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [
-                  0,
-                  3
-                ],
-                [
-                  11,
-                  12
-                ]
+                [0, 3],
+                [11, 12]
               ],
               "children": [
                 {
@@ -8973,12 +8880,7 @@
               "type": "diff-block",
               "file": "src/pages/admin/Products.vue",
               "commit": "0dfeb91",
-              "hiddenLines": [
-                [
-                  0,
-                  1
-                ]
-              ],
+              "hiddenLines": [[0, 1]],
               "children": [
                 {
                   "text": ""
@@ -9534,12 +9436,7 @@
               "type": "diff-block",
               "file": "src/store/index.js",
               "commit": "7b7d864",
-              "hiddenLines": [
-                [
-                  0,
-                  13
-                ]
-              ],
+              "hiddenLines": [[0, 13]],
               "children": [
                 {
                   "text": ""
@@ -9898,12 +9795,7 @@
               "type": "diff-block",
               "file": "src/pages/Home.vue",
               "commit": "7b7d864",
-              "hiddenLines": [
-                [
-                  15,
-                  15
-                ]
-              ],
+              "hiddenLines": [[15, 15]],
               "children": [
                 {
                   "text": ""
@@ -9972,14 +9864,8 @@
               "file": "src/pages/Cart.vue",
               "commit": "7b7d864",
               "hiddenLines": [
-                [
-                  0,
-                  1
-                ],
-                [
-                  32,
-                  32
-                ]
+                [0, 1],
+                [32, 32]
               ],
               "children": [
                 {
@@ -10143,12 +10029,7 @@
               "type": "diff-block",
               "file": "src/pages/admin/New.vue",
               "commit": "7b7d864",
-              "hiddenLines": [
-                [
-                  0,
-                  29
-                ]
-              ],
+              "hiddenLines": [[0, 29]],
               "children": [
                 {
                   "text": ""
@@ -10668,18 +10549,9 @@
               "file": "package-lock.json",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  0,
-                  470
-                ],
-                [
-                  509,
-                  6961
-                ],
-                [
-                  6971,
-                  12805
-                ]
+                [0, 470],
+                [509, 6961],
+                [6971, 12805]
               ],
               "children": [
                 {
@@ -10728,14 +10600,8 @@
               "file": "package.json",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  0,
-                  9
-                ],
-                [
-                  17,
-                  73
-                ]
+                [0, 9],
+                [17, 73]
               ],
               "children": [
                 {
@@ -10800,14 +10666,8 @@
               "file": "src/store/index.js",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  8,
-                  14
-                ],
-                [
-                  64,
-                  68
-                ]
+                [8, 14],
+                [64, 68]
               ],
               "children": [
                 {
@@ -11138,18 +10998,9 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  0,
-                  7
-                ],
-                [
-                  16,
-                  31
-                ],
-                [
-                  43,
-                  54
-                ]
+                [0, 7],
+                [16, 31],
+                [43, 54]
               ],
               "children": [
                 {
@@ -11311,14 +11162,8 @@
               "file": "src/pages/Cart.vue",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  0,
-                  6
-                ],
-                [
-                  15,
-                  51
-                ]
+                [0, 6],
+                [15, 51]
               ],
               "children": [
                 {
@@ -12029,18 +11874,9 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "9ed8f6a",
               "hiddenLines": [
-                [
-                  0,
-                  3
-                ],
-                [
-                  19,
-                  29
-                ],
-                [
-                  37,
-                  43
-                ]
+                [0, 3],
+                [19, 29],
+                [37, 43]
               ],
               "children": [
                 {
@@ -12183,18 +12019,9 @@
               "file": "src/pages/Cart.vue",
               "commit": "9ed8f6a",
               "hiddenLines": [
-                [
-                  0,
-                  2
-                ],
-                [
-                  18,
-                  27
-                ],
-                [
-                  35,
-                  40
-                ]
+                [0, 2],
+                [18, 27],
+                [35, 40]
               ],
               "children": [
                 {
@@ -12737,14 +12564,8 @@
               "file": "src/store/index.js",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  35
-                ],
-                [
-                  63,
-                  63
-                ]
+                [0, 35],
+                [63, 63]
               ],
               "children": [
                 {
@@ -12949,14 +12770,8 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  11
-                ],
-                [
-                  20,
-                  20
-                ]
+                [0, 11],
+                [20, 20]
               ],
               "children": [
                 {
@@ -13125,12 +12940,7 @@
               "type": "diff-block",
               "file": "src/components/products/ProductItem.vue",
               "commit": "ff121fa",
-              "hiddenLines": [
-                [
-                  34,
-                  40
-                ]
-              ],
+              "hiddenLines": [[34, 40]],
               "children": [
                 {
                   "text": ""
@@ -13194,18 +13004,9 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  9
-                ],
-                [
-                  27,
-                  32
-                ],
-                [
-                  41,
-                  44
-                ]
+                [0, 9],
+                [27, 32],
+                [41, 44]
               ],
               "children": [
                 {
@@ -13296,14 +13097,8 @@
               "file": "src/pages/Cart.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  7
-                ],
-                [
-                  25,
-                  40
-                ]
+                [0, 7],
+                [25, 40]
               ],
               "children": [
                 {
@@ -13509,14 +13304,8 @@
               "file": "src/router/index.js",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  1
-                ],
-                [
-                  9,
-                  45
-                ]
+                [0, 1],
+                [9, 45]
               ],
               "children": [
                 {
@@ -14144,12 +13933,7 @@
               "type": "diff-block",
               "file": "src/pages/admin/Products.vue",
               "commit": "f0b5684",
-              "hiddenLines": [
-                [
-                  73,
-                  73
-                ]
-              ],
+              "hiddenLines": [[73, 73]],
               "children": [
                 {
                   "text": ""
@@ -14220,18 +14004,9 @@
               "file": "src/router/index.js",
               "commit": "f0b5684",
               "hiddenLines": [
-                [
-                  0,
-                  8
-                ],
-                [
-                  16,
-                  39
-                ],
-                [
-                  51,
-                  61
-                ]
+                [0, 8],
+                [16, 39],
+                [51, 61]
               ],
               "children": [
                 {
@@ -14747,18 +14522,9 @@
               "file": "src/store/index.js",
               "commit": "f0b5684",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  10,
-                  22
-                ],
-                [
-                  72,
-                  85
-                ]
+                [0, 0],
+                [10, 22],
+                [72, 85]
               ],
               "children": [
                 {
@@ -15210,14 +14976,8 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "4909803",
               "hiddenLines": [
-                [
-                  0,
-                  25
-                ],
-                [
-                  34,
-                  78
-                ]
+                [0, 25],
+                [34, 78]
               ],
               "children": [
                 {
@@ -15870,12 +15630,7 @@
               "type": "diff-block",
               "file": "src/store/index.js",
               "commit": "4909803",
-              "hiddenLines": [
-                [
-                  12,
-                  34
-                ]
-              ],
+              "hiddenLines": [[12, 34]],
               "children": [
                 {
                   "text": ""
@@ -15974,14 +15729,8 @@
               "file": "src/store/mutations.js",
               "commit": "4909803",
               "hiddenLines": [
-                [
-                  0,
-                  23
-                ],
-                [
-                  55,
-                  85
-                ]
+                [0, 23],
+                [55, 85]
               ],
               "children": [
                 {
@@ -16448,12 +16197,7 @@
               "type": "diff-block",
               "file": "src/store/getters.js",
               "commit": "49571dc",
-              "hiddenLines": [
-                [
-                  0,
-                  12
-                ]
-              ],
+              "hiddenLines": [[0, 12]],
               "children": [
                 {
                   "text": ""
@@ -16818,14 +16562,8 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  11
-                ],
-                [
-                  21,
-                  24
-                ]
+                [0, 11],
+                [21, 24]
               ],
               "children": [
                 {
@@ -16877,14 +16615,8 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  34
-                ],
-                [
-                  45,
-                  62
-                ]
+                [0, 34],
+                [45, 62]
               ],
               "children": [
                 {
@@ -16953,14 +16685,8 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  38
-                ],
-                [
-                  49,
-                  66
-                ]
+                [0, 38],
+                [49, 66]
               ],
               "children": [
                 {
@@ -17035,18 +16761,9 @@
               "file": "src/router/index.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  9
-                ],
-                [
-                  18,
-                  46
-                ],
-                [
-                  63,
-                  73
-                ]
+                [0, 9],
+                [18, 46],
+                [63, 73]
               ],
               "children": [
                 {
@@ -17312,12 +17029,7 @@
               "type": "diff-block",
               "file": "src/store/actions.js",
               "commit": "49571dc",
-              "hiddenLines": [
-                [
-                  87,
-                  88
-                ]
-              ],
+              "hiddenLines": [[87, 88]],
               "children": [
                 {
                   "text": ""
@@ -17378,14 +17090,8 @@
               "file": "src/store/index.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  18
-                ],
-                [
-                  25,
-                  38
-                ]
+                [0, 18],
+                [25, 38]
               ],
               "children": [
                 {
@@ -17471,14 +17177,8 @@
               "file": "src/store/mutations.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  69,
-                  74
-                ],
-                [
-                  87,
-                  88
-                ]
+                [69, 74],
+                [87, 88]
               ],
               "children": [
                 {
@@ -17617,12 +17317,7 @@
               "type": "diff-block",
               "file": "build/webpack.base.conf.js",
               "commit": "19b49e9",
-              "hiddenLines": [
-                [
-                  113,
-                  116
-                ]
-              ],
+              "hiddenLines": [[113, 116]],
               "children": [
                 {
                   "text": ""
@@ -17668,12 +17363,7 @@
               "type": "diff-block",
               "file": "src/pages/Home.vue",
               "commit": "19b49e9",
-              "hiddenLines": [
-                [
-                  0,
-                  6
-                ]
-              ],
+              "hiddenLines": [[0, 6]],
               "children": [
                 {
                   "text": ""
@@ -17767,38 +17457,14 @@
               "file": "tuture.yml",
               "commit": "19b49e9",
               "hiddenLines": [
-                [
-                  0,
-                  1
-                ],
-                [
-                  10,
-                  107
-                ],
-                [
-                  117,
-                  174
-                ],
-                [
-                  202,
-                  335
-                ],
-                [
-                  346,
-                  346
-                ],
-                [
-                  356,
-                  595
-                ],
-                [
-                  1288,
-                  1478
-                ],
-                [
-                  1487,
-                  1488
-                ]
+                [0, 1],
+                [10, 107],
+                [117, 174],
+                [202, 335],
+                [346, 346],
+                [356, 595],
+                [1288, 1478],
+                [1487, 1488]
               ],
               "children": [
                 {
@@ -18055,58 +17721,19 @@
               "file": "package-lock.json",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  58
-                ],
-                [
-                  94,
-                  479
-                ],
-                [
-                  494,
-                  811
-                ],
-                [
-                  821,
-                  854
-                ],
-                [
-                  870,
-                  1350
-                ],
-                [
-                  1358,
-                  2328
-                ],
-                [
-                  2338,
-                  3410
-                ],
-                [
-                  3422,
-                  3708
-                ],
-                [
-                  3728,
-                  7227
-                ],
-                [
-                  7239,
-                  10370
-                ],
-                [
-                  10380,
-                  10524
-                ],
-                [
-                  10536,
-                  11531
-                ],
-                [
-                  11543,
-                  12885
-                ]
+                [0, 58],
+                [94, 479],
+                [494, 811],
+                [821, 854],
+                [870, 1350],
+                [1358, 2328],
+                [2338, 3410],
+                [3422, 3708],
+                [3728, 7227],
+                [7239, 10370],
+                [10380, 10524],
+                [10536, 11531],
+                [11543, 12885]
               ],
               "children": [
                 {
@@ -18155,18 +17782,9 @@
               "file": "package.json",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  10
-                ],
-                [
-                  18,
-                  22
-                ],
-                [
-                  30,
-                  75
-                ]
+                [0, 10],
+                [18, 22],
+                [30, 75]
               ],
               "children": [
                 {
@@ -18243,14 +17861,8 @@
               "file": "src/main.js",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  4
-                ],
-                [
-                  15,
-                  22
-                ]
+                [0, 4],
+                [15, 22]
               ],
               "children": [
                 {
@@ -18363,12 +17975,7 @@
               "type": "diff-block",
               "file": "src/App.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [
-                [
-                  39,
-                  39
-                ]
-              ],
+              "hiddenLines": [[39, 39]],
               "children": [
                 {
                   "text": ""
@@ -18479,12 +18086,7 @@
               "type": "diff-block",
               "file": "src/components/products/ProductList.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [
-                [
-                  15,
-                  35
-                ]
-              ],
+              "hiddenLines": [[15, 35]],
               "children": [
                 {
                   "text": ""
@@ -18769,14 +18371,8 @@
               "file": "src/components/products/ProductButton.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  30,
-                  42
-                ],
-                [
-                  45,
-                  54
-                ]
+                [30, 42],
+                [45, 54]
               ],
               "children": [
                 {
@@ -18949,14 +18545,8 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  35,
-                  46
-                ],
-                [
-                  81,
-                  106
-                ]
+                [35, 46],
+                [81, 106]
               ],
               "children": [
                 {
@@ -19050,18 +18640,9 @@
               "file": "src/pages/admin/Edit.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  13
-                ],
-                [
-                  27,
-                  35
-                ],
-                [
-                  48,
-                  58
-                ]
+                [0, 13],
+                [27, 35],
+                [48, 58]
               ],
               "children": [
                 {
@@ -19187,14 +18768,8 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  32,
-                  99
-                ],
-                [
-                  101,
-                  101
-                ]
+                [32, 99],
+                [101, 101]
               ],
               "children": [
                 {
@@ -19320,18 +18895,9 @@
               "file": "src/pages/admin/New.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  8
-                ],
-                [
-                  17,
-                  21
-                ],
-                [
-                  30,
-                  39
-                ]
+                [0, 8],
+                [17, 21],
+                [30, 39]
               ],
               "children": [
                 {
@@ -19476,22 +19042,10 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  21,
-                  35
-                ],
-                [
-                  37,
-                  37
-                ],
-                [
-                  58,
-                  64
-                ],
-                [
-                  66,
-                  91
-                ]
+                [21, 35],
+                [37, 37],
+                [58, 64],
+                [66, 91]
               ],
               "children": [
                 {
@@ -19577,14 +19131,8 @@
               "file": "src/pages/admin/NewManufacturers.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  7
-                ],
-                [
-                  20,
-                  30
-                ]
+                [0, 7],
+                [20, 30]
               ],
               "children": [
                 {
@@ -19660,12 +19208,7 @@
               "type": "diff-block",
               "file": "src/components/ManufacturerForm.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [
-                [
-                  17,
-                  22
-                ]
-              ],
+              "hiddenLines": [[17, 22]],
               "children": [
                 {
                   "text": ""
@@ -19750,14 +19293,8 @@
               "file": "src/pages/Cart.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  1
-                ],
-                [
-                  12,
-                  30
-                ]
+                [0, 1],
+                [12, 30]
               ],
               "children": [
                 {
@@ -19822,14 +19359,8 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  23,
-                  24
-                ]
+                [0, 0],
+                [23, 24]
               ],
               "children": [
                 {
@@ -20083,30 +19614,12 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
               "hiddenLines": [
-                [
-                  7,
-                  7
-                ],
-                [
-                  27,
-                  30
-                ],
-                [
-                  41,
-                  72
-                ],
-                [
-                  81,
-                  97
-                ],
-                [
-                  108,
-                  110
-                ],
-                [
-                  143,
-                  152
-                ]
+                [7, 7],
+                [27, 30],
+                [41, 72],
+                [81, 97],
+                [108, 110],
+                [143, 152]
               ],
               "children": [
                 {
@@ -20371,22 +19884,10 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  13,
-                  23
-                ],
-                [
-                  34,
-                  39
-                ],
-                [
-                  42,
-                  106
-                ],
-                [
-                  108,
-                  145
-                ]
+                [13, 23],
+                [34, 39],
+                [42, 106],
+                [108, 145]
               ],
               "children": [
                 {
@@ -20435,18 +19936,9 @@
               "file": "src/components/products/ProductItem.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  10,
-                  48
-                ],
-                [
-                  75,
-                  85
-                ]
+                [0, 0],
+                [10, 48],
+                [75, 85]
               ],
               "children": [
                 {
@@ -20495,14 +19987,8 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  3
-                ],
-                [
-                  12,
-                  33
-                ]
+                [0, 3],
+                [12, 33]
               ],
               "children": [
                 {
@@ -20551,14 +20037,8 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  10,
-                  10
-                ]
+                [0, 0],
+                [10, 10]
               ],
               "children": [
                 {
@@ -20607,18 +20087,9 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  10
-                ],
-                [
-                  21,
-                  35
-                ],
-                [
-                  66,
-                  84
-                ]
+                [0, 10],
+                [21, 35],
+                [66, 84]
               ],
               "children": [
                 {
@@ -20667,14 +20138,8 @@
               "file": "src/pages/admin/New.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  25
-                ],
-                [
-                  33,
-                  39
-                ]
+                [0, 25],
+                [33, 39]
               ],
               "children": [
                 {
@@ -20723,18 +20188,9 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  20
-                ],
-                [
-                  29,
-                  48
-                ],
-                [
-                  87,
-                  100
-                ]
+                [0, 20],
+                [29, 48],
+                [87, 100]
               ],
               "children": [
                 {
@@ -20783,14 +20239,8 @@
               "file": "src/store/actions.js",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  72
-                ],
-                [
-                  80,
-                  132
-                ]
+                [0, 72],
+                [80, 132]
               ],
               "children": [
                 {
@@ -20923,22 +20373,10 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [
-                  0,
-                  104
-                ],
-                [
-                  107,
-                  111
-                ],
-                [
-                  119,
-                  121
-                ],
-                [
-                  132,
-                  143
-                ]
+                [0, 104],
+                [107, 111],
+                [119, 121],
+                [132, 143]
               ],
               "children": [
                 {
@@ -21072,14 +20510,8 @@
               "file": "src/components/products/ProductItem.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [
-                  0,
-                  54
-                ],
-                [
-                  67,
-                  86
-                ]
+                [0, 54],
+                [67, 86]
               ],
               "children": [
                 {
@@ -21128,14 +20560,8 @@
               "file": "src/pages/admin/New.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [
-                  0,
-                  10
-                ],
-                [
-                  19,
-                  40
-                ]
+                [0, 10],
+                [19, 40]
               ],
               "children": [
                 {
@@ -21268,14 +20694,8 @@
               "file": "src/components/ManufacturerForm.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  22,
-                  41
-                ],
-                [
-                  73,
-                  84
-                ]
+                [22, 41],
+                [73, 84]
               ],
               "children": [
                 {
@@ -21394,18 +20814,9 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  14,
-                  35
-                ],
-                [
-                  44,
-                  127
-                ],
-                [
-                  155,
-                  168
-                ]
+                [14, 35],
+                [44, 127],
+                [155, 168]
               ],
               "children": [
                 {
@@ -21469,34 +20880,13 @@
               "file": "src/store/actions.js",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  0,
-                  23
-                ],
-                [
-                  26,
-                  27
-                ],
-                [
-                  30,
-                  36
-                ],
-                [
-                  39,
-                  46
-                ],
-                [
-                  109,
-                  109
-                ],
-                [
-                  112,
-                  118
-                ],
-                [
-                  121,
-                  128
-                ]
+                [0, 23],
+                [26, 27],
+                [30, 36],
+                [39, 46],
+                [109, 109],
+                [112, 118],
+                [121, 128]
               ],
               "children": [
                 {
@@ -21566,18 +20956,9 @@
               "file": "src/store/mutations.js",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  0,
-                  24
-                ],
-                [
-                  27,
-                  81
-                ],
-                [
-                  102,
-                  155
-                ]
+                [0, 24],
+                [27, 81],
+                [102, 155]
               ],
               "children": [
                 {
@@ -21664,14 +21045,8 @@
               "file": "src/pages/admin/New.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  0,
-                  25
-                ],
-                [
-                  33,
-                  39
-                ]
+                [0, 25],
+                [33, 39]
               ],
               "children": [
                 {
@@ -21897,30 +21272,12 @@
               "file": "src/store/actions.js",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [
-                  0,
-                  27
-                ],
-                [
-                  29,
-                  66
-                ],
-                [
-                  86,
-                  103
-                ],
-                [
-                  105,
-                  105
-                ],
-                [
-                  107,
-                  144
-                ],
-                [
-                  164,
-                  180
-                ]
+                [0, 27],
+                [29, 66],
+                [86, 103],
+                [105, 105],
+                [107, 144],
+                [164, 180]
               ],
               "children": [
                 {
@@ -21991,30 +21348,12 @@
               "file": "src/store/mutations.js",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [
-                  0,
-                  25
-                ],
-                [
-                  27,
-                  56
-                ],
-                [
-                  77,
-                  82
-                ],
-                [
-                  84,
-                  103
-                ],
-                [
-                  105,
-                  134
-                ],
-                [
-                  152,
-                  157
-                ]
+                [0, 25],
+                [27, 56],
+                [77, 82],
+                [84, 103],
+                [105, 134],
+                [152, 157]
               ],
               "children": [
                 {
@@ -22063,14 +21402,8 @@
               "file": "src/pages/admin/Edit.vue",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [
-                  0,
-                  38
-                ],
-                [
-                  50,
-                  54
-                ]
+                [0, 38],
+                [50, 54]
               ],
               "children": [
                 {
@@ -22119,14 +21452,8 @@
               "file": "src/pages/admin/EditManufacturers.vue",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [
-                  0,
-                  22
-                ],
-                [
-                  34,
-                  38
-                ]
+                [0, 22],
+                [34, 38]
               ],
               "children": [
                 {
@@ -22613,18 +21940,9 @@
               "file": "client/src/store/actions.js",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
               "hiddenLines": [
-                [
-                  0,
-                  23
-                ],
-                [
-                  30,
-                  103
-                ],
-                [
-                  107,
-                  179
-                ]
+                [0, 23],
+                [30, 103],
+                [107, 179]
               ],
               "children": [
                 {
@@ -22872,14 +22190,8 @@
               "file": "server/app.js",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
               "hiddenLines": [
-                [
-                  0,
-                  12
-                ],
-                [
-                  21,
-                  66
-                ]
+                [0, 12],
+                [21, 66]
               ],
               "children": [
                 {
@@ -23449,12 +22761,7 @@
               "type": "diff-block",
               "file": "client/.gitignore",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
-              "hiddenLines": [
-                [
-                  0,
-                  10
-                ]
-              ],
+              "hiddenLines": [[0, 10]],
               "children": [
                 {
                   "text": ""
@@ -23616,14 +22923,8 @@
               "file": "server/app.js",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [
-                  0,
-                  15
-                ],
-                [
-                  26,
-                  71
-                ]
+                [0, 15],
+                [26, 71]
               ],
               "children": [
                 {
@@ -23751,14 +23052,8 @@
               "file": "server/Dockerfile",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [
-                  0,
-                  12
-                ],
-                [
-                  23,
-                  27
-                ]
+                [0, 12],
+                [23, 27]
               ],
               "children": [
                 {
@@ -23868,14 +23163,8 @@
               "file": "docker-compose.yml",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [
-                  0,
-                  2
-                ],
-                [
-                  12,
-                  16
-                ]
+                [0, 2],
+                [12, 16]
               ],
               "children": [
                 {
@@ -24750,12 +24039,7 @@
               "type": "diff-block",
               "file": "docker-compose.yml",
               "commit": "b8afe6837849e25e1386f78c89786cce23159272",
-              "hiddenLines": [
-                [
-                  0,
-                  6
-                ]
-              ],
+              "hiddenLines": [[0, 6]],
               "children": [
                 {
                   "text": ""
@@ -25057,12 +24341,7 @@
               "type": "diff-block",
               "file": "client/src/components/products/ProductButton.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [
-                [
-                  34,
-                  45
-                ]
-              ],
+              "hiddenLines": [[34, 45]],
               "children": [
                 {
                   "text": ""
@@ -25109,12 +24388,7 @@
               "type": "diff-block",
               "file": "client/src/pages/Cart.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [
-                [
-                  8,
-                  8
-                ]
-              ],
+              "hiddenLines": [[8, 8]],
               "children": [
                 {
                   "text": ""
@@ -25161,12 +24435,7 @@
               "type": "diff-block",
               "file": "client/src/pages/Home.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [
-                [
-                  8,
-                  9
-                ]
-              ],
+              "hiddenLines": [[8, 9]],
               "children": [
                 {
                   "text": ""
@@ -25261,22 +24530,10 @@
               "file": "client/src/store/actions.js",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
               "hiddenLines": [
-                [
-                  5,
-                  19
-                ],
-                [
-                  48,
-                  48
-                ],
-                [
-                  155,
-                  157
-                ],
-                [
-                  169,
-                  169
-                ]
+                [5, 19],
+                [48, 48],
+                [155, 157],
+                [169, 169]
               ],
               "children": [
                 {
@@ -25594,15 +24851,458 @@
       ]
     },
     {
-      "type": "step",
-      "id": "8622c2c5",
+      "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+      "id": "3eb3632d",
       "articleId": "nO-RmUbzz",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "id": "b685530e",
+          "fixed": true,
+          "children": [
+            {
+              "text": "添加用户界面及路由"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "首先我们先来看一下整体用户系统接入后的效果："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://static.tuture.co/c/092faf4/172281d303fc18b0.gif"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "了解了效果之后，我们为你准备好了重构之后的迷你电商代码，你可以 Clone 这份代码，然后跟着教程，补充集成用户系统需要的："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "git clone -b auth-start https://github.com/tuture-dev/vue-online-shop-frontend.git"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "# 或者下载 Gitee 上的仓库"
+                    }
+                  ]
+                },
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "git clone -b auth-start https://gitee.com/tuture/vue-online-shop-frontend.git"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "代码下载后，在 "
+                },
+                {
+                  "text": "client/src/pages",
+                  "code": true
+                },
+                {
+                  "text": " 目录中创建 "
+                },
+                {
+                  "text": "user",
+                  "code": true
+                },
+                {
+                  "text": " 目录，在接下来时间我们会在其中实现所有与用户系统相关的页面。"
+                }
+              ]
+            },
+            {
+              "type": "note",
+              "level": "info",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "本篇教程采用的是 Vue 2.x 版本，但这篇教程的核心是通过 Authing 集成用户系我们并没有使用太多关于 Vue 的知识。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/main.js",
+          "display": false,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/main.js",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Index.vue",
+          "display": true,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现用户系统相关页面"
+                    }
+                  ],
+                  "id": "co9uU1bTi"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，我们在 "
+                    },
+                    {
+                      "text": "user",
+                      "code": true
+                    },
+                    {
+                      "text": " 页面目录下创建 "
+                    },
+                    {
+                      "text": "Index.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " 用户首页组件，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Index.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Login.vue",
+          "display": true,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着创建 "
+                    },
+                    {
+                      "text": "Login.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " 登录组件，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Login.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Setting.vue",
+          "display": true,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后创建 "
+                    },
+                    {
+                      "text": "Setting.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " 设置组件，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Setting.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/router/index.js",
+          "display": true,
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "配置中心路由"
+                    }
+                  ],
+                  "id": "ZDRojGGyR"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后是在路由中集成上面定义的用户系统相关页面，修改 "
+                    },
+                    {
+                      "text": "client/src/router/index.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/router/index.js",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [[0, 26]],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "把项目跑起来，点击右上角的登录或注册应该可以成功地跳转到登录页面（虽然现在还很简陋哈）："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://static.tuture.co/c/092faf4/172281d30417fb78.jpeg"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "OK，接下来让我们具体地实现各个页面吧~"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+      "id": "20a3c151",
+      "articleId": "nO-RmUbzz",
+      "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-          "id": "14fd43c0",
+          "id": "e46e0ee4",
           "fixed": true,
           "children": [
             {
@@ -25618,87 +25318,45 @@
               "type": "paragraph",
               "children": [
                 {
+                  "text": "在这一步骤中，我们将正式使用 "
+                },
+                {
+                  "text": "Authing",
+                  "link": true,
+                  "url": "https://authing.cn/?utm_source=tuture"
+                },
+                {
+                  "text": " 接入用户系统。Authing 是国内出色的身份认证云，能让我们轻松集成身份认证相关的逻辑，对于个人开发者来说，其"
+                },
+                {
+                  "text": "免费使用额度",
+                  "link": true,
+                  "url": "https://authing.cn/pricing?utm_source=tuture"
+                },
+                {
+                  "text": "也是相当充足的。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "首先，让我们访问 Authing 官方网站，点击右上角的登录按钮，如下图所示："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
                   "text": ""
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "client/index.html",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/index.html",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "client/src/App.vue",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/App.vue",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [
-                [
-                  0,
-                  4
-                ]
               ],
+              "url": "https://static.tuture.co/c/092faf4/172281d3055eca8c.png"
+            },
+            {
+              "type": "paragraph",
               "children": [
                 {
                   "text": ""
@@ -25706,162 +25364,80 @@
               ]
             },
             {
-              "type": "explain",
-              "fixed": true,
+              "type": "paragraph",
               "children": [
                 {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "client/src/components/Header.vue",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
+                  "text": "进入到登录页面后，我们输入帐户名和密码，会直接为我们创建帐号："
                 }
               ]
             },
             {
-              "type": "diff-block",
-              "file": "client/src/components/Header.vue",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [
-                [
-                  0,
-                  92
-                ]
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
               ],
+              "url": "https://static.tuture.co/c/092faf4/172281d3095f926b.png"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "进入到控制台后，让我们创建一个新的"
+                },
+                {
+                  "text": "用户池",
+                  "link": true,
+                  "url": "https://docs.authing.cn/authing/quickstart/basic#yong-hu-chi?utm_source=tuture"
+                },
+                {
+                  "text": "（顾名思义，就是用来管理和存储一系列用户的数据和信息），如下图所示："
+                }
+              ]
+            },
+            {
+              "type": "image",
               "children": [
                 {
                   "text": ""
                 }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "client/src/pages/user/Login.vue",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/pages/user/Login.vue",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "client/src/store/index.js",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/store/index.js",
-              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [
-                [
-                  19,
-                  30
-                ]
               ],
+              "url": "https://static.tuture.co/c/092faf4/172281d309214195.jpeg"
+            },
+            {
+              "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "在创建用户池的时候，输入我们想要的用户池名称和专属域名后，选择类型为 Web，最后点击，我们的第一个用户池边创建好了。点击“基础配置”书签，可以查看到刚才创建用户池的一些关键信息，特别是用户池 ID，如下图所示："
                 }
               ]
             },
             {
-              "type": "explain",
-              "fixed": true,
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://static.tuture.co/c/092faf4/172281d32d134626.jpeg"
+            },
+            {
+              "type": "note",
+              "level": "warning",
               "children": [
                 {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "后续应用开发时，所有的用户池 ID（"
+                    },
+                    {
+                      "text": "userPoolId",
+                      "code": true
+                    },
+                    {
+                      "text": "）请替换成自己帐户的真实 ID。"
                     }
                   ]
                 }
@@ -25870,19 +25446,85 @@
           ]
         },
         {
-          "type": "file",
           "file": "client/src/store/mutation-types.js",
           "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "配置 Vuex Mutations 和 Store"
+                    }
+                  ],
+                  "id": "ocYxgr-Ys"
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "由于我们的应用使用了 "
+                    },
+                    {
+                      "text": "Vuex",
+                      "link": true,
+                      "url": "https://vuex.vuejs.org/"
+                    },
+                    {
+                      "text": " 来解决状态管理问题，因此我们首先需要定义身份验证相关的 Mutation。这里我们定义两个新的 Mutation："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "SET_USER",
+                          "code": true
+                        },
+                        {
+                          "text": "  ：设置用户身份数据"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "LOGOUT",
+                          "code": true
+                        },
+                        {
+                          "text": " ：退出登录"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "在 "
+                    },
+                    {
+                      "text": "client/src/store/mutation-types.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 中添加上面三个 Mutation 常量，代码如下："
                     }
                   ]
                 }
@@ -25916,9 +25558,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "client/src/store/mutations.js",
           "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -25928,7 +25571,14 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "然后我们在 "
+                    },
+                    {
+                      "text": "client/src/store/mutations.js",
+                      "code": true
+                    },
+                    {
+                      "text": " 中实现上面定义用户相关 Mutation，代码如下："
                     }
                   ]
                 }
@@ -25939,30 +25589,12 @@
               "file": "client/src/store/mutations.js",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
               "hiddenLines": [
-                [
-                  0,
-                  19
-                ],
-                [
-                  42,
-                  62
-                ],
-                [
-                  73,
-                  75
-                ],
-                [
-                  84,
-                  101
-                ],
-                [
-                  129,
-                  150
-                ],
-                [
-                  161,
-                  180
-                ]
+                [0, 19],
+                [42, 62],
+                [73, 75],
+                [84, 101],
+                [129, 150],
+                [161, 180]
               ],
               "children": [
                 {
@@ -25987,56 +25619,10 @@
           ]
         },
         {
-          "type": "explain",
-          "fixed": true,
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "step",
-      "id": "b1ba7646",
-      "articleId": "nO-RmUbzz",
-      "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
-      "children": [
-        {
-          "type": "heading-two",
-          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
-          "id": "0fd29f55",
-          "fixed": true,
-          "children": [
-            {
-              "text": "添加路由守卫限制权限"
-            }
-          ]
-        },
-        {
-          "type": "explain",
-          "fixed": true,
-          "children": [
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "client/src/components/products/ProductButton.vue",
+          "file": "client/src/store/index.js",
           "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -26046,7 +25632,892 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "最后我们在 Vuex Store 中集成相应的状态与 Mutation，修改 "
+                    },
+                    {
+                      "text": "client/src/store/index.js",
+                      "code": true
+                    },
+                    {
+                      "text": " ，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/index.js",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [0, 7],
+                [22, 33],
+                [43, 52]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
                       "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/App.vue",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "在根组件 App 中集成用户逻辑"
+                    }
+                  ],
+                  "id": "iBks_R1S2"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "让我们打开根组件 "
+                    },
+                    {
+                      "text": "client/src/App.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，在其中添加一个 "
+                    },
+                    {
+                      "text": "mounted",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法，使得在整个应用刚启动时获取并检查用户身份数据。修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/App.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [
+                [0, 4],
+                [20, 28]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们从 "
+                    },
+                    {
+                      "text": "localStorage",
+                      "code": true
+                    },
+                    {
+                      "text": " 中检查是否有 "
+                    },
+                    {
+                      "text": "userInfo",
+                      "code": true
+                    },
+                    {
+                      "text": " 数据，如果有的话通过 "
+                    },
+                    {
+                      "text": "SET_USER",
+                      "code": true
+                    },
+                    {
+                      "text": " Mutation 将用户身份数据存入状态中。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/components/Header.vue",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "在头部组件 Header 中集成用户逻辑"
+                    }
+                  ],
+                  "id": "5kE3XCGXb"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "打开头部组件 "
+                    },
+                    {
+                      "text": "client/src/components/Header.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " ，我们在其中添加用户系统相关的逻辑，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/components/Header.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [[0, 89]],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们主要做了以下改变："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "把 "
+                        },
+                        {
+                          "text": "isLogged",
+                          "code": true
+                        },
+                        {
+                          "text": " 从原先的 "
+                        },
+                        {
+                          "text": "data",
+                          "code": true
+                        },
+                        {
+                          "text": " 变成了一个计算属性，通过从 Vuex Store 中获取 "
+                        },
+                        {
+                          "text": "token",
+                          "code": true
+                        },
+                        {
+                          "text": " 是否存在来判断是否登录"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "添加了 "
+                        },
+                        {
+                          "text": "avatar",
+                          "code": true
+                        },
+                        {
+                          "text": " 计算属性，用于从 Store 中获取用户头像"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "实现了 "
+                        },
+                        {
+                          "text": "handleLogout",
+                          "code": true
+                        },
+                        {
+                          "text": " 方法，用于处理登出逻辑，包括从 "
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 中去除 "
+                        },
+                        {
+                          "text": "token",
+                          "code": true
+                        },
+                        {
+                          "text": " 和 "
+                        },
+                        {
+                          "text": "userInfo",
+                          "code": true
+                        },
+                        {
+                          "text": " 数据，并发起一个 "
+                        },
+                        {
+                          "text": "LOGOUT",
+                          "code": true
+                        },
+                        {
+                          "text": " Mutation 用于更新 Store 的状态"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/index.html",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "通过 Authing Guard 实现登录页面"
+                    }
+                  ],
+                  "id": "2lGzEyhxm"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Guard ",
+                      "link": true,
+                      "url": "https://docs.authing.cn/authing/sdk/guard?utm_source=tuture"
+                    },
+                    {
+                      "text": "是 Authing 推出的可嵌入登录表单，能够让我们用几行代码为整个应用集成登录和注册功能，集成后的效果如下："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d333d68545.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "整体效果还是很 OK 的，而且我们可以通过一些配置项轻松实现定制，下面我们就来看看怎么实现吧。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，我们通过引入 Authing UMD 构建文件来集成 "
+                    },
+                    {
+                      "text": "Authing Guard",
+                      "link": true,
+                      "url": "https://docs.authing.cn/authing/sdk/guard?utm_source=tuture"
+                    },
+                    {
+                      "text": "。在 "
+                    },
+                    {
+                      "text": "client/index.html",
+                      "code": true
+                    },
+                    {
+                      "text": " 文件中通过 "
+                    },
+                    {
+                      "text": "script",
+                      "code": true
+                    },
+                    {
+                      "text": " 标签引入："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/index.html",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Login.vue",
+          "display": true,
+          "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着打开登录页面组件 "
+                    },
+                    {
+                      "text": "client/src/pages/user/Login.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Login.vue",
+              "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我们在 "
+                    },
+                    {
+                      "text": "mounted",
+                      "code": true
+                    },
+                    {
+                      "text": " 生命周期方法中初始化 "
+                    },
+                    {
+                      "text": "Guard",
+                      "code": true
+                    },
+                    {
+                      "text": " 实例。在初始化 "
+                    },
+                    {
+                      "text": "Guard",
+                      "code": true
+                    },
+                    {
+                      "text": " 实例时，第一个参数是用户池 ID（"
+                    },
+                    {
+                      "text": "记得换成自己的用户池 ID！",
+                      "bold": true,
+                      "italic": true
+                    },
+                    {
+                      "text": "），可以通过 Authing 控制台获取，第二个参数则是 Guard 组件的一些选项参数："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "logo",
+                          "code": true
+                        },
+                        {
+                          "text": " 是我们整个网站的 Logo 图片链接"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "title",
+                          "code": true
+                        },
+                        {
+                          "text": " 是整个登录表单的标题"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "mountId",
+                          "code": true
+                        },
+                        {
+                          "text": " 是用于挂载登录表单的 DOM ID，这里就是模板中唯一的 "
+                        },
+                        {
+                          "text": "div",
+                          "code": true
+                        },
+                        {
+                          "text": " 元素 "
+                        },
+                        {
+                          "text": "login-form",
+                          "code": true
+                        },
+                        {
+                          "text": " "
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "hideClose",
+                          "code": true
+                        },
+                        {
+                          "text": " 用于隐藏关闭按钮，因为我们把登录做成了一个独立的页面，不希望用户把登录表单关掉（这样整个页面就一片空白啦）"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "info",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "关于 "
+                        },
+                        {
+                          "text": "Guard",
+                          "code": true
+                        },
+                        {
+                          "text": " 完整的构造函数 API，请参考"
+                        },
+                        {
+                          "text": "官方文档",
+                          "link": true,
+                          "url": "https://docs.authing.cn/authing/sdk/guard#gou-zao-han-shu-new-guarduserpoolid-options?utm_source=tuture"
+                        },
+                        {
+                          "text": "。"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "在初始化 "
+                    },
+                    {
+                      "text": "Guard",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件后，我们还需要添加身份验证成功后的监听事件函数，即 "
+                    },
+                    {
+                      "text": "form.on(\"authenticated\", handler)",
+                      "code": true
+                    },
+                    {
+                      "text": " 。可以看到，在回调函数中，我们做了三件事："
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "发出 "
+                        },
+                        {
+                          "text": "SET_USER",
+                          "code": true
+                        },
+                        {
+                          "text": " Mutation，修改 Store 状态"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 1
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "在 "
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 中存储登录后获取的用户信息"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 2
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "通过 "
+                        },
+                        {
+                          "text": "$router",
+                          "code": true
+                        },
+                        {
+                          "text": " 路由重定向到首页"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 3
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "info",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "更多回调事件，可参考"
+                        },
+                        {
+                          "text": "完整事件列表",
+                          "link": true,
+                          "url": "https://docs.authing.cn/authing/sdk/guard#hui-tiao-shi-jian-onevent-callback?utm_source=tuture"
+                        },
+                        {
+                          "text": "。"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "配置完成后，开启应用，点击登录按钮，就可以看到我们炫酷的登录页面了："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://static.tuture.co/c/092faf4/172281d336625305.jpeg"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "看上去很不错！"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+      "id": "e350f44f",
+      "articleId": "nO-RmUbzz",
+      "type": "step",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+          "id": "47226a80",
+          "fixed": true,
+          "children": [
+            {
+              "text": "添加权限管理和路由守卫"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在这一步中，我们将配置权限管理和路由守卫。权限管理很容易理解，就是当用户进行某些需要登录的操作（例如添加到购物车）时判断是否已经登录，如果未登录则重定向到登录页面。所谓"
+                },
+                {
+                  "text": "路由守卫",
+                  "link": true,
+                  "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html?utm_source=tuture"
+                },
+                {
+                  "text": "（或称"
+                },
+                {
+                  "text": "导航守卫",
+                  "bold": true
+                },
+                {
+                  "text": "），就是在进入一个具体的路由（页面）"
+                },
+                {
+                  "text": "之前",
+                  "bold": true
+                },
+                {
+                  "text": "，判断用户是否具备足够的权限，如果权限不够，则直接重定向到登录页面，否则允许进入该页面。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "在我们的应用中，主要有三个地方需要配置权限："
+                }
+              ]
+            },
+            {
+              "type": "bulleted-list",
+              "children": [
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "商品添加按钮（ProductionButton）"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "购物车（Cart）"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                },
+                {
+                  "type": "list-item",
+                  "children": [
+                    {
+                      "text": "后台管理（Admin）"
+                    }
+                  ],
+                  "level": 0,
+                  "parent": "bulleted-list"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "让我们逐个击破吧。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/components/products/ProductButton.vue",
+          "display": true,
+          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "添加商品添加按钮的权限管理"
+                    }
+                  ],
+                  "id": "VDqy8fpIb"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先，我们需要为商品添加按钮配置权限管理。打开 "
+                    },
+                    {
+                      "text": "client/src/components/products/ProductButton.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " 组件，修改 "
+                    },
+                    {
+                      "text": "methods",
+                      "code": true
+                    },
+                    {
+                      "text": " 中的 "
+                    },
+                    {
+                      "text": "addToCart",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "removeFromCart",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法，代码如下："
                     }
                   ]
                 }
@@ -26057,10 +26528,8 @@
               "file": "client/src/components/products/ProductButton.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [
-                  13,
-                  35
-                ]
+                [0, 12],
+                [15, 36]
               ],
               "children": [
                 {
@@ -26076,7 +26545,28 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "可以看到，实现权限管理的思路很简单：先从 "
+                    },
+                    {
+                      "text": "localStorage",
+                      "code": true
+                    },
+                    {
+                      "text": " 中判断用于鉴权的 "
+                    },
+                    {
+                      "text": "token",
+                      "code": true
+                    },
+                    {
+                      "text": " 是否存在，如果存在则表明已登录，执行相应的 Mutation；如果不存在 "
+                    },
+                    {
+                      "text": "token",
+                      "code": true
+                    },
+                    {
+                      "text": "，则弹出 Alert 提示框询问用户是否需要跳转到登录页面进行登录。"
                     }
                   ]
                 }
@@ -26085,19 +26575,51 @@
           ]
         },
         {
-          "type": "file",
           "file": "client/src/pages/Cart.vue",
           "display": true,
+          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现购物车的路由守卫"
+                    }
+                  ],
+                  "id": "0YBRNop9P"
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "然后我们来实现购物车的路由守卫。幸运的是，Vue Router 已经为我们提供了"
+                    },
+                    {
+                      "text": "组件级别的路由守卫的方法",
+                      "link": true,
+                      "url": "https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E7%BB%84%E4%BB%B6%E5%86%85%E7%9A%84%E5%AE%88%E5%8D%AB?utm_source=tuture"
+                    },
+                    {
+                      "text": " "
+                    },
+                    {
+                      "text": "beforeRouteEnter",
+                      "code": true
+                    },
+                    {
+                      "text": " 。打开 "
+                    },
+                    {
+                      "text": "client/src/pages/Cart.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，修改代码如下："
                     }
                   ]
                 }
@@ -26108,14 +26630,9 @@
               "file": "client/src/pages/Cart.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  9,
-                  27
-                ]
+                [0, 10],
+                [12, 13],
+                [17, 31]
               ],
               "children": [
                 {
@@ -26131,7 +26648,28 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "依然是通过 "
+                    },
+                    {
+                      "text": "localStorage",
+                      "code": true
+                    },
+                    {
+                      "text": " 中尝试获取 "
+                    },
+                    {
+                      "text": "token",
+                      "code": true
+                    },
+                    {
+                      "text": " 来判断登录状态，然后通过 "
+                    },
+                    {
+                      "text": "next",
+                      "code": true
+                    },
+                    {
+                      "text": " 函数进入合适的路由。"
                     }
                   ]
                 }
@@ -26140,19 +26678,36 @@
           ]
         },
         {
-          "type": "file",
           "file": "client/src/pages/admin/Index.vue",
           "display": true,
+          "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
+          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现后台管理的路由守卫"
+                    }
+                  ],
+                  "id": "y6zZmzn20"
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "类似地，我们实现后台管理页面的路由守卫。打开 "
+                    },
+                    {
+                      "text": "client/src/pages/admin.Index.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，添加路由守卫方法，代码如下："
                     }
                   ]
                 }
@@ -26163,10 +26718,9 @@
               "file": "client/src/pages/admin/Index.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [
-                  0,
-                  23
-                ]
+                [0, 11],
+                [13, 14],
+                [17, 27]
               ],
               "children": [
                 {
@@ -26198,6 +26752,23 @@
               "type": "paragraph",
               "children": [
                 {
+                  "text": "完成这一步后，打开应用，我们来看一下添加了权限管理和路由守卫的之后的应用会是怎么样的："
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "children": [
+                {
+                  "text": ""
+                }
+              ],
+              "url": "https://static.tuture.co/c/092faf4/172281d34166fbdd.gif"
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
                   "text": ""
                 }
               ]
@@ -26207,15 +26778,15 @@
       ]
     },
     {
-      "type": "step",
-      "id": "ea01aaa8",
-      "articleId": "nO-RmUbzz",
       "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+      "id": "9eb3b275",
+      "articleId": "nO-RmUbzz",
+      "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-          "id": "6b369d1d",
+          "id": "2502e9f9",
           "fixed": true,
           "children": [
             {
@@ -26231,26 +26802,51 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "仅仅实现登录和注册功能是远远不够的，我们还需要将用户系统集成到现有的数据库中。例如我们在添加商品时，希望能够和具体的用户绑定。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "所幸我们使用的是 MongoDB 数据库，因此不像传统的关系型数据库那样需要繁杂的表结构更新，只需修改数据模型定义即可。"
                 }
               ]
             }
           ]
         },
         {
-          "type": "file",
-          "file": "client/src/store/actions.js",
+          "file": "server/model/index.js",
           "display": true,
+          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "更新 Mongoose 数据定义"
+                    }
+                  ],
+                  "id": "DqsbMcXRR"
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "首先让我们来更新一波 Mongoose 数据定义。打开 "
+                    },
+                    {
+                      "text": "server/model/index.js",
+                      "code": true
+                    },
+                    {
+                      "text": " ，修改代码如下："
                     }
                   ]
                 }
@@ -26258,17 +26854,11 @@
             },
             {
               "type": "diff-block",
-              "file": "client/src/store/actions.js",
+              "file": "server/model/index.js",
               "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
               "hiddenLines": [
-                [
-                  0,
-                  83
-                ],
-                [
-                  103,
-                  170
-                ]
+                [0, 4],
+                [24, 30]
               ],
               "children": [
                 {
@@ -26284,7 +26874,28 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "可以看到，我们主要是在两个数据模型 "
+                    },
+                    {
+                      "text": "productSchema",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "manufacturerSchema",
+                      "code": true
+                    },
+                    {
+                      "text": " 中加入了 "
+                    },
+                    {
+                      "text": "user",
+                      "code": true
+                    },
+                    {
+                      "text": " 字段，其他均无需改变。"
                     }
                   ]
                 }
@@ -26293,9 +26904,109 @@
           ]
         },
         {
-          "type": "file",
-          "file": "server/controllers/product.js",
+          "file": "client/src/store/actions.js",
           "display": true,
+          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "配置 Vuex Action"
+                    }
+                  ],
+                  "id": "8ON51qZBT"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着我们修改项目的 Action，主要是在两个新增数据的 Action（"
+                    },
+                    {
+                      "text": "addProduct",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "addManufacturer",
+                      "code": true
+                    },
+                    {
+                      "text": "）创建模型时记录用户数据。打开 "
+                    },
+                    {
+                      "text": "client/src/store/actions.js",
+                      "code": true
+                    },
+                    {
+                      "text": "，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/store/actions.js",
+              "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+              "hiddenLines": [
+                [0, 27],
+                [29, 86],
+                [101, 107],
+                [110, 110],
+                [116, 173],
+                [184, 190],
+                [193, 193]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "这里我们在前端发起请求创建新数据时，把 "
+                    },
+                    {
+                      "text": "user",
+                      "code": true
+                    },
+                    {
+                      "text": " 的 "
+                    },
+                    {
+                      "text": "_id",
+                      "code": true
+                    },
+                    {
+                      "text": " 也传了进去，这样数据库里面对应的商品和制造商就会记录相应的用户 ID 啦。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "server/controllers/product.js",
+          "display": false,
+          "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -26315,63 +27026,7 @@
               "type": "diff-block",
               "file": "server/controllers/product.js",
               "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-              "hiddenLines": [
-                [
-                  23,
-                  23
-                ]
-              ],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "server/model/index.js",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "server/model/index.js",
-              "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-              "hiddenLines": [
-                [
-                  5,
-                  6
-                ]
-              ],
+              "hiddenLines": [[23, 23]],
               "children": [
                 {
                   "text": ""
@@ -26411,15 +27066,15 @@
       ]
     },
     {
-      "type": "step",
-      "id": "18ec6f33",
-      "articleId": "nO-RmUbzz",
       "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+      "id": "1e88ef4a",
+      "articleId": "nO-RmUbzz",
+      "type": "step",
       "children": [
         {
           "type": "heading-two",
           "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-          "id": "dc7bb55f",
+          "id": "32f2ee12",
           "fixed": true,
           "children": [
             {
@@ -26435,16 +27090,39 @@
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "在最后一步中，我们将借助 "
+                },
+                {
+                  "text": "Authing SDK",
+                  "link": true,
+                  "url": "https://docs.authing.cn/authing/sdk/sdk-for-javascript?utm_source=tuture"
+                },
+                {
+                  "text": " 实现更细粒度的用户身份管理，以及个人信息设置页面。首先用 npm 安装 Authing 的 JavaScript SDK："
+                }
+              ]
+            },
+            {
+              "type": "code-block",
+              "lang": "bash",
+              "children": [
+                {
+                  "type": "code-line",
+                  "children": [
+                    {
+                      "text": "npm install authing-js-sdk"
+                    }
+                  ]
                 }
               ]
             }
           ]
         },
         {
-          "type": "file",
           "file": "client/package.json",
-          "display": true,
+          "display": false,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -26464,12 +27142,7 @@
               "type": "diff-block",
               "file": "client/package.json",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [
-                [
-                  0,
-                  9
-                ]
-              ],
+              "hiddenLines": [[0, 9]],
               "children": [
                 {
                   "text": ""
@@ -26493,70 +27166,36 @@
           ]
         },
         {
-          "type": "file",
-          "file": "client/src/App.vue",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/App.vue",
-              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [
-                [
-                  0,
-                  3
-                ]
-              ],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
           "file": "client/src/components/Header.vue",
           "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
           "children": [
             {
               "type": "explain",
               "fixed": true,
               "children": [
                 {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "修改 Header 的帐户设置链接"
+                    }
+                  ],
+                  "id": "43xkckrmq"
+                },
+                {
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "首先，让我们修改 Header 头部中的帐户设置链接。打开 "
+                    },
+                    {
+                      "text": "client/src/components/Header.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，修改代码如下："
                     }
                   ]
                 }
@@ -26567,18 +27206,10 @@
               "file": "client/src/components/Header.vue",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
-                [
-                  0,
-                  37
-                ],
-                [
-                  46,
-                  89
-                ],
-                [
-                  98,
-                  111
-                ]
+                [2, 35],
+                [49, 56],
+                [60, 90],
+                [96, 113]
               ],
               "children": [
                 {
@@ -26594,7 +27225,69 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "可以看到，我们主要做了两点变动："
+                    }
+                  ]
+                },
+                {
+                  "type": "numbered-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "在模板中调整“账户设置”的链接，从原先 Authing 的链接替换成了本应用的 "
+                        },
+                        {
+                          "text": "/user/settings",
+                          "code": true
+                        },
+                        {
+                          "text": " 路由，这个我们后面马上会实现"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 1
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "在 "
+                        },
+                        {
+                          "text": "handleLogout",
+                          "code": true
+                        },
+                        {
+                          "text": " 方法中，我们在 "
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 抹去用户信息之前，通过 "
+                        },
+                        {
+                          "text": "authing.checkLoginStatus",
+                          "code": true
+                        },
+                        {
+                          "text": " 检查登录状态，然后通过 "
+                        },
+                        {
+                          "text": "authing.logout",
+                          "code": true
+                        },
+                        {
+                          "text": " 执行登出操作"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "numbered-list",
+                      "number": 2
                     }
                   ]
                 }
@@ -26603,10 +27296,52 @@
           ]
         },
         {
-          "type": "file",
-          "file": "client/src/pages/user/Index.vue",
+          "file": "client/src/pages/user/Setting.vue",
           "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
           "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "实现 Setting 帐户设置页面"
+                    }
+                  ],
+                  "id": "39FYBnbFx"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "打开之前已经创建好的设置页面 "
+                    },
+                    {
+                      "text": "client/src/pages/user/Setting.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，实现用户个人信息设置页面，代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Setting.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
             {
               "type": "explain",
               "fixed": true,
@@ -26615,7 +27350,298 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "我们主要看一下 "
+                    },
+                    {
+                      "text": "script",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "template",
+                      "code": true
+                    },
+                    {
+                      "text": " 部分。首先在 "
+                    },
+                    {
+                      "text": "script",
+                      "code": true
+                    },
+                    {
+                      "text": " 部分中，我们的组件包括："
+                    }
+                  ]
+                },
+                {
+                  "type": "bulleted-list",
+                  "children": [
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "data",
+                          "code": true
+                        },
+                        {
+                          "text": " 字段定义了模板中所需要的数据，包括 "
+                        },
+                        {
+                          "text": "user",
+                          "code": true
+                        },
+                        {
+                          "text": " 、"
+                        },
+                        {
+                          "text": "imageUrl",
+                          "code": true
+                        },
+                        {
+                          "text": "（头像链接）以及 "
+                        },
+                        {
+                          "text": "rules",
+                          "code": true
+                        },
+                        {
+                          "text": "（表单校验规则）"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "created",
+                          "code": true
+                        },
+                        {
+                          "text": " 生命周期方法用于从 Vuex Store 以及 "
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 中获取用户数据（"
+                        },
+                        {
+                          "text": "localStorage",
+                          "code": true
+                        },
+                        {
+                          "text": " 的优先级更高一些），然后初始化上面的 "
+                        },
+                        {
+                          "text": "data",
+                          "code": true
+                        },
+                        {
+                          "text": " 字段"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "components",
+                          "code": true
+                        },
+                        {
+                          "text": " 用于指定 "
+                        },
+                        {
+                          "text": "app-header",
+                          "code": true
+                        },
+                        {
+                          "text": " 组件为我们刚才修改好的 "
+                        },
+                        {
+                          "text": "Header",
+                          "code": true
+                        },
+                        {
+                          "text": " 组件"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    },
+                    {
+                      "type": "list-item",
+                      "children": [
+                        {
+                          "text": "methods",
+                          "code": true
+                        },
+                        {
+                          "text": " 中定义了 "
+                        },
+                        {
+                          "text": "handleAvatarSuccess",
+                          "code": true
+                        },
+                        {
+                          "text": " 和 "
+                        },
+                        {
+                          "text": "submitForm",
+                          "code": true
+                        },
+                        {
+                          "text": " 两个 Handler，分别用于处理头像上传成功以及提交表单的逻辑。在 "
+                        },
+                        {
+                          "text": "submitForm",
+                          "code": true
+                        },
+                        {
+                          "text": " 方法中，我们先从表单中获取到相应的数据，然后通过 "
+                        },
+                        {
+                          "text": "authing.update",
+                          "code": true
+                        },
+                        {
+                          "text": " 更新用户数据，成功后再修改 Vuex Store 中的状态"
+                        }
+                      ],
+                      "level": 0,
+                      "parent": "bulleted-list"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/App.vue",
+          "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "调整 App 根组件"
+                    }
+                  ],
+                  "id": "6fUJbzXeI"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "让我们调整一下 App 根组件。打开 "
+                    },
+                    {
+                      "text": "client/src/App.vue",
+                      "code": true
+                    },
+                    {
+                      "text": " ，修改代码如下："
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/App.vue",
+              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+              "hiddenLines": [
+                [0, 4],
+                [46, 54]
+              ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "可以看到，我们主要实现了一个 "
+                    },
+                    {
+                      "text": "checkLogin",
+                      "code": true
+                    },
+                    {
+                      "text": " 方法，用于在整个应用刚挂载时检查登录状态，如果登录成功，则从 "
+                    },
+                    {
+                      "text": "storage",
+                      "code": true
+                    },
+                    {
+                      "text": " 里面取出数据并设置进 Redux Store ，如果登录失效，则清空本地的 "
+                    },
+                    {
+                      "text": "storage",
+                      "code": true
+                    },
+                    {
+                      "text": " 信息。"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "file": "client/src/pages/user/Index.vue",
+          "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "调整其他页面"
+                    }
+                  ],
+                  "id": "_zPLrzOO6"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后我们调整一下其他页面的一些细节。修改 "
+                    },
+                    {
+                      "text": "client/src/pages/user/Index.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，代码如下："
                     }
                   ]
                 }
@@ -26649,9 +27675,10 @@
           ]
         },
         {
-          "type": "file",
           "file": "client/src/pages/user/Login.vue",
           "display": true,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -26661,7 +27688,14 @@
                   "type": "paragraph",
                   "children": [
                     {
-                      "text": ""
+                      "text": "继续修改 "
+                    },
+                    {
+                      "text": "client/src/pages/user/Login.vue",
+                      "code": true
+                    },
+                    {
+                      "text": "，代码如下："
                     }
                   ]
                 }
@@ -26671,12 +27705,7 @@
               "type": "diff-block",
               "file": "client/src/pages/user/Login.vue",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [
-                [
-                  19,
-                  20
-                ]
-              ],
+              "hiddenLines": [[16, 46]],
               "children": [
                 {
                   "text": ""
@@ -26691,23 +27720,394 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "当保存上面的修改的代码，我们可以看到如下的效果："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d34c19bd30.gif"
+                },
+                {
+                  "type": "heading-two",
+                  "children": [
+                    {
+                      "text": "集成微信、QQ 登录或 Github 登录"
+                    }
+                  ],
+                  "id": "ATn1k27w-"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "通过上述流程，我们就完成了一个完整的用户系统及其与现有系统的整合，但是有同学发现了，我们在平时生活或工作中，除了常规的手机号+验证码、邮箱密码等，还会有一些更方便的登录方式，如微信登录、QQ登录等，那么我们如何集成这些方便的登录呢？实际上可能看起来很复杂，但是在我们现有的基础上，用 Authing 可以很方便的集成微信、QQ登录等。"
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "level": "warning",
+                  "children": [
+                    {
+                      "type": "paragraph",
+                      "children": [
+                        {
+                          "text": "只有企业才能集成微信或 QQ 登录，如果你是个人开发者，那么这一节你可以跳过哦🤓"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "集成微信扫码登录"
+                    }
+                  ],
+                  "id": "nB787Uvc2"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先去微信官方文档完成注册，然后申请一个"
+                    },
+                    {
+                      "text": "微信网页应用",
+                      "link": true,
+                      "url": "https://open.weixin.qq.com/cgi-bin/frame?t=home/web_tmpl&lang=zh_CN"
+                    },
+                    {
+                      "text": "，然后获取到微信网页应用的 AppID 和 AppSecret："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d3566d0e0d.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "接着滑动到底部，将授权回调域改为 "
+                    },
+                    {
+                      "text": "oauth.authing.cn",
+                      "code": true
+                    },
+                    {
+                      "text": " "
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d360ce9fa8.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后我们开始去 Authing 控制台，在相应微信登录里面，填入刚刚获取的 "
+                    },
+                    {
+                      "text": "AppID",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "AppSecret",
+                      "code": true
+                    },
+                    {
+                      "text": " ："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d366bb0ba1.png"
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d36d70102e.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "注意到上面我们第三个参数 “重定向地址” 填写了我们现在 Vue 全栈电商应用的开发服务器地址，读者应该根据自己当前的需要地址进行对应的填写。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "大功告成，通过上面的步骤我们就配置好了微信网页登录，现在你应该可以看到如下的效果："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d37286a52f.gif"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "我的天！好神奇！就是上面几下手工点按配置，我们就集成好了微信登录！😅"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "集成 QQ 登录"
+                    }
+                  ],
+                  "id": "zcascN_xA"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "按照和接入微信网页登录类似的方式，我们前往"
+                    },
+                    {
+                      "text": " QQ 互联中心",
+                      "link": true,
+                      "url": "https://connect.qq.com/manage.html#/"
+                    },
+                    {
+                      "text": "，注册一个账号，并创建一个网页应用。"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后进入网页应用，将授权回调地址填写为："
+                    },
+                    {
+                      "text": "https://oauth.authing.cn/oauth/qq/redirect  ",
+                      "code": true
+                    },
+                    {
+                      "text": " ，接着回到 Authing 控制台，我们配置 QQ 登录："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d37ca48ed6.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
                       "text": ""
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "file",
-          "file": "client/src/pages/user/Setting.vue",
-          "display": true,
-          "children": [
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d3865db313.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "保存之后，大功告成！我们的应用里面就有了 QQ 登录，和微信登录同样简单！"
+                    }
+                  ]
+                },
+                {
+                  "type": "heading-three",
+                  "children": [
+                    {
+                      "text": "集成 Github 登录"
+                    }
+                  ],
+                  "id": "ddjounxzC"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后我们再来尝试集成一下开发者比较喜爱的 Github 登录，看看 Authing 是如何简化这一劳动的呢？"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "首先根据 Github 指引，创建一个 "
+                    },
+                    {
+                      "text": "OAuth 应用",
+                      "link": true,
+                      "url": "https://developer.github.com/apps/building-oauth-apps/creating-an-oauth-app/"
+                    },
+                    {
+                      "text": "。"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d38eaec73b.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "然后填入如下内容："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d3990fc36f.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "其中红框框出来的内容需要填入 Authing 相关的 "
+                    },
+                    {
+                      "text": "https://oauth.authing.cn/oauth/github/redirect",
+                      "code": true
+                    },
+                    {
+                      "text": "，然后创建好应用之后，取出 "
+                    },
+                    {
+                      "text": "Client ID",
+                      "code": true
+                    },
+                    {
+                      "text": " 和 "
+                    },
+                    {
+                      "text": "Client Secret",
+                      "code": true
+                    },
+                    {
+                      "text": " ："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d3a81ef29d.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "之后就是类似之前的操作，进入 Authing 控制台，配置 Github 相关的内容："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d3a8503117.png"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "最后可以看到如下效果："
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ],
+                  "url": "https://static.tuture.co/c/092faf4/172281d3b53de278.gif"
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
                 {
                   "type": "paragraph",
                   "children": [
@@ -26717,38 +28117,14 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "diff-block",
-              "file": "client/src/pages/user/Setting.vue",
-              "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [],
-              "children": [
-                {
-                  "text": ""
-                }
-              ]
-            },
-            {
-              "type": "explain",
-              "fixed": true,
-              "children": [
-                {
-                  "type": "paragraph",
-                  "children": [
-                    {
-                      "text": ""
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
         {
-          "type": "file",
           "file": "client/yarn.lock",
-          "display": true,
+          "display": false,
+          "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
+          "type": "file",
           "children": [
             {
               "type": "explain",
@@ -26769,22 +28145,10 @@
               "file": "client/yarn.lock",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
-                [
-                  0,
-                  360
-                ],
-                [
-                  378,
-                  1864
-                ],
-                [
-                  1876,
-                  4139
-                ],
-                [
-                  4151,
-                  5994
-                ]
+                [0, 360],
+                [378, 1864],
+                [1876, 4139],
+                [4151, 5994]
               ],
               "children": [
                 {
@@ -26813,10 +28177,27 @@
           "fixed": true,
           "children": [
             {
+              "type": "heading-two",
+              "children": [
+                {
+                  "text": "小结"
+                }
+              ],
+              "id": "xw7CJJ3K5"
+            },
+            {
               "type": "paragraph",
               "children": [
                 {
-                  "text": ""
+                  "text": "至此，本篇教程也就结束了，相信你已经感受到了 Authing 身份认证机制的强大与便捷。在当今 Serverless 时代，越来越多标准化的流程（例如身份验证、人工智能应用等等）正在逐渐迈向云端，成为一种可直接消费的资源，而我们作为应用终端的开发者则可以将更多的时间和精力放在打磨和完善自身的产品上，在一定程度上解放了生产力。"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": "图雀社区秉承“加速技术传播”的理念，致力于推广能够真正让开发者和用户的生活变得更美好的技术。"
                 }
               ]
             }
