@@ -5,14 +5,8 @@
   "id": "092faf468f0108b393159a8456de3e15",
   "created": "2019-10-17T00:00:00.509Z",
   "github": "https://github.com/tuture-dev/vue-online-shop-frontend",
-  "topics": [
-    "Vue"
-  ],
-  "categories": [
-    "前端",
-    "Vue",
-    "入门"
-  ],
+  "topics": ["Vue"],
+  "categories": ["前端", "Vue", "入门"],
   "articles": [
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（一）",
@@ -31,10 +25,7 @@
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）",
       "description": "随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库 Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。",
-      "topics": [
-        "Vue",
-        "Vuex"
-      ],
+      "topics": ["Vue", "Vuex"],
       "id": "ae8a389b0b6f1fb121a6881d2ec2544f",
       "created": "2020-01-10T00:00:00.509Z",
       "cover": "https://imgkr.cn-bj.ufileos.com/49ed15a4-31b9-416d-8a74-124e24029ed3.jpg"
@@ -42,10 +33,7 @@
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（五）",
       "description": "组件化和逻辑复用能帮助写出简洁易懂的代码，随着应用越写越复杂，我们有必要把视图层中重复的逻辑抽成组件，以求在多个页面中复用；同时对于 Vuex 端，Store 中的逻辑也会越来越臃肿，我们有必要使用 Vuex 提供的 Getters 来复用本地数据获取逻辑。在这篇教程中，我们将带领你抽出 Vue 组件简化页面逻辑，使用 Vuex Getters 复用本地数据获取逻辑。",
-      "topics": [
-        "Vue",
-        "Vuex"
-      ],
+      "topics": ["Vue", "Vuex"],
       "id": "6f96d15",
       "created": "2020-02-11T00:00:00.509Z",
       "cover": "https://imgkr.cn-bj.ufileos.com/d7c72ec8-d28d-4f52-b0da-b212f2e69950.jpg"
@@ -53,10 +41,7 @@
     {
       "id": "-OixkkqI",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（六）",
-      "topics": [
-        "Vue.js",
-        "Vuex"
-      ],
+      "topics": ["Vue.js", "Vuex"],
       "cover": "https://imgkr.cn-bj.ufileos.com/d357716a-929b-48b2-acdb-75f1f9840ae3.jpg",
       "description": "前面五篇教程我们已经基本实现了迷你全栈电商应用的界面展示以及功能逻辑，相信大家在这个过程中都收获颇丰，并且迈向了全栈工程师的第一步。但是我们却并不满足于此，我们还需要对我们的项目代码进行优化，使得我们的代码可读性更高，也更好维护。相信细心的你们已经感觉到了项目中的store实例实在是过于臃肿，因此，本篇教程就是带大家一起学习如何抽出 Getters 、 Mutations 和Actions 逻辑实现store的“减重”以及如何干掉 mutation-types 硬编码。",
       "created": "2020-03-03T00:00:00.509Z"
@@ -65,10 +50,7 @@
       "id": "tc1c9oDB",
       "created": "2020-03-13T02:00:37.658Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（七）",
-      "topics": [
-        "Vue",
-        "Element UI"
-      ],
+      "topics": ["Vue", "Element UI"],
       "cover": "https://imgkr.cn-bj.ufileos.com/50009d9a-e157-43d9-803f-d3e7459a492d.jpg",
       "description": "在之前的六篇教程中我们已经基本实现了迷你全栈电商应用，相信大家对于一个全栈应用的开发已经有了一个全面的认知。但是一个追求完美的工程师是不会吝啬他的艺术创造，仅仅实现应用的功能还不能满足用户的高需求，应用的界面效果也是提高用户体验的关键因素。因此本篇教程将基于element-ui组件库重构项目的前端代码，改善迷你电商应用的界面效果，提高用户的体验感。虽然我们可以轻松地引入现成的组件库，但是与之对应的数据处理也值得我们注意，那我会在引入组件库的同时带大家一起踩一踩element-ui给我们挖的坑，毕竟踩坑才能成长嘛。"
     },
@@ -76,10 +58,7 @@
       "id": "-td0ssrw",
       "created": "2020-03-14T03:10:55.150Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（八）",
-      "topics": [
-        "Docker",
-        "Docker Compose"
-      ],
+      "topics": ["Docker", "Docker Compose"],
       "cover": "https://imgkr.cn-bj.ufileos.com/4cde7f12-c425-4e35-9f63-a3582d05b38e.jpg",
       "description": "本篇是系列文章终篇，我们将实现应用的部署，这篇教程将首先 Docker 来容器化你的应用，接着教你配置 MongoDB 的身份验证机制，给你的数据库添加一份安全守护，最后我们会带你使用阿里云的容器镜像服务将整个全栈应用部署到云端，使得你互联网上的用户可以访问你的网站，希望这篇教程能解决长期困扰你的部署上云的问题！"
     },
@@ -87,20 +66,10 @@
       "id": "nO-RmUbzz",
       "created": "2020-05-17T02:25:27.336Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（九）：使用 Authing 集成完整的用户系统",
-      "topics": [
-        "Vue",
-        "Express",
-        "Authing",
-        "OAuth",
-        "第三方登录"
-      ],
+      "topics": ["Vue", "Express", "Authing", "OAuth", "第三方登录"],
       "cover": "https://imgkr.cn-bj.ufileos.com/329b0aa0-5db5-449c-a71b-20f6c078ad63.jpg",
       "description": "在之前的迷你电商应用中，我们的网站缺少了一个关键组成部分：用户鉴权系统，包括登录、注册、以及权限管理等相应的配置。徒手实现这些功能固然可行，但是对于一支崇尚精益的团队来说，选择可靠的身份认证服务（IDaaS）是更加明智的选择，不仅能够提供完善且丰富的身份认证和用户鉴权功能，还确保遵循最佳安全实践和优秀的可扩展性。在这篇教程中，我们将手把手带你在本系列之前完成的迷你电商应用中快速集成 Authing 用户认证模块，提供一致、流畅、安全的身份认证体验。",
-      "categories": [
-        "前端",
-        "Vue",
-        "进阶"
-      ]
+      "categories": ["前端", "Vue", "进阶"]
     }
   ],
   "steps": [
@@ -434,7 +403,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/32719f10-4d3f-4fbe-b9e6-df123d10e1f7.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/16f2652f23b7ebd0.png",
                   "children": [
                     {
                       "text": ""
@@ -554,20 +523,6 @@
                     },
                     {
                       "text": "。"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "paragraph",
-              "children": [
-                {
-                  "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/46ea4d04-75bb-4f1d-8dd2-5bee8e4b7a4c.png",
-                  "children": [
-                    {
-                      "text": ""
                     }
                   ]
                 }
@@ -807,7 +762,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "display": false
         },
         {
           "type": "file",
@@ -2617,7 +2573,7 @@
                   "children": [
                     {
                       "type": "image",
-                      "url": "https://imgkr.cn-bj.ufileos.com/2a82a28b-d624-48aa-beea-67e09ec75d0c.png",
+                      "url": "https://static.tuture.co/c/092faf4/16f2653b19ea8fe1.png",
                       "children": [
                         {
                           "text": ""
@@ -2800,14 +2756,8 @@
               "file": "src/components/HelloWorld.vue",
               "commit": "056d555",
               "hiddenLines": [
-                [
-                  88,
-                  89
-                ],
-                [
-                  101,
-                  119
-                ]
+                [88, 89],
+                [101, 119]
               ],
               "children": [
                 {
@@ -3093,12 +3043,7 @@
               "type": "diff-block",
               "file": "src/router/index.js",
               "commit": "056d555",
-              "hiddenLines": [
-                [
-                  7,
-                  7
-                ]
-              ],
+              "hiddenLines": [[7, 7]],
               "children": [
                 {
                   "text": ""
@@ -3129,7 +3074,7 @@
                   "children": [
                     {
                       "type": "image",
-                      "url": "https://imgkr.cn-bj.ufileos.com/8b2064cf-2d4a-4348-bdd7-4861620834f2.png",
+                      "url": "https://static.tuture.co/c/092faf4/16f2657c42c648fb.png",
                       "children": [
                         {
                           "text": ""
@@ -3315,12 +3260,7 @@
               "type": "diff-block",
               "file": "src/App.vue",
               "commit": "19a30e7",
-              "hiddenLines": [
-                [
-                  22,
-                  38
-                ]
-              ],
+              "hiddenLines": [[22, 38]],
               "children": [
                 {
                   "text": ""
@@ -3699,12 +3639,7 @@
               "type": "diff-block",
               "file": "src/router/index.js",
               "commit": "19a30e7",
-              "hiddenLines": [
-                [
-                  9,
-                  12
-                ]
-              ],
+              "hiddenLines": [[9, 12]],
               "children": [
                 {
                   "text": ""
@@ -3744,7 +3679,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/bd984d0d-382c-403f-bc61-0bc55b007266.gif",
+                  "url": "https://static.tuture.co/c/092faf4/16f265b24d1615d4.gif",
                   "children": [
                     {
                       "text": ""
@@ -3906,14 +3841,8 @@
               "file": "src/router/index.js",
               "commit": "4bad80e",
               "hiddenLines": [
-                [
-                  16,
-                  21
-                ],
-                [
-                  47,
-                  51
-                ]
+                [16, 21],
+                [47, 51]
               ],
               "children": [
                 {
@@ -4585,7 +4514,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/f5ef0f82-bf4f-4a13-b882-d5c455638b11.gif",
+                  "url": "https://static.tuture.co/c/092faf4/16f265b9cfeec55f.gif",
                   "children": [
                     {
                       "text": ""
@@ -6866,14 +6795,8 @@
               "file": "package-lock.json",
               "commit": "f2fa516",
               "hiddenLines": [
-                [
-                  0,
-                  11938
-                ],
-                [
-                  11950,
-                  12767
-                ]
+                [0, 11938],
+                [11950, 12767]
               ],
               "children": [
                 {
@@ -6922,14 +6845,8 @@
               "file": "package.json",
               "commit": "f2fa516",
               "hiddenLines": [
-                [
-                  0,
-                  9
-                ],
-                [
-                  17,
-                  71
-                ]
+                [0, 9],
+                [17, 71]
               ],
               "children": [
                 {
@@ -7540,12 +7457,7 @@
               "type": "diff-block",
               "file": "src/main.js",
               "commit": "f2fa516",
-              "hiddenLines": [
-                [
-                  13,
-                  17
-                ]
-              ],
+              "hiddenLines": [[13, 17]],
               "children": [
                 {
                   "text": ""
@@ -7770,7 +7682,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/eb851b81-fa87-477f-a7f0-0b0adb824ff5.png",
+                  "url": "https://static.tuture.co/c/092faf4/16f71022a22e3093.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -7964,14 +7876,8 @@
               "file": "package-lock.json",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [
-                  0,
-                  12084
-                ],
-                [
-                  12096,
-                  12772
-                ]
+                [0, 12084],
+                [12096, 12772]
               ],
               "children": [
                 {
@@ -8020,14 +7926,8 @@
               "file": "package.json",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [
-                  0,
-                  11
-                ],
-                [
-                  21,
-                  73
-                ]
+                [0, 11],
+                [21, 73]
               ],
               "children": [
                 {
@@ -8342,14 +8242,8 @@
               "file": "src/main.js",
               "commit": "0dfeb91",
               "hiddenLines": [
-                [
-                  0,
-                  3
-                ],
-                [
-                  11,
-                  12
-                ]
+                [0, 3],
+                [11, 12]
               ],
               "children": [
                 {
@@ -8986,12 +8880,7 @@
               "type": "diff-block",
               "file": "src/pages/admin/Products.vue",
               "commit": "0dfeb91",
-              "hiddenLines": [
-                [
-                  0,
-                  1
-                ]
-              ],
+              "hiddenLines": [[0, 1]],
               "children": [
                 {
                   "text": ""
@@ -9547,12 +9436,7 @@
               "type": "diff-block",
               "file": "src/store/index.js",
               "commit": "7b7d864",
-              "hiddenLines": [
-                [
-                  0,
-                  13
-                ]
-              ],
+              "hiddenLines": [[0, 13]],
               "children": [
                 {
                   "text": ""
@@ -9911,12 +9795,7 @@
               "type": "diff-block",
               "file": "src/pages/Home.vue",
               "commit": "7b7d864",
-              "hiddenLines": [
-                [
-                  15,
-                  15
-                ]
-              ],
+              "hiddenLines": [[15, 15]],
               "children": [
                 {
                   "text": ""
@@ -9985,14 +9864,8 @@
               "file": "src/pages/Cart.vue",
               "commit": "7b7d864",
               "hiddenLines": [
-                [
-                  0,
-                  1
-                ],
-                [
-                  32,
-                  32
-                ]
+                [0, 1],
+                [32, 32]
               ],
               "children": [
                 {
@@ -10156,12 +10029,7 @@
               "type": "diff-block",
               "file": "src/pages/admin/New.vue",
               "commit": "7b7d864",
-              "hiddenLines": [
-                [
-                  0,
-                  29
-                ]
-              ],
+              "hiddenLines": [[0, 29]],
               "children": [
                 {
                   "text": ""
@@ -10217,7 +10085,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/9892fc16-797c-49d7-8f32-4ed9dbe47b01.gif",
+                  "url": "https://static.tuture.co/c/092faf4/16f9341421d9c19f.gif",
                   "children": [
                     {
                       "text": ""
@@ -10681,18 +10549,9 @@
               "file": "package-lock.json",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  0,
-                  470
-                ],
-                [
-                  509,
-                  6961
-                ],
-                [
-                  6971,
-                  12805
-                ]
+                [0, 470],
+                [509, 6961],
+                [6971, 12805]
               ],
               "children": [
                 {
@@ -10741,14 +10600,8 @@
               "file": "package.json",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  0,
-                  9
-                ],
-                [
-                  17,
-                  73
-                ]
+                [0, 9],
+                [17, 73]
               ],
               "children": [
                 {
@@ -10813,14 +10666,8 @@
               "file": "src/store/index.js",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  8,
-                  14
-                ],
-                [
-                  64,
-                  68
-                ]
+                [8, 14],
+                [64, 68]
               ],
               "children": [
                 {
@@ -11151,18 +10998,9 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  0,
-                  7
-                ],
-                [
-                  16,
-                  31
-                ],
-                [
-                  43,
-                  54
-                ]
+                [0, 7],
+                [16, 31],
+                [43, 54]
               ],
               "children": [
                 {
@@ -11324,14 +11162,8 @@
               "file": "src/pages/Cart.vue",
               "commit": "5ff8afe",
               "hiddenLines": [
-                [
-                  0,
-                  6
-                ],
-                [
-                  15,
-                  51
-                ]
+                [0, 6],
+                [15, 51]
               ],
               "children": [
                 {
@@ -12042,18 +11874,9 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "9ed8f6a",
               "hiddenLines": [
-                [
-                  0,
-                  3
-                ],
-                [
-                  19,
-                  29
-                ],
-                [
-                  37,
-                  43
-                ]
+                [0, 3],
+                [19, 29],
+                [37, 43]
               ],
               "children": [
                 {
@@ -12196,18 +12019,9 @@
               "file": "src/pages/Cart.vue",
               "commit": "9ed8f6a",
               "hiddenLines": [
-                [
-                  0,
-                  2
-                ],
-                [
-                  18,
-                  27
-                ],
-                [
-                  35,
-                  40
-                ]
+                [0, 2],
+                [18, 27],
+                [35, 40]
               ],
               "children": [
                 {
@@ -12283,7 +12097,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/9a07854c-c8a4-41ea-8d8e-4effaa532713.png",
+                  "url": "https://static.tuture.co/c/092faf4/170fc2865b17a8fa.png",
                   "children": [
                     {
                       "text": ""
@@ -12305,7 +12119,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/7667b550-51f5-45ce-82af-793b0f0b6cf5.png",
+                  "url": "https://static.tuture.co/c/092faf4/170fc2865bf857e9.png",
                   "children": [
                     {
                       "text": ""
@@ -12750,14 +12564,8 @@
               "file": "src/store/index.js",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  35
-                ],
-                [
-                  63,
-                  63
-                ]
+                [0, 35],
+                [63, 63]
               ],
               "children": [
                 {
@@ -12962,14 +12770,8 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  11
-                ],
-                [
-                  20,
-                  20
-                ]
+                [0, 11],
+                [20, 20]
               ],
               "children": [
                 {
@@ -13138,12 +12940,7 @@
               "type": "diff-block",
               "file": "src/components/products/ProductItem.vue",
               "commit": "ff121fa",
-              "hiddenLines": [
-                [
-                  34,
-                  40
-                ]
-              ],
+              "hiddenLines": [[34, 40]],
               "children": [
                 {
                   "text": ""
@@ -13207,18 +13004,9 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  9
-                ],
-                [
-                  27,
-                  32
-                ],
-                [
-                  41,
-                  44
-                ]
+                [0, 9],
+                [27, 32],
+                [41, 44]
               ],
               "children": [
                 {
@@ -13309,14 +13097,8 @@
               "file": "src/pages/Cart.vue",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  7
-                ],
-                [
-                  25,
-                  40
-                ]
+                [0, 7],
+                [25, 40]
               ],
               "children": [
                 {
@@ -13522,14 +13304,8 @@
               "file": "src/router/index.js",
               "commit": "ff121fa",
               "hiddenLines": [
-                [
-                  0,
-                  1
-                ],
-                [
-                  9,
-                  45
-                ]
+                [0, 1],
+                [9, 45]
               ],
               "children": [
                 {
@@ -13570,7 +13346,7 @@
               "children": [
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/bee9a8d2-9afa-4286-b31f-69ace1a0d97f.png",
+                  "url": "https://static.tuture.co/c/092faf4/170fc2865dc88d16.png",
                   "children": [
                     {
                       "text": ""
@@ -13803,6 +13579,7 @@
         {
           "file": "src/pages/admin/Index.vue",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -13872,6 +13649,7 @@
         {
           "file": "src/pages/admin/Manufacturers.vue",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14097,6 +13875,7 @@
         {
           "file": "src/pages/admin/Products.vue",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14154,12 +13933,7 @@
               "type": "diff-block",
               "file": "src/pages/admin/Products.vue",
               "commit": "f0b5684",
-              "hiddenLines": [
-                [
-                  73,
-                  73
-                ]
-              ],
+              "hiddenLines": [[73, 73]],
               "children": [
                 {
                   "text": ""
@@ -14192,6 +13966,7 @@
         {
           "file": "src/router/index.js",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14229,18 +14004,9 @@
               "file": "src/router/index.js",
               "commit": "f0b5684",
               "hiddenLines": [
-                [
-                  0,
-                  8
-                ],
-                [
-                  16,
-                  39
-                ],
-                [
-                  51,
-                  61
-                ]
+                [0, 8],
+                [16, 39],
+                [51, 61]
               ],
               "children": [
                 {
@@ -14256,6 +14022,29 @@
                   "type": "paragraph",
                   "children": [
                     {
+                      "text": "把项目跑起来，点击"
+                    },
+                    {
+                      "text": "Admin",
+                      "code": true
+                    },
+                    {
+                      "text": "然后再点击"
+                    },
+                    {
+                      "text": "查看生产商",
+                      "bold": true
+                    },
+                    {
+                      "text": "，我们可以看到从后端获取的所有生产商：  下面展示的就是从后端获取的制造商，并且我们可以对其进行修改和删除操作。"
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": "https://imgkr2.cn-bj.ufileos.com/11f291f4-daa2-4d7b-80a3-305fd8840cef.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=bUlzaK1%252BPpuYQhfzNYPVKpxfx9k%253D&Expires=1597417587",
+                  "children": [
+                    {
                       "text": ""
                     }
                   ]
@@ -14267,6 +14056,7 @@
         {
           "file": "src/store/getters.js",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14426,6 +14216,7 @@
         {
           "file": "src/store/mutations.js",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14651,6 +14442,7 @@
         {
           "file": "src/store/index.js",
           "display": true,
+          "commit": "f0b5684",
           "type": "file",
           "children": [
             {
@@ -14730,18 +14522,9 @@
               "file": "src/store/index.js",
               "commit": "f0b5684",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  10,
-                  22
-                ],
-                [
-                  72,
-                  85
-                ]
+                [0, 0],
+                [10, 22],
+                [72, 85]
               ],
               "children": [
                 {
@@ -15193,14 +14976,8 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "4909803",
               "hiddenLines": [
-                [
-                  0,
-                  25
-                ],
-                [
-                  34,
-                  78
-                ]
+                [0, 25],
+                [34, 78]
               ],
               "children": [
                 {
@@ -15227,6 +15004,7 @@
         {
           "file": "src/pages/admin/Edit.vue",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15493,6 +15271,7 @@
         {
           "file": "src/pages/admin/New.vue",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15585,6 +15364,7 @@
         {
           "file": "src/store/actions.js",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15806,6 +15586,7 @@
         {
           "file": "src/store/index.js",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15849,12 +15630,7 @@
               "type": "diff-block",
               "file": "src/store/index.js",
               "commit": "4909803",
-              "hiddenLines": [
-                [
-                  12,
-                  34
-                ]
-              ],
+              "hiddenLines": [[12, 34]],
               "children": [
                 {
                   "text": ""
@@ -15908,6 +15684,7 @@
         {
           "file": "src/store/mutations.js",
           "display": true,
+          "commit": "4909803",
           "type": "file",
           "children": [
             {
@@ -15952,14 +15729,8 @@
               "file": "src/store/mutations.js",
               "commit": "4909803",
               "hiddenLines": [
-                [
-                  0,
-                  23
-                ],
-                [
-                  55,
-                  85
-                ]
+                [0, 23],
+                [55, 85]
               ],
               "children": [
                 {
@@ -16189,6 +15960,7 @@
         {
           "file": "src/components/ManufacturerForm.vue",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16366,6 +16138,7 @@
         {
           "file": "src/store/getters.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16424,12 +16197,7 @@
               "type": "diff-block",
               "file": "src/store/getters.js",
               "commit": "49571dc",
-              "hiddenLines": [
-                [
-                  0,
-                  12
-                ]
-              ],
+              "hiddenLines": [[0, 12]],
               "children": [
                 {
                   "text": ""
@@ -16459,6 +16227,7 @@
         {
           "file": "src/pages/admin/EditManufacturers.vue",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16677,6 +16446,7 @@
         {
           "file": "src/pages/admin/NewManufacturers.vue",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16746,6 +16516,7 @@
         {
           "file": "src/pages/admin/Index.vue",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -16791,14 +16562,8 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  11
-                ],
-                [
-                  21,
-                  24
-                ]
+                [0, 11],
+                [21, 24]
               ],
               "children": [
                 {
@@ -16850,14 +16615,8 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  34
-                ],
-                [
-                  45,
-                  62
-                ]
+                [0, 34],
+                [45, 62]
               ],
               "children": [
                 {
@@ -16926,14 +16685,8 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  38
-                ],
-                [
-                  49,
-                  66
-                ]
+                [0, 38],
+                [49, 66]
               ],
               "children": [
                 {
@@ -16960,6 +16713,7 @@
         {
           "file": "src/router/index.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -17007,18 +16761,9 @@
               "file": "src/router/index.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  9
-                ],
-                [
-                  18,
-                  46
-                ],
-                [
-                  63,
-                  73
-                ]
+                [0, 9],
+                [18, 46],
+                [63, 73]
               ],
               "children": [
                 {
@@ -17051,6 +16796,48 @@
                       "text": "方式传参。\t"
                     }
                   ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "配置好添加制造商和修改制造商的路由参数之后，我们又可以进行验收啦，运行项目，点击Admin然后再点击添加制造商，我们可以看到添加制造商的表单：  "
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": "https://imgkr2.cn-bj.ufileos.com/75d2e9a0-99e1-48b7-bd69-7e3b02c2e1d5.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=X%252FJFSTrFlTYnf7d5tuQdt%252F%252FVlhA%253D&Expires=1597417641",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "\n 然后再点击查看制造商，我们又可以看到一系列的制造商，并且每个制造商都对应的有修改和删除操作，这里我们随便选择一个制造商进行修改，就会看到该制造商的表单信息：  "
+                    }
+                  ]
+                },
+                {
+                  "type": "image",
+                  "url": "https://imgkr2.cn-bj.ufileos.com/1ba7ff1c-472b-4aa2-987b-b9272906e773.png?UCloudPublicKey=TOKEN_8d8b72be-579a-4e83-bfd0-5f6ce1546f13&Signature=xC1ZxIRtgoxTIFhTsb4EwxLf1P8%253D&Expires=1597417672",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
                 }
               ]
             }
@@ -17059,6 +16846,7 @@
         {
           "file": "src/store/mutation-types.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -17204,6 +16992,7 @@
         {
           "file": "src/store/actions.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -17240,12 +17029,7 @@
               "type": "diff-block",
               "file": "src/store/actions.js",
               "commit": "49571dc",
-              "hiddenLines": [
-                [
-                  87,
-                  88
-                ]
-              ],
+              "hiddenLines": [[87, 88]],
               "children": [
                 {
                   "text": ""
@@ -17306,14 +17090,8 @@
               "file": "src/store/index.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  0,
-                  18
-                ],
-                [
-                  25,
-                  38
-                ]
+                [0, 18],
+                [25, 38]
               ],
               "children": [
                 {
@@ -17361,6 +17139,7 @@
         {
           "file": "src/store/mutations.js",
           "display": true,
+          "commit": "49571dc",
           "type": "file",
           "children": [
             {
@@ -17398,14 +17177,8 @@
               "file": "src/store/mutations.js",
               "commit": "49571dc",
               "hiddenLines": [
-                [
-                  69,
-                  74
-                ],
-                [
-                  87,
-                  88
-                ]
+                [69, 74],
+                [87, 88]
               ],
               "children": [
                 {
@@ -17544,12 +17317,7 @@
               "type": "diff-block",
               "file": "build/webpack.base.conf.js",
               "commit": "19b49e9",
-              "hiddenLines": [
-                [
-                  113,
-                  116
-                ]
-              ],
+              "hiddenLines": [[113, 116]],
               "children": [
                 {
                   "text": ""
@@ -17595,12 +17363,7 @@
               "type": "diff-block",
               "file": "src/pages/Home.vue",
               "commit": "19b49e9",
-              "hiddenLines": [
-                [
-                  0,
-                  6
-                ]
-              ],
+              "hiddenLines": [[0, 6]],
               "children": [
                 {
                   "text": ""
@@ -17694,38 +17457,14 @@
               "file": "tuture.yml",
               "commit": "19b49e9",
               "hiddenLines": [
-                [
-                  0,
-                  1
-                ],
-                [
-                  10,
-                  107
-                ],
-                [
-                  117,
-                  174
-                ],
-                [
-                  202,
-                  335
-                ],
-                [
-                  346,
-                  346
-                ],
-                [
-                  356,
-                  595
-                ],
-                [
-                  1288,
-                  1478
-                ],
-                [
-                  1487,
-                  1488
-                ]
+                [0, 1],
+                [10, 107],
+                [117, 174],
+                [202, 335],
+                [346, 346],
+                [356, 595],
+                [1288, 1478],
+                [1487, 1488]
               ],
               "children": [
                 {
@@ -17982,58 +17721,19 @@
               "file": "package-lock.json",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  58
-                ],
-                [
-                  94,
-                  479
-                ],
-                [
-                  494,
-                  811
-                ],
-                [
-                  821,
-                  854
-                ],
-                [
-                  870,
-                  1350
-                ],
-                [
-                  1358,
-                  2328
-                ],
-                [
-                  2338,
-                  3410
-                ],
-                [
-                  3422,
-                  3708
-                ],
-                [
-                  3728,
-                  7227
-                ],
-                [
-                  7239,
-                  10370
-                ],
-                [
-                  10380,
-                  10524
-                ],
-                [
-                  10536,
-                  11531
-                ],
-                [
-                  11543,
-                  12885
-                ]
+                [0, 58],
+                [94, 479],
+                [494, 811],
+                [821, 854],
+                [870, 1350],
+                [1358, 2328],
+                [2338, 3410],
+                [3422, 3708],
+                [3728, 7227],
+                [7239, 10370],
+                [10380, 10524],
+                [10536, 11531],
+                [11543, 12885]
               ],
               "children": [
                 {
@@ -18082,18 +17782,9 @@
               "file": "package.json",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  10
-                ],
-                [
-                  18,
-                  22
-                ],
-                [
-                  30,
-                  75
-                ]
+                [0, 10],
+                [18, 22],
+                [30, 75]
               ],
               "children": [
                 {
@@ -18170,14 +17861,8 @@
               "file": "src/main.js",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  4
-                ],
-                [
-                  15,
-                  22
-                ]
+                [0, 4],
+                [15, 22]
               ],
               "children": [
                 {
@@ -18290,12 +17975,7 @@
               "type": "diff-block",
               "file": "src/App.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [
-                [
-                  39,
-                  39
-                ]
-              ],
+              "hiddenLines": [[39, 39]],
               "children": [
                 {
                   "text": ""
@@ -18406,12 +18086,7 @@
               "type": "diff-block",
               "file": "src/components/products/ProductList.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [
-                [
-                  15,
-                  35
-                ]
-              ],
+              "hiddenLines": [[15, 35]],
               "children": [
                 {
                   "text": ""
@@ -18696,14 +18371,8 @@
               "file": "src/components/products/ProductButton.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  30,
-                  42
-                ],
-                [
-                  45,
-                  54
-                ]
+                [30, 42],
+                [45, 54]
               ],
               "children": [
                 {
@@ -18789,7 +18458,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/59b95d7c-ce20-4bf0-881c-3df5d3eab6bb.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd7f1d39bb647.png",
                   "children": [
                     {
                       "text": ""
@@ -18876,14 +18545,8 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  35,
-                  46
-                ],
-                [
-                  81,
-                  106
-                ]
+                [35, 46],
+                [81, 106]
               ],
               "children": [
                 {
@@ -18927,7 +18590,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/3a7a9f34-f5c1-4a15-b48d-559dd6677e55.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd7fc2f9b7080.png",
                   "children": [
                     {
                       "text": ""
@@ -18977,18 +18640,9 @@
               "file": "src/pages/admin/Edit.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  13
-                ],
-                [
-                  27,
-                  35
-                ],
-                [
-                  48,
-                  58
-                ]
+                [0, 13],
+                [27, 35],
+                [48, 58]
               ],
               "children": [
                 {
@@ -19114,14 +18768,8 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  32,
-                  99
-                ],
-                [
-                  101,
-                  101
-                ]
+                [32, 99],
+                [101, 101]
               ],
               "children": [
                 {
@@ -19247,18 +18895,9 @@
               "file": "src/pages/admin/New.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  8
-                ],
-                [
-                  17,
-                  21
-                ],
-                [
-                  30,
-                  39
-                ]
+                [0, 8],
+                [17, 21],
+                [30, 39]
               ],
               "children": [
                 {
@@ -19309,7 +18948,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/46658098-acba-4a4f-ba7a-3e8ba5118eb2.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd807ce1da156.png",
                   "children": [
                     {
                       "text": ""
@@ -19403,22 +19042,10 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  21,
-                  35
-                ],
-                [
-                  37,
-                  37
-                ],
-                [
-                  58,
-                  64
-                ],
-                [
-                  66,
-                  91
-                ]
+                [21, 35],
+                [37, 37],
+                [58, 64],
+                [66, 91]
               ],
               "children": [
                 {
@@ -19440,7 +19067,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/ea4f1264-352f-4b59-bd77-372d82c61e6a.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd8133a39a38f.png",
                   "children": [
                     {
                       "text": ""
@@ -19504,14 +19131,8 @@
               "file": "src/pages/admin/NewManufacturers.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  7
-                ],
-                [
-                  20,
-                  30
-                ]
+                [0, 7],
+                [20, 30]
               ],
               "children": [
                 {
@@ -19587,12 +19208,7 @@
               "type": "diff-block",
               "file": "src/components/ManufacturerForm.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
-              "hiddenLines": [
-                [
-                  17,
-                  22
-                ]
-              ],
+              "hiddenLines": [[17, 22]],
               "children": [
                 {
                   "text": ""
@@ -19613,7 +19229,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/1117ccfa-77cd-4d33-84bf-fab45019a1ac.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd81d39c3eb45.png",
                   "children": [
                     {
                       "text": ""
@@ -19677,14 +19293,8 @@
               "file": "src/pages/Cart.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  1
-                ],
-                [
-                  12,
-                  30
-                ]
+                [0, 1],
+                [12, 30]
               ],
               "children": [
                 {
@@ -19706,7 +19316,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/fdf7e580-2d32-4b7d-bebb-cd3e9830378b.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd82508c14642.png",
                   "children": [
                     {
                       "text": ""
@@ -19749,14 +19359,8 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "b6d9a87f1af8f2a068cfb5a2d392fd1dbaec84c3",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  23,
-                  24
-                ]
+                [0, 0],
+                [23, 24]
               ],
               "children": [
                 {
@@ -19864,7 +19468,7 @@
             },
             {
               "type": "image",
-              "url": "https://imgkr.cn-bj.ufileos.com/063d8169-2f45-4515-8d8b-2ee248cc4af5.png",
+              "url": "https://static.tuture.co/c/092faf4/170bd829d4626c61.png",
               "children": [
                 {
                   "text": ""
@@ -20010,30 +19614,12 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "02f5761fdc540a3cf3e0549b2a4e3f616b4f1a48",
               "hiddenLines": [
-                [
-                  7,
-                  7
-                ],
-                [
-                  27,
-                  30
-                ],
-                [
-                  41,
-                  72
-                ],
-                [
-                  81,
-                  97
-                ],
-                [
-                  108,
-                  110
-                ],
-                [
-                  143,
-                  152
-                ]
+                [7, 7],
+                [27, 30],
+                [41, 72],
+                [81, 97],
+                [108, 110],
+                [143, 152]
               ],
               "children": [
                 {
@@ -20298,22 +19884,10 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  13,
-                  23
-                ],
-                [
-                  34,
-                  39
-                ],
-                [
-                  42,
-                  106
-                ],
-                [
-                  108,
-                  145
-                ]
+                [13, 23],
+                [34, 39],
+                [42, 106],
+                [108, 145]
               ],
               "children": [
                 {
@@ -20362,18 +19936,9 @@
               "file": "src/components/products/ProductItem.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  10,
-                  48
-                ],
-                [
-                  75,
-                  85
-                ]
+                [0, 0],
+                [10, 48],
+                [75, 85]
               ],
               "children": [
                 {
@@ -20422,14 +19987,8 @@
               "file": "src/components/products/ProductList.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  3
-                ],
-                [
-                  12,
-                  33
-                ]
+                [0, 3],
+                [12, 33]
               ],
               "children": [
                 {
@@ -20478,14 +20037,8 @@
               "file": "src/pages/admin/Index.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  0
-                ],
-                [
-                  10,
-                  10
-                ]
+                [0, 0],
+                [10, 10]
               ],
               "children": [
                 {
@@ -20534,18 +20087,9 @@
               "file": "src/pages/admin/Manufacturers.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  10
-                ],
-                [
-                  21,
-                  35
-                ],
-                [
-                  66,
-                  84
-                ]
+                [0, 10],
+                [21, 35],
+                [66, 84]
               ],
               "children": [
                 {
@@ -20594,14 +20138,8 @@
               "file": "src/pages/admin/New.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  25
-                ],
-                [
-                  33,
-                  39
-                ]
+                [0, 25],
+                [33, 39]
               ],
               "children": [
                 {
@@ -20650,18 +20188,9 @@
               "file": "src/pages/admin/Products.vue",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  20
-                ],
-                [
-                  29,
-                  48
-                ],
-                [
-                  87,
-                  100
-                ]
+                [0, 20],
+                [29, 48],
+                [87, 100]
               ],
               "children": [
                 {
@@ -20710,14 +20239,8 @@
               "file": "src/store/actions.js",
               "commit": "5c7666c1f66b288f2c02b04c964c53791ba4ecb5",
               "hiddenLines": [
-                [
-                  0,
-                  72
-                ],
-                [
-                  80,
-                  132
-                ]
+                [0, 72],
+                [80, 132]
               ],
               "children": [
                 {
@@ -20850,22 +20373,10 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [
-                  0,
-                  104
-                ],
-                [
-                  107,
-                  111
-                ],
-                [
-                  119,
-                  121
-                ],
-                [
-                  132,
-                  143
-                ]
+                [0, 104],
+                [107, 111],
+                [119, 121],
+                [132, 143]
               ],
               "children": [
                 {
@@ -20999,14 +20510,8 @@
               "file": "src/components/products/ProductItem.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [
-                  0,
-                  54
-                ],
-                [
-                  67,
-                  86
-                ]
+                [0, 54],
+                [67, 86]
               ],
               "children": [
                 {
@@ -21055,14 +20560,8 @@
               "file": "src/pages/admin/New.vue",
               "commit": "11118c364dd8c3bbe0380075f980767417ec1f33",
               "hiddenLines": [
-                [
-                  0,
-                  10
-                ],
-                [
-                  19,
-                  40
-                ]
+                [0, 10],
+                [19, 40]
               ],
               "children": [
                 {
@@ -21195,14 +20694,8 @@
               "file": "src/components/ManufacturerForm.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  22,
-                  41
-                ],
-                [
-                  73,
-                  84
-                ]
+                [22, 41],
+                [73, 84]
               ],
               "children": [
                 {
@@ -21321,18 +20814,9 @@
               "file": "src/components/products/ProductForm.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  14,
-                  35
-                ],
-                [
-                  44,
-                  127
-                ],
-                [
-                  155,
-                  168
-                ]
+                [14, 35],
+                [44, 127],
+                [155, 168]
               ],
               "children": [
                 {
@@ -21396,34 +20880,13 @@
               "file": "src/store/actions.js",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  0,
-                  23
-                ],
-                [
-                  26,
-                  27
-                ],
-                [
-                  30,
-                  36
-                ],
-                [
-                  39,
-                  46
-                ],
-                [
-                  109,
-                  109
-                ],
-                [
-                  112,
-                  118
-                ],
-                [
-                  121,
-                  128
-                ]
+                [0, 23],
+                [26, 27],
+                [30, 36],
+                [39, 46],
+                [109, 109],
+                [112, 118],
+                [121, 128]
               ],
               "children": [
                 {
@@ -21493,18 +20956,9 @@
               "file": "src/store/mutations.js",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  0,
-                  24
-                ],
-                [
-                  27,
-                  81
-                ],
-                [
-                  102,
-                  155
-                ]
+                [0, 24],
+                [27, 81],
+                [102, 155]
               ],
               "children": [
                 {
@@ -21548,7 +21002,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/bf1581ca-1ea2-4583-abed-946cf482d8aa.png",
+                  "url": "https://static.tuture.co/c/092faf4/170bd8414598aa64.png",
                   "children": [
                     {
                       "text": ""
@@ -21591,14 +21045,8 @@
               "file": "src/pages/admin/New.vue",
               "commit": "38caf6d47d40776d073f517ea7ff25c9e21b0a8b",
               "hiddenLines": [
-                [
-                  0,
-                  25
-                ],
-                [
-                  33,
-                  39
-                ]
+                [0, 25],
+                [33, 39]
               ],
               "children": [
                 {
@@ -21738,7 +21186,7 @@
             },
             {
               "type": "image",
-              "url": "https://imgkr.cn-bj.ufileos.com/655aef8c-71ff-40a1-8c61-d5626c2cb899.png",
+              "url": "https://static.tuture.co/c/092faf4/170bd845ae228eb9.png",
               "children": [
                 {
                   "text": ""
@@ -21747,7 +21195,7 @@
             },
             {
               "type": "image",
-              "url": "https://imgkr.cn-bj.ufileos.com/efca8186-5645-4389-9117-5d6e19a8cf68.png",
+              "url": "https://static.tuture.co/c/092faf4/170bd848f59fad3b.png",
               "children": [
                 {
                   "text": ""
@@ -21824,30 +21272,12 @@
               "file": "src/store/actions.js",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [
-                  0,
-                  27
-                ],
-                [
-                  29,
-                  66
-                ],
-                [
-                  86,
-                  103
-                ],
-                [
-                  105,
-                  105
-                ],
-                [
-                  107,
-                  144
-                ],
-                [
-                  164,
-                  180
-                ]
+                [0, 27],
+                [29, 66],
+                [86, 103],
+                [105, 105],
+                [107, 144],
+                [164, 180]
               ],
               "children": [
                 {
@@ -21918,30 +21348,12 @@
               "file": "src/store/mutations.js",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [
-                  0,
-                  25
-                ],
-                [
-                  27,
-                  56
-                ],
-                [
-                  77,
-                  82
-                ],
-                [
-                  84,
-                  103
-                ],
-                [
-                  105,
-                  134
-                ],
-                [
-                  152,
-                  157
-                ]
+                [0, 25],
+                [27, 56],
+                [77, 82],
+                [84, 103],
+                [105, 134],
+                [152, 157]
               ],
               "children": [
                 {
@@ -21990,14 +21402,8 @@
               "file": "src/pages/admin/Edit.vue",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [
-                  0,
-                  38
-                ],
-                [
-                  50,
-                  54
-                ]
+                [0, 38],
+                [50, 54]
               ],
               "children": [
                 {
@@ -22046,14 +21452,8 @@
               "file": "src/pages/admin/EditManufacturers.vue",
               "commit": "aa23775d642373413aa51b97bc3e7915ac9e2095",
               "hiddenLines": [
-                [
-                  0,
-                  22
-                ],
-                [
-                  34,
-                  38
-                ]
+                [0, 22],
+                [34, 38]
               ],
               "children": [
                 {
@@ -22176,7 +21576,7 @@
             },
             {
               "type": "image",
-              "url": "https://imgkr.cn-bj.ufileos.com/7d1ea84e-9338-4b4b-b9f9-e0ea2dfaf338.png",
+              "url": "https://static.tuture.co/c/092faf4/170e3df21624b4e9.png",
               "children": [
                 {
                   "text": ""
@@ -22540,18 +21940,9 @@
               "file": "client/src/store/actions.js",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
               "hiddenLines": [
-                [
-                  0,
-                  23
-                ],
-                [
-                  30,
-                  103
-                ],
-                [
-                  107,
-                  179
-                ]
+                [0, 23],
+                [30, 103],
+                [107, 179]
               ],
               "children": [
                 {
@@ -22799,14 +22190,8 @@
               "file": "server/app.js",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
               "hiddenLines": [
-                [
-                  0,
-                  12
-                ],
-                [
-                  21,
-                  66
-                ]
+                [0, 12],
+                [21, 66]
               ],
               "children": [
                 {
@@ -23279,7 +22664,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/88f665bc-3c10-4698-907c-99391de64c61.png",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df21661b0dd.png",
                   "children": [
                     {
                       "text": ""
@@ -23303,7 +22688,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/3ed0cf34-00ec-4338-ae7b-cf02980674d6.png",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df219c9c305.png",
                   "children": [
                     {
                       "text": ""
@@ -23376,12 +22761,7 @@
               "type": "diff-block",
               "file": "client/.gitignore",
               "commit": "40e98722ac395db0546ac896d7497313e46081a1",
-              "hiddenLines": [
-                [
-                  0,
-                  10
-                ]
-              ],
+              "hiddenLines": [[0, 10]],
               "children": [
                 {
                   "text": ""
@@ -23543,14 +22923,8 @@
               "file": "server/app.js",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [
-                  0,
-                  15
-                ],
-                [
-                  26,
-                  71
-                ]
+                [0, 15],
+                [26, 71]
               ],
               "children": [
                 {
@@ -23678,14 +23052,8 @@
               "file": "server/Dockerfile",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [
-                  0,
-                  12
-                ],
-                [
-                  23,
-                  27
-                ]
+                [0, 12],
+                [23, 27]
               ],
               "children": [
                 {
@@ -23795,14 +23163,8 @@
               "file": "docker-compose.yml",
               "commit": "cc4d59c976050064882d1e08f448c4525d35b2dc",
               "hiddenLines": [
-                [
-                  0,
-                  2
-                ],
-                [
-                  12,
-                  16
-                ]
+                [0, 2],
+                [12, 16]
               ],
               "children": [
                 {
@@ -24395,7 +23757,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/4b79b282-a56b-4856-8454-27ae24199b1d.png",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df21636b67e.png",
                   "children": [
                     {
                       "text": ""
@@ -24419,7 +23781,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/d3d8a032-438f-430b-9956-332042068786.png",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df21a7ca3b2.png",
                   "children": [
                     {
                       "text": ""
@@ -24435,7 +23797,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/65fa64bc-6500-4cfa-901d-cbda29367c8a.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df21cb0520a.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -24451,7 +23813,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/22d637d4-028a-48ae-baa9-88ea145641b5.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df248bd0cc9.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -24467,7 +23829,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/8efdc549-daca-4b0f-a262-c22df37b2db5.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df248d09a1e.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -24498,7 +23860,7 @@
                 },
                 {
                   "type": "image",
-                  "url": "https://imgkr.cn-bj.ufileos.com/e7040054-6f17-43f7-8a99-63a47bd5081d.jpg",
+                  "url": "https://static.tuture.co/c/092faf4/170e3df24a00c61c.jpeg",
                   "children": [
                     {
                       "text": ""
@@ -24677,12 +24039,7 @@
               "type": "diff-block",
               "file": "docker-compose.yml",
               "commit": "b8afe6837849e25e1386f78c89786cce23159272",
-              "hiddenLines": [
-                [
-                  0,
-                  6
-                ]
-              ],
+              "hiddenLines": [[0, 6]],
               "children": [
                 {
                   "text": ""
@@ -24984,12 +24341,7 @@
               "type": "diff-block",
               "file": "client/src/components/products/ProductButton.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [
-                [
-                  34,
-                  45
-                ]
-              ],
+              "hiddenLines": [[34, 45]],
               "children": [
                 {
                   "text": ""
@@ -25036,12 +24388,7 @@
               "type": "diff-block",
               "file": "client/src/pages/Cart.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [
-                [
-                  8,
-                  8
-                ]
-              ],
+              "hiddenLines": [[8, 8]],
               "children": [
                 {
                   "text": ""
@@ -25088,12 +24435,7 @@
               "type": "diff-block",
               "file": "client/src/pages/Home.vue",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
-              "hiddenLines": [
-                [
-                  8,
-                  9
-                ]
-              ],
+              "hiddenLines": [[8, 9]],
               "children": [
                 {
                   "text": ""
@@ -25188,23 +24530,288 @@
               "file": "client/src/store/actions.js",
               "commit": "4588ca697e3eed582cf976f51b03500fac4b9ec4",
               "hiddenLines": [
-                [
-                  5,
-                  19
-                ],
-                [
-                  48,
-                  48
-                ],
-                [
-                  155,
-                  157
-                ],
-                [
-                  169,
-                  169
-                ]
+                [5, 19],
+                [48, 48],
+                [155, 157],
+                [169, 169]
               ],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "step",
+      "id": "96038675",
+      "articleId": "nO-RmUbzz",
+      "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+      "children": [
+        {
+          "type": "heading-two",
+          "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+          "id": "72ccf1a2",
+          "fixed": true,
+          "children": [
+            {
+              "text": "添加用户界面及路由"
+            }
+          ]
+        },
+        {
+          "type": "explain",
+          "fixed": true,
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/main.js",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/main.js",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/pages/user/Index.vue",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Index.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/pages/user/Login.vue",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Login.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/pages/user/Setting.vue",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/pages/user/Setting.vue",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
+              "children": [
+                {
+                  "text": ""
+                }
+              ]
+            },
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "file": "client/src/router/index.js",
+          "display": true,
+          "children": [
+            {
+              "type": "explain",
+              "fixed": true,
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": ""
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "diff-block",
+              "file": "client/src/router/index.js",
+              "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
+              "hiddenLines": [],
               "children": [
                 {
                   "text": ""
@@ -25279,7 +24886,7 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/e1f9dd49-024b-42f5-9f25-b7ec05a3d2a4.gif"
+              "url": "https://static.tuture.co/c/092faf4/172281d303fc18b0.gif"
             },
             {
               "type": "paragraph",
@@ -25630,12 +25237,7 @@
               "type": "diff-block",
               "file": "client/src/router/index.js",
               "commit": "0bc64d13046e72ce7fd9529cb7efbb69c011d1c7",
-              "hiddenLines": [
-                [
-                  0,
-                  26
-                ]
-              ],
+              "hiddenLines": [[0, 26]],
               "children": [
                 {
                   "text": ""
@@ -25677,7 +25279,7 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/608ec9f7-dcc1-4ccf-8b0e-5a94e3b1fcc3.jpg"
+              "url": "https://static.tuture.co/c/092faf4/172281d30417fb78.jpeg"
             },
             {
               "type": "paragraph",
@@ -25751,7 +25353,7 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/b911fb44-5bb4-477c-9a7f-6613e8af3bd9.png"
+              "url": "https://static.tuture.co/c/092faf4/172281d3055eca8c.png"
             },
             {
               "type": "paragraph",
@@ -25776,7 +25378,7 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/941f9c0d-933a-4d4a-a103-09d5af864a54.png"
+              "url": "https://static.tuture.co/c/092faf4/172281d3095f926b.png"
             },
             {
               "type": "paragraph",
@@ -25801,7 +25403,7 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/f947b966-4f2f-41c7-84f4-d34c879a2238.jpg"
+              "url": "https://static.tuture.co/c/092faf4/172281d309214195.jpeg"
             },
             {
               "type": "paragraph",
@@ -25818,7 +25420,7 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/9e61b095-916e-4ae3-9186-5267dff2a5a0.jpg"
+              "url": "https://static.tuture.co/c/092faf4/172281d32d134626.jpeg"
             },
             {
               "type": "note",
@@ -25987,30 +25589,12 @@
               "file": "client/src/store/mutations.js",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
               "hiddenLines": [
-                [
-                  0,
-                  19
-                ],
-                [
-                  42,
-                  62
-                ],
-                [
-                  73,
-                  75
-                ],
-                [
-                  84,
-                  101
-                ],
-                [
-                  129,
-                  150
-                ],
-                [
-                  161,
-                  180
-                ]
+                [0, 19],
+                [42, 62],
+                [73, 75],
+                [84, 101],
+                [129, 150],
+                [161, 180]
               ],
               "children": [
                 {
@@ -26066,18 +25650,9 @@
               "file": "client/src/store/index.js",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
               "hiddenLines": [
-                [
-                  0,
-                  7
-                ],
-                [
-                  22,
-                  33
-                ],
-                [
-                  43,
-                  52
-                ]
+                [0, 7],
+                [22, 33],
+                [43, 52]
               ],
               "children": [
                 {
@@ -26149,14 +25724,8 @@
               "file": "client/src/App.vue",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
               "hiddenLines": [
-                [
-                  0,
-                  4
-                ],
-                [
-                  20,
-                  28
-                ]
+                [0, 4],
+                [20, 28]
               ],
               "children": [
                 {
@@ -26241,12 +25810,7 @@
               "type": "diff-block",
               "file": "client/src/components/Header.vue",
               "commit": "f8e83ff89ed688548582d08d4c81a57981187a17",
-              "hiddenLines": [
-                [
-                  0,
-                  89
-                ]
-              ],
+              "hiddenLines": [[0, 89]],
               "children": [
                 {
                   "text": ""
@@ -26406,7 +25970,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/8459ef19-e1b7-48d8-9620-55054752a1e8.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d333d68545.png"
                 },
                 {
                   "type": "paragraph",
@@ -26784,7 +26348,7 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/4a8bce59-cc9f-431c-865e-18745428d00f.jpg"
+              "url": "https://static.tuture.co/c/092faf4/172281d336625305.jpeg"
             },
             {
               "type": "paragraph",
@@ -26964,14 +26528,8 @@
               "file": "client/src/components/products/ProductButton.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [
-                  0,
-                  12
-                ],
-                [
-                  15,
-                  36
-                ]
+                [0, 12],
+                [15, 36]
               ],
               "children": [
                 {
@@ -27072,18 +26630,9 @@
               "file": "client/src/pages/Cart.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [
-                  0,
-                  10
-                ],
-                [
-                  12,
-                  13
-                ],
-                [
-                  17,
-                  31
-                ]
+                [0, 10],
+                [12, 13],
+                [17, 31]
               ],
               "children": [
                 {
@@ -27169,18 +26718,9 @@
               "file": "client/src/pages/admin/Index.vue",
               "commit": "10225335e6195fd3cb4d98c84b64f3d2807048af",
               "hiddenLines": [
-                [
-                  0,
-                  11
-                ],
-                [
-                  13,
-                  14
-                ],
-                [
-                  17,
-                  27
-                ]
+                [0, 11],
+                [13, 14],
+                [17, 27]
               ],
               "children": [
                 {
@@ -27223,7 +26763,7 @@
                   "text": ""
                 }
               ],
-              "url": "https://imgkr.cn-bj.ufileos.com/d9d9ac16-c6df-42a6-bcfb-6765edbe9789.gif"
+              "url": "https://static.tuture.co/c/092faf4/172281d34166fbdd.gif"
             },
             {
               "type": "paragraph",
@@ -27317,14 +26857,8 @@
               "file": "server/model/index.js",
               "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
               "hiddenLines": [
-                [
-                  0,
-                  4
-                ],
-                [
-                  24,
-                  30
-                ]
+                [0, 4],
+                [24, 30]
               ],
               "children": [
                 {
@@ -27424,34 +26958,13 @@
               "file": "client/src/store/actions.js",
               "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
               "hiddenLines": [
-                [
-                  0,
-                  27
-                ],
-                [
-                  29,
-                  86
-                ],
-                [
-                  101,
-                  107
-                ],
-                [
-                  110,
-                  110
-                ],
-                [
-                  116,
-                  173
-                ],
-                [
-                  184,
-                  190
-                ],
-                [
-                  193,
-                  193
-                ]
+                [0, 27],
+                [29, 86],
+                [101, 107],
+                [110, 110],
+                [116, 173],
+                [184, 190],
+                [193, 193]
               ],
               "children": [
                 {
@@ -27513,12 +27026,7 @@
               "type": "diff-block",
               "file": "server/controllers/product.js",
               "commit": "d1c5dad8ef4db3d706cb489dad23996846b9d6b7",
-              "hiddenLines": [
-                [
-                  23,
-                  23
-                ]
-              ],
+              "hiddenLines": [[23, 23]],
               "children": [
                 {
                   "text": ""
@@ -27634,12 +27142,7 @@
               "type": "diff-block",
               "file": "client/package.json",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [
-                [
-                  0,
-                  9
-                ]
-              ],
+              "hiddenLines": [[0, 9]],
               "children": [
                 {
                   "text": ""
@@ -27703,22 +27206,10 @@
               "file": "client/src/components/Header.vue",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
-                [
-                  2,
-                  35
-                ],
-                [
-                  49,
-                  56
-                ],
-                [
-                  60,
-                  90
-                ],
-                [
-                  96,
-                  113
-                ]
+                [2, 35],
+                [49, 56],
+                [60, 90],
+                [96, 113]
               ],
               "children": [
                 {
@@ -28074,14 +27565,8 @@
               "file": "client/src/App.vue",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
-                [
-                  0,
-                  4
-                ],
-                [
-                  46,
-                  54
-                ]
+                [0, 4],
+                [46, 54]
               ],
               "children": [
                 {
@@ -28220,12 +27705,7 @@
               "type": "diff-block",
               "file": "client/src/pages/user/Login.vue",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
-              "hiddenLines": [
-                [
-                  16,
-                  46
-                ]
-              ],
+              "hiddenLines": [[16, 46]],
               "children": [
                 {
                   "text": ""
@@ -28251,7 +27731,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/32bd0abf-dbcc-4364-8d01-47affc0f9a89.gif"
+                  "url": "https://static.tuture.co/c/092faf4/172281d34c19bd30.gif"
                 },
                 {
                   "type": "heading-two",
@@ -28316,7 +27796,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/735e6f6c-d56f-42ea-9fda-d92dcaa64d39.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d3566d0e0d.png"
                 },
                 {
                   "type": "paragraph",
@@ -28340,7 +27820,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/600497e6-a149-4c36-bc18-5032c1453cff.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d360ce9fa8.png"
                 },
                 {
                   "type": "paragraph",
@@ -28371,7 +27851,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/432e971d-cb3a-4dff-b967-d5011807852a.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d366bb0ba1.png"
                 },
                 {
                   "type": "image",
@@ -28380,7 +27860,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/abf56159-142c-4e9c-b08a-e2f8359048b4.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d36d70102e.png"
                 },
                 {
                   "type": "paragraph",
@@ -28405,7 +27885,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/ea6c5f67-40ee-4afe-8f54-3eff447cfce1.gif"
+                  "url": "https://static.tuture.co/c/092faf4/172281d37286a52f.gif"
                 },
                 {
                   "type": "paragraph",
@@ -28462,7 +27942,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/062db59f-41fd-44c6-9d51-2b2830b64541.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d37ca48ed6.png"
                 },
                 {
                   "type": "paragraph",
@@ -28479,7 +27959,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/089087d0-b597-4cae-afc3-c539ea795ea4.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d3865db313.png"
                 },
                 {
                   "type": "paragraph",
@@ -28529,7 +28009,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/6cd8539f-997a-4583-a5c4-a36fd166a9e0.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d38eaec73b.png"
                 },
                 {
                   "type": "paragraph",
@@ -28546,7 +28026,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/9987a2dc-20cd-4f65-9704-ef368b622d1e.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d3990fc36f.png"
                 },
                 {
                   "type": "paragraph",
@@ -28584,7 +28064,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/419c6cce-551c-4a0f-a528-b7c8276c8287.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d3a81ef29d.png"
                 },
                 {
                   "type": "paragraph",
@@ -28601,7 +28081,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/ccfb4947-5ddf-4c10-8509-24e0c5da5681.png"
+                  "url": "https://static.tuture.co/c/092faf4/172281d3a8503117.png"
                 },
                 {
                   "type": "paragraph",
@@ -28618,7 +28098,7 @@
                       "text": ""
                     }
                   ],
-                  "url": "https://imgkr.cn-bj.ufileos.com/7fcd879d-03d2-4dd6-b4d5-ea936fdf6ddd.gif"
+                  "url": "https://static.tuture.co/c/092faf4/172281d3b53de278.gif"
                 },
                 {
                   "type": "paragraph",
@@ -28665,22 +28145,10 @@
               "file": "client/yarn.lock",
               "commit": "f25eb7cbe23d905594334ddeede9a1e13d2d8462",
               "hiddenLines": [
-                [
-                  0,
-                  360
-                ],
-                [
-                  378,
-                  1864
-                ],
-                [
-                  1876,
-                  4139
-                ],
-                [
-                  4151,
-                  5994
-                ]
+                [0, 360],
+                [378, 1864],
+                [1876, 4139],
+                [4151, 5994]
               ],
               "children": [
                 {
@@ -28738,20 +28206,5 @@
       ]
     }
   ],
-  "remotes": [
-    {
-      "name": "gitee",
-      "refs": {
-        "fetch": "https://gitee.com/tuture/vue-online-shop.git",
-        "push": "https://gitee.com/tuture/vue-online-shop.git"
-      }
-    },
-    {
-      "name": "origin",
-      "refs": {
-        "fetch": "https://github.com/tuture-dev/vue-online-shop-frontend.git",
-        "push": "https://github.com/tuture-dev/vue-online-shop-frontend.git"
-      }
-    }
-  ]
+  "remotes": []
 }
