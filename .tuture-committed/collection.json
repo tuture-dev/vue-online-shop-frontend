@@ -13,36 +13,51 @@
       "description": "Vue 是尤雨溪在2014年创建的一个前端框架，目前 Github Star 数高达150K，是 Star 数最高的前端项目，并且 Vue 有着极为活跃的社区生态以及专职团队进行维护以确保项目可以健康长久的发展。\n目前中国很多互联网公司前端程序员的招聘要求都要求程序员掌握 Vue，像滴滴、美团、饿了么等大厂也在重度使用 Vue 进行开发，并且有着像 Element 、mpvue、iView 这样优秀的基于 Vue 开源项目存在，所以学习 Vue 是一个不错的投资，当你学会 Vue，就可以快速开发项目，这样不仅可以接外包挣外快，而且当有了一定的项目经验，还可以在一线互联网大厂找到一份不错的工作。\n看到这里你心动了嘛？心动不如行动！而最幸运的是，本教程将会一步一步带你以实战的方式实现一个 real-life （真实世界中的运行的）项目，并在实战的过程中，了解 Vue 的全貌，现在就打开电脑，跟随者我的脚步，这一次彻底掌握 Vue 开发！",
       "id": "0b662ce",
       "created": "2019-10-17T00:00:00.509Z",
-      "cover": "https://imgkr.cn-bj.ufileos.com/3e119a16-f74d-4bab-922e-80504879485a.jpg"
+      "cover": "https://static.tuture.co/c/092faf4/cover-1.jpg",
+      "topics": [
+        "Vue"
+      ]
     },
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（三）",
       "description": "在这篇文章中，我们将讲解 Vue 实例的 Props 和 Methods，接着讲解最常见的 Vue 模板语法，并通过实例的方式将这些模板语法都实践一番，最后将讲解 Vue 组件的组合，并完成了我们的发表商品页面。",
       "id": "5e10a4665188253a800423a5",
       "created": "2019-12-18T00:00:00.509Z",
-      "cover": "https://imgkr.cn-bj.ufileos.com/09a5ff8d-b2c7-4699-bed6-cd331e54d8a1.jpg"
+      "cover": "https://static.tuture.co/c/092faf4/cover-3.jpg",
+      "topics": [
+        "Vue"
+      ]
     },
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（四）",
       "description": "随着前端应用的日渐复杂，状态和数据管理成为了构建大型应用的关键。受 Redux 等项目的启发，Vue.js 团队也量身定做了状态管理库 Vuex。在这篇教程中，我们将带你熟悉 Store、Mutation 和 Action 三大关键概念，并升级迷你商城应用的前端代码。",
-      "topics": ["Vue", "Vuex"],
+      "topics": [
+        "Vue",
+        "Vuex"
+      ],
       "id": "ae8a389b0b6f1fb121a6881d2ec2544f",
       "created": "2020-01-10T00:00:00.509Z",
-      "cover": "https://imgkr.cn-bj.ufileos.com/49ed15a4-31b9-416d-8a74-124e24029ed3.jpg"
+      "cover": "https://static.tuture.co/c/092faf4/cover-4.jpg"
     },
     {
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（五）",
       "description": "组件化和逻辑复用能帮助写出简洁易懂的代码，随着应用越写越复杂，我们有必要把视图层中重复的逻辑抽成组件，以求在多个页面中复用；同时对于 Vuex 端，Store 中的逻辑也会越来越臃肿，我们有必要使用 Vuex 提供的 Getters 来复用本地数据获取逻辑。在这篇教程中，我们将带领你抽出 Vue 组件简化页面逻辑，使用 Vuex Getters 复用本地数据获取逻辑。",
-      "topics": ["Vue", "Vuex"],
+      "topics": [
+        "Vue",
+        "Vuex"
+      ],
       "id": "6f96d15",
       "created": "2020-02-11T00:00:00.509Z",
-      "cover": "https://imgkr.cn-bj.ufileos.com/d7c72ec8-d28d-4f52-b0da-b212f2e69950.jpg"
+      "cover": "https://static.tuture.co/c/092faf4/cover-5.jpg"
     },
     {
       "id": "-OixkkqI",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（六）",
-      "topics": ["Vue.js", "Vuex"],
-      "cover": "https://imgkr.cn-bj.ufileos.com/d357716a-929b-48b2-acdb-75f1f9840ae3.jpg",
+      "topics": [
+        "Vue",
+        "Vuex"
+      ],
+      "cover": "https://static.tuture.co/c/092faf4/cover-6.jpg",
       "description": "前面五篇教程我们已经基本实现了迷你全栈电商应用的界面展示以及功能逻辑，相信大家在这个过程中都收获颇丰，并且迈向了全栈工程师的第一步。但是我们却并不满足于此，我们还需要对我们的项目代码进行优化，使得我们的代码可读性更高，也更好维护。相信细心的你们已经感觉到了项目中的store实例实在是过于臃肿，因此，本篇教程就是带大家一起学习如何抽出 Getters 、 Mutations 和Actions 逻辑实现store的“减重”以及如何干掉 mutation-types 硬编码。",
       "created": "2020-03-03T00:00:00.509Z"
     },
@@ -50,16 +65,22 @@
       "id": "tc1c9oDB",
       "created": "2020-03-13T02:00:37.658Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（七）",
-      "topics": ["Vue", "Element UI"],
-      "cover": "https://imgkr.cn-bj.ufileos.com/50009d9a-e157-43d9-803f-d3e7459a492d.jpg",
+      "topics": [
+        "Vue",
+        "Element UI"
+      ],
+      "cover": "https://static.tuture.co/c/092faf4/vue-cover-7-squashed.jpg",
       "description": "在之前的六篇教程中我们已经基本实现了迷你全栈电商应用，相信大家对于一个全栈应用的开发已经有了一个全面的认知。但是一个追求完美的工程师是不会吝啬他的艺术创造，仅仅实现应用的功能还不能满足用户的高需求，应用的界面效果也是提高用户体验的关键因素。因此本篇教程将基于element-ui组件库重构项目的前端代码，改善迷你电商应用的界面效果，提高用户的体验感。虽然我们可以轻松地引入现成的组件库，但是与之对应的数据处理也值得我们注意，那我会在引入组件库的同时带大家一起踩一踩element-ui给我们挖的坑，毕竟踩坑才能成长嘛。"
     },
     {
       "id": "-td0ssrw",
       "created": "2020-03-14T03:10:55.150Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（八）",
-      "topics": ["Docker", "Docker Compose"],
-      "cover": "https://imgkr.cn-bj.ufileos.com/4cde7f12-c425-4e35-9f63-a3582d05b38e.jpg",
+      "topics": [
+        "Docker",
+        "Docker Compose"
+      ],
+      "cover": "https://static.tuture.co/c/092faf4/vue-cover-8-squashed.jpg",
       "description": "本篇是系列文章终篇，我们将实现应用的部署，这篇教程将首先 Docker 来容器化你的应用，接着教你配置 MongoDB 的身份验证机制，给你的数据库添加一份安全守护，最后我们会带你使用阿里云的容器镜像服务将整个全栈应用部署到云端，使得你互联网上的用户可以访问你的网站，希望这篇教程能解决长期困扰你的部署上云的问题！"
     },
     {
@@ -67,9 +88,8 @@
       "created": "2020-05-17T02:25:27.336Z",
       "name": "从零到部署：用 Vue 和 Express 实现迷你全栈电商应用（九）：使用 Authing 集成完整的用户系统",
       "topics": ["Vue", "Express", "Authing", "OAuth", "第三方登录"],
-      "cover": "https://imgkr.cn-bj.ufileos.com/329b0aa0-5db5-449c-a71b-20f6c078ad63.jpg",
-      "description": "在之前的迷你电商应用中，我们的网站缺少了一个关键组成部分：用户鉴权系统，包括登录、注册、以及权限管理等相应的配置。徒手实现这些功能固然可行，但是对于一支崇尚精益的团队来说，选择可靠的身份认证服务（IDaaS）是更加明智的选择，不仅能够提供完善且丰富的身份认证和用户鉴权功能，还确保遵循最佳安全实践和优秀的可扩展性。在这篇教程中，我们将手把手带你在本系列之前完成的迷你电商应用中快速集成 Authing 用户认证模块，提供一致、流畅、安全的身份认证体验。",
-      "categories": ["前端", "Vue", "进阶"]
+      "cover": "https://static.tuture.co/c/092faf4/vue-cover-9.png",
+      "description": "在之前的迷你电商应用中，我们的网站缺少了一个关键组成部分：用户鉴权系统，包括登录、注册、以及权限管理等相应的配置。徒手实现这些功能固然可行，但是对于一支崇尚精益的团队来说，选择可靠的身份认证服务（IDaaS）是更加明智的选择，不仅能够提供完善且丰富的身份认证和用户鉴权功能，还确保遵循最佳安全实践和优秀的可扩展性。在这篇教程中，我们将手把手带你在本系列之前完成的迷你电商应用中快速集成 Authing 用户认证模块，提供一致、流畅、安全的身份认证体验。"
     }
   ],
   "steps": [
