@@ -7,7 +7,7 @@ WORKDIR /usr/src/app
 COPY package.json .
 
 # 安装 npm 依赖
-RUN npm config set registry https://registry.npm.taobao.org && npm install
+RUN npm config set registry https://registry.npmmirror.com && npm install
 
 # 拷贝源代码
 COPY . .
